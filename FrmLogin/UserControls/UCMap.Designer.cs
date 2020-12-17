@@ -576,6 +576,9 @@ namespace FrmLogin.UserControls
             this.rb5 = new System.Windows.Forms.RadioButton();
             this.label27 = new System.Windows.Forms.Label();
             this.dgvStanjeNaPoziciji = new System.Windows.Forms.DataGridView();
+            this.btnUlaz = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnFind = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStanjeNaPoziciji)).BeginInit();
             this.SuspendLayout();
             // 
@@ -5536,12 +5539,48 @@ namespace FrmLogin.UserControls
             this.dgvStanjeNaPoziciji.Size = new System.Drawing.Size(333, 442);
             this.dgvStanjeNaPoziciji.TabIndex = 1135;
             // 
+            // btnUlaz
+            // 
+            this.btnUlaz.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnUlaz.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUlaz.Location = new System.Drawing.Point(1272, 31);
+            this.btnUlaz.Name = "btnUlaz";
+            this.btnUlaz.Size = new System.Drawing.Size(105, 52);
+            this.btnUlaz.TabIndex = 1137;
+            this.btnUlaz.Text = "Entrance";
+            this.btnUlaz.UseVisualStyleBackColor = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Thistle;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(1272, 103);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(105, 52);
+            this.btnExit.TabIndex = 1138;
+            this.btnExit.Text = "Leaving";
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
+            // btnFind
+            // 
+            this.btnFind.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnFind.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFind.Location = new System.Drawing.Point(1272, 180);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(105, 52);
+            this.btnFind.TabIndex = 1139;
+            this.btnFind.Text = "Find";
+            this.btnFind.UseVisualStyleBackColor = false;
+            // 
             // UCMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.btnFind);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnUlaz);
             this.Controls.Add(this.dgvStanjeNaPoziciji);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.rb5);
@@ -6648,5 +6687,8 @@ namespace FrmLogin.UserControls
         private System.Windows.Forms.RadioButton rb5;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.DataGridView dgvStanjeNaPoziciji;
+        private System.Windows.Forms.Button btnUlaz;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnFind;
     }
 }

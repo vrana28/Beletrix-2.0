@@ -42,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\SqlServer\StorageClientSqlServer.cs" />
+    <Compile Include="Implementation\SqlServer\StorageEntranceItems.cs" />
+    <Compile Include="Implementation\SqlServer\StoragePositionSql.cs" />
     <Compile Include="Implementation\SqlServer\StorageRobaSqlServer.cs" />
     <Compile Include="Implementation\SqlServer\StorageStorekeeperSqlServer.cs" />
     <Compile Include="IStorageClient.cs" />
+    <Compile Include="IStorageEntranceItems.cs" />
     <Compile Include="IStoragePosition.cs" />
     <Compile Include="IStorageRoba.cs" />
     <Compile Include="IStorageStorekeeper.cs" />

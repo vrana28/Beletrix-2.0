@@ -18,6 +18,7 @@ namespace FrmLogin.FrmAdd
         public FrmAddRoba( )
         {
             InitializeComponent();
+            txtWeightOfBox.Text = "1";
         }
 
         private void FrmAddRoba_Load(object sender, EventArgs e)
@@ -39,11 +40,11 @@ namespace FrmLogin.FrmAdd
                 return;
             }
 
-            Roba r = new Roba
-            {
+            Roba r = new Roba {
                 Name = txtName.Text,
                 WeightOfBox = double.Parse(txtWeightOfBox.Text)
             };
+          
 
             try
             {
