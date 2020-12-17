@@ -11,7 +11,7 @@ namespace Storage
     {
         void Add(Storekeeper s);
         void Delete(Storekeeper s);
-        bool Find(string username, string password);
+        bool Find(Storekeeper s);
         List<Storekeeper> GetAll();
         void Update(Storekeeper s);
     }

@@ -51,7 +51,7 @@ namespace Controller
         }
 
         public bool FindStorekeeper(Storekeeper s) {
-            return storageStorekeeper.Find(s.Username,s.Password);
+            return storageStorekeeper.Find(s);
         }
 
         public void UpdateRoba(Roba r)

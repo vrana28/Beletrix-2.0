@@ -40,12 +40,12 @@ namespace Storage.Implementation.SqlServer
 
         
 
-        public bool Find(string username, string password)
+        public bool Find(Storekeeper s)
         {
             try
             {
                 broker.OpenConnection();
-                return broker.ExistStorekeeper(username);
+                return broker.ExistStorekeeper(s);
             }
             finally
             {
