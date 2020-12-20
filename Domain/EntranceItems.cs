@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class EntrenceItems
+    public class EntranceItems
     {
         public int Num { get; set; }
         public int EntranceId { get; set; }

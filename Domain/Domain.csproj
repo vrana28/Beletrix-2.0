@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Entrance.cs" />
-    <Compile Include="EntrenceItems.cs" />
+    <Compile Include="EntranceItems.cs" />
     <Compile Include="GeneralDomainObject.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

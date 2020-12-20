@@ -5549,6 +5549,7 @@ namespace FrmLogin.UserControls
             this.btnUlaz.TabIndex = 1137;
             this.btnUlaz.Text = "Entrance";
             this.btnUlaz.UseVisualStyleBackColor = false;
+            this.btnUlaz.Click += new System.EventHandler(this.btnUlaz_Click);
             // 
             // btnExit
             // 

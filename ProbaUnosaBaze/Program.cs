@@ -11,7 +11,7 @@ namespace ProbaUnosaBaze
     {
         static void Main(string[] args)
         {
-            //SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BeletrixDatabase;Integrated Security=True;");
+            SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BeletrixDatabase;Integrated Security=True;");
 
             //string sifra;
             //for (int i = 0; i < 8; i++) {
@@ -28,6 +28,12 @@ namespace ProbaUnosaBaze
             //        Console.WriteLine(sifra+5);
             //    }
             //}
+            //connection.Open();
+            //SqlCommand command = connection.CreateCommand();
+            //command.CommandText = "update Positions set Slobodno = 1";
+            //command.ExecuteNonQuery();
+            //connection.Close();
+
             Console.WriteLine("Uspesno ubaceno");
 
             Console.ReadLine();

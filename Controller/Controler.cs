@@ -15,6 +15,7 @@ namespace Controller
         private IStorageClient storageClient;
         private IStorageStorekeeper storageStorekeeper;
         private IStorageRoba storageRoba;
+        private IStorageEntrance storageEntrance;
 
         public Storekeeper Storekeeper{ get; set; }
 
@@ -30,6 +31,7 @@ namespace Controller
             storageClient = new StorageClientSqlServer();
             storageStorekeeper = new StorageStorekeeperSqlServer();
             storageRoba = new StorageRobaSqlServer();
+            storageEntrance = new StorageEntranceSqlServer();
         }
 
        
@@ -94,6 +96,11 @@ namespace Controller
         public void AddStorekeeper(Storekeeper s)
         {
             storageStorekeeper.Add(s);
+        }
+
+        public void AddEntrance(Entrance ulaz)
+        {
+            storageEntrance.Add(ulaz);
         }
 
         public bool FindClient(Client c)

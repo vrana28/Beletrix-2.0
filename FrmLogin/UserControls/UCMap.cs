@@ -29,6 +29,9 @@ namespace FrmLogin.UserControls
             MessageBox.Show($"You clicked {C24.Name}{UserControlHelpers.CkeckedButtons(rButtons).Text}");
         }
 
-        
+        private void btnUlaz_Click(object sender, EventArgs e)
+        {
+            MainCoordinator.Instance.OpenFrmEntrance();
+        }
     }
 }

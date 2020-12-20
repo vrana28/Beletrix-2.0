@@ -46,5 +46,7 @@ namespace FrmLogin.FrmGetAll
             robe = new BindingList<Roba>(Controler.Instance.GetAllRoba());
             dgvRoba.DataSource = robe;
         }
+
+        
     }
 }

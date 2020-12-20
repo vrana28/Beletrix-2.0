@@ -64,6 +64,24 @@
     <Compile Include="FrmAdd\FrmAddStorekeeper.Designer.cs">
       <DependentUpon>FrmAddStorekeeper.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEnter\FrmEnterArtikal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnter\FrmEnterArtikal.Designer.cs">
+      <DependentUpon>FrmEnterArtikal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnter\FrmEnterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnter\FrmEnterClient.Designer.cs">
+      <DependentUpon>FrmEnterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntrance.Designer.cs">
+      <DependentUpon>FrmEntrance.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGetAll\ChangeOrDelete\FrmClientChange.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +148,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdd\FrmAddStorekeeper.resx">
       <DependentUpon>FrmAddStorekeeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnter\FrmEnterArtikal.resx">
+      <DependentUpon>FrmEnterArtikal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnter\FrmEnterClient.resx">
+      <DependentUpon>FrmEnterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntrance.resx">
+      <DependentUpon>FrmEntrance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGetAll\ChangeOrDelete\FrmClientChange.resx">
       <DependentUpon>FrmClientChange.cs</DependentUpon>

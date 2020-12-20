@@ -18,6 +18,20 @@ namespace DatabaseBroker
             connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BeletrixDatabase;Integrated Security=True;");
         }
 
+        public void AddEntrance(Entrance e)
+        {
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = $"insert into Entrances values (@Weight,@DateOfEntrance,@DateOfExit, @Dimension,@Obradjen, @ClientId, @StorekeeperId)";
+            command.Parameters.AddWithValue("@Weight", e.TotalWeight);
+            command.Parameters.AddWithValue("@DateOfEntrance", e.DateOfEntrance);
+            command.Parameters.AddWithValue("@DateOfExit", e.DateOfExit);
+            command.Parameters.AddWithValue("@Dimension", e.Dimension);
+            command.Parameters.AddWithValue("@Obradjen", e.Obradjen);
+            command.Parameters.AddWithValue("@ClientId", e.ClientId);
+            command.Parameters.AddWithValue("@StorekeeperId", e.Storekeeper.StorekeeperId);
+            command.ExecuteNonQuery();
+        }
+
 
         #region GenericMethods
         public void Insert(GeneralDomainObject gdo) {

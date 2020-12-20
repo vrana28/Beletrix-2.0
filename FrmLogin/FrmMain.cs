@@ -70,7 +70,7 @@ namespace FrmLogin
 
         private void clientsDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenDeleteFormForClients();
+            MainCoordinator.Instance.OpenGetAllClients();
         }
 
         private void storekeepersdeleteToolStripMenuItem_Click(object sender, EventArgs e)

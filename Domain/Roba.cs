@@ -12,6 +12,7 @@ namespace Domain
         public string Name { get; set; }
         public double WeightOfBox { get; set; }
 
+
         public string GetAllValues()
         {
             return $"'{Name}','{WeightOfBox}'";

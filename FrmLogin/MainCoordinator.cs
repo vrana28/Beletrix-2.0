@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Domain;
 using FrmLogin;
 using FrmLogin.FrmAdd;
+using FrmLogin.FrmEnter;
 using FrmLogin.FrmGetAll;
 using FrmLogin.FrmGetAll.ChangeOrDelete;
 
@@ -26,6 +27,8 @@ namespace FrmLogin
         public FrmAddRoba frmAddRoba;
         public FrmGetAllRoba frmGetAllRoba;
         public FrmRobaChange frmRobaChanged;
+        public FrmEntrance frmEntrance;
+        public FrmEnterClient frmEnterClient;
 
         public MainCoordinator()
         {
@@ -66,7 +69,7 @@ namespace FrmLogin
             frmAddClient.ShowDialog();
         }
 
-        public void OpenDeleteFormForClients() {
+        public void OpenGetAllClients() {
             frmGetAllClients = new FrmGetAllClients();
             frmGetAllClients.ShowDialog();
         }
@@ -95,6 +98,16 @@ namespace FrmLogin
         public void OpenFrmDeleteRoba(Roba r) {
             frmRobaChanged = new FrmRobaChange(r);
             frmRobaChanged.ShowDialog();
+        }
+
+        public void OpenFrmEntrance() {
+            frmEntrance = new FrmEntrance();
+            frmEntrance.ShowDialog();
+        }
+
+        public void OpenFrmEnterClient() {
+            frmEnterClient = new FrmEnterClient();
+            frmEnterClient.ShowDialog();
         }
 
     }

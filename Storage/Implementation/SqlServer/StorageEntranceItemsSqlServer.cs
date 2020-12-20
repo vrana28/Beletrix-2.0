@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Storage.Implementation.SqlServer
 {
-    public class StorageEntranceItems : IStorageEntranceItems
+    public class StorageEntranceItemsSqlServer : IStorageEntranceItems
     {
         public void AddItem()
         {
