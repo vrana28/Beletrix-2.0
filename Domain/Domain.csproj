@@ -47,6 +47,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="Entrance.cs" />
     <Compile Include="EntranceItems.cs" />
+    <Compile Include="EntrancePosition.cs" />
     <Compile Include="GeneralDomainObject.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

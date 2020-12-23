@@ -42,10 +42,12 @@ namespace FrmLogin
             this.button2 = new System.Windows.Forms.Button();
             this.dgvItems = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDeadlineDate = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnChooseArtikal = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtDateOfMan = new System.Windows.Forms.TextBox();
             this.txtArtikal = new System.Windows.Forms.TextBox();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,6 +57,9 @@ namespace FrmLogin
             this.btnAddToItems = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.lblMagacioner = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblTotalWeight = new System.Windows.Forms.Label();
+            this.btnSaveComplete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -136,7 +141,7 @@ namespace FrmLogin
             this.lbEntranceItems.FormattingEnabled = true;
             this.lbEntranceItems.Location = new System.Drawing.Point(141, 275);
             this.lbEntranceItems.Name = "lbEntranceItems";
-            this.lbEntranceItems.Size = new System.Drawing.Size(481, 199);
+            this.lbEntranceItems.Size = new System.Drawing.Size(555, 199);
             this.lbEntranceItems.TabIndex = 8;
             // 
             // btnSavePaleta
@@ -151,31 +156,34 @@ namespace FrmLogin
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 369);
+            this.button2.Location = new System.Drawing.Point(15, 368);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 23);
             this.button2.TabIndex = 10;
             this.button2.Text = "Delete item";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dgvItems
             // 
             this.dgvItems.AllowUserToAddRows = false;
             this.dgvItems.AllowUserToDeleteRows = false;
             this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvItems.Location = new System.Drawing.Point(151, 297);
+            this.dgvItems.Location = new System.Drawing.Point(154, 297);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
-            this.dgvItems.Size = new System.Drawing.Size(458, 159);
+            this.dgvItems.Size = new System.Drawing.Size(519, 159);
             this.dgvItems.TabIndex = 11;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtDeadlineDate);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.txtQuantity);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnChooseArtikal);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txtDateOfMan);
             this.panel1.Controls.Add(this.txtArtikal);
             this.panel1.Controls.Add(this.txtNum);
             this.panel1.Controls.Add(this.label8);
@@ -183,23 +191,40 @@ namespace FrmLogin
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnAddToItems);
-            this.panel1.Location = new System.Drawing.Point(661, 35);
+            this.panel1.Location = new System.Drawing.Point(742, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 439);
             this.panel1.TabIndex = 12;
             this.panel1.Visible = false;
             // 
-            // textBox3
+            // txtDeadlineDate
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 22;
+            this.txtDeadlineDate.Location = new System.Drawing.Point(155, 273);
+            this.txtDeadlineDate.Name = "txtDeadlineDate";
+            this.txtDeadlineDate.ReadOnly = true;
+            this.txtDeadlineDate.Size = new System.Drawing.Size(100, 20);
+            this.txtDeadlineDate.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(25, 276);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(76, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Deadline date:";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(155, 306);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantity.TabIndex = 22;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 278);
+            this.label9.Location = new System.Drawing.Point(25, 309);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 21;
@@ -215,12 +240,12 @@ namespace FrmLogin
             this.btnChooseArtikal.UseVisualStyleBackColor = true;
             this.btnChooseArtikal.Click += new System.EventHandler(this.btnChooseArtikal_Click);
             // 
-            // textBox5
+            // txtDateOfMan
             // 
-            this.textBox5.Location = new System.Drawing.Point(155, 231);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 20;
+            this.txtDateOfMan.Location = new System.Drawing.Point(155, 231);
+            this.txtDateOfMan.Name = "txtDateOfMan";
+            this.txtDateOfMan.Size = new System.Drawing.Size(100, 20);
+            this.txtDateOfMan.TabIndex = 20;
             // 
             // txtArtikal
             // 
@@ -283,6 +308,7 @@ namespace FrmLogin
             this.btnAddToItems.TabIndex = 13;
             this.btnAddToItems.Text = "Add item";
             this.btnAddToItems.UseVisualStyleBackColor = true;
+            this.btnAddToItems.Click += new System.EventHandler(this.btnAddToItems_Click);
             // 
             // label10
             // 
@@ -301,11 +327,44 @@ namespace FrmLogin
             this.lblMagacioner.Size = new System.Drawing.Size(0, 13);
             this.lblMagacioner.TabIndex = 14;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(6, 275);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(129, 24);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Total weight:";
+            // 
+            // lblTotalWeight
+            // 
+            this.lblTotalWeight.AutoSize = true;
+            this.lblTotalWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTotalWeight.Location = new System.Drawing.Point(42, 314);
+            this.lblTotalWeight.Name = "lblTotalWeight";
+            this.lblTotalWeight.Size = new System.Drawing.Size(0, 20);
+            this.lblTotalWeight.TabIndex = 16;
+            // 
+            // btnSaveComplete
+            // 
+            this.btnSaveComplete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSaveComplete.Location = new System.Drawing.Point(15, 414);
+            this.btnSaveComplete.Name = "btnSaveComplete";
+            this.btnSaveComplete.Size = new System.Drawing.Size(102, 60);
+            this.btnSaveComplete.TabIndex = 17;
+            this.btnSaveComplete.Text = "Save Complete Entrance";
+            this.btnSaveComplete.UseVisualStyleBackColor = false;
+            this.btnSaveComplete.Click += new System.EventHandler(this.btnSaveComplete_Click);
+            // 
             // FrmEntrance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 495);
+            this.ClientSize = new System.Drawing.Size(1078, 495);
+            this.Controls.Add(this.btnSaveComplete);
+            this.Controls.Add(this.lblTotalWeight);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.lblMagacioner);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
@@ -347,7 +406,7 @@ namespace FrmLogin
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvItems;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtDateOfMan;
         private System.Windows.Forms.TextBox txtArtikal;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label label8;
@@ -355,10 +414,15 @@ namespace FrmLogin
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAddToItems;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnChooseArtikal;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblMagacioner;
+        private System.Windows.Forms.TextBox txtDeadlineDate;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTotalWeight;
+        private System.Windows.Forms.Button btnSaveComplete;
     }
 }

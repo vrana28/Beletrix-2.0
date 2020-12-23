@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Domain;
 using Storage.Implementation.SqlServer;
 using System.ComponentModel;
+using System.Data;
 
 namespace Controller
 {
@@ -16,6 +17,19 @@ namespace Controller
         private IStorageStorekeeper storageStorekeeper;
         private IStorageRoba storageRoba;
         private IStorageEntrance storageEntrance;
+        private IStorageEntranceItems storageEntranceItems;
+        private IStoragePosition storagePosition;
+        private IStorageEntrancePosition storageEntrancePosition;
+
+        public DataTable GetAllEntrancecs()
+        {
+            return storageEntrance.GetAllEntrance();
+        }
+
+        public List<Position> GetAllPositions()
+        {
+            return storagePosition.GetAllPositions();
+        }
 
         public Storekeeper Storekeeper{ get; set; }
 
@@ -32,9 +46,20 @@ namespace Controller
             storageStorekeeper = new StorageStorekeeperSqlServer();
             storageRoba = new StorageRobaSqlServer();
             storageEntrance = new StorageEntranceSqlServer();
+            storageEntranceItems = new StorageEntranceItemsSqlServer();
+            storagePosition = new StoragePositionSql();
+            storageEntrancePosition = new StorageEntrancePositionSqlServer();
         }
 
-       
+        public DataTable ShowEntranceItems(string positionId)
+        {
+            return storageEntranceItems.ShowItemOnPosition(positionId);
+        }
+
+        public List<Position> FindPositions(string v)
+        {
+           return storagePosition.Find(v);
+        }
 
         public static Controler Instance {
             get {
@@ -83,6 +108,11 @@ namespace Controller
             throw new Exception("Login failed...");
         }
 
+        public Entrance FindEntrance(int entranceId)
+        {
+            return storageEntrance.Find(entranceId);
+        }
+
         public void DeleteRoba(Roba roba)
         {
             storageRoba.Delete(roba);
@@ -113,9 +143,24 @@ namespace Controller
             storageClient.Add(c);
         }
 
+        public int GetMaxId()
+        {
+            return storageEntrance.GetMaxId();
+        }
+
         public void UpdateClient(Client c)
         {
             storageClient.Update(c);
+        }
+
+        public void SetEntranceTrue(int entranceId)
+        {
+            storageEntrance.SetEntranceTrue(entranceId);
+        }
+
+        public void UpdatePosition(string positionId)
+        {
+            storagePosition.UpdatePosition(positionId);
         }
 
         public void DeleteClient(Client client)
@@ -123,9 +168,34 @@ namespace Controller
             storageClient.Delete(client);
         }
 
+        public void AddEntrancePosition(EntrancePosition ep)
+        {
+            storageEntrancePosition.AddEntrancePosition(ep);
+        }
+
         public void DeleteStorekeeper(Storekeeper storekeeper)
         {
             storageStorekeeper.Delete(storekeeper);
+        }
+
+        public void AddEntranceItem(EntranceItems ei)
+        {
+            storageEntranceItems.AddItem(ei);
+        }
+
+        public void DeleteEntranceItem(EntranceItems ei)
+        {
+            storageEntranceItems.DeleteItem(ei);
+        }
+
+        public double GetWeightOfBox(EntranceItems e)
+        {
+            return storageEntranceItems.GetWeightOfBox(e);
+        }
+
+        public void UpdateEntrance(Entrance entrance, double totalWeight)
+        {
+             storageEntrance.UpdateEntrance(entrance, totalWeight);
         }
     }
 }

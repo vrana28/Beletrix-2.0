@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Implementation\SqlServer\StorageClientSqlServer.cs" />
     <Compile Include="Implementation\SqlServer\StorageEntranceItemsSqlServer.cs" />
+    <Compile Include="Implementation\SqlServer\StorageEntrancePositionSqlServer.cs" />
     <Compile Include="Implementation\SqlServer\StorageEntranceSqlServer.cs" />
     <Compile Include="Implementation\SqlServer\StoragePositionSql.cs" />
     <Compile Include="Implementation\SqlServer\StorageRobaSqlServer.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="IStorageClient.cs" />
     <Compile Include="IStorageEntrance.cs" />
     <Compile Include="IStorageEntranceItems.cs" />
+    <Compile Include="IStorageEntrancePosition.cs" />
     <Compile Include="IStoragePosition.cs" />
     <Compile Include="IStorageRoba.cs" />
     <Compile Include="IStorageStorekeeper.cs" />

@@ -27,7 +27,7 @@ namespace Domain
 
         public string GetName()
         {
-            return "Entrances";
+            return "Entrance";
         }
 
         public string GetWhereName()
@@ -37,7 +37,7 @@ namespace Domain
 
         public string GetWhereValues()
         {
-            throw new NotImplementedException();
+            return $"where EntranceId = {EntranceId}";
         }
 
         public string SetValues()

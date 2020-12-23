@@ -34,6 +34,13 @@ namespace ProbaUnosaBaze
             //command.ExecuteNonQuery();
             //connection.Close();
 
+            //connection.Open();
+            //SqlCommand command = connection.CreateCommand();
+            //command.CommandText = "delete from Entrance";
+            //command.ExecuteNonQuery();
+            //connection.Close();
+
+
             Console.WriteLine("Uspesno ubaceno");
 
             Console.ReadLine();

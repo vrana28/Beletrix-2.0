@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Position : GeneralDomainObject
+    public class EntrancePosition : GeneralDomainObject
     {
+        public int EntranceId { get; set; }
+        public Entrance Entrance { get; set; }
         public string PositionId { get; set; }
-        public bool Slobodna { get; set; }
+        public Position Position { get; set; }
 
         public string GetAllValues()
         {
-            return $"'{PositionId}','0'";
+            return $"'{EntranceId}','{PositionId}''";
         }
 
         public string GetName()
         {
-            throw new NotImplementedException();
+            return "EntrancePositions";
         }
 
         public string GetWhereName()
@@ -33,7 +35,12 @@ namespace Domain
 
         public string SetValues()
         {
-            return $"Slobodna = '{0}' where PositionId = '{PositionId}'";
+            throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return $"{EntranceId} {PositionId}";
         }
     }
 }

@@ -29,6 +29,7 @@ namespace FrmLogin
         public FrmRobaChange frmRobaChanged;
         public FrmEntrance frmEntrance;
         public FrmEnterClient frmEnterClient;
+        public FrmPositioning frmPositioning;
 
         public MainCoordinator()
         {
@@ -40,6 +41,11 @@ namespace FrmLogin
                 if (instance == null) instance = new MainCoordinator();
                 return instance;
             }
+        }
+
+        public void OpenFrmPositioning() {
+            frmPositioning = new FrmPositioning();
+            frmPositioning.ShowDialog();
         }
 
         public void OpenLoginForm() {

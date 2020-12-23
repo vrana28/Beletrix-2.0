@@ -579,6 +579,7 @@ namespace FrmLogin.UserControls
             this.btnUlaz = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnFind = new System.Windows.Forms.Button();
+            this.btnPovezi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStanjeNaPoziciji)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1822,6 +1823,7 @@ namespace FrmLogin.UserControls
             this.A01.TabIndex = 745;
             this.A01.Text = "1";
             this.A01.UseVisualStyleBackColor = true;
+            this.A01.Click += new System.EventHandler(this.A01_Click);
             // 
             // A64
             // 
@@ -5533,9 +5535,15 @@ namespace FrmLogin.UserControls
             // 
             // dgvStanjeNaPoziciji
             // 
+            this.dgvStanjeNaPoziciji.AllowUserToAddRows = false;
+            this.dgvStanjeNaPoziciji.AllowUserToDeleteRows = false;
+            this.dgvStanjeNaPoziciji.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvStanjeNaPoziciji.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStanjeNaPoziciji.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvStanjeNaPoziciji.Location = new System.Drawing.Point(1130, 277);
             this.dgvStanjeNaPoziciji.Name = "dgvStanjeNaPoziciji";
+            this.dgvStanjeNaPoziciji.ReadOnly = true;
+            this.dgvStanjeNaPoziciji.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStanjeNaPoziciji.Size = new System.Drawing.Size(333, 442);
             this.dgvStanjeNaPoziciji.TabIndex = 1135;
             // 
@@ -5543,7 +5551,7 @@ namespace FrmLogin.UserControls
             // 
             this.btnUlaz.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btnUlaz.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUlaz.Location = new System.Drawing.Point(1272, 31);
+            this.btnUlaz.Location = new System.Drawing.Point(1254, 31);
             this.btnUlaz.Name = "btnUlaz";
             this.btnUlaz.Size = new System.Drawing.Size(105, 52);
             this.btnUlaz.TabIndex = 1137;
@@ -5555,7 +5563,7 @@ namespace FrmLogin.UserControls
             // 
             this.btnExit.BackColor = System.Drawing.Color.Thistle;
             this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(1272, 103);
+            this.btnExit.Location = new System.Drawing.Point(1254, 103);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 52);
             this.btnExit.TabIndex = 1138;
@@ -5566,12 +5574,24 @@ namespace FrmLogin.UserControls
             // 
             this.btnFind.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnFind.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(1272, 180);
+            this.btnFind.Location = new System.Drawing.Point(1254, 180);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(105, 52);
             this.btnFind.TabIndex = 1139;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = false;
+            // 
+            // btnPovezi
+            // 
+            this.btnPovezi.BackColor = System.Drawing.Color.Orchid;
+            this.btnPovezi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPovezi.Location = new System.Drawing.Point(1376, 28);
+            this.btnPovezi.Name = "btnPovezi";
+            this.btnPovezi.Size = new System.Drawing.Size(98, 204);
+            this.btnPovezi.TabIndex = 1140;
+            this.btnPovezi.Text = "POSITION";
+            this.btnPovezi.UseVisualStyleBackColor = false;
+            this.btnPovezi.Click += new System.EventHandler(this.btnPovezi_Click);
             // 
             // UCMap
             // 
@@ -5579,6 +5599,7 @@ namespace FrmLogin.UserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.btnPovezi);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUlaz);
@@ -6691,5 +6712,6 @@ namespace FrmLogin.UserControls
         private System.Windows.Forms.Button btnUlaz;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.Button btnPovezi;
     }
 }

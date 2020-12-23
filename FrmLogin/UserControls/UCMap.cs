@@ -1,8 +1,10 @@
-﻿using FrmLogin.Helpers;
+﻿using Controller;
+using FrmLogin.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,5 +35,23 @@ namespace FrmLogin.UserControls
         {
             MainCoordinator.Instance.OpenFrmEntrance();
         }
+
+        private void btnPovezi_Click(object sender, EventArgs e)
+        {
+            MainCoordinator.Instance.OpenFrmPositioning();
+        }
+
+        private void A01_Click(object sender, EventArgs e)
+        {
+            string PositionId = A01.Name+UserControlHelpers.CkeckedButtons(rButtons).Text;
+            try
+            {
+                dgvStanjeNaPoziciji.DataSource = Controler.Instance.ShowEntranceItems(PositionId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+          }
     }
 }

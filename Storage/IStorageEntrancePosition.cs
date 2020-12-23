@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Storage
 {
-    public interface IStoragePosition
+    public interface IStorageEntrancePosition
     {
-        List<Position> GetAllPositions();
-        List<Position> Find(string v);
-        void UpdatePosition(string positionId);
+        EntrancePosition Find();
+        void AddEntrancePosition(EntrancePosition ep);
     }
 }
