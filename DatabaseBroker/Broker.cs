@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -29,13 +30,57 @@ namespace DatabaseBroker
             command.ExecuteNonQuery();
         }
 
+        public DataTable FindBusyPositions(Client client, Roba roba)
+        {
+            string command = "";
+            if (client != null && roba != null)
+            {
+                 command = "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Ukupna_Tezina,ei.NumOfBoxes as Broj_Kutija," +
+                    " r.WeightOfBox as Tezina_Kutije, c.Name as Klijent,"
+                +$" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+                +$"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
+                +$"join Clients c on (c.ClientId = e.ClientId) where c.ClientId = {client.ClientId} and r.RobaId = {roba.RobaId}";
+            }
+            if (client != null && roba == null)
+            {
+                 command = "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+                    " r.WeightOfBox as Tezina_Kutije, c.Name as Klijent,"
+                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+                + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
+                + $"join Clients c on (c.ClientId = e.ClientId) where c.ClientId = {client.ClientId}";
+            }
+            if (client == null && roba != null)
+            {
+                 command = "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+                    " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
+                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+                + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
+                + $"join Clients c on (c.ClientId = e.ClientId) where r.RobaId = {roba.RobaId}";
+            }
+            if (client == null && roba == null)
+            {
+                command = "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+                   " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
+               + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+               + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
+               + $"join Clients c on (c.ClientId = e.ClientId) order by ep.PositionId";
+            }
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command, connection);
+            SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            dataAdapter.Fill(table);
+            return table;
+
+        }
+
         #region Position
 
         public List<Position> FindPositions(string v)
         {
             List<Position> pozicije = new List<Position>();
             SqlCommand command = connection.CreateCommand();
-            command.CommandText = $"select * from Positions where PositionId like '{v}'";
+            command.CommandText = $"select * from Positions where PositionId like '{v}' and Slobodno = 1";
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {

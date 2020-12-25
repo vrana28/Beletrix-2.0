@@ -30,6 +30,7 @@ namespace FrmLogin
         public FrmEntrance frmEntrance;
         public FrmEnterClient frmEnterClient;
         public FrmPositioning frmPositioning;
+        public FrmFind frmFind;
 
         public MainCoordinator()
         {
@@ -114,6 +115,11 @@ namespace FrmLogin
         public void OpenFrmEnterClient() {
             frmEnterClient = new FrmEnterClient();
             frmEnterClient.ShowDialog();
+        }
+
+        public void OpenFrmFind() {
+            frmFind = new FrmFind();
+            frmFind.ShowDialog();
         }
 
     }

@@ -51,6 +51,11 @@ namespace Controller
             storageEntrancePosition = new StorageEntrancePositionSqlServer();
         }
 
+        public DataTable FindBusyPositions(Client client, Roba roba)
+        {
+            return storagePosition.FindBusyPosition(client, roba);
+        }
+
         public DataTable ShowEntranceItems(string positionId)
         {
             return storageEntranceItems.ShowItemOnPosition(positionId);

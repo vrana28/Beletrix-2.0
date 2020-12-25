@@ -165,15 +165,16 @@ namespace FrmLogin
                 MessageBox.Show("No data");
                 return;
             }
-            EntranceItems ei = new EntranceItems();
-            DataGridViewRow row = dgvItems.SelectedRows[0];
-           
-            ei = (EntranceItems)row.DataBoundItem;
-
-            bindingList.Remove(ei);
+            
 
             try
             {
+                EntranceItems ei = new EntranceItems();
+                DataGridViewRow row = dgvItems.SelectedRows[0];
+
+                ei = (EntranceItems)row.DataBoundItem;
+
+                bindingList.Remove(ei);
                 Controler.Instance.DeleteEntranceItem(ei);
                 lblTotalWeight.Text = GetTotalWeight().ToString();
             }

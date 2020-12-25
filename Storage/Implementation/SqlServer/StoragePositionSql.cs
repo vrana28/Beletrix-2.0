@@ -2,6 +2,7 @@
 using Domain;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,19 @@ namespace Storage.Implementation.SqlServer
             {
                 broker.OpenConnection();
                 return broker.FindPositions(v);
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public DataTable FindBusyPosition(Client client, Roba roba)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.FindBusyPositions(client,roba);
             }
             finally
             {
