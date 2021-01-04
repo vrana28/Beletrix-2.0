@@ -59,8 +59,10 @@ namespace FrmLogin.Helpers
             return false;
         }
 
+
+
         public static bool IsValidDouble(string broj) {
-            if (broj != null) return true;
+           
             
                 if (double.TryParse(broj, out _))
                 {

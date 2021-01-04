@@ -64,6 +64,20 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
+        public double GetWeightOfBox(int robaId)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.GetWeightOfBox(robaId);
+
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public void Update(Roba r)
         {
             try

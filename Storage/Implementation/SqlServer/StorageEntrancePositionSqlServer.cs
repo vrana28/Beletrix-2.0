@@ -18,7 +18,7 @@ namespace Storage.Implementation.SqlServer
                 broker.OpenConnection();
                 broker.AddEntrancePosition(ep);
             }
-            catch (Exception ex)
+            finally
             {
                 broker.CloseConnection();
             }
@@ -29,5 +29,36 @@ namespace Storage.Implementation.SqlServer
             throw new NotImplementedException();
         }
 
+        public void LeaveEntrancePosition(EntrancePosition entrancePosition)
+        {
+            try
+            {
+                broker.OpenConnection();
+                broker.BeginTransaction();
+                broker.ExitEntrancePosition(entrancePosition);
+                broker.Commit();
+            }
+            catch (Exception ex) {
+                broker.Rollback();
+                throw new Exception("Geska kod transakcije");
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public EntrancePosition ReturnEntrancePosition(string pozicija)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.ReturnEntrancePosition(pozicija);
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
     }
 }

@@ -38,7 +38,6 @@ namespace FrmLogin
             this.txtDateOfEntrance = new System.Windows.Forms.TextBox();
             this.btnChooseClient = new System.Windows.Forms.Button();
             this.lbEntranceItems = new System.Windows.Forms.ListBox();
-            this.btnSavePaleta = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvItems = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -144,16 +143,6 @@ namespace FrmLogin
             this.lbEntranceItems.Size = new System.Drawing.Size(555, 199);
             this.lbEntranceItems.TabIndex = 8;
             // 
-            // btnSavePaleta
-            // 
-            this.btnSavePaleta.Location = new System.Drawing.Point(374, 179);
-            this.btnSavePaleta.Name = "btnSavePaleta";
-            this.btnSavePaleta.Size = new System.Drawing.Size(102, 23);
-            this.btnSavePaleta.TabIndex = 9;
-            this.btnSavePaleta.Text = "Save paleta";
-            this.btnSavePaleta.UseVisualStyleBackColor = true;
-            this.btnSavePaleta.Click += new System.EventHandler(this.btnSavePaleta_Click);
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(15, 368);
@@ -172,6 +161,7 @@ namespace FrmLogin
             this.dgvItems.Location = new System.Drawing.Point(154, 297);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
+            this.dgvItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItems.Size = new System.Drawing.Size(519, 159);
             this.dgvItems.TabIndex = 11;
             // 
@@ -195,7 +185,6 @@ namespace FrmLogin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 439);
             this.panel1.TabIndex = 12;
-            this.panel1.Visible = false;
             // 
             // txtDeadlineDate
             // 
@@ -370,7 +359,6 @@ namespace FrmLogin
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvItems);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnSavePaleta);
             this.Controls.Add(this.lbEntranceItems);
             this.Controls.Add(this.btnChooseClient);
             this.Controls.Add(this.txtDateOfEntrance);
@@ -402,7 +390,6 @@ namespace FrmLogin
         private System.Windows.Forms.TextBox txtDateOfEntrance;
         private System.Windows.Forms.Button btnChooseClient;
         private System.Windows.Forms.ListBox lbEntranceItems;
-        private System.Windows.Forms.Button btnSavePaleta;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvItems;
         private System.Windows.Forms.Panel panel1;

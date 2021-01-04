@@ -37,7 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dgvSearchResult = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.txtVertikala = new System.Windows.Forms.TextBox();
             this.txtPaletnoMesto = new System.Windows.Forms.TextBox();
             this.txtRed = new System.Windows.Forms.TextBox();
@@ -47,9 +47,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReds = new System.Windows.Forms.TextBox();
             this.btnRoba = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,47 +133,48 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(673, 96);
+            this.button4.Location = new System.Drawing.Point(366, 88);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 57);
+            this.button4.Size = new System.Drawing.Size(51, 68);
             this.button4.TabIndex = 11;
             this.button4.Text = "Search product";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnPrint
             // 
-            this.button5.Location = new System.Drawing.Point(673, 36);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(88, 36);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Print";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPrint.Location = new System.Drawing.Point(708, 35);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(88, 36);
+            this.btnPrint.TabIndex = 12;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // txtVertikala
             // 
-            this.txtVertikala.Location = new System.Drawing.Point(452, 138);
+            this.txtVertikala.Location = new System.Drawing.Point(640, 133);
             this.txtVertikala.Name = "txtVertikala";
             this.txtVertikala.Size = new System.Drawing.Size(42, 20);
             this.txtVertikala.TabIndex = 21;
             // 
             // txtPaletnoMesto
             // 
-            this.txtPaletnoMesto.Location = new System.Drawing.Point(452, 92);
+            this.txtPaletnoMesto.Location = new System.Drawing.Point(527, 133);
             this.txtPaletnoMesto.Name = "txtPaletnoMesto";
             this.txtPaletnoMesto.Size = new System.Drawing.Size(42, 20);
             this.txtPaletnoMesto.TabIndex = 20;
             // 
             // txtRed
             // 
-            this.txtRed.Location = new System.Drawing.Point(576, 138);
+            this.txtRed.Location = new System.Drawing.Point(640, 95);
             this.txtRed.Name = "txtRed";
             this.txtRed.Size = new System.Drawing.Size(42, 20);
             this.txtRed.TabIndex = 19;
             // 
             // txtKolona
             // 
-            this.txtKolona.Location = new System.Drawing.Point(576, 92);
+            this.txtKolona.Location = new System.Drawing.Point(527, 92);
             this.txtKolona.Name = "txtKolona";
             this.txtKolona.Size = new System.Drawing.Size(42, 20);
             this.txtKolona.TabIndex = 18;
@@ -180,7 +182,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(387, 145);
+            this.label7.Location = new System.Drawing.Point(575, 140);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 17;
@@ -189,7 +191,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(364, 99);
+            this.label6.Location = new System.Drawing.Point(439, 138);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 16;
@@ -198,7 +200,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(532, 145);
+            this.label5.Location = new System.Drawing.Point(596, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 15;
@@ -207,7 +209,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(519, 99);
+            this.label8.Location = new System.Drawing.Point(470, 96);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 14;
@@ -216,18 +218,18 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(532, 145);
+            this.label9.Location = new System.Drawing.Point(596, 102);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 13);
             this.label9.TabIndex = 15;
             this.label9.Text = "Red:";
             // 
-            // textBox2
+            // txtReds
             // 
-            this.textBox2.Location = new System.Drawing.Point(576, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(42, 20);
-            this.textBox2.TabIndex = 19;
+            this.txtReds.Location = new System.Drawing.Point(640, 95);
+            this.txtReds.Name = "txtReds";
+            this.txtReds.Size = new System.Drawing.Size(42, 20);
+            this.txtReds.TabIndex = 19;
             // 
             // btnRoba
             // 
@@ -252,16 +254,27 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(708, 104);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(88, 50);
+            this.btnSearch.TabIndex = 24;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // FrmFind
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 626);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.btnRoba);
             this.Controls.Add(this.txtVertikala);
             this.Controls.Add(this.txtPaletnoMesto);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtReds);
             this.Controls.Add(this.txtRed);
             this.Controls.Add(this.txtKolona);
             this.Controls.Add(this.label7);
@@ -269,7 +282,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dgvSearchResult);
             this.Controls.Add(this.button2);
@@ -300,7 +313,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvSearchResult;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.TextBox txtVertikala;
         private System.Windows.Forms.TextBox txtPaletnoMesto;
         private System.Windows.Forms.TextBox txtRed;
@@ -310,8 +323,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReds;
         private System.Windows.Forms.Button btnRoba;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

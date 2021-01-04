@@ -39,6 +39,19 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
+        public DataTable FindBusyPositionWithPosition(Client client, Roba roba, string v)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.FindBusyPositionsWithPosition(client, roba,v);
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public List<Position> GetAllPositions()
         {
             try

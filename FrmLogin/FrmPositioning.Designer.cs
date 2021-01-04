@@ -57,11 +57,11 @@
             this.dgvEntrances.AllowUserToAddRows = false;
             this.dgvEntrances.AllowUserToDeleteRows = false;
             this.dgvEntrances.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEntrances.Location = new System.Drawing.Point(39, 70);
+            this.dgvEntrances.Location = new System.Drawing.Point(16, 70);
             this.dgvEntrances.Name = "dgvEntrances";
             this.dgvEntrances.ReadOnly = true;
             this.dgvEntrances.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEntrances.Size = new System.Drawing.Size(432, 250);
+            this.dgvEntrances.Size = new System.Drawing.Size(470, 250);
             this.dgvEntrances.TabIndex = 0;
             this.dgvEntrances.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvEntrances_MouseDoubleClick);
             // 

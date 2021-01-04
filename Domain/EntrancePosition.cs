@@ -30,7 +30,7 @@ namespace Domain
 
         public string GetWhereValues()
         {
-            throw new NotImplementedException();
+            return $"where PositionId = {PositionId}";
         }
 
         public string SetValues()

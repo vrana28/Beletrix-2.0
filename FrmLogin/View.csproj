@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="FrmEntrance.Designer.cs">
       <DependentUpon>FrmEntrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExit.Designer.cs">
+      <DependentUpon>FrmExit.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFind.cs">
       <SubType>Form</SubType>
@@ -170,6 +182,9 @@
     <EmbeddedResource Include="FrmEntrance.resx">
       <DependentUpon>FrmEntrance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExit.resx">
+      <DependentUpon>FrmExit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFind.resx">
       <DependentUpon>FrmFind.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,7 @@
     <EmbeddedResource Include="UserControls\UCMap.resx">
       <DependentUpon>UCMap.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -11,5 +11,7 @@ namespace Storage
     {
         EntrancePosition Find();
         void AddEntrancePosition(EntrancePosition ep);
+        EntrancePosition ReturnEntrancePosition(string pozicija);
+        void LeaveEntrancePosition(EntrancePosition entrancePosition);
     }
 }

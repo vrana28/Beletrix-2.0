@@ -13,7 +13,7 @@ namespace Domain
         public int RobaId { get; set; }
         public DateTime DeadlineDate { get; set; }
         public DateTime DateOfManu { get; set; }
-      
+        public Roba Roba { get; set; }
         public bool Deadline { get; set; }
         public double NumOfBoxes { get; set; }
 
@@ -40,7 +40,7 @@ namespace Domain
 
         public string SetValues()
         {
-            throw new NotImplementedException();
+            return $" NumOfBoxes = {NumOfBoxes} where EntranceId = {EntranceId} and Num = {Num}";
         }
     }
 }

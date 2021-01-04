@@ -31,6 +31,7 @@ namespace FrmLogin
         public FrmEnterClient frmEnterClient;
         public FrmPositioning frmPositioning;
         public FrmFind frmFind;
+        public FrmExit frmExit;
 
         public MainCoordinator()
         {
@@ -44,6 +45,10 @@ namespace FrmLogin
             }
         }
 
+        public void OpenFrmExit() {
+            frmExit = new FrmExit();
+            frmExit.ShowDialog();
+        }
         public void OpenFrmPositioning() {
             frmPositioning = new FrmPositioning();
             frmPositioning.ShowDialog();

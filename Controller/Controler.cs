@@ -77,6 +77,17 @@ namespace Controller
         {
             return storageStorekeeper.GetAll();
         }
+
+        public EntrancePosition ReturnEntrancePosition(string pozicija)
+        {
+            return storageEntrancePosition.ReturnEntrancePosition(pozicija);
+        }
+
+        public List<EntranceItems> ReturnEntranceItems(int entranceId)
+        {
+            return storageEntranceItems.ReturnItems(entranceId);
+        }
+
         public List<Client> GetAllClient()
         {
             return storageClient.GetAll();
@@ -116,6 +127,16 @@ namespace Controller
         public Entrance FindEntrance(int entranceId)
         {
             return storageEntrance.Find(entranceId);
+        }
+
+        public void LeaveEntrance(EntrancePosition entrancePosition)
+        {
+            storageEntrancePosition.LeaveEntrancePosition(entrancePosition);
+        }
+
+        public DataTable FindBusyPositionsWithPosition(Client client, Roba roba, string v)
+        {
+            return storagePosition.FindBusyPositionWithPosition(client, roba, v);
         }
 
         public void DeleteRoba(Roba roba)
@@ -173,6 +194,11 @@ namespace Controller
             storageClient.Delete(client);
         }
 
+        public DataTable GetAllEntranceItems(EntranceItems ei, Entrance entrance)
+        {
+            return storageEntranceItems.GetSpecificItems(ei,entrance);
+        }
+
         public void AddEntrancePosition(EntrancePosition ep)
         {
             storageEntrancePosition.AddEntrancePosition(ep);
@@ -193,14 +219,24 @@ namespace Controller
             storageEntranceItems.DeleteItem(ei);
         }
 
-        public double GetWeightOfBox(EntranceItems e)
+        public double GetWeightOfBox(int robaId)
         {
-            return storageEntranceItems.GetWeightOfBox(e);
+            return storageRoba.GetWeightOfBox(robaId);
         }
 
         public void UpdateEntrance(Entrance entrance, double totalWeight)
         {
              storageEntrance.UpdateEntrance(entrance, totalWeight);
+        }
+
+        public void UpdateEntranceItems(EntranceItems item)
+        {
+            storageEntranceItems.UpdateEntranceItems(item);
+        }
+
+        public void SaveEntrance(Entrance entrance)
+        {
+            storageEntrance.SaveEntrance(entrance);
         }
     }
 }

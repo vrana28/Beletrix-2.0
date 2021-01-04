@@ -13,7 +13,10 @@ namespace Storage
 
         void AddItem(EntranceItems ei);
         void DeleteItem(EntranceItems ei);
-        double GetWeightOfBox(EntranceItems e);
+        
         DataTable ShowItemOnPosition(string positionId);
+        DataTable GetSpecificItems(EntranceItems ei, Entrance entrance);
+        List<EntranceItems> ReturnItems(int entranceId);
+        void UpdateEntranceItems(EntranceItems item);
     }
 }

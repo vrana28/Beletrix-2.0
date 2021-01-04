@@ -17,5 +17,6 @@ namespace Storage
         DataTable GetAllEntrance();
         Entrance  Find(int entranceId);
         void SetEntranceTrue(int entranceId);
+        void SaveEntrance(Entrance entrance);
     }
 }

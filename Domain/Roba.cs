@@ -12,6 +12,10 @@ namespace Domain
         public string Name { get; set; }
         public double WeightOfBox { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Name} ";
+        }
 
         public string GetAllValues()
         {

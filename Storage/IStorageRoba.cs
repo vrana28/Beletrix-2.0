@@ -14,5 +14,6 @@ namespace Storage
         List<Roba> GetAllRoba();
         void Update(Roba r);
         bool Find(Roba r);
+        double GetWeightOfBox(int robaId);
     }
 }

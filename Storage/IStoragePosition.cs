@@ -14,5 +14,6 @@ namespace Storage
         List<Position> Find(string v);
         void UpdatePosition(string positionId);
         DataTable FindBusyPosition(Client client, Roba roba);
+        DataTable FindBusyPositionWithPosition(Client client, Roba roba, string v);
     }
 }

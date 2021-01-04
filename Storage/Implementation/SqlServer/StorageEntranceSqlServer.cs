@@ -64,6 +64,30 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
+        public void SaveEntrance(Entrance entrance)
+        {
+            try
+            {
+                broker.OpenConnection();
+                broker.BeginTransaction();
+                entrance.EntranceId = broker.SaveEntrance(entrance);
+                foreach (EntranceItems ei in entrance.Items) {
+                    ei.EntranceId = entrance.EntranceId;
+                    broker.SaveEntranceItem(ei);
+                }
+                broker.Commit();
+            }
+            catch (Exception ex)
+            {
+                broker.Rollback();
+                throw new Exception("Rollback!");
+            }
+            finally 
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public void SetEntranceTrue(int entranceId)
         {
             try

@@ -41,12 +41,29 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
-        public double GetWeightOfBox(EntranceItems e)
+        public DataTable GetSpecificItems(EntranceItems ei,Entrance entrance)
         {
             try
             {
                 broker.OpenConnection();
-                return broker.GetWeightOfBox(e);
+                return broker.GetSpecificItems(ei,entrance);
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+       
+
+        
+
+        public List<EntranceItems> ReturnItems(int entranceId)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.ReturnEntranceItems(entranceId);
             }
             finally
             {
@@ -60,6 +77,19 @@ namespace Storage.Implementation.SqlServer
             {
                 broker.OpenConnection();
                 return broker.ShowItemsOnPosition(positionId);
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public void UpdateEntranceItems(EntranceItems item)
+        {
+            try
+            {
+                broker.OpenConnection();
+                broker.UpdateEntranceItems(item);
             }
             finally
             {
