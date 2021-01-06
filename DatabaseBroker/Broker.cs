@@ -398,6 +398,7 @@ namespace DatabaseBroker
         #region GenericMethods
         public void Insert(GeneralDomainObject gdo) {
             SqlCommand command = connection.CreateCommand();
+            command.Transaction = transaction;
             command.CommandText = $"insert into {gdo.GetName()} values ({gdo.GetAllValues()})";
             command.ExecuteNonQuery();
         }
@@ -405,6 +406,8 @@ namespace DatabaseBroker
         public void Update(GeneralDomainObject gdo)
         {
             SqlCommand command = connection.CreateCommand();
+            command.Transaction = transaction;
+            command.Transaction = transaction;
             command.CommandText = $"update {gdo.GetName()} set {gdo.SetValues()}";
             command.ExecuteNonQuery();
         }

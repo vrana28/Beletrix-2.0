@@ -28,9 +28,15 @@ namespace FrmLogin
                 return;
             }
 
+            Storekeeper st = new Storekeeper
+            {
+                Username = txtUsername.Text,
+                Password = txtPassword.Text
+            };
+
             try
             {
-                Storekeeper s = Controler.Instance.Login(txtUsername.Text, txtPassword.Text);
+                Storekeeper s = Controler.Instance.Login(st);
                 MessageBox.Show($"Uspesno ste se prijavili {s.Name} {s.LastName}");
                 MainCoordinator.Instance.OpenMainForm(s);
             }

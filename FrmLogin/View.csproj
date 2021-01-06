@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Communication\Communication.cs" />
+    <Compile Include="Communication\CommunicationClient.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Exceptions\ServerExceptions.cs" />
+    <Compile Include="Exceptions\SystemOperationException.cs" />
     <Compile Include="FrmAdd\FrmAddClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e5c55a45-2298-44ea-b89b-fa3a8f787e51}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{8415a03b-e676-4bc2-86cd-0485eeed1eb9}</Project>
       <Name>Controller</Name>

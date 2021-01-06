@@ -49,6 +49,7 @@
     <Compile Include="EntranceItems.cs" />
     <Compile Include="EntrancePosition.cs" />
     <Compile Include="GeneralDomainObject.cs" />
+    <Compile Include="LeavingItem.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roba.cs" />

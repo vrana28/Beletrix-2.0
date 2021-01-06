@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,9 @@ namespace FrmLogin
         public Client Client { get; set; }
         public Roba Roba { get; private set; }
         public EntrancePosition EntrancePosition { get; set; }
-
+        public DateTime LeavingDate { get; set; }
+        public List<LeavingItem> listaItemaZaIzlaz { get; set; } = new List<LeavingItem>();
+        public List<EntranceItems> listaItemaZaUpdate { get; set; } = new List<EntranceItems>();
         public EntranceItems EntranceItems { get; set; }
 
         public string kolona;
@@ -92,6 +95,9 @@ namespace FrmLogin
         private void dgvSearchResult_DoubleClick(object sender, EventArgs e)
         {
             string pozicija;
+            dgvLeavingItems.DataSource = null;
+            listaItemaZaIzlaz.Clear();
+            pnlIzmena.Visible = false;
             try
             {
                 DataGridViewRow row = dgvSearchResultExit.SelectedRows[0];
@@ -151,6 +157,9 @@ namespace FrmLogin
         public void RefreshGridView1() {
             dgvSearchResultExit.DataSource = null;
             dgvSearchResultExit.DataSource = Controler.Instance.FindBusyPositions(Client, Roba);
+            dgvItems.DataSource = null;
+            dgvLeavingItems.DataSource = null;
+            pnlIzmena.Visible = false;
         }
 
         public string ReturnSearchItem()
@@ -209,7 +218,7 @@ namespace FrmLogin
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnPrint_Click(object sender, EventArgs e)
         {
             if (dgvSearchResultExit.Rows.Count > 0)
             {
@@ -283,6 +292,7 @@ namespace FrmLogin
         {
             try
             {
+                
                 DataGridViewRow row = dgvItems.SelectedRows[0];
                 EntranceItems = (EntranceItems)row.DataBoundItem;
                 MessageBox.Show(EntranceItems.EntranceId.ToString());
@@ -291,9 +301,9 @@ namespace FrmLogin
                 txtEntranceId.Text = EntranceItems.EntranceId.ToString();
                 txtName.Text = EntranceItems.Roba.Name;
                 txtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
-
-                
-
+                var culture = new CultureInfo("de-DE");
+                txtDateOfLeaving.Text = DateTime.Now.ToString(culture);
+                LeavingDate = DateTime.Now;
             }
             catch (Exception ex)
             {
@@ -301,30 +311,126 @@ namespace FrmLogin
             }
         }
 
-        private void btnUpdateEntranceItem_Click(object sender, EventArgs e)
+        private void btnAddLeavingItem_Click(object sender, EventArgs e)
         {
             double broj = EntranceItems.NumOfBoxes;
-            EntranceItems item = EntranceItems;
+            
 
             if (!UserControlHelpers.IsValidDouble(txtNumOfBoxes.Text)) {
                 MessageBox.Show("Wrong data!");
                 return;
             }
 
-            item.NumOfBoxes = double.Parse(txtNumOfBoxes.Text);
-            if (item.NumOfBoxes>broj) {
+            //item.NumOfBoxes = double.Parse(txtNumOfBoxes.Text);
+            if (double.Parse(txtNumOfBoxes.Text)>broj) {
                 MessageBox.Show("Wrong change data!");
                 return;
             }
 
             try
             {
-                Controler.Instance.UpdateEntranceItems(item);
-                MessageBox.Show("Updated!");
+
+                LeavingItem li = new LeavingItem {
+                    EntranceId = EntranceItems.EntranceId,
+                    Num = EntranceItems.Num,
+                    RobaId = EntranceItems.RobaId,
+                    Roba = EntranceItems.Roba,
+                    NumOfBoxes = double.Parse(txtNumOfBoxes.Text),
+                    DateOfLeaving = LeavingDate
+                };
+
+                if (!ExistInList(li))
+                {
+
+                    EntranceItems.NumOfBoxes = EntranceItems.NumOfBoxes - li.NumOfBoxes;
+                    txtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
+
+                    listaItemaZaIzlaz.Add(li);
+                    dgvLeavingItems.DataSource = null;
+                    dgvLeavingItems.DataSource = listaItemaZaIzlaz;
+                    DgvLeavingCorrection(dgvLeavingItems);
+                }
+                else {
+                    EntranceItems.NumOfBoxes = EntranceItems.NumOfBoxes - li.NumOfBoxes;
+                    txtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
+                    dgvLeavingItems.DataSource = null;
+                    dgvLeavingItems.DataSource = listaItemaZaIzlaz;
+                    DgvLeavingCorrection(dgvLeavingItems);
+                }            
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        public bool ExistInList(LeavingItem li)
+        {
+
+            if (listaItemaZaIzlaz.Count > 0)
+            {
+                foreach (LeavingItem l in listaItemaZaIzlaz)
+                {
+                    if (l.RobaId == li.RobaId)
+                    {
+                        l.NumOfBoxes += li.NumOfBoxes;
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private void DgvLeavingCorrection(DataGridView dgvLeavingItems)
+        {
+            dgvLeavingItems.Columns["Num"].Visible = false;
+            dgvLeavingItems.Columns["RobaId"].Visible = false;
+            dgvLeavingItems.Columns["NumOfBoxes"].HeaderText = "Broj kutija";
+            dgvLeavingItems.Columns["LeavingItemId"].Visible = false;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvLeavingItems.SelectedRows[0];
+            LeavingItem li = (LeavingItem)row.DataBoundItem;
+            if (li.RobaId != EntranceItems.RobaId) {
+                MessageBox.Show("Morate prvo da ga ucitate.");
+                return;
+            }
+            listaItemaZaIzlaz.Remove(li);
+            dgvLeavingItems.DataSource = null;
+            dgvLeavingItems.DataSource = listaItemaZaIzlaz;
+            EntranceItems.NumOfBoxes += li.NumOfBoxes;
+            txtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
+        }
+
+        private void btnIzlazDela_Click(object sender, EventArgs e)
+        {
+            NapraviListuZaUpdate();
+
+            try
+            {
+                if (listaItemaZaUpdate.Count > 0 && listaItemaZaIzlaz.Count > 0)
+                {
+                    Controler.Instance.LeavingEntranceItems(listaItemaZaIzlaz, listaItemaZaUpdate);
+                    MessageBox.Show("Uspesno sacuvano");
+                    RefreshGridView1();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void NapraviListuZaUpdate()
+        {
+            listaItemaZaUpdate.Clear();
+            for (int i = 0; i < dgvItems.RowCount; i++) {
+                DataGridViewRow row = dgvItems.Rows[i];
+                listaItemaZaUpdate.Add((EntranceItems)row.DataBoundItem);
             }
         }
     }

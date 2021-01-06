@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 using FrmLogin;
+using FrmLogin.Controllers;
 using FrmLogin.FrmAdd;
 using FrmLogin.FrmEnter;
 using FrmLogin.FrmGetAll;
@@ -32,6 +33,8 @@ namespace FrmLogin
         public FrmPositioning frmPositioning;
         public FrmFind frmFind;
         public FrmExit frmExit;
+
+        private LoginController loginController = new LoginController();
 
         public MainCoordinator()
         {

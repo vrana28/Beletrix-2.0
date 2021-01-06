@@ -20,6 +20,7 @@ namespace Controller
         private IStorageEntranceItems storageEntranceItems;
         private IStoragePosition storagePosition;
         private IStorageEntrancePosition storageEntrancePosition;
+        private IStorageLeavingItems storageLeavingItems;
 
         public DataTable GetAllEntrancecs()
         {
@@ -49,6 +50,7 @@ namespace Controller
             storageEntranceItems = new StorageEntranceItemsSqlServer();
             storagePosition = new StoragePositionSql();
             storageEntrancePosition = new StorageEntrancePositionSqlServer();
+            storageLeavingItems = new StorageLeavingItems();
         }
 
         public DataTable FindBusyPositions(Client client, Roba roba)
@@ -112,11 +114,11 @@ namespace Controller
             storageRoba.Add(r);
         }
 
-        public Storekeeper Login(string username, string password)
+        public Storekeeper Login(Storekeeper st)
         {
             List<Storekeeper> users = storageStorekeeper.GetAll();
             foreach (Storekeeper s in users) {
-                if (s.Username == username && s.Password == password) {
+                if (s.Username == st.Username && s.Password == st.Password) {
                     Storekeeper = s;
                     return Storekeeper;
                 }
@@ -237,6 +239,11 @@ namespace Controller
         public void SaveEntrance(Entrance entrance)
         {
             storageEntrance.SaveEntrance(entrance);
+        }
+
+        public void LeavingEntranceItems(List<LeavingItem> listaItemaZaIzlaz, List<EntranceItems> listaItemaZaUpdate)
+        {
+            storageLeavingItems.SaveLeavingItems(listaItemaZaIzlaz, listaItemaZaUpdate);
         }
     }
 }

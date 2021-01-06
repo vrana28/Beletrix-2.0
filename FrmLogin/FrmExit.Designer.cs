@@ -41,7 +41,7 @@ namespace FrmLogin
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dgvSearchResultExit = new System.Windows.Forms.DataGridView();
             this.btnProductSearch = new System.Windows.Forms.Button();
@@ -52,25 +52,31 @@ namespace FrmLogin
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlChange = new System.Windows.Forms.Panel();
+            this.pnlIzmena = new System.Windows.Forms.Panel();
+            this.btnIzlazDela = new System.Windows.Forms.Button();
+            this.txtDateOfLeaving = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dgvLeavingItems = new System.Windows.Forms.DataGridView();
+            this.btnAddLeavingItem = new System.Windows.Forms.Button();
+            this.txtNumOfBoxes = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtEntranceId = new System.Windows.Forms.TextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnIzlazDelaPalete = new System.Windows.Forms.Button();
             this.btnIzlaz = new System.Windows.Forms.Button();
             this.lblPozicija = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvItems = new System.Windows.Forms.DataGridView();
-            this.pnlIzmena = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtNum = new System.Windows.Forms.TextBox();
-            this.txtEntranceId = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtNumOfBoxes = new System.Windows.Forms.TextBox();
-            this.btnUpdateEntranceItem = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResultExit)).BeginInit();
             this.pnlChange.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.pnlIzmena.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLeavingItems)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -176,15 +182,15 @@ namespace FrmLogin
             this.label8.TabIndex = 34;
             this.label8.Text = "Kolona:";
             // 
-            // button5
+            // btnPrint
             // 
-            this.button5.Location = new System.Drawing.Point(641, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(88, 36);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "Print";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnPrint.Location = new System.Drawing.Point(641, 12);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(88, 36);
+            this.btnPrint.TabIndex = 33;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // button4
             // 
@@ -284,12 +290,151 @@ namespace FrmLogin
             this.pnlChange.Controls.Add(this.dgvItems);
             this.pnlChange.Location = new System.Drawing.Point(735, 12);
             this.pnlChange.Name = "pnlChange";
-            this.pnlChange.Size = new System.Drawing.Size(379, 590);
+            this.pnlChange.Size = new System.Drawing.Size(379, 602);
             this.pnlChange.TabIndex = 46;
+            // 
+            // pnlIzmena
+            // 
+            this.pnlIzmena.Controls.Add(this.btnDelete);
+            this.pnlIzmena.Controls.Add(this.btnIzlazDela);
+            this.pnlIzmena.Controls.Add(this.txtDateOfLeaving);
+            this.pnlIzmena.Controls.Add(this.label14);
+            this.pnlIzmena.Controls.Add(this.dgvLeavingItems);
+            this.pnlIzmena.Controls.Add(this.btnAddLeavingItem);
+            this.pnlIzmena.Controls.Add(this.txtNumOfBoxes);
+            this.pnlIzmena.Controls.Add(this.txtName);
+            this.pnlIzmena.Controls.Add(this.txtEntranceId);
+            this.pnlIzmena.Controls.Add(this.txtNum);
+            this.pnlIzmena.Controls.Add(this.label13);
+            this.pnlIzmena.Controls.Add(this.label12);
+            this.pnlIzmena.Controls.Add(this.label11);
+            this.pnlIzmena.Controls.Add(this.label10);
+            this.pnlIzmena.Location = new System.Drawing.Point(3, 266);
+            this.pnlIzmena.Name = "pnlIzmena";
+            this.pnlIzmena.Size = new System.Drawing.Size(373, 324);
+            this.pnlIzmena.TabIndex = 42;
+            this.pnlIzmena.Visible = false;
+            // 
+            // btnIzlazDela
+            // 
+            this.btnIzlazDela.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnIzlazDela.Location = new System.Drawing.Point(197, 124);
+            this.btnIzlazDela.Name = "btnIzlazDela";
+            this.btnIzlazDela.Size = new System.Drawing.Size(100, 42);
+            this.btnIzlazDela.TabIndex = 12;
+            this.btnIzlazDela.Text = "Izlaz dela";
+            this.btnIzlazDela.UseVisualStyleBackColor = false;
+            this.btnIzlazDela.Click += new System.EventHandler(this.btnIzlazDela_Click);
+            // 
+            // txtDateOfLeaving
+            // 
+            this.txtDateOfLeaving.Location = new System.Drawing.Point(197, 59);
+            this.txtDateOfLeaving.Name = "txtDateOfLeaving";
+            this.txtDateOfLeaving.ReadOnly = true;
+            this.txtDateOfLeaving.Size = new System.Drawing.Size(100, 20);
+            this.txtDateOfLeaving.TabIndex = 11;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(194, 31);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Date od leaving:";
+            // 
+            // dgvLeavingItems
+            // 
+            this.dgvLeavingItems.AllowUserToAddRows = false;
+            this.dgvLeavingItems.AllowUserToDeleteRows = false;
+            this.dgvLeavingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLeavingItems.Location = new System.Drawing.Point(21, 172);
+            this.dgvLeavingItems.Name = "dgvLeavingItems";
+            this.dgvLeavingItems.ReadOnly = true;
+            this.dgvLeavingItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLeavingItems.Size = new System.Drawing.Size(343, 149);
+            this.dgvLeavingItems.TabIndex = 9;
+            // 
+            // btnAddLeavingItem
+            // 
+            this.btnAddLeavingItem.Location = new System.Drawing.Point(197, 95);
+            this.btnAddLeavingItem.Name = "btnAddLeavingItem";
+            this.btnAddLeavingItem.Size = new System.Drawing.Size(100, 23);
+            this.btnAddLeavingItem.TabIndex = 8;
+            this.btnAddLeavingItem.Text = "Dodaj";
+            this.btnAddLeavingItem.UseVisualStyleBackColor = true;
+            this.btnAddLeavingItem.Click += new System.EventHandler(this.btnAddLeavingItem_Click);
+            // 
+            // txtNumOfBoxes
+            // 
+            this.txtNumOfBoxes.Location = new System.Drawing.Point(81, 132);
+            this.txtNumOfBoxes.Name = "txtNumOfBoxes";
+            this.txtNumOfBoxes.Size = new System.Drawing.Size(100, 20);
+            this.txtNumOfBoxes.TabIndex = 7;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(81, 95);
+            this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 6;
+            // 
+            // txtEntranceId
+            // 
+            this.txtEntranceId.Location = new System.Drawing.Point(81, 59);
+            this.txtEntranceId.Name = "txtEntranceId";
+            this.txtEntranceId.ReadOnly = true;
+            this.txtEntranceId.Size = new System.Drawing.Size(100, 20);
+            this.txtEntranceId.TabIndex = 5;
+            // 
+            // txtNum
+            // 
+            this.txtNum.Location = new System.Drawing.Point(81, 24);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.ReadOnly = true;
+            this.txtNum.Size = new System.Drawing.Size(100, 20);
+            this.txtNum.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(0, 139);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 13);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Num of boxes:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(38, 13);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Name:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 66);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "EntranceId:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(36, 27);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Num:";
             // 
             // btnIzlazDelaPalete
             // 
-            this.btnIzlazDelaPalete.Location = new System.Drawing.Point(218, 257);
+            this.btnIzlazDelaPalete.Location = new System.Drawing.Point(241, 215);
             this.btnIzlazDelaPalete.Name = "btnIzlazDelaPalete";
             this.btnIzlazDelaPalete.Size = new System.Drawing.Size(112, 45);
             this.btnIzlazDelaPalete.TabIndex = 41;
@@ -299,12 +444,13 @@ namespace FrmLogin
             // 
             // btnIzlaz
             // 
-            this.btnIzlaz.Location = new System.Drawing.Point(29, 257);
+            this.btnIzlaz.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnIzlaz.Location = new System.Drawing.Point(29, 215);
             this.btnIzlaz.Name = "btnIzlaz";
             this.btnIzlaz.Size = new System.Drawing.Size(112, 45);
             this.btnIzlaz.TabIndex = 40;
             this.btnIzlaz.Text = "Izlaz cele palete";
-            this.btnIzlaz.UseVisualStyleBackColor = true;
+            this.btnIzlaz.UseVisualStyleBackColor = false;
             this.btnIzlaz.Click += new System.EventHandler(this.btnIzlaz_Click);
             // 
             // lblPozicija
@@ -335,102 +481,19 @@ namespace FrmLogin
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
             this.dgvItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvItems.Size = new System.Drawing.Size(373, 187);
+            this.dgvItems.Size = new System.Drawing.Size(373, 147);
             this.dgvItems.TabIndex = 0;
             // 
-            // pnlIzmena
+            // btnDelete
             // 
-            this.pnlIzmena.Controls.Add(this.btnUpdateEntranceItem);
-            this.pnlIzmena.Controls.Add(this.txtNumOfBoxes);
-            this.pnlIzmena.Controls.Add(this.txtName);
-            this.pnlIzmena.Controls.Add(this.txtEntranceId);
-            this.pnlIzmena.Controls.Add(this.txtNum);
-            this.pnlIzmena.Controls.Add(this.label13);
-            this.pnlIzmena.Controls.Add(this.label12);
-            this.pnlIzmena.Controls.Add(this.label11);
-            this.pnlIzmena.Controls.Add(this.label10);
-            this.pnlIzmena.Location = new System.Drawing.Point(12, 320);
-            this.pnlIzmena.Name = "pnlIzmena";
-            this.pnlIzmena.Size = new System.Drawing.Size(355, 253);
-            this.pnlIzmena.TabIndex = 42;
-            this.pnlIzmena.Visible = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(60, 45);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Num:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(60, 80);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "EntranceId:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(60, 120);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 13);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Name:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(60, 157);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 13);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Num of boxes:";
-            // 
-            // txtNum
-            // 
-            this.txtNum.Location = new System.Drawing.Point(156, 38);
-            this.txtNum.Name = "txtNum";
-            this.txtNum.ReadOnly = true;
-            this.txtNum.Size = new System.Drawing.Size(100, 20);
-            this.txtNum.TabIndex = 4;
-            // 
-            // txtEntranceId
-            // 
-            this.txtEntranceId.Location = new System.Drawing.Point(156, 77);
-            this.txtEntranceId.Name = "txtEntranceId";
-            this.txtEntranceId.ReadOnly = true;
-            this.txtEntranceId.Size = new System.Drawing.Size(100, 20);
-            this.txtEntranceId.TabIndex = 5;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(156, 113);
-            this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 6;
-            // 
-            // txtNumOfBoxes
-            // 
-            this.txtNumOfBoxes.Location = new System.Drawing.Point(156, 150);
-            this.txtNumOfBoxes.Name = "txtNumOfBoxes";
-            this.txtNumOfBoxes.Size = new System.Drawing.Size(100, 20);
-            this.txtNumOfBoxes.TabIndex = 7;
-            // 
-            // btnUpdateEntranceItem
-            // 
-            this.btnUpdateEntranceItem.Location = new System.Drawing.Point(156, 203);
-            this.btnUpdateEntranceItem.Name = "btnUpdateEntranceItem";
-            this.btnUpdateEntranceItem.Size = new System.Drawing.Size(100, 23);
-            this.btnUpdateEntranceItem.TabIndex = 8;
-            this.btnUpdateEntranceItem.Text = "Update";
-            this.btnUpdateEntranceItem.UseVisualStyleBackColor = true;
-            this.btnUpdateEntranceItem.Click += new System.EventHandler(this.btnUpdateEntranceItem_Click);
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(311, 59);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(53, 98);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "X";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // FrmExit
             // 
@@ -450,7 +513,7 @@ namespace FrmLogin
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dgvSearchResultExit);
             this.Controls.Add(this.btnProductSearch);
@@ -467,9 +530,10 @@ namespace FrmLogin
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResultExit)).EndInit();
             this.pnlChange.ResumeLayout(false);
             this.pnlChange.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.pnlIzmena.ResumeLayout(false);
             this.pnlIzmena.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLeavingItems)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,7 +553,7 @@ namespace FrmLogin
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dgvSearchResultExit;
         private System.Windows.Forms.Button btnProductSearch;
@@ -506,7 +570,7 @@ namespace FrmLogin
         private System.Windows.Forms.Button btnIzlazDelaPalete;
         private System.Windows.Forms.Button btnIzlaz;
         private System.Windows.Forms.Panel pnlIzmena;
-        private System.Windows.Forms.Button btnUpdateEntranceItem;
+        private System.Windows.Forms.Button btnAddLeavingItem;
         private System.Windows.Forms.TextBox txtNumOfBoxes;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtEntranceId;
@@ -515,5 +579,10 @@ namespace FrmLogin
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dgvLeavingItems;
+        private System.Windows.Forms.TextBox txtDateOfLeaving;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnIzlazDela;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
