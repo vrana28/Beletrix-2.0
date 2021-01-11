@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    [Serializable]
     public class EntranceItems : GeneralDomainObject
     {
         public int Num { get; set; }

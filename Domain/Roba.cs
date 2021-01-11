@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    [Serializable]
     public class Roba : GeneralDomainObject
     {
         public int RobaId { get; set; }

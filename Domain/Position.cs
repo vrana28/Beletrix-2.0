@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    [Serializable]
     public class Position : GeneralDomainObject
     {
         public string PositionId { get; set; }

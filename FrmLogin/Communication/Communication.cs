@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Common;
+using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -24,16 +26,32 @@ namespace FrmLogin.Communication
             }
         }
 
-        public void Connect() {
-
-            if (socket != null && socket.Connected) {
-                return;
-            }
-            socket = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
-            socket.Connect("127.0.0.1", 9998);
-            client = new CommunicationClient(socket);
+        internal void Disconnect()
+        {
+                socket.Close();
+                socket = null;
         }
 
+        public void Connect() {
 
+                if (socket != null && socket.Connected)
+                {
+                    return;
+                }
+                socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                socket.Connect("127.0.0.1", 9998);
+                client = new CommunicationClient(socket);
+        }
+
+        internal Storekeeper Login(string username, string password)
+        {
+            Request r = new Request
+            {
+                Operation = Operation.Login,
+                RequestObject = new Storekeeper { Username = username, Password = password }
+            };
+            client.SendRequest(r);
+            return (Storekeeper)client.GetResponseResult();
+        }
     }
 }

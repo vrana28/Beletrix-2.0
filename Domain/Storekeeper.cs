@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    [Serializable]
     public class Storekeeper : GeneralDomainObject
     {
         public int StorekeeperId { get; set; }

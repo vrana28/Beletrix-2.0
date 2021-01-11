@@ -43,6 +43,7 @@ namespace Server
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
@@ -52,6 +53,7 @@ namespace Server
             this.btnStop.TabIndex = 1;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // dgvOnlineClients
             // 
@@ -64,7 +66,7 @@ namespace Server
             this.dgvOnlineClients.Size = new System.Drawing.Size(701, 343);
             this.dgvOnlineClients.TabIndex = 2;
             // 
-            // Form1
+            // FrmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,8 +74,9 @@ namespace Server
             this.Controls.Add(this.dgvOnlineClients);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
-            this.Name = "Form1";
+            this.Name = "FrmServer";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmServer_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOnlineClients)).EndInit();
             this.ResumeLayout(false);
 

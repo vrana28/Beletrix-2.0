@@ -35,12 +35,14 @@ namespace FrmLogin
         public FrmExit frmExit;
 
         private LoginController loginController = new LoginController();
+        private MainController mainController = new MainController();
 
         public MainCoordinator()
         {
 
         }
 
+        public Storekeeper Storekeeper { get; set; }
         public static MainCoordinator Instance {
             get {
                 if (instance == null) instance = new MainCoordinator();
@@ -48,27 +50,33 @@ namespace FrmLogin
             }
         }
 
-        public void OpenFrmExit() {
+        public void OpenLoginForm()
+        {
+            frmLogin = new FrmLogin(loginController);
+            frmLogin.Show();
+        }
+
+        public void OpenMainForm(Storekeeper s)
+        {
+            frmLogin.Dispose();
+            frmMain = new FrmMain(s, mainController);
+            frmMain.Show();
+        }
+
+        // NA DOLE SE BRISE LOLOLOLOL
+        public void OpenFrmExit()
+        {
             frmExit = new FrmExit();
             frmExit.ShowDialog();
         }
-        public void OpenFrmPositioning() {
+        public void OpenFrmPositioning()
+        {
             frmPositioning = new FrmPositioning();
             frmPositioning.ShowDialog();
         }
 
-        public void OpenLoginForm() {
-            frmLogin = new FrmLogin();
-            frmLogin.Show();
-        }
-
-        public void OpenMainForm(Storekeeper s) {
-            frmLogin.Dispose();
-            frmMain = new FrmMain(s);
-            frmMain.Show();
-        }
-
-        public void OpenAddFormStorekeeper() {
+        public void OpenAddFormStorekeeper()
+        {
             frmAddStorekeeper = new FrmAddStorekeeper();
             frmAddStorekeeper.ShowDialog();
         }
@@ -79,53 +87,63 @@ namespace FrmLogin
             frmStorekeeperChange.ShowDialog();
         }
 
-        public void OpenAddFormClient() {
+        public void OpenAddFormClient()
+        {
             frmAddClient = new FrmAddClient();
             frmAddClient.ShowDialog();
         }
 
-        public void OpenGetAllClients() {
+        public void OpenGetAllClients()
+        {
             frmGetAllClients = new FrmGetAllClients();
             frmGetAllClients.ShowDialog();
         }
 
-        public void OpenFrmClientChange(Client c) {
+        public void OpenFrmClientChange(Client c)
+        {
             frmClientChange = new FrmClientChange(c);
             frmClientChange.ShowDialog();
 
         }
 
-        public void OpenFrmGetAllStorekeepers() {
+        public void OpenFrmGetAllStorekeepers()
+        {
             frmGetAllStorekeepers = new FrmGetAllStorekeepers();
             frmGetAllStorekeepers.ShowDialog();
         }
 
-        public void OpenFrmGetAllRoba() {
+        public void OpenFrmGetAllRoba()
+        {
             frmGetAllRoba = new FrmGetAllRoba();
             frmGetAllRoba.ShowDialog();
         }
 
-        public void OpenFrmAddRoba() {
+        public void OpenFrmAddRoba()
+        {
             frmAddRoba = new FrmAddRoba();
             frmAddRoba.ShowDialog();
         }
 
-        public void OpenFrmDeleteRoba(Roba r) {
+        public void OpenFrmDeleteRoba(Roba r)
+        {
             frmRobaChanged = new FrmRobaChange(r);
             frmRobaChanged.ShowDialog();
         }
 
-        public void OpenFrmEntrance() {
+        public void OpenFrmEntrance()
+        {
             frmEntrance = new FrmEntrance();
             frmEntrance.ShowDialog();
         }
 
-        public void OpenFrmEnterClient() {
+        public void OpenFrmEnterClient()
+        {
             frmEnterClient = new FrmEnterClient();
             frmEnterClient.ShowDialog();
         }
 
-        public void OpenFrmFind() {
+        public void OpenFrmFind()
+        {
             frmFind = new FrmFind();
             frmFind.ShowDialog();
         }

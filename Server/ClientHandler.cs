@@ -14,6 +14,7 @@ namespace Server
 {
     public class ClientHandler
     {
+        // serverski soket koji je namenjen islkljucivo jednom klijentu 
         private Socket client;
         private Server s;
 
@@ -52,6 +53,11 @@ namespace Server
                 Console.WriteLine("Doslo je do greske - Start handler");
             }
 
+        }
+
+        internal void Close()
+        {
+            client.Close();
         }
 
         Storekeeper Storekeeper;

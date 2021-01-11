@@ -9,30 +9,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
+using FrmLogin.Controllers;
 
 namespace FrmLogin
 {
     public partial class FrmMain : Form
     {
-        public FrmMain(Storekeeper s)
+        private MainController mainController = new MainController();
+        public FrmMain(Storekeeper s, Controllers.MainController mainController)
         {
             InitializeComponent();
             lblUser.Text = $"{s.Name} {s.LastName}";
+            this.mainController = mainController;
         }
+
+        
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            try
-            {
-                PanelMethod(new UCMap());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
             
+                mainController.OpenUCMap(this);
         }
 
+        // PANEL METODA GLAVNA
         public void PanelMethod(UserControl userControl)
         {
             pnlMain.Controls.Clear();
@@ -55,7 +54,7 @@ namespace FrmLogin
 
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MainCoordinator.Instance.OpenLoginForm();
+            mainController.CloseMainForm();
         }
 
         private void addStorekeeperToolStripMenuItem1_Click(object sender, EventArgs e)
