@@ -10,50 +10,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
-
+using FrmLogin.Controllers;
 
 namespace FrmLogin
 {
     public partial class FrmAddStorekeeper : Form
     {
-        public FrmAddStorekeeper()
+        private readonly StorekeeperController storekeeperController;
+        public FrmAddStorekeeper(StorekeeperController storekeeperController)
         {
+            this.storekeeperController = storekeeperController;
             InitializeComponent();
         }
 
+        public TextBox TxtName { get => txtName; }
+        public TextBox TxtLastName { get => txtLastName; }
+        public TextBox TxtUsername { get => txtUsername; }
+        public TextBox TxtPassword { get => txtPassword; }
+       
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (UserControlHelpers.IsNullOrWhiteSpace(txtName) | UserControlHelpers.IsNullOrWhiteSpace(txtLastName)
-                | UserControlHelpers.IsNullOrWhiteSpace(txtUsername) | UserControlHelpers.IsNullOrWhiteSpace(txtPassword)) {
-
-                return;
-            }
-
-            Storekeeper s = new Storekeeper {
-                Name = txtName.Text,
-                LastName = txtLastName.Text,
-                Username = txtUsername.Text,
-                Password = txtPassword.Text
-            };
-
-            try
-            {
-                if (Controler.Instance.FindStorekeeper(s)) {
-                    MessageBox.Show("Already exist!");
-                    UserControlHelpers.ResetTxt(txtUsername);
-                    return;
-                }
-                Controler.Instance.AddStorekeeper(s);
-                MessageBox.Show("Saved");
-                this.Dispose();
-            }
-            catch (Exception ex )
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            
-
+            storekeeperController.Save(this);
         }
     }
 }

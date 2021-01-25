@@ -11,16 +11,18 @@ namespace FrmLogin.Controllers
 {
     public class LoginController
     {
-        internal void Connect()
+        public static Storekeeper Storekeeper{ get; set; }
+        internal bool Connect()
         {
             try
             {
                 Communication.Communication.Instance.Connect();
+                return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Greska prilikom povezivvanja sa serverom");
-                Environment.Exit(0);
+                MessageBox.Show("Greska prilikom povezivanja sa serverom");
+                return false;
             }
         }
 
@@ -32,9 +34,9 @@ namespace FrmLogin.Controllers
 
             try
             {
-                Storekeeper s = Communication.Communication.Instance.Login(txtUsername.Text, txtPassword.Text);
-                MainCoordinator.Instance.Storekeeper = s;
-                MessageBox.Show($"Korisnik {s.Name} {s.LastName} se uspesno prijavio");
+                Storekeeper = Communication.Communication.Instance.Login(txtUsername.Text, txtPassword.Text);
+                MainCoordinator.Instance.Storekeeper = Storekeeper;
+                MessageBox.Show($"Korisnik {Storekeeper.Name} {Storekeeper.LastName} se uspesno prijavio");
                 MainCoordinator.Instance.OpenMainForm(MainCoordinator.Instance.Storekeeper);
                 frmLogin.Dispose();
             }
@@ -43,6 +45,14 @@ namespace FrmLogin.Controllers
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        internal void Login(FrmLogin frmLogin)
+        {
+            if (Connect())
+            {
+               Login(frmLogin.TxtUsername, frmLogin.TxtPassword, frmLogin);
+            }
         }
     }
 }

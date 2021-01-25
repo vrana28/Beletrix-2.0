@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,39 +15,25 @@ namespace FrmLogin.FrmGetAll
 {
     public partial class FrmGetAllRoba : Form
     {
-        private BindingList<Roba> robe;
-        public FrmGetAllRoba()
+
+        private readonly RobaController robaController;
+        public FrmGetAllRoba(Controllers.RobaController robaController)
         {
+            this.robaController = robaController;
             InitializeComponent();
-            robe = new BindingList<Roba>(Controler.Instance.GetAllRoba());
-            dgvRoba.DataSource = robe;
+            robaController.InitDataGridView(this);
         }
 
+        public DataGridView DGVRoba { get => dgvRoba; }
+        public DataGridViewRow Row{ get; set; }
         private void dgvRoba_DoubleClick(object sender, EventArgs e)
         {
-            try
-            {
-                if (dgvRoba.ColumnCount > 0)
-                {
-                    DataGridViewRow row = dgvRoba.SelectedRows[0];
-                    Roba r = (Roba)row.DataBoundItem;
-                    MainCoordinator.Instance.OpenFrmDeleteRoba(r);
-                }
-                Refresh();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Nema unetih podatak");
-            }
+            robaController.DoubleClickDataGridView(this);
         }
 
         public override void Refresh()
         {
-            dgvRoba.DataSource = null;
-            robe = new BindingList<Roba>(Controler.Instance.GetAllRoba());
-            dgvRoba.DataSource = robe;
+            robaController.Refresh(this);
         }
-
-        
     }
 }

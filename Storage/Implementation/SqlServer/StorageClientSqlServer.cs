@@ -63,6 +63,19 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
+        public Client ReturnClient(string requestObject)
+        {
+            try {
+                
+                broker.OpenConnection();
+                return broker.ReturnClient(requestObject);
+            }
+        
+            finally {
+                broker.CloseConnection();
+            }
+        }
+
         public void Update(Client c)
         {
             try

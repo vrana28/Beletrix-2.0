@@ -19,32 +19,27 @@ namespace FrmLogin
         public FrmMain(Storekeeper s, Controllers.MainController mainController)
         {
             InitializeComponent();
-            lblUser.Text = $"{s.Name} {s.LastName}";
+            LblUser.Text = $"{Controllers.LoginController.Storekeeper.Name} {Controllers.LoginController.Storekeeper.LastName}";
             this.mainController = mainController;
         }
 
-        
-
+        public Panel PnlMain { get=>pnlMain; }
+        public Label LblUser{ get => lblUser; }
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            
-                mainController.OpenUCMap(this);
+            mainController.OpenUCMap(this,Controllers.MainController.User);
         }
 
-        // PANEL METODA GLAVNA
         public void PanelMethod(UserControl userControl)
         {
-            pnlMain.Controls.Clear();
-            userControl.Parent = pnlMain;
-            userControl.Dock = DockStyle.Fill;
-
+            mainController.PanelMethod(this, userControl);
         }
 
         private void mapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
-                PanelMethod(new UCMap());
+                PanelMethod(new UCMap(new Controllers.MapController()));
             }
             catch (Exception ex)
             {
@@ -59,32 +54,32 @@ namespace FrmLogin
 
         private void addStorekeeperToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenAddFormStorekeeper();
+            mainController.OpenAddFormStorekeeper(this);
         }
 
         private void addClientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenAddFormClient();
+            mainController.OpenAddClients(this);
         }
 
         private void clientsDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenGetAllClients();
+            mainController.OpenGetAllClients(this);
         }
 
         private void storekeepersdeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenFrmGetAllStorekeepers();
+            mainController.OpenGetAllStorekeepers(this);
         }
 
         private void addRobuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenFrmAddRoba();
+            mainController.OpenAddRoba(this);
         }
 
         private void robedeleteupdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenFrmGetAllRoba();
+            mainController.OpenGetAllRoba(this);
         }
     }
 }

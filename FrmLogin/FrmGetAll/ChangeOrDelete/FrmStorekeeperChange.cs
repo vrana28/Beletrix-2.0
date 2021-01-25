@@ -9,82 +9,40 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using FrmLogin.Helpers;
 
 namespace FrmLogin.FrmGetAll.ChangeOrDelete
 {
     public partial class FrmStorekeeperChange : Form
     {
-        public FrmStorekeeperChange(Storekeeper s)
+        private readonly StorekeeperController storekeeperController;
+        public FrmStorekeeperChange(DataGridViewRow r, Controllers.StorekeeperController storekeeperController)
         {
+            this.storekeeperController = storekeeperController;
             InitializeComponent();
-            Storekeeper = s;
+            Row = r;
         }
-        private Storekeeper Storekeeper { get; set; }
+
+        public DataGridViewRow Row { get; set; }
+        public TextBox TxtName{ get => txtName; }
+        public TextBox TxtLastName { get => txtLastName; }
+        public TextBox TxtUsername { get => txtUsername; }
+        public TextBox TxtPassword { get => txtPassword; }
 
         private void FrmStorekeeperChange_Load(object sender, EventArgs e)
         {
-            txtName.Text = Storekeeper.Name;
-            txtLastName.Text = Storekeeper.LastName;
-            txtUsername.Text = Storekeeper.Username;
-            txtPassword.Text = Storekeeper.Password;
+            storekeeperController.InitTextBoxes(this, Row);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (UserControlHelpers.IsNullOrWhiteSpace(txtName) | UserControlHelpers.IsNullOrWhiteSpace(txtLastName)
-               | UserControlHelpers.IsNullOrWhiteSpace(txtUsername) | UserControlHelpers.IsNullOrWhiteSpace(txtPassword))
-            {
-
-                return;
-            }
-
-           
-
-            Storekeeper s = new Storekeeper
-            {
-                StorekeeperId = Storekeeper.StorekeeperId,
-                Name = txtName.Text,
-                LastName = txtLastName.Text,
-                Username = txtUsername.Text,
-                Password = txtPassword.Text
-            };
-
-            try
-            {
-
-                Controler.Instance.UpdateStorekeeper(s);
-                MessageBox.Show("Storekeeper updated!");
-                this.Dispose();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            storekeeperController.Update(this,Row);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            var confirmResult = MessageBox.Show("Are you sure to delete this item ??",
-                                     "Confirm Delete!!",
-                                     MessageBoxButtons.YesNo);
-            if (confirmResult == DialogResult.Yes)
-            {
-                try
-                {
-                    Controler.instance.DeleteStorekeeper(Storekeeper);
-                    MessageBox.Show("Deleted!");
-                    this.Dispose();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            else
-            {
-                this.Dispose();
-            }
+            storekeeperController.Delete(this, Row);
         }
     }
 }

@@ -11,5 +11,7 @@ namespace Common
     {
         public Object RequestObject { get; set; }
         public Operation Operation { get; set; }
+        public Object RequestObject2 { get; set; }
+        public string Text { get; set; }
     }
 }

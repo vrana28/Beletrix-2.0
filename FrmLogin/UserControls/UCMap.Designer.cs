@@ -1471,7 +1471,6 @@ namespace FrmLogin.UserControls
             this.C24.TabIndex = 652;
             this.C24.Text = "4";
             this.C24.UseVisualStyleBackColor = true;
-            this.C24.Click += new System.EventHandler(this.C24_Click);
             // 
             // C23
             // 

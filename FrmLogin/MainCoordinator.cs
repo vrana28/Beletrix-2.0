@@ -50,6 +50,11 @@ namespace FrmLogin
             }
         }
 
+        internal void OpenGetAllRoba(RobaController robaController)
+        {
+            
+        }
+
         public void OpenLoginForm()
         {
             frmLogin = new FrmLogin(loginController);
@@ -64,87 +69,87 @@ namespace FrmLogin
         }
 
         // NA DOLE SE BRISE LOLOLOLOL
-        public void OpenFrmExit()
+        public void OpenFrmExit(LeavingItemsController leavingItemsController)
         {
-            frmExit = new FrmExit();
+            frmExit = new FrmExit(leavingItemsController);
             frmExit.ShowDialog();
         }
-        public void OpenFrmPositioning()
+        public void OpenFrmPositioning(PositionController positionController)
         {
-            frmPositioning = new FrmPositioning();
+            frmPositioning = new FrmPositioning(positionController);
             frmPositioning.ShowDialog();
         }
 
-        public void OpenAddFormStorekeeper()
+        public void OpenAddFormStorekeeper(StorekeeperController storekeeperController)
         {
-            frmAddStorekeeper = new FrmAddStorekeeper();
+            frmAddStorekeeper = new FrmAddStorekeeper(storekeeperController);
             frmAddStorekeeper.ShowDialog();
         }
 
-        internal void OpenFrmStorekeeperChange(Storekeeper s)
+        internal void OpenFrmStorekeeperChange(DataGridViewRow row, StorekeeperController storekeeperController)
         {
-            frmStorekeeperChange = new FrmStorekeeperChange(s);
+            frmStorekeeperChange = new FrmStorekeeperChange(row,storekeeperController);
             frmStorekeeperChange.ShowDialog();
         }
 
-        public void OpenAddFormClient()
+        public void OpenAddFormClient(ClientsController clientsController)
         {
-            frmAddClient = new FrmAddClient();
+            frmAddClient = new FrmAddClient(clientsController);
             frmAddClient.ShowDialog();
         }
 
-        public void OpenGetAllClients()
+        public void OpenGetAllClients(ClientsController clientsController)
         {
-            frmGetAllClients = new FrmGetAllClients();
+            frmGetAllClients = new FrmGetAllClients(clientsController);
             frmGetAllClients.ShowDialog();
         }
 
-        public void OpenFrmClientChange(Client c)
+        public void OpenFrmClientChange(ClientsController clientsController, DataGridViewRow row)
         {
-            frmClientChange = new FrmClientChange(c);
+            frmClientChange = new FrmClientChange(clientsController, row);
             frmClientChange.ShowDialog();
 
         }
 
-        public void OpenFrmGetAllStorekeepers()
+        public void OpenFrmGetAllStorekeepers(StorekeeperController storekeeperController)
         {
-            frmGetAllStorekeepers = new FrmGetAllStorekeepers();
+            frmGetAllStorekeepers = new FrmGetAllStorekeepers(storekeeperController);
             frmGetAllStorekeepers.ShowDialog();
         }
 
-        public void OpenFrmGetAllRoba()
+        public void OpenFrmGetAllRoba(RobaController robaController)
         {
-            frmGetAllRoba = new FrmGetAllRoba();
+            frmGetAllRoba = new FrmGetAllRoba(robaController);
             frmGetAllRoba.ShowDialog();
         }
 
-        public void OpenFrmAddRoba()
+        public void OpenFrmAddRoba(RobaController robaController)
         {
-            frmAddRoba = new FrmAddRoba();
+            frmAddRoba = new FrmAddRoba(robaController);
             frmAddRoba.ShowDialog();
         }
 
-        public void OpenFrmDeleteRoba(Roba r)
+        public void OpenFrmDeleteRoba(RobaController robaController, DataGridViewRow r)
         {
-            frmRobaChanged = new FrmRobaChange(r);
+            frmRobaChanged = new FrmRobaChange(robaController, r);
             frmRobaChanged.ShowDialog();
         }
 
-        public void OpenFrmEntrance()
+        public void OpenFrmEntrance(EntranceController entranceController)
         {
-            frmEntrance = new FrmEntrance();
+            frmEntrance = new FrmEntrance(entranceController);
             frmEntrance.ShowDialog();
         }
 
         public void OpenFrmEnterClient()
         {
-            frmEnterClient = new FrmEnterClient();
+            frmEnterClient = new FrmEnterClient(new Controllers.ClientsController());
             frmEnterClient.ShowDialog();
         }
 
-        public void OpenFrmFind()
+        public void OpenFrmFind(FindProductController findProductController)
         {
-            frmFind = new FrmFind();
+            frmFind = new FrmFind(findProductController);
             frmFind.ShowDialog();
         }
 

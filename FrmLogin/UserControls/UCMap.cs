@@ -1,4 +1,6 @@
 ﻿using Controller;
+using Domain;
+using FrmLogin.Controllers;
 using FrmLogin.Helpers;
 using System;
 using System.Collections.Generic;
@@ -15,32 +17,47 @@ namespace FrmLogin.UserControls
 {
     public partial class UCMap : UserControl
     {
-        private List<RadioButton> rButtons = new List<RadioButton>();
-        public UCMap()
+        public List<RadioButton> RButtons { get; set; } = new List<RadioButton>();
+        private readonly MapController mapController;
+        public UCMap(Controllers.MapController mapController)
         {
+            this.mapController = mapController;
             InitializeComponent();
-            rButtons.Add(rb1);
-            rButtons.Add(rb2);
-            rButtons.Add(rb3);
-            rButtons.Add(rb4);
-            rButtons.Add(rb5);
+            RButtons.Add(rb1);
+            RButtons.Add(rb2);
+            RButtons.Add(rb3);
+            RButtons.Add(rb4);
+            RButtons.Add(rb5);
         }
 
-        private void C24_Click(object sender, EventArgs e)
-        {
-            ShowPosition(C24.Name);
-        }
+        public DataGridView DGVStanjeNaPoziciji{ get=>dgvStanjeNaPoziciji; }
 
         private void btnUlaz_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenFrmEntrance();
+            mapController.OpenFrmEntrance(this);
         }
 
         private void btnPovezi_Click(object sender, EventArgs e)
         {
-            MainCoordinator.Instance.OpenFrmPositioning();
+            mapController.OpenFrmPositioning(this);
         }
 
+        public void ShowPosition(string pozicija) {
+
+            mapController.ShowPositin(this,pozicija);
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            mapController.Find(this);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            mapController.LeavingItems(this);
+        }
+
+        #region Buttons
         private void A01_Click(object sender, EventArgs e)
         {
             ShowPosition(A01.Name);
@@ -55,27 +72,6 @@ namespace FrmLogin.UserControls
         {
             ShowPosition(A03.Name);
         }
-
-        public void ShowPosition(string pozicija) {
-            string PositionId = pozicija+UserControlHelpers.CkeckedButtons(rButtons).Text;
-            MessageBox.Show(PositionId);
-            try
-            {
-                dgvStanjeNaPoziciji.DataSource = null;
-                dgvStanjeNaPoziciji.DataSource = Controler.Instance.ShowEntranceItems(PositionId);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void btnFind_Click(object sender, EventArgs e)
-        {
-            MainCoordinator.Instance.OpenFrmFind();
-        }
-
-        #region Buttons
         private void A04_Click(object sender, EventArgs e)
         {
             ShowPosition(A04.Name);
@@ -362,9 +358,6 @@ namespace FrmLogin.UserControls
         }
 
         #endregion
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            MainCoordinator.Instance.OpenFrmExit();
-        }
+      
     }
 }

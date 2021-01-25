@@ -25,6 +25,7 @@ namespace DatabaseBroker
         public void AddEntrancePosition(EntrancePosition ep)
         {
             SqlCommand command = connection.CreateCommand();
+            command.Transaction = transaction;
             command.CommandText = $"insert into EntrancePositions values (@EntranceId,@PositionId)";
             command.Parameters.AddWithValue("@EntranceId", ep.EntranceId);
             command.Parameters.AddWithValue("@PositionId",ep.PositionId );
@@ -53,6 +54,44 @@ namespace DatabaseBroker
                 $"PositionId='{entrancePosition.PositionId}'";
             command2.ExecuteNonQuery();
 
+        }
+
+        public Roba ReturnRoba(string requestObject)
+        {
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = $"select * from Roba where Name = '{requestObject}'";
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+               Roba r = new Roba
+                {
+                    RobaId = (int)reader[0],
+                    Name = (string)reader[1],
+                    WeightOfBox = (double)reader[2]
+                };
+                return r;
+            }
+            return null;
+        }
+
+        public Client ReturnClient(string requestObject)
+        {
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = $"select * from Clients where Name = '{requestObject}'";
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read()) {
+                 Client c = new Client
+                {
+                    ClientId = (int)reader[0],
+                    Name = (string)reader[1],
+                    Place = (string)reader[2],
+                    PIB = (int)reader[3],
+                    Telephone = (int)reader[4],
+                    Email = (string)reader[5]
+                };
+                return c;
+            }
+            return null ;
         }
 
         public void SaveEntranceItem(EntranceItems ei)
@@ -280,6 +319,7 @@ namespace DatabaseBroker
         public void SetEntranceTrue(int entranceId)
         {
             SqlCommand command = connection.CreateCommand();
+            command.Transaction = transaction;
             command.CommandText = $"update Entrance set Obradjen = {1} where EntranceId = '{entranceId}'";
             command.ExecuteNonQuery();
         }
@@ -287,6 +327,7 @@ namespace DatabaseBroker
         public void UpdatePosition(string positionId)
         {
             SqlCommand command = connection.CreateCommand();
+            command.Transaction = transaction;
             command.CommandText = $"update Positions set Slobodno = {0} where PositionId = '{positionId}'";
             command.ExecuteNonQuery();
         }

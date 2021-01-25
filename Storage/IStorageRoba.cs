@@ -15,5 +15,6 @@ namespace Storage
         void Update(Roba r);
         bool Find(Roba r);
         double GetWeightOfBox(int robaId);
+        Roba ReturnRoba(string requestObject);
     }
 }

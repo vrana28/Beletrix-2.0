@@ -33,11 +33,9 @@ namespace FrmLogin
             this.btnRoba = new System.Windows.Forms.Button();
             this.txtVertikala = new System.Windows.Forms.TextBox();
             this.txtPaletnoMesto = new System.Windows.Forms.TextBox();
-            this.txtReds = new System.Windows.Forms.TextBox();
             this.txtRed = new System.Windows.Forms.TextBox();
             this.txtKolona = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,6 +51,7 @@ namespace FrmLogin
             this.label1 = new System.Windows.Forms.Label();
             this.pnlChange = new System.Windows.Forms.Panel();
             this.pnlIzmena = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnIzlazDela = new System.Windows.Forms.Button();
             this.txtDateOfLeaving = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -71,7 +70,6 @@ namespace FrmLogin
             this.lblPozicija = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvItems = new System.Windows.Forms.DataGridView();
-            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResultExit)).BeginInit();
             this.pnlChange.SuspendLayout();
             this.pnlIzmena.SuspendLayout();
@@ -116,13 +114,6 @@ namespace FrmLogin
             this.txtPaletnoMesto.Size = new System.Drawing.Size(42, 20);
             this.txtPaletnoMesto.TabIndex = 42;
             // 
-            // txtReds
-            // 
-            this.txtReds.Location = new System.Drawing.Point(568, 84);
-            this.txtReds.Name = "txtReds";
-            this.txtReds.Size = new System.Drawing.Size(42, 20);
-            this.txtReds.TabIndex = 41;
-            // 
             // txtRed
             // 
             this.txtRed.Location = new System.Drawing.Point(568, 84);
@@ -145,15 +136,6 @@ namespace FrmLogin
             this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 38;
             this.label7.Text = "Vertikala:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(524, 91);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Red:";
             // 
             // label6
             // 
@@ -314,6 +296,17 @@ namespace FrmLogin
             this.pnlIzmena.Size = new System.Drawing.Size(373, 324);
             this.pnlIzmena.TabIndex = 42;
             this.pnlIzmena.Visible = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(311, 59);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(53, 98);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "X";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnIzlazDela
             // 
@@ -484,17 +477,6 @@ namespace FrmLogin
             this.dgvItems.Size = new System.Drawing.Size(373, 147);
             this.dgvItems.TabIndex = 0;
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(311, 59);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(53, 98);
-            this.btnDelete.TabIndex = 13;
-            this.btnDelete.Text = "X";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // FrmExit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,11 +487,9 @@ namespace FrmLogin
             this.Controls.Add(this.btnRoba);
             this.Controls.Add(this.txtVertikala);
             this.Controls.Add(this.txtPaletnoMesto);
-            this.Controls.Add(this.txtReds);
             this.Controls.Add(this.txtRed);
             this.Controls.Add(this.txtKolona);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label8);
@@ -526,7 +506,6 @@ namespace FrmLogin
             this.Name = "FrmExit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmExit";
-            this.Load += new System.EventHandler(this.FrmExit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResultExit)).EndInit();
             this.pnlChange.ResumeLayout(false);
             this.pnlChange.PerformLayout();
@@ -545,11 +524,9 @@ namespace FrmLogin
         private System.Windows.Forms.Button btnRoba;
         private System.Windows.Forms.TextBox txtVertikala;
         private System.Windows.Forms.TextBox txtPaletnoMesto;
-        private System.Windows.Forms.TextBox txtReds;
         private System.Windows.Forms.TextBox txtRed;
         private System.Windows.Forms.TextBox txtKolona;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;

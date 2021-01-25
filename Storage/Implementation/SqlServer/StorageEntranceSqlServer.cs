@@ -77,7 +77,7 @@ namespace Storage.Implementation.SqlServer
                 }
                 broker.Commit();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 broker.Rollback();
                 throw new Exception("Rollback!");

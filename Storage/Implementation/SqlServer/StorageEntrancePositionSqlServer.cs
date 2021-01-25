@@ -16,7 +16,16 @@ namespace Storage.Implementation.SqlServer
             try
             {
                 broker.OpenConnection();
+                broker.BeginTransaction();
+
                 broker.AddEntrancePosition(ep);
+                broker.SetEntranceTrue(ep.EntranceId);
+                broker.UpdatePosition(ep.PositionId);
+                broker.Commit();
+            }
+            catch (Exception ex) {
+                broker.Rollback();
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -38,7 +47,7 @@ namespace Storage.Implementation.SqlServer
                 broker.ExitEntrancePosition(entrancePosition);
                 broker.Commit();
             }
-            catch (Exception ex) {
+            catch (Exception) {
                 broker.Rollback();
                 throw new Exception("Geska kod transakcije");
             }

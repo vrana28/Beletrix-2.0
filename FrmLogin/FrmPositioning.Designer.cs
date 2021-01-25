@@ -274,7 +274,6 @@
             this.Name = "FrmPositioning";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPositioning";
-            this.Load += new System.EventHandler(this.FrmPositioning_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrances)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositions)).EndInit();
             this.ResumeLayout(false);

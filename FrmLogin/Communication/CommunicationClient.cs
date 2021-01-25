@@ -41,23 +41,19 @@ namespace FrmLogin.Communication
 
         public Object GetResponseResult() {
 
-            try
-            {
+            
                 Response response = (Response)receiver.Receive();
                 if (response.IsSuccessful)
                 {
                     return response.Result;
                 }
                 else {
-                    throw new SystemOperationException();
+                    throw new SystemOperationException(response.Error);
                 }
             }
-            catch (SerializationException)
-            {
-                throw new ServerException();
-            }
+          
         }
 
 
-    }
+    
 }

@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using FrmLogin.Helpers;
 using System;
 using System.Collections.Generic;
@@ -15,141 +16,50 @@ namespace FrmLogin
 {
     public partial class FrmPositioning : Form
     {
-        public FrmPositioning()
+        private readonly PositionController positionController;
+        public FrmPositioning(Controllers.PositionController positionController)
         {
+            this.positionController = positionController;
             InitializeComponent();
+            positionController.InitDataGridViews(this);
         }
 
-        public string kolona;
-        public string red;
-        public string pm;
-        public string vertikala;
-
-        private void FrmPositioning_Load(object sender, EventArgs e)
-        {
-
-            try
-            {
-                dgvEntrances.DataSource = Controler.Instance.GetAllEntrancecs();
-                dgvPositions.DataSource = Controler.Instance.GetAllPositions();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        public DataGridView DGVEntrances{ get => dgvEntrances; }
+        public DataGridView DGVPositions{ get => dgvPositions; }
+        public TextBox TxtKolona { get => txtKolona; }
+        public TextBox TxtRed { get => txtRed; }
+        public TextBox TxtPM { get => txtPaletnoMesto; }
+        public TextBox TxtVertikala { get => txtVertikala; }
+        public TextBox TxtEntranceId{ get => txtEntranceId; }
+        public TextBox TxtPositionId { get => txtPositionId; }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-           
-
-            kolona = txtKolona.Text;
-            red = txtRed.Text;
-             pm = txtPaletnoMesto.Text;
-             vertikala = txtVertikala.Text;
-
-            try
-            {
-                dgvPositions.DataSource = Controler.Instance.FindPositions(ReturnSearchItem());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
+            positionController.SearchPosition(this);
         }
-
-        public string ReturnSearchItem() {
-            string item = "";
-            if (kolona == "") item += "_";
-            else item += kolona;
-            if (red == "") item += "_";
-            else item += red;
-            if (pm == "") item += "_";
-            else item += pm;
-            if (vertikala == "") item += "_";
-            else item += vertikala;
-            return item;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            RefreshAll();
-
+            positionController.Refresh(this);
         }
 
         private void dgvEntrances_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            try
-            {
-                DataGridViewRow row = dgvEntrances.SelectedRows[0];
-                int entranceId = (int)row.Cells[0].Value;
-                Entrance entrance = Controler.Instance.FindEntrance(entranceId);
-                txtEntranceId.Text = entrance.EntranceId.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
+            positionController.ReturnSelectedEntrance(this);
         }
 
         private void dgvPositions_DoubleClick(object sender, EventArgs e)
         {
-            try
-            {
-                DataGridViewRow row = dgvPositions.SelectedRows[0];
-                Position p = (Position)row.DataBoundItem;
-                txtPositionId.Text = p.PositionId;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            positionController.ReturnSelectedPosition(this);
         }
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            txtPositionId.Text = "";
-            txtEntranceId.Text = "";
+            positionController.RestartFields(this);
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            if (UserControlHelpers.IsNullOrWhiteSpace(txtEntranceId) | UserControlHelpers.IsNullOrWhiteSpace(txtPositionId)) {
-                MessageBox.Show("No data to bind!");
-                return;
-            }
-
-            EntrancePosition ep = new EntrancePosition {
-                EntranceId = int.Parse(txtEntranceId.Text),
-                PositionId = txtPositionId.Text
-            };
-
-            try
-            {
-                Controler.Instance.AddEntrancePosition(ep);
-                Controler.Instance.SetEntranceTrue(ep.EntranceId);
-                Controler.Instance.UpdatePosition(ep.PositionId);
-                RefreshAll();
-                MessageBox.Show("Connected");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        public void RefreshAll() {
-            txtKolona.Text = "";
-            txtRed.Text = "";
-            txtPaletnoMesto.Text = "";
-            txtVertikala.Text = "";
-            txtEntranceId.Text = "";
-            txtPositionId.Text = "";
-            dgvPositions.DataSource = Controler.Instance.GetAllPositions();
-            dgvEntrances.DataSource = Controler.Instance.GetAllEntrancecs();
+            positionController.Connect(this);
         }
 
     }

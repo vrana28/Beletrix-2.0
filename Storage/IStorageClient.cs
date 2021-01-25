@@ -14,5 +14,6 @@ namespace Storage
         void Delete(Client c);
         void Update(Client c);
         bool Find(Client c);
+        Client ReturnClient(string requestObject);
     }
 }

@@ -78,6 +78,20 @@ namespace Storage.Implementation.SqlServer
             }
         }
 
+        public Roba ReturnRoba(string requestObject)
+        {
+            try
+            {
+                broker.OpenConnection();
+                return broker.ReturnRoba(requestObject);
+
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public void Update(Roba r)
         {
             try

@@ -46,8 +46,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtReds = new System.Windows.Forms.TextBox();
             this.btnRoba = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -167,7 +165,7 @@
             // 
             // txtRed
             // 
-            this.txtRed.Location = new System.Drawing.Point(640, 95);
+            this.txtRed.Location = new System.Drawing.Point(640, 93);
             this.txtRed.Name = "txtRed";
             this.txtRed.Size = new System.Drawing.Size(42, 20);
             this.txtRed.TabIndex = 19;
@@ -200,7 +198,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(596, 102);
+            this.label5.Location = new System.Drawing.Point(596, 94);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 15;
@@ -214,22 +212,6 @@
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 14;
             this.label8.Text = "Kolona:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(596, 102);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Red:";
-            // 
-            // txtReds
-            // 
-            this.txtReds.Location = new System.Drawing.Point(640, 95);
-            this.txtReds.Name = "txtReds";
-            this.txtReds.Size = new System.Drawing.Size(42, 20);
-            this.txtReds.TabIndex = 19;
             // 
             // btnRoba
             // 
@@ -274,11 +256,9 @@
             this.Controls.Add(this.btnRoba);
             this.Controls.Add(this.txtVertikala);
             this.Controls.Add(this.txtPaletnoMesto);
-            this.Controls.Add(this.txtReds);
             this.Controls.Add(this.txtRed);
             this.Controls.Add(this.txtKolona);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label8);
@@ -322,8 +302,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtReds;
         private System.Windows.Forms.Button btnRoba;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnSearch;

@@ -9,42 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 using Controller;
+using FrmLogin.Controllers;
 
 namespace FrmLogin.FrmGetAll
 {
     public partial class FrmGetAllClients : Form
     {
-        private BindingList<Client> clients = new BindingList<Client>();
-        public FrmGetAllClients()
+        private ClientsController clientsController;
+        public FrmGetAllClients(Controllers.ClientsController clientsController)
         {
+            this.clientsController = clientsController;
             InitializeComponent();
-            clients = new BindingList<Client>( Controler.Instance.GetAllClient());
-            dgvClients.DataSource = clients;
+            clientsController.InitdatagridView(this);
         }
 
+        public DataGridView DGVClients { get => dgvClients; }
         private void dgvClients_DoubleClick(object sender, EventArgs e)
         {
-            try
-            {
-                if (dgvClients.ColumnCount > 0)
-                {
-                    DataGridViewRow row = dgvClients.SelectedRows[0];
-                    Client c = (Client)row.DataBoundItem;
-                    MainCoordinator.Instance.OpenFrmClientChange(c);
-                }
-                Refresh();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Nema unetih podatak");
-            }
+            clientsController.DoubleClickDataGridView(this);
         }
-
-        public override void  Refresh() {
-            dgvClients.DataSource = null;
-            clients = new BindingList<Client>(Controler.Instance.GetAllClient());
-            dgvClients.DataSource = clients;
+        public override void Refresh()
+        {
+            clientsController.GetAllClients(this);
         }
-
     }
 }

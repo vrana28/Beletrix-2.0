@@ -51,6 +51,7 @@ namespace Server
             catch (IOException)
             {
                 Console.WriteLine("Doslo je do greske - Start handler");
+                Close();
             }
 
         }
@@ -70,8 +71,99 @@ namespace Server
                     Storekeeper = Controler.Instance.Login((Storekeeper)request.RequestObject);
                     response.Result = Storekeeper;
                     break;
-            
-            
+                case Operation.SaveStorekeeper:
+                    Controler.Instance.AddStorekeeper((Storekeeper)request.RequestObject);
+                    break;
+                case Operation.GetAllStorekeepers:
+                    response.Result = Controler.Instance.GetAllStorekeepers();
+                    break;
+                case Operation.UpdateStorekeeper:
+                    Controler.Instance.UpdateStorekeeper((Storekeeper)request.RequestObject);
+                    break;
+                case Operation.DeleteStorekeeper:
+                    Controler.Instance.DeleteStorekeeper((Storekeeper)request.RequestObject);
+                    break;
+                case Operation.FindClient:
+                   response.Result = Controler.Instance.FindClient((Client)request.RequestObject);
+                    break;
+                case Operation.SaveClient:
+                    Controler.Instance.AddClient((Client)request.RequestObject);
+                    break;
+                case Operation.GetAllClients:
+                    response.Result = Controler.Instance.GetAllClient();
+                    break;
+                case Operation.UpdateClient:
+                    Controler.Instance.UpdateClient((Client)request.RequestObject);
+                    break;
+                case Operation.DeleteClient:
+                    Controler.Instance.DeleteClient((Client)request.RequestObject);
+                    break;
+                case Operation.FindRoba:
+                    response.Result = Controler.Instance.FindRoba((Roba)request.RequestObject);
+                    break;
+                case Operation.SaveRoba:
+                    Controler.Instance.AddRoba((Roba)request.RequestObject);
+                    break;
+                case Operation.GetAllRoba:
+                    response.Result = Controler.Instance.GetAllRoba();
+                    break;
+                case Operation.UpdateRoba:
+                    Controler.Instance.UpdateRoba((Roba)request.RequestObject);
+                    break;
+                case Operation.DeleteRoba:
+                    Controler.Instance.DeleteRoba((Roba)request.RequestObject);
+                    break;
+                case Operation.SearchProductWith:
+                    response.Result = Controler.Instance.FindBusyPositions((Client)request.RequestObject, (Roba)request.RequestObject2);
+                    break;
+                case Operation.SearchAllParameters:
+                    response.Result = Controler.Instance.FindBusyPositionsWithPosition((Client)request.RequestObject, (Roba)request.RequestObject2, request.Text);
+                    break;
+                case Operation.AddEntrance:
+                    Controler.Instance.SaveEntrance((Entrance)request.RequestObject);
+                    break;
+                case Operation.GetAllEntrances:
+                    response.Result = Controler.Instance.GetAllEntrancecs();
+                    break;
+                case Operation.GetAllPositions:
+                    response.Result= Controler.Instance.GetAllPositions();
+                    break;
+                case Operation.FindPositions:
+                    response.Result = Controler.Instance.FindPositions(request.Text);
+                    break;
+                case Operation.AddEntrancePosition:
+                    Controler.Instance.AddEntrancePosition((EntrancePosition)request.RequestObject);
+                    break;
+                case Operation.FindEntrance:
+                    response.Result = Controler.Instance.FindEntrance((int)request.RequestObject);
+                    break;
+                case Operation.FindBusyPosition:
+                    response.Result = Controler.Instance.FindBusyPositions((Client)request.RequestObject, (Roba)request.RequestObject2);
+                    break;
+                case Operation.ReturnEntrancePosition:
+                    response.Result = Controler.Instance.ReturnEntrancePosition((string)request.RequestObject);
+                    break;
+                case Operation.ReturnEntranceItems:
+                    response.Result = Controler.Instance.ReturnEntranceItems((int)request.RequestObject);
+                    break;
+                case Operation.LeaveEntrancePosition:
+                    Controler.Instance.LeaveEntrance((EntrancePosition)request.RequestObject);
+                    break;
+                case Operation.LeavingEntranceItem:
+                    Controler.Instance.LeavingEntranceItems((List<LeavingItem>)request.RequestObject, (List<EntranceItems>)request.RequestObject2);
+                    break;
+                case Operation.ShowEntranceItems:
+                    response.Result = Controler.Instance.ShowEntranceItems((string)request.RequestObject);
+                    break;
+                case Operation.ReturnClient:
+                    response.Result = Controler.Instance.ReturnClient((string)request.RequestObject);
+                    break;
+                case Operation.ReturnRoba:
+                    response.Result = Controler.instance.ReturnRoba((string)request.RequestObject);
+                    break;
+                case Operation.GetWeightOfBox:
+                    response.Result = Controler.Instance.GetWeightOfBox((int)request.RequestObject);
+                    break;
             }
             return response;
         }

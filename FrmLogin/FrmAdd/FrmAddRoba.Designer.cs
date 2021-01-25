@@ -114,7 +114,6 @@ namespace FrmLogin.FrmAdd
             this.Name = "FrmAddRoba";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddRoba";
-            this.Load += new System.EventHandler(this.FrmAddRoba_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

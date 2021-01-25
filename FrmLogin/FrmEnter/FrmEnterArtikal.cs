@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,20 +15,45 @@ namespace FrmLogin.FrmEnter
 {
     public partial class FrmEnterArtikal : Form
     {
-        private BindingList<Roba> robe;
-        public FrmEnterArtikal()
+        private readonly RobaController robaController;
+
+        public int Signal { get; set; }
+        public FrmEntrance frmEntrance{ get; set; }
+        public FrmFind frmFind { get; set; }
+        public FrmExit FrmExit { get; set; }
+
+        public DataGridView DGVArtikli { get => dgvRoba; }
+
+        public FrmEnterArtikal(FrmEntrance frmEntrance, Controllers.RobaController robaController)
         {
+            this.robaController = robaController;
+            this.frmEntrance = frmEntrance;
             InitializeComponent();
-            robe = new BindingList<Roba>(Controler.Instance.GetAllRoba());
-            dgvRoba.DataSource = robe;
+            robaController.InitEnterDataGridView(this);
+            Signal = 1;
         }
 
-        public Roba Roba { get; set; }
+        public FrmEnterArtikal(FrmFind frmFind, RobaController robaController)
+        {
+            this.frmFind = frmFind;
+            this.robaController = robaController;
+            InitializeComponent();
+            robaController.InitEnterDataGridView(this);
+            Signal = 2;
+        }
+
+        public FrmEnterArtikal(FrmExit frmExit, RobaController robaController)
+        {
+            this.FrmExit = frmExit;
+            this.robaController = robaController;
+            InitializeComponent();
+            robaController.InitEnterDataGridView(this);
+            Signal = 3;
+        }
+
         private void dgvRoba_DoubleClick(object sender, EventArgs e)
         {
-            DataGridViewRow row = dgvRoba.SelectedRows[0];
-            Roba = (Roba)row.DataBoundItem;
-            this.Dispose();
+            robaController.EnterArtikal(this,Signal);
         }
     }
 }

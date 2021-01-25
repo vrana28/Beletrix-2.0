@@ -16,19 +16,20 @@ namespace FrmLogin
 {
     public partial class FrmLogin : Form
     {
-        private LoginController loginController;
+        private readonly LoginController loginController;
         public FrmLogin(Controllers.LoginController loginController)
         {
             InitializeComponent();
             this.loginController = loginController;
-            txtUsername.Text = "admin";
-            txtPassword.Text = "admin";
+            TxtUsername.Text = "admin";
+            TxtPassword.Text = "admin";
         }
 
+        public TextBox TxtUsername{ get=>txtUsername; }
+        public TextBox TxtPassword { get=>txtPassword; }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            loginController.Connect();
-            loginController.Login(txtUsername, txtPassword, this);
+            loginController.Login(this);
         }
 
         private void FrmLogin_FormClosed(object sender, FormClosedEventArgs e)

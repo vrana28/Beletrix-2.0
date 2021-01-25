@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,22 +15,51 @@ namespace FrmLogin.FrmEnter
 {
     public partial class FrmEnterClient : Form
     {
-        private BindingList<Client> clients = new BindingList<Client>();
-        public FrmEnterClient()
+        private readonly ClientsController clientController;
+
+        public int Signal { get; set; }
+        public FrmEntrance frmEntrance{ get; set; }
+        public FrmFind frmFind{ get; set; }
+        public FrmExit frmExit { get; set; }
+        public DataGridView DGVClientsToEnter { get => dgvClients; }
+        public FrmEnterClient(Controllers.ClientsController clientsController)
         {
+            this.clientController = clientsController;
             InitializeComponent();
-            clients = new BindingList<Client>(Controler.Instance.GetAllClient());
-            dgvClients.DataSource = clients;
+            clientController.InitEnterDataGridView(this);
         }
 
-        public Client Client { get; set; }
+        public FrmEnterClient(FrmEntrance frmEntrance, ClientsController clientsController)
+        {
+            this.frmEntrance = frmEntrance;
+            this.clientController = clientsController;
+            InitializeComponent();
+            clientController.InitEnterDataGridView(this);
+            Signal = 1;
+        }
+
+        public FrmEnterClient(FrmFind frmFind, ClientsController clientsController)
+        {
+            this.frmFind = frmFind;
+            this.clientController = clientsController;
+            InitializeComponent();
+            clientController.InitEnterDataGridView(this);
+            Signal = 2;
+        }
+
+        public FrmEnterClient(FrmExit frmExit, ClientsController clientsController)
+        {
+            this.frmExit = frmExit;
+            this.clientController = clientsController;
+            InitializeComponent();
+            clientController.InitEnterDataGridView(this);
+            Signal = 3;
+        }
 
         private void dgvClients_DoubleClick(object sender, EventArgs e)
         {
-            DataGridViewRow row = dgvClients.SelectedRows[0];
-            Client = (Client)row.DataBoundItem;
-            
-            this.Dispose();
+            clientController.EnterClient(this,Signal);
         }
+       
     }
 }

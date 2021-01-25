@@ -245,5 +245,15 @@ namespace Controller
         {
             storageLeavingItems.SaveLeavingItems(listaItemaZaIzlaz, listaItemaZaUpdate);
         }
+
+        public Client ReturnClient(string requestObject)
+        {
+            return storageClient.ReturnClient(requestObject);
+        }
+
+        public Roba ReturnRoba(string requestObject)
+        {
+            return storageRoba.ReturnRoba(requestObject);
+        }
     }
 }

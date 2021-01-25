@@ -1,5 +1,6 @@
 ﻿using Controller;
 using Domain;
+using FrmLogin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,37 +15,26 @@ namespace FrmLogin.FrmGetAll
 {
     public partial class FrmGetAllStorekeepers : Form
     {
-        private BindingList<Storekeeper> keepers = new BindingList<Storekeeper>();
-        public FrmGetAllStorekeepers()
+        public  BindingList<Storekeeper> keepers = new BindingList<Storekeeper>();
+        private StorekeeperController storekeeperController;
+        public FrmGetAllStorekeepers(Controllers.StorekeeperController storekeeperController)
         {
+            this.storekeeperController = storekeeperController;
             InitializeComponent();
-            keepers = new BindingList<Storekeeper>(Controler.Instance.GetAllStorekeepers());
-            dgvStorekeepers.DataSource = keepers;
+            storekeeperController.InitDataGridView(this);
+  
         }
 
+        public DataGridView DgvStoreKeepers { get => dgvStorekeepers; }
+
         public override void Refresh() {
-            dgvStorekeepers.DataSource = null;
-            keepers = new BindingList<Storekeeper>(Controler.Instance.GetAllStorekeepers());
-            dgvStorekeepers.DataSource = keepers;
+            storekeeperController.Refresh(this);
         }
 
         private void dgvStorekeepers_DoubleClick(object sender, EventArgs e)
         {
-            try
-            {
-                if (dgvStorekeepers.ColumnCount > 0)
-                {
-                    DataGridViewRow row = dgvStorekeepers.SelectedRows[0];
-                    Storekeeper s = (Storekeeper)row.DataBoundItem;
-                    MainCoordinator.Instance.OpenFrmStorekeeperChange(s);
-                }
-                Refresh();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            storekeeperController.DoubleClickDataGridView(this);
+            
         }
     }
 }
