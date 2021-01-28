@@ -40,5 +40,6 @@ namespace Common
         ReturnClient,
         ReturnRoba,
         GetWeightOfBox,
+        FindStorekeeper,
     }
 }

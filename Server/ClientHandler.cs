@@ -25,33 +25,42 @@ namespace Server
         }
 
         public void StartHandler() {
-
             try
             {
-                NetworkStream stream = new NetworkStream(client);
-                BinaryFormatter formatter = new BinaryFormatter();
 
-                while (true) {
-                    Request request = (Request)formatter.Deserialize(stream);
-                    Response response;
-                    try
+                try
+                {
+                    NetworkStream stream = new NetworkStream(client);
+                    BinaryFormatter formatter = new BinaryFormatter();
+
+                    while (true)
                     {
-                        response = PorocessRequest(request);
+                        Request request = (Request)formatter.Deserialize(stream);
+                        Response response;
+                        try
+                        {
+                            response = PorocessRequest(request);
+                        }
+                        catch (Exception)
+                        {
+                            response = new Response();
+                            response.IsSuccessful = false;
+                            response.Error = "Greska kod procesiranja zahteva - SERVER";
+                        }
+                        formatter.Serialize(stream, response);
                     }
-                    catch (Exception)
-                    {
-                        response = new Response();
-                        response.IsSuccessful = false;
-                        response.Error = "Greska kod procesiranja zahteva - SERVER";
-                    }
-                    formatter.Serialize(stream, response);
+
                 }
-
+                catch (IOException)
+                {
+                    Console.WriteLine("Doslo je do greske - Start handler");
+                    Close();
+                }
             }
-            catch (IOException)
+            catch (Exception)
             {
-                Console.WriteLine("Doslo je do greske - Start handler");
-                Close();
+                Server.OnlineKorisnici.Remove(Storekeeper);
+                Console.WriteLine("Klijent je izasao");
             }
 
         }
@@ -61,7 +70,7 @@ namespace Server
             client.Close();
         }
 
-        Storekeeper Storekeeper;
+        public Storekeeper Storekeeper { get; set; }
         private Response PorocessRequest(Request request)
         {
             Response response = new Response();
@@ -69,6 +78,7 @@ namespace Server
             switch (request.Operation) {
                 case Operation.Login:
                     Storekeeper = Controler.Instance.Login((Storekeeper)request.RequestObject);
+                    if (Storekeeper != null) Server.OnlineKorisnici.Add(Storekeeper);
                     response.Result = Storekeeper;
                     break;
                 case Operation.SaveStorekeeper:
@@ -159,10 +169,13 @@ namespace Server
                     response.Result = Controler.Instance.ReturnClient((string)request.RequestObject);
                     break;
                 case Operation.ReturnRoba:
-                    response.Result = Controler.instance.ReturnRoba((string)request.RequestObject);
+                    response.Result = Controler.Instance.ReturnRoba((string)request.RequestObject);
                     break;
                 case Operation.GetWeightOfBox:
                     response.Result = Controler.Instance.GetWeightOfBox((int)request.RequestObject);
+                    break;
+                case Operation.FindStorekeeper:
+                    response.Result = Controler.Instance.FindStorekeeper((Storekeeper)request.RequestObject);
                     break;
             }
             return response;

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24AE806C-D155-4B12-9260-7332779952A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SystemOperations</RootNamespace>
+    <AssemblyName>SystemOperations</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientSO\AddNewClientSO.cs" />
+    <Compile Include="ClientSO\DeleteClientSO.cs" />
+    <Compile Include="ClientSO\ExistClientSO.cs" />
+    <Compile Include="ClientSO\GetAllClientsSO.cs" />
+    <Compile Include="ClientSO\ReturnClientSO.cs" />
+    <Compile Include="ClientSO\UpdateClientSO.cs" />
+    <Compile Include="EntranceItemSO\AddNewEntranceItemSO.cs" />
+    <Compile Include="EntranceItemSO\LeavingEntranceItemSO.cs" />
+    <Compile Include="EntranceItemSO\SearchEntranceItemsSO.cs" />
+    <Compile Include="EntranceItemSO\ShowEntranceItemsSO.cs" />
+    <Compile Include="EntrancePositionSO\AddNewEntrancePositionSO.cs" />
+    <Compile Include="EntrancePositionSO\ExitEntrancePositionSO.cs" />
+    <Compile Include="EntrancePositionSO\ReturnEntrancePositionSO.cs" />
+    <Compile Include="EntranceSO\AddNewEntranceSO.cs" />
+    <Compile Include="EntranceSO\GetAllJoinSO.cs" />
+    <Compile Include="EntranceSO\ReturnEntranceSO.cs" />
+    <Compile Include="PositionSO\GetAllPositionsSO.cs" />
+    <Compile Include="PositionSO\GetBusyPositionSO.cs" />
+    <Compile Include="PositionSO\GetBusyPositionWithPosition.cs" />
+    <Compile Include="PositionSO\SearchSO.cs" />
+    <Compile Include="RobaSO\AddNewRobaSO.cs" />
+    <Compile Include="RobaSO\DeleteRobaSO.cs" />
+    <Compile Include="RobaSO\ExistRobaSO.cs" />
+    <Compile Include="RobaSO\GetAllRobaSO.cs" />
+    <Compile Include="RobaSO\GetWeightOfBoxSO.cs" />
+    <Compile Include="RobaSO\ReturnRobaSO.cs" />
+    <Compile Include="RobaSO\UpdateRobaSO.cs" />
+    <Compile Include="StorekeeperSO\AddNewStorekeeperSO.cs" />
+    <Compile Include="StorekeeperSO\DeleteStorekeeperSO.cs" />
+    <Compile Include="StorekeeperSO\ExistStorekeeperSO.cs" />
+    <Compile Include="StorekeeperSO\GetAllStorekeepersSO.cs" />
+    <Compile Include="StorekeeperSO\LoginSO.cs" />
+    <Compile Include="StorekeeperSO\UpdateStorekeeperSO.cs" />
+    <Compile Include="SystemOperationBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{0d51a52d-0971-4626-89a2-2cc100a5eb0b}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Storage\Storage.csproj">
+      <Project>{5ece7979-59fd-4c10-8d42-815b56eb4dcb}</Project>
+      <Name>Storage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

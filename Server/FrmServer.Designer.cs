@@ -31,8 +31,8 @@ namespace Server
         {
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
-            this.dgvOnlineClients = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOnlineClients)).BeginInit();
+            this.dgvOnlineKorisnici = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOnlineKorisnici)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -55,29 +55,27 @@ namespace Server
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
-            // dgvOnlineClients
+            // dgvOnlineKorisnici
             // 
-            this.dgvOnlineClients.AllowUserToAddRows = false;
-            this.dgvOnlineClients.AllowUserToDeleteRows = false;
-            this.dgvOnlineClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOnlineClients.Location = new System.Drawing.Point(61, 85);
-            this.dgvOnlineClients.Name = "dgvOnlineClients";
-            this.dgvOnlineClients.ReadOnly = true;
-            this.dgvOnlineClients.Size = new System.Drawing.Size(701, 343);
-            this.dgvOnlineClients.TabIndex = 2;
+            this.dgvOnlineKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOnlineKorisnici.Location = new System.Drawing.Point(45, 115);
+            this.dgvOnlineKorisnici.Name = "dgvOnlineKorisnici";
+            this.dgvOnlineKorisnici.Size = new System.Drawing.Size(680, 295);
+            this.dgvOnlineKorisnici.TabIndex = 2;
             // 
             // FrmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvOnlineClients);
+            this.Controls.Add(this.dgvOnlineKorisnici);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Name = "FrmServer";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmServer_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOnlineClients)).EndInit();
+            this.Load += new System.EventHandler(this.FrmServer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOnlineKorisnici)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,7 +84,7 @@ namespace Server
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.DataGridView dgvOnlineClients;
+        private System.Windows.Forms.DataGridView dgvOnlineKorisnici;
     }
 }
 

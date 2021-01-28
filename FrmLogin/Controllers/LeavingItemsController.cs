@@ -190,10 +190,13 @@ namespace FrmLogin.Controllers
                     MessageBox.Show("Uspesno sacuvano");
                     RefreshGridView1(frmExit);
                 }
+                else {
+                    throw new Exception();
+                }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Sistem ne moze da zapamti izlaz dela palete");
             }
         }
 
@@ -267,7 +270,7 @@ namespace FrmLogin.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Sistem ne moze da kreira deo izlazne palete");
             }
         }
 

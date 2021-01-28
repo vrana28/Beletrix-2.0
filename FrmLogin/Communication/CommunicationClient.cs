@@ -48,7 +48,7 @@ namespace FrmLogin.Communication
                     return response.Result;
                 }
                 else {
-                    throw new SystemOperationException(response.Error);
+                throw new Exception(response.Error);
                 }
             }
           

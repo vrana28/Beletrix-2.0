@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,6 +15,9 @@ namespace Server
     {
         private Socket listener;
         private List<ClientHandler> onlineKlijenti = new List<ClientHandler>();
+
+        public static List<Storekeeper> OnlineKorisnici { get; set; } = new List<Storekeeper>();
+
         public Server()
         {
             listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

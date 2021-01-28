@@ -35,6 +35,10 @@ namespace FrmLogin.Controllers
             try
             {
                 Storekeeper = Communication.Communication.Instance.Login(txtUsername.Text, txtPassword.Text);
+                if (Storekeeper == null) {
+                    MessageBox.Show("Korisnik ne postoji");
+                    return;
+                }
                 MainCoordinator.Instance.Storekeeper = Storekeeper;
                 MessageBox.Show($"Korisnik {Storekeeper.Name} {Storekeeper.LastName} se uspesno prijavio");
                 MainCoordinator.Instance.OpenMainForm(MainCoordinator.Instance.Storekeeper);

@@ -478,7 +478,7 @@ namespace FrmLogin.UserControls
             this.P13 = new System.Windows.Forms.Button();
             this.P12 = new System.Windows.Forms.Button();
             this.P11 = new System.Windows.Forms.Button();
-            this.button441 = new System.Windows.Forms.Button();
+            this.R74 = new System.Windows.Forms.Button();
             this.R73 = new System.Windows.Forms.Button();
             this.R72 = new System.Windows.Forms.Button();
             this.R71 = new System.Windows.Forms.Button();
@@ -679,6 +679,7 @@ namespace FrmLogin.UserControls
             this.S64.TabIndex = 428;
             this.S64.Text = "4";
             this.S64.UseVisualStyleBackColor = true;
+            this.S64.Click += new System.EventHandler(this.S64_Click);
             // 
             // S63
             // 
@@ -688,6 +689,7 @@ namespace FrmLogin.UserControls
             this.S63.TabIndex = 427;
             this.S63.Text = "3";
             this.S63.UseVisualStyleBackColor = true;
+            this.S63.Click += new System.EventHandler(this.S63_Click);
             // 
             // S62
             // 
@@ -697,6 +699,7 @@ namespace FrmLogin.UserControls
             this.S62.TabIndex = 426;
             this.S62.Text = "2";
             this.S62.UseVisualStyleBackColor = true;
+            this.S62.Click += new System.EventHandler(this.S62_Click);
             // 
             // S61
             // 
@@ -706,6 +709,7 @@ namespace FrmLogin.UserControls
             this.S61.TabIndex = 425;
             this.S61.Text = "1";
             this.S61.UseVisualStyleBackColor = true;
+            this.S61.Click += new System.EventHandler(this.S61_Click);
             // 
             // S54
             // 
@@ -715,6 +719,7 @@ namespace FrmLogin.UserControls
             this.S54.TabIndex = 424;
             this.S54.Text = "4";
             this.S54.UseVisualStyleBackColor = true;
+            this.S54.Click += new System.EventHandler(this.S54_Click);
             // 
             // S53
             // 
@@ -724,6 +729,7 @@ namespace FrmLogin.UserControls
             this.S53.TabIndex = 423;
             this.S53.Text = "3";
             this.S53.UseVisualStyleBackColor = true;
+            this.S53.Click += new System.EventHandler(this.S53_Click);
             // 
             // S52
             // 
@@ -733,6 +739,7 @@ namespace FrmLogin.UserControls
             this.S52.TabIndex = 422;
             this.S52.Text = "2";
             this.S52.UseVisualStyleBackColor = true;
+            this.S52.Click += new System.EventHandler(this.S52_Click);
             // 
             // S51
             // 
@@ -742,6 +749,7 @@ namespace FrmLogin.UserControls
             this.S51.TabIndex = 421;
             this.S51.Text = "1";
             this.S51.UseVisualStyleBackColor = true;
+            this.S51.Click += new System.EventHandler(this.S51_Click);
             // 
             // S44
             // 
@@ -751,6 +759,7 @@ namespace FrmLogin.UserControls
             this.S44.TabIndex = 420;
             this.S44.Text = "4";
             this.S44.UseVisualStyleBackColor = true;
+            this.S44.Click += new System.EventHandler(this.S44_Click);
             // 
             // S43
             // 
@@ -760,6 +769,7 @@ namespace FrmLogin.UserControls
             this.S43.TabIndex = 419;
             this.S43.Text = "3";
             this.S43.UseVisualStyleBackColor = true;
+            this.S43.Click += new System.EventHandler(this.S43_Click);
             // 
             // S42
             // 
@@ -769,6 +779,7 @@ namespace FrmLogin.UserControls
             this.S42.TabIndex = 418;
             this.S42.Text = "2";
             this.S42.UseVisualStyleBackColor = true;
+            this.S42.Click += new System.EventHandler(this.S42_Click);
             // 
             // S41
             // 
@@ -778,6 +789,7 @@ namespace FrmLogin.UserControls
             this.S41.TabIndex = 417;
             this.S41.Text = "1";
             this.S41.UseVisualStyleBackColor = true;
+            this.S41.Click += new System.EventHandler(this.S41_Click);
             // 
             // S34
             // 
@@ -787,6 +799,7 @@ namespace FrmLogin.UserControls
             this.S34.TabIndex = 416;
             this.S34.Text = "4";
             this.S34.UseVisualStyleBackColor = true;
+            this.S34.Click += new System.EventHandler(this.S34_Click);
             // 
             // S33
             // 
@@ -796,6 +809,7 @@ namespace FrmLogin.UserControls
             this.S33.TabIndex = 415;
             this.S33.Text = "3";
             this.S33.UseVisualStyleBackColor = true;
+            this.S33.Click += new System.EventHandler(this.S33_Click);
             // 
             // S32
             // 
@@ -805,6 +819,7 @@ namespace FrmLogin.UserControls
             this.S32.TabIndex = 414;
             this.S32.Text = "2";
             this.S32.UseVisualStyleBackColor = true;
+            this.S32.Click += new System.EventHandler(this.S32_Click);
             // 
             // S31
             // 
@@ -814,6 +829,7 @@ namespace FrmLogin.UserControls
             this.S31.TabIndex = 413;
             this.S31.Text = "1";
             this.S31.UseVisualStyleBackColor = true;
+            this.S31.Click += new System.EventHandler(this.S31_Click);
             // 
             // S24
             // 
@@ -823,6 +839,7 @@ namespace FrmLogin.UserControls
             this.S24.TabIndex = 412;
             this.S24.Text = "4";
             this.S24.UseVisualStyleBackColor = true;
+            this.S24.Click += new System.EventHandler(this.S24_Click);
             // 
             // S23
             // 
@@ -832,6 +849,7 @@ namespace FrmLogin.UserControls
             this.S23.TabIndex = 411;
             this.S23.Text = "3";
             this.S23.UseVisualStyleBackColor = true;
+            this.S23.Click += new System.EventHandler(this.S23_Click);
             // 
             // S22
             // 
@@ -841,6 +859,7 @@ namespace FrmLogin.UserControls
             this.S22.TabIndex = 410;
             this.S22.Text = "2";
             this.S22.UseVisualStyleBackColor = true;
+            this.S22.Click += new System.EventHandler(this.S22_Click);
             // 
             // S21
             // 
@@ -850,6 +869,7 @@ namespace FrmLogin.UserControls
             this.S21.TabIndex = 409;
             this.S21.Text = "1";
             this.S21.UseVisualStyleBackColor = true;
+            this.S21.Click += new System.EventHandler(this.S21_Click);
             // 
             // S14
             // 
@@ -859,6 +879,7 @@ namespace FrmLogin.UserControls
             this.S14.TabIndex = 408;
             this.S14.Text = "4";
             this.S14.UseVisualStyleBackColor = true;
+            this.S14.Click += new System.EventHandler(this.S14_Click);
             // 
             // S13
             // 
@@ -868,6 +889,7 @@ namespace FrmLogin.UserControls
             this.S13.TabIndex = 407;
             this.S13.Text = "3";
             this.S13.UseVisualStyleBackColor = true;
+            this.S13.Click += new System.EventHandler(this.S13_Click);
             // 
             // S12
             // 
@@ -877,6 +899,7 @@ namespace FrmLogin.UserControls
             this.S12.TabIndex = 406;
             this.S12.Text = "2";
             this.S12.UseVisualStyleBackColor = true;
+            this.S12.Click += new System.EventHandler(this.S12_Click);
             // 
             // S11
             // 
@@ -886,6 +909,7 @@ namespace FrmLogin.UserControls
             this.S11.TabIndex = 405;
             this.S11.Text = "1";
             this.S11.UseVisualStyleBackColor = true;
+            this.S11.Click += new System.EventHandler(this.S11_Click);
             // 
             // E64
             // 
@@ -895,6 +919,7 @@ namespace FrmLogin.UserControls
             this.E64.TabIndex = 716;
             this.E64.Text = "4";
             this.E64.UseVisualStyleBackColor = true;
+            this.E64.Click += new System.EventHandler(this.E64_Click);
             // 
             // E63
             // 
@@ -904,6 +929,7 @@ namespace FrmLogin.UserControls
             this.E63.TabIndex = 715;
             this.E63.Text = "3";
             this.E63.UseVisualStyleBackColor = true;
+            this.E63.Click += new System.EventHandler(this.E63_Click);
             // 
             // E62
             // 
@@ -913,6 +939,7 @@ namespace FrmLogin.UserControls
             this.E62.TabIndex = 714;
             this.E62.Text = "2";
             this.E62.UseVisualStyleBackColor = true;
+            this.E62.Click += new System.EventHandler(this.E62_Click);
             // 
             // E61
             // 
@@ -922,6 +949,7 @@ namespace FrmLogin.UserControls
             this.E61.TabIndex = 713;
             this.E61.Text = "1";
             this.E61.UseVisualStyleBackColor = true;
+            this.E61.Click += new System.EventHandler(this.E61_Click);
             // 
             // E54
             // 
@@ -931,6 +959,7 @@ namespace FrmLogin.UserControls
             this.E54.TabIndex = 712;
             this.E54.Text = "4";
             this.E54.UseVisualStyleBackColor = true;
+            this.E54.Click += new System.EventHandler(this.E54_Click);
             // 
             // E53
             // 
@@ -940,6 +969,7 @@ namespace FrmLogin.UserControls
             this.E53.TabIndex = 711;
             this.E53.Text = "3";
             this.E53.UseVisualStyleBackColor = true;
+            this.E53.Click += new System.EventHandler(this.E53_Click);
             // 
             // E52
             // 
@@ -949,6 +979,7 @@ namespace FrmLogin.UserControls
             this.E52.TabIndex = 710;
             this.E52.Text = "2";
             this.E52.UseVisualStyleBackColor = true;
+            this.E52.Click += new System.EventHandler(this.E52_Click);
             // 
             // E51
             // 
@@ -958,6 +989,7 @@ namespace FrmLogin.UserControls
             this.E51.TabIndex = 709;
             this.E51.Text = "1";
             this.E51.UseVisualStyleBackColor = true;
+            this.E51.Click += new System.EventHandler(this.E51_Click);
             // 
             // E44
             // 
@@ -967,6 +999,7 @@ namespace FrmLogin.UserControls
             this.E44.TabIndex = 708;
             this.E44.Text = "4";
             this.E44.UseVisualStyleBackColor = true;
+            this.E44.Click += new System.EventHandler(this.E44_Click);
             // 
             // E43
             // 
@@ -976,6 +1009,7 @@ namespace FrmLogin.UserControls
             this.E43.TabIndex = 707;
             this.E43.Text = "3";
             this.E43.UseVisualStyleBackColor = true;
+            this.E43.Click += new System.EventHandler(this.E43_Click);
             // 
             // E42
             // 
@@ -985,6 +1019,7 @@ namespace FrmLogin.UserControls
             this.E42.TabIndex = 706;
             this.E42.Text = "2";
             this.E42.UseVisualStyleBackColor = true;
+            this.E42.Click += new System.EventHandler(this.E42_Click);
             // 
             // E41
             // 
@@ -994,6 +1029,7 @@ namespace FrmLogin.UserControls
             this.E41.TabIndex = 705;
             this.E41.Text = "1";
             this.E41.UseVisualStyleBackColor = true;
+            this.E41.Click += new System.EventHandler(this.E41_Click);
             // 
             // E34
             // 
@@ -1003,6 +1039,7 @@ namespace FrmLogin.UserControls
             this.E34.TabIndex = 704;
             this.E34.Text = "4";
             this.E34.UseVisualStyleBackColor = true;
+            this.E34.Click += new System.EventHandler(this.E34_Click);
             // 
             // E33
             // 
@@ -1012,6 +1049,7 @@ namespace FrmLogin.UserControls
             this.E33.TabIndex = 703;
             this.E33.Text = "3";
             this.E33.UseVisualStyleBackColor = true;
+            this.E33.Click += new System.EventHandler(this.E33_Click);
             // 
             // E32
             // 
@@ -1021,6 +1059,7 @@ namespace FrmLogin.UserControls
             this.E32.TabIndex = 702;
             this.E32.Text = "2";
             this.E32.UseVisualStyleBackColor = true;
+            this.E32.Click += new System.EventHandler(this.E32_Click);
             // 
             // E31
             // 
@@ -1030,6 +1069,7 @@ namespace FrmLogin.UserControls
             this.E31.TabIndex = 701;
             this.E31.Text = "1";
             this.E31.UseVisualStyleBackColor = true;
+            this.E31.Click += new System.EventHandler(this.E31_Click);
             // 
             // E24
             // 
@@ -1039,6 +1079,7 @@ namespace FrmLogin.UserControls
             this.E24.TabIndex = 700;
             this.E24.Text = "4";
             this.E24.UseVisualStyleBackColor = true;
+            this.E24.Click += new System.EventHandler(this.E24_Click);
             // 
             // E23
             // 
@@ -1048,6 +1089,7 @@ namespace FrmLogin.UserControls
             this.E23.TabIndex = 699;
             this.E23.Text = "3";
             this.E23.UseVisualStyleBackColor = true;
+            this.E23.Click += new System.EventHandler(this.E23_Click);
             // 
             // E22
             // 
@@ -1057,6 +1099,7 @@ namespace FrmLogin.UserControls
             this.E22.TabIndex = 698;
             this.E22.Text = "2";
             this.E22.UseVisualStyleBackColor = true;
+            this.E22.Click += new System.EventHandler(this.E22_Click);
             // 
             // E21
             // 
@@ -1066,6 +1109,7 @@ namespace FrmLogin.UserControls
             this.E21.TabIndex = 697;
             this.E21.Text = "1";
             this.E21.UseVisualStyleBackColor = true;
+            this.E21.Click += new System.EventHandler(this.E21_Click);
             // 
             // E14
             // 
@@ -1075,6 +1119,7 @@ namespace FrmLogin.UserControls
             this.E14.TabIndex = 696;
             this.E14.Text = "4";
             this.E14.UseVisualStyleBackColor = true;
+            this.E14.Click += new System.EventHandler(this.E14_Click);
             // 
             // E13
             // 
@@ -1084,6 +1129,7 @@ namespace FrmLogin.UserControls
             this.E13.TabIndex = 695;
             this.E13.Text = "3";
             this.E13.UseVisualStyleBackColor = true;
+            this.E13.Click += new System.EventHandler(this.E13_Click);
             // 
             // E12
             // 
@@ -1093,6 +1139,7 @@ namespace FrmLogin.UserControls
             this.E12.TabIndex = 694;
             this.E12.Text = "2";
             this.E12.UseVisualStyleBackColor = true;
+            this.E12.Click += new System.EventHandler(this.E12_Click);
             // 
             // E11
             // 
@@ -1102,6 +1149,7 @@ namespace FrmLogin.UserControls
             this.E11.TabIndex = 693;
             this.E11.Text = "1";
             this.E11.UseVisualStyleBackColor = true;
+            this.E11.Click += new System.EventHandler(this.E11_Click);
             // 
             // D64
             // 
@@ -1111,6 +1159,7 @@ namespace FrmLogin.UserControls
             this.D64.TabIndex = 692;
             this.D64.Text = "4";
             this.D64.UseVisualStyleBackColor = true;
+            this.D64.Click += new System.EventHandler(this.D64_Click);
             // 
             // D63
             // 
@@ -1120,6 +1169,7 @@ namespace FrmLogin.UserControls
             this.D63.TabIndex = 691;
             this.D63.Text = "3";
             this.D63.UseVisualStyleBackColor = true;
+            this.D63.Click += new System.EventHandler(this.D63_Click);
             // 
             // D62
             // 
@@ -1129,6 +1179,7 @@ namespace FrmLogin.UserControls
             this.D62.TabIndex = 690;
             this.D62.Text = "2";
             this.D62.UseVisualStyleBackColor = true;
+            this.D62.Click += new System.EventHandler(this.D62_Click);
             // 
             // D61
             // 
@@ -1138,6 +1189,7 @@ namespace FrmLogin.UserControls
             this.D61.TabIndex = 689;
             this.D61.Text = "1";
             this.D61.UseVisualStyleBackColor = true;
+            this.D61.Click += new System.EventHandler(this.D61_Click);
             // 
             // D54
             // 
@@ -1147,6 +1199,7 @@ namespace FrmLogin.UserControls
             this.D54.TabIndex = 688;
             this.D54.Text = "4";
             this.D54.UseVisualStyleBackColor = true;
+            this.D54.Click += new System.EventHandler(this.D54_Click);
             // 
             // D53
             // 
@@ -1156,6 +1209,7 @@ namespace FrmLogin.UserControls
             this.D53.TabIndex = 687;
             this.D53.Text = "3";
             this.D53.UseVisualStyleBackColor = true;
+            this.D53.Click += new System.EventHandler(this.D53_Click);
             // 
             // D52
             // 
@@ -1165,6 +1219,7 @@ namespace FrmLogin.UserControls
             this.D52.TabIndex = 686;
             this.D52.Text = "2";
             this.D52.UseVisualStyleBackColor = true;
+            this.D52.Click += new System.EventHandler(this.D52_Click);
             // 
             // D51
             // 
@@ -1174,6 +1229,7 @@ namespace FrmLogin.UserControls
             this.D51.TabIndex = 685;
             this.D51.Text = "1";
             this.D51.UseVisualStyleBackColor = true;
+            this.D51.Click += new System.EventHandler(this.D51_Click);
             // 
             // D44
             // 
@@ -1183,6 +1239,7 @@ namespace FrmLogin.UserControls
             this.D44.TabIndex = 684;
             this.D44.Text = "4";
             this.D44.UseVisualStyleBackColor = true;
+            this.D44.Click += new System.EventHandler(this.D44_Click);
             // 
             // D43
             // 
@@ -1192,6 +1249,7 @@ namespace FrmLogin.UserControls
             this.D43.TabIndex = 683;
             this.D43.Text = "3";
             this.D43.UseVisualStyleBackColor = true;
+            this.D43.Click += new System.EventHandler(this.D43_Click);
             // 
             // D42
             // 
@@ -1201,6 +1259,7 @@ namespace FrmLogin.UserControls
             this.D42.TabIndex = 682;
             this.D42.Text = "2";
             this.D42.UseVisualStyleBackColor = true;
+            this.D42.Click += new System.EventHandler(this.D42_Click);
             // 
             // D41
             // 
@@ -1210,6 +1269,7 @@ namespace FrmLogin.UserControls
             this.D41.TabIndex = 681;
             this.D41.Text = "1";
             this.D41.UseVisualStyleBackColor = true;
+            this.D41.Click += new System.EventHandler(this.D41_Click);
             // 
             // D34
             // 
@@ -1219,6 +1279,7 @@ namespace FrmLogin.UserControls
             this.D34.TabIndex = 680;
             this.D34.Text = "4";
             this.D34.UseVisualStyleBackColor = true;
+            this.D34.Click += new System.EventHandler(this.D34_Click);
             // 
             // D33
             // 
@@ -1228,6 +1289,7 @@ namespace FrmLogin.UserControls
             this.D33.TabIndex = 679;
             this.D33.Text = "3";
             this.D33.UseVisualStyleBackColor = true;
+            this.D33.Click += new System.EventHandler(this.D33_Click);
             // 
             // D32
             // 
@@ -1237,6 +1299,7 @@ namespace FrmLogin.UserControls
             this.D32.TabIndex = 678;
             this.D32.Text = "2";
             this.D32.UseVisualStyleBackColor = true;
+            this.D32.Click += new System.EventHandler(this.D32_Click);
             // 
             // D31
             // 
@@ -1246,6 +1309,7 @@ namespace FrmLogin.UserControls
             this.D31.TabIndex = 677;
             this.D31.Text = "1";
             this.D31.UseVisualStyleBackColor = true;
+            this.D31.Click += new System.EventHandler(this.D31_Click);
             // 
             // D24
             // 
@@ -1255,6 +1319,7 @@ namespace FrmLogin.UserControls
             this.D24.TabIndex = 676;
             this.D24.Text = "4";
             this.D24.UseVisualStyleBackColor = true;
+            this.D24.Click += new System.EventHandler(this.D24_Click);
             // 
             // D23
             // 
@@ -1264,6 +1329,7 @@ namespace FrmLogin.UserControls
             this.D23.TabIndex = 675;
             this.D23.Text = "3";
             this.D23.UseVisualStyleBackColor = true;
+            this.D23.Click += new System.EventHandler(this.D23_Click);
             // 
             // D22
             // 
@@ -1273,6 +1339,7 @@ namespace FrmLogin.UserControls
             this.D22.TabIndex = 674;
             this.D22.Text = "2";
             this.D22.UseVisualStyleBackColor = true;
+            this.D22.Click += new System.EventHandler(this.D22_Click);
             // 
             // D21
             // 
@@ -1282,6 +1349,7 @@ namespace FrmLogin.UserControls
             this.D21.TabIndex = 673;
             this.D21.Text = "1";
             this.D21.UseVisualStyleBackColor = true;
+            this.D21.Click += new System.EventHandler(this.D21_Click);
             // 
             // D14
             // 
@@ -1291,6 +1359,7 @@ namespace FrmLogin.UserControls
             this.D14.TabIndex = 672;
             this.D14.Text = "4";
             this.D14.UseVisualStyleBackColor = true;
+            this.D14.Click += new System.EventHandler(this.D14_Click);
             // 
             // D13
             // 
@@ -1300,6 +1369,7 @@ namespace FrmLogin.UserControls
             this.D13.TabIndex = 671;
             this.D13.Text = "3";
             this.D13.UseVisualStyleBackColor = true;
+            this.D13.Click += new System.EventHandler(this.D13_Click);
             // 
             // D12
             // 
@@ -1309,6 +1379,7 @@ namespace FrmLogin.UserControls
             this.D12.TabIndex = 670;
             this.D12.Text = "2";
             this.D12.UseVisualStyleBackColor = true;
+            this.D12.Click += new System.EventHandler(this.D12_Click);
             // 
             // D11
             // 
@@ -1318,6 +1389,7 @@ namespace FrmLogin.UserControls
             this.D11.TabIndex = 669;
             this.D11.Text = "1";
             this.D11.UseVisualStyleBackColor = true;
+            this.D11.Click += new System.EventHandler(this.D11_Click);
             // 
             // C64
             // 
@@ -1327,6 +1399,7 @@ namespace FrmLogin.UserControls
             this.C64.TabIndex = 668;
             this.C64.Text = "4";
             this.C64.UseVisualStyleBackColor = true;
+            this.C64.Click += new System.EventHandler(this.C64_Click);
             // 
             // C63
             // 
@@ -1336,6 +1409,7 @@ namespace FrmLogin.UserControls
             this.C63.TabIndex = 667;
             this.C63.Text = "3";
             this.C63.UseVisualStyleBackColor = true;
+            this.C63.Click += new System.EventHandler(this.C63_Click);
             // 
             // C62
             // 
@@ -1345,6 +1419,7 @@ namespace FrmLogin.UserControls
             this.C62.TabIndex = 666;
             this.C62.Text = "2";
             this.C62.UseVisualStyleBackColor = true;
+            this.C62.Click += new System.EventHandler(this.C62_Click);
             // 
             // C61
             // 
@@ -1354,6 +1429,7 @@ namespace FrmLogin.UserControls
             this.C61.TabIndex = 665;
             this.C61.Text = "1";
             this.C61.UseVisualStyleBackColor = true;
+            this.C61.Click += new System.EventHandler(this.C61_Click);
             // 
             // C54
             // 
@@ -1363,6 +1439,7 @@ namespace FrmLogin.UserControls
             this.C54.TabIndex = 664;
             this.C54.Text = "4";
             this.C54.UseVisualStyleBackColor = true;
+            this.C54.Click += new System.EventHandler(this.C54_Click);
             // 
             // C53
             // 
@@ -1372,6 +1449,7 @@ namespace FrmLogin.UserControls
             this.C53.TabIndex = 663;
             this.C53.Text = "3";
             this.C53.UseVisualStyleBackColor = true;
+            this.C53.Click += new System.EventHandler(this.C53_Click);
             // 
             // C52
             // 
@@ -1381,6 +1459,7 @@ namespace FrmLogin.UserControls
             this.C52.TabIndex = 662;
             this.C52.Text = "2";
             this.C52.UseVisualStyleBackColor = true;
+            this.C52.Click += new System.EventHandler(this.C52_Click);
             // 
             // C51
             // 
@@ -1390,6 +1469,7 @@ namespace FrmLogin.UserControls
             this.C51.TabIndex = 661;
             this.C51.Text = "1";
             this.C51.UseVisualStyleBackColor = true;
+            this.C51.Click += new System.EventHandler(this.C51_Click);
             // 
             // C44
             // 
@@ -1399,6 +1479,7 @@ namespace FrmLogin.UserControls
             this.C44.TabIndex = 660;
             this.C44.Text = "4";
             this.C44.UseVisualStyleBackColor = true;
+            this.C44.Click += new System.EventHandler(this.C44_Click);
             // 
             // C43
             // 
@@ -1408,6 +1489,7 @@ namespace FrmLogin.UserControls
             this.C43.TabIndex = 659;
             this.C43.Text = "3";
             this.C43.UseVisualStyleBackColor = true;
+            this.C43.Click += new System.EventHandler(this.C43_Click);
             // 
             // C42
             // 
@@ -1417,6 +1499,7 @@ namespace FrmLogin.UserControls
             this.C42.TabIndex = 658;
             this.C42.Text = "2";
             this.C42.UseVisualStyleBackColor = true;
+            this.C42.Click += new System.EventHandler(this.C42_Click);
             // 
             // C41
             // 
@@ -1426,6 +1509,7 @@ namespace FrmLogin.UserControls
             this.C41.TabIndex = 657;
             this.C41.Text = "1";
             this.C41.UseVisualStyleBackColor = true;
+            this.C41.Click += new System.EventHandler(this.C41_Click);
             // 
             // C34
             // 
@@ -1435,6 +1519,7 @@ namespace FrmLogin.UserControls
             this.C34.TabIndex = 656;
             this.C34.Text = "4";
             this.C34.UseVisualStyleBackColor = true;
+            this.C34.Click += new System.EventHandler(this.C34_Click);
             // 
             // C33
             // 
@@ -1444,6 +1529,7 @@ namespace FrmLogin.UserControls
             this.C33.TabIndex = 655;
             this.C33.Text = "3";
             this.C33.UseVisualStyleBackColor = true;
+            this.C33.Click += new System.EventHandler(this.C33_Click);
             // 
             // C32
             // 
@@ -1453,6 +1539,7 @@ namespace FrmLogin.UserControls
             this.C32.TabIndex = 654;
             this.C32.Text = "2";
             this.C32.UseVisualStyleBackColor = true;
+            this.C32.Click += new System.EventHandler(this.C32_Click);
             // 
             // C31
             // 
@@ -1462,6 +1549,7 @@ namespace FrmLogin.UserControls
             this.C31.TabIndex = 653;
             this.C31.Text = "1";
             this.C31.UseVisualStyleBackColor = true;
+            this.C31.Click += new System.EventHandler(this.C31_Click);
             // 
             // C24
             // 
@@ -1471,6 +1559,7 @@ namespace FrmLogin.UserControls
             this.C24.TabIndex = 652;
             this.C24.Text = "4";
             this.C24.UseVisualStyleBackColor = true;
+            this.C24.Click += new System.EventHandler(this.C24_Click);
             // 
             // C23
             // 
@@ -1480,6 +1569,7 @@ namespace FrmLogin.UserControls
             this.C23.TabIndex = 651;
             this.C23.Text = "3";
             this.C23.UseVisualStyleBackColor = true;
+            this.C23.Click += new System.EventHandler(this.C23_Click);
             // 
             // C22
             // 
@@ -1489,6 +1579,7 @@ namespace FrmLogin.UserControls
             this.C22.TabIndex = 650;
             this.C22.Text = "2";
             this.C22.UseVisualStyleBackColor = true;
+            this.C22.Click += new System.EventHandler(this.C22_Click);
             // 
             // C21
             // 
@@ -1498,6 +1589,7 @@ namespace FrmLogin.UserControls
             this.C21.TabIndex = 649;
             this.C21.Text = "1";
             this.C21.UseVisualStyleBackColor = true;
+            this.C21.Click += new System.EventHandler(this.C21_Click);
             // 
             // C14
             // 
@@ -1507,6 +1599,7 @@ namespace FrmLogin.UserControls
             this.C14.TabIndex = 648;
             this.C14.Text = "4";
             this.C14.UseVisualStyleBackColor = true;
+            this.C14.Click += new System.EventHandler(this.C14_Click);
             // 
             // C13
             // 
@@ -1516,6 +1609,7 @@ namespace FrmLogin.UserControls
             this.C13.TabIndex = 647;
             this.C13.Text = "3";
             this.C13.UseVisualStyleBackColor = true;
+            this.C13.Click += new System.EventHandler(this.C13_Click);
             // 
             // C12
             // 
@@ -1525,6 +1619,7 @@ namespace FrmLogin.UserControls
             this.C12.TabIndex = 646;
             this.C12.Text = "2";
             this.C12.UseVisualStyleBackColor = true;
+            this.C12.Click += new System.EventHandler(this.C12_Click);
             // 
             // C11
             // 
@@ -1534,6 +1629,7 @@ namespace FrmLogin.UserControls
             this.C11.TabIndex = 645;
             this.C11.Text = "1";
             this.C11.UseVisualStyleBackColor = true;
+            this.C11.Click += new System.EventHandler(this.C11_Click);
             // 
             // B64
             // 
@@ -1783,6 +1879,7 @@ namespace FrmLogin.UserControls
             this.S04.TabIndex = 720;
             this.S04.Text = "4";
             this.S04.UseVisualStyleBackColor = true;
+            this.S04.Click += new System.EventHandler(this.S04_Click);
             // 
             // S03
             // 
@@ -1792,6 +1889,7 @@ namespace FrmLogin.UserControls
             this.S03.TabIndex = 719;
             this.S03.Text = "3";
             this.S03.UseVisualStyleBackColor = true;
+            this.S03.Click += new System.EventHandler(this.S03_Click);
             // 
             // S02
             // 
@@ -1801,6 +1899,7 @@ namespace FrmLogin.UserControls
             this.S02.TabIndex = 718;
             this.S02.Text = "2";
             this.S02.UseVisualStyleBackColor = true;
+            this.S02.Click += new System.EventHandler(this.S02_Click);
             // 
             // S01
             // 
@@ -1810,6 +1909,7 @@ namespace FrmLogin.UserControls
             this.S01.TabIndex = 717;
             this.S01.Text = "1";
             this.S01.UseVisualStyleBackColor = true;
+            this.S01.Click += new System.EventHandler(this.S01_Click);
             // 
             // A04
             // 
@@ -2099,6 +2199,7 @@ namespace FrmLogin.UserControls
             this.G64.TabIndex = 796;
             this.G64.Text = "4";
             this.G64.UseVisualStyleBackColor = true;
+            this.G64.Click += new System.EventHandler(this.G64_Click);
             // 
             // G63
             // 
@@ -2108,6 +2209,7 @@ namespace FrmLogin.UserControls
             this.G63.TabIndex = 795;
             this.G63.Text = "3";
             this.G63.UseVisualStyleBackColor = true;
+            this.G63.Click += new System.EventHandler(this.G63_Click);
             // 
             // G62
             // 
@@ -2117,6 +2219,7 @@ namespace FrmLogin.UserControls
             this.G62.TabIndex = 794;
             this.G62.Text = "2";
             this.G62.UseVisualStyleBackColor = true;
+            this.G62.Click += new System.EventHandler(this.G62_Click);
             // 
             // G61
             // 
@@ -2126,6 +2229,7 @@ namespace FrmLogin.UserControls
             this.G61.TabIndex = 793;
             this.G61.Text = "1";
             this.G61.UseVisualStyleBackColor = true;
+            this.G61.Click += new System.EventHandler(this.G61_Click);
             // 
             // G54
             // 
@@ -2135,6 +2239,7 @@ namespace FrmLogin.UserControls
             this.G54.TabIndex = 792;
             this.G54.Text = "4";
             this.G54.UseVisualStyleBackColor = true;
+            this.G54.Click += new System.EventHandler(this.G54_Click);
             // 
             // G53
             // 
@@ -2144,6 +2249,7 @@ namespace FrmLogin.UserControls
             this.G53.TabIndex = 791;
             this.G53.Text = "3";
             this.G53.UseVisualStyleBackColor = true;
+            this.G53.Click += new System.EventHandler(this.G53_Click);
             // 
             // G52
             // 
@@ -2153,6 +2259,7 @@ namespace FrmLogin.UserControls
             this.G52.TabIndex = 790;
             this.G52.Text = "2";
             this.G52.UseVisualStyleBackColor = true;
+            this.G52.Click += new System.EventHandler(this.G52_Click);
             // 
             // G51
             // 
@@ -2162,6 +2269,7 @@ namespace FrmLogin.UserControls
             this.G51.TabIndex = 789;
             this.G51.Text = "1";
             this.G51.UseVisualStyleBackColor = true;
+            this.G51.Click += new System.EventHandler(this.G51_Click);
             // 
             // G44
             // 
@@ -2171,6 +2279,7 @@ namespace FrmLogin.UserControls
             this.G44.TabIndex = 788;
             this.G44.Text = "4";
             this.G44.UseVisualStyleBackColor = true;
+            this.G44.Click += new System.EventHandler(this.G44_Click);
             // 
             // G43
             // 
@@ -2180,6 +2289,7 @@ namespace FrmLogin.UserControls
             this.G43.TabIndex = 787;
             this.G43.Text = "3";
             this.G43.UseVisualStyleBackColor = true;
+            this.G43.Click += new System.EventHandler(this.G43_Click);
             // 
             // G42
             // 
@@ -2189,6 +2299,7 @@ namespace FrmLogin.UserControls
             this.G42.TabIndex = 786;
             this.G42.Text = "2";
             this.G42.UseVisualStyleBackColor = true;
+            this.G42.Click += new System.EventHandler(this.G42_Click);
             // 
             // G41
             // 
@@ -2198,6 +2309,7 @@ namespace FrmLogin.UserControls
             this.G41.TabIndex = 785;
             this.G41.Text = "1";
             this.G41.UseVisualStyleBackColor = true;
+            this.G41.Click += new System.EventHandler(this.G41_Click);
             // 
             // G34
             // 
@@ -2207,6 +2319,7 @@ namespace FrmLogin.UserControls
             this.G34.TabIndex = 784;
             this.G34.Text = "4";
             this.G34.UseVisualStyleBackColor = true;
+            this.G34.Click += new System.EventHandler(this.G34_Click);
             // 
             // G33
             // 
@@ -2216,6 +2329,7 @@ namespace FrmLogin.UserControls
             this.G33.TabIndex = 783;
             this.G33.Text = "3";
             this.G33.UseVisualStyleBackColor = true;
+            this.G33.Click += new System.EventHandler(this.G33_Click);
             // 
             // G32
             // 
@@ -2225,6 +2339,7 @@ namespace FrmLogin.UserControls
             this.G32.TabIndex = 782;
             this.G32.Text = "2";
             this.G32.UseVisualStyleBackColor = true;
+            this.G32.Click += new System.EventHandler(this.G32_Click);
             // 
             // G31
             // 
@@ -2234,6 +2349,7 @@ namespace FrmLogin.UserControls
             this.G31.TabIndex = 781;
             this.G31.Text = "1";
             this.G31.UseVisualStyleBackColor = true;
+            this.G31.Click += new System.EventHandler(this.G31_Click);
             // 
             // G24
             // 
@@ -2243,6 +2359,7 @@ namespace FrmLogin.UserControls
             this.G24.TabIndex = 780;
             this.G24.Text = "4";
             this.G24.UseVisualStyleBackColor = true;
+            this.G24.Click += new System.EventHandler(this.G24_Click);
             // 
             // G23
             // 
@@ -2252,6 +2369,7 @@ namespace FrmLogin.UserControls
             this.G23.TabIndex = 779;
             this.G23.Text = "3";
             this.G23.UseVisualStyleBackColor = true;
+            this.G23.Click += new System.EventHandler(this.G23_Click);
             // 
             // G22
             // 
@@ -2261,6 +2379,7 @@ namespace FrmLogin.UserControls
             this.G22.TabIndex = 778;
             this.G22.Text = "2";
             this.G22.UseVisualStyleBackColor = true;
+            this.G22.Click += new System.EventHandler(this.G22_Click);
             // 
             // G21
             // 
@@ -2270,6 +2389,7 @@ namespace FrmLogin.UserControls
             this.G21.TabIndex = 777;
             this.G21.Text = "1";
             this.G21.UseVisualStyleBackColor = true;
+            this.G21.Click += new System.EventHandler(this.G21_Click);
             // 
             // G14
             // 
@@ -2279,6 +2399,7 @@ namespace FrmLogin.UserControls
             this.G14.TabIndex = 776;
             this.G14.Text = "4";
             this.G14.UseVisualStyleBackColor = true;
+            this.G14.Click += new System.EventHandler(this.G14_Click);
             // 
             // G13
             // 
@@ -2288,6 +2409,7 @@ namespace FrmLogin.UserControls
             this.G13.TabIndex = 775;
             this.G13.Text = "3";
             this.G13.UseVisualStyleBackColor = true;
+            this.G13.Click += new System.EventHandler(this.G13_Click);
             // 
             // G12
             // 
@@ -2297,6 +2419,7 @@ namespace FrmLogin.UserControls
             this.G12.TabIndex = 774;
             this.G12.Text = "2";
             this.G12.UseVisualStyleBackColor = true;
+            this.G12.Click += new System.EventHandler(this.G12_Click);
             // 
             // G11
             // 
@@ -2306,6 +2429,7 @@ namespace FrmLogin.UserControls
             this.G11.TabIndex = 773;
             this.G11.Text = "1";
             this.G11.UseVisualStyleBackColor = true;
+            this.G11.Click += new System.EventHandler(this.G11_Click);
             // 
             // F64
             // 
@@ -2315,6 +2439,7 @@ namespace FrmLogin.UserControls
             this.F64.TabIndex = 772;
             this.F64.Text = "4";
             this.F64.UseVisualStyleBackColor = true;
+            this.F64.Click += new System.EventHandler(this.F64_Click);
             // 
             // F63
             // 
@@ -2324,6 +2449,7 @@ namespace FrmLogin.UserControls
             this.F63.TabIndex = 771;
             this.F63.Text = "3";
             this.F63.UseVisualStyleBackColor = true;
+            this.F63.Click += new System.EventHandler(this.F63_Click);
             // 
             // F62
             // 
@@ -2333,6 +2459,7 @@ namespace FrmLogin.UserControls
             this.F62.TabIndex = 770;
             this.F62.Text = "2";
             this.F62.UseVisualStyleBackColor = true;
+            this.F62.Click += new System.EventHandler(this.F62_Click);
             // 
             // F61
             // 
@@ -2342,6 +2469,7 @@ namespace FrmLogin.UserControls
             this.F61.TabIndex = 769;
             this.F61.Text = "1";
             this.F61.UseVisualStyleBackColor = true;
+            this.F61.Click += new System.EventHandler(this.F61_Click);
             // 
             // F54
             // 
@@ -2351,6 +2479,7 @@ namespace FrmLogin.UserControls
             this.F54.TabIndex = 768;
             this.F54.Text = "4";
             this.F54.UseVisualStyleBackColor = true;
+            this.F54.Click += new System.EventHandler(this.F54_Click);
             // 
             // F53
             // 
@@ -2360,6 +2489,7 @@ namespace FrmLogin.UserControls
             this.F53.TabIndex = 767;
             this.F53.Text = "3";
             this.F53.UseVisualStyleBackColor = true;
+            this.F53.Click += new System.EventHandler(this.F53_Click);
             // 
             // F52
             // 
@@ -2369,6 +2499,7 @@ namespace FrmLogin.UserControls
             this.F52.TabIndex = 766;
             this.F52.Text = "2";
             this.F52.UseVisualStyleBackColor = true;
+            this.F52.Click += new System.EventHandler(this.F52_Click);
             // 
             // F51
             // 
@@ -2378,6 +2509,7 @@ namespace FrmLogin.UserControls
             this.F51.TabIndex = 765;
             this.F51.Text = "1";
             this.F51.UseVisualStyleBackColor = true;
+            this.F51.Click += new System.EventHandler(this.F51_Click);
             // 
             // F44
             // 
@@ -2387,6 +2519,7 @@ namespace FrmLogin.UserControls
             this.F44.TabIndex = 764;
             this.F44.Text = "4";
             this.F44.UseVisualStyleBackColor = true;
+            this.F44.Click += new System.EventHandler(this.F44_Click);
             // 
             // F43
             // 
@@ -2396,6 +2529,7 @@ namespace FrmLogin.UserControls
             this.F43.TabIndex = 763;
             this.F43.Text = "3";
             this.F43.UseVisualStyleBackColor = true;
+            this.F43.Click += new System.EventHandler(this.F43_Click);
             // 
             // F42
             // 
@@ -2405,6 +2539,7 @@ namespace FrmLogin.UserControls
             this.F42.TabIndex = 762;
             this.F42.Text = "2";
             this.F42.UseVisualStyleBackColor = true;
+            this.F42.Click += new System.EventHandler(this.F42_Click);
             // 
             // F41
             // 
@@ -2414,6 +2549,7 @@ namespace FrmLogin.UserControls
             this.F41.TabIndex = 761;
             this.F41.Text = "1";
             this.F41.UseVisualStyleBackColor = true;
+            this.F41.Click += new System.EventHandler(this.F41_Click);
             // 
             // F34
             // 
@@ -2423,6 +2559,7 @@ namespace FrmLogin.UserControls
             this.F34.TabIndex = 760;
             this.F34.Text = "4";
             this.F34.UseVisualStyleBackColor = true;
+            this.F34.Click += new System.EventHandler(this.F34_Click);
             // 
             // F33
             // 
@@ -2432,6 +2569,7 @@ namespace FrmLogin.UserControls
             this.F33.TabIndex = 759;
             this.F33.Text = "3";
             this.F33.UseVisualStyleBackColor = true;
+            this.F33.Click += new System.EventHandler(this.F33_Click);
             // 
             // F32
             // 
@@ -2441,6 +2579,7 @@ namespace FrmLogin.UserControls
             this.F32.TabIndex = 758;
             this.F32.Text = "2";
             this.F32.UseVisualStyleBackColor = true;
+            this.F32.Click += new System.EventHandler(this.F32_Click);
             // 
             // F31
             // 
@@ -2450,6 +2589,7 @@ namespace FrmLogin.UserControls
             this.F31.TabIndex = 757;
             this.F31.Text = "1";
             this.F31.UseVisualStyleBackColor = true;
+            this.F31.Click += new System.EventHandler(this.F31_Click);
             // 
             // F24
             // 
@@ -2459,6 +2599,7 @@ namespace FrmLogin.UserControls
             this.F24.TabIndex = 756;
             this.F24.Text = "4";
             this.F24.UseVisualStyleBackColor = true;
+            this.F24.Click += new System.EventHandler(this.F24_Click);
             // 
             // F23
             // 
@@ -2468,6 +2609,7 @@ namespace FrmLogin.UserControls
             this.F23.TabIndex = 755;
             this.F23.Text = "3";
             this.F23.UseVisualStyleBackColor = true;
+            this.F23.Click += new System.EventHandler(this.F23_Click);
             // 
             // F22
             // 
@@ -2477,6 +2619,7 @@ namespace FrmLogin.UserControls
             this.F22.TabIndex = 754;
             this.F22.Text = "2";
             this.F22.UseVisualStyleBackColor = true;
+            this.F22.Click += new System.EventHandler(this.F22_Click);
             // 
             // F21
             // 
@@ -2486,6 +2629,7 @@ namespace FrmLogin.UserControls
             this.F21.TabIndex = 753;
             this.F21.Text = "1";
             this.F21.UseVisualStyleBackColor = true;
+            this.F21.Click += new System.EventHandler(this.F21_Click);
             // 
             // F14
             // 
@@ -2495,6 +2639,7 @@ namespace FrmLogin.UserControls
             this.F14.TabIndex = 752;
             this.F14.Text = "4";
             this.F14.UseVisualStyleBackColor = true;
+            this.F14.Click += new System.EventHandler(this.F14_Click);
             // 
             // F13
             // 
@@ -2504,6 +2649,7 @@ namespace FrmLogin.UserControls
             this.F13.TabIndex = 751;
             this.F13.Text = "3";
             this.F13.UseVisualStyleBackColor = true;
+            this.F13.Click += new System.EventHandler(this.F13_Click);
             // 
             // F12
             // 
@@ -2513,6 +2659,7 @@ namespace FrmLogin.UserControls
             this.F12.TabIndex = 750;
             this.F12.Text = "2";
             this.F12.UseVisualStyleBackColor = true;
+            this.F12.Click += new System.EventHandler(this.F12_Click);
             // 
             // F11
             // 
@@ -2522,6 +2669,7 @@ namespace FrmLogin.UserControls
             this.F11.TabIndex = 749;
             this.F11.Text = "1";
             this.F11.UseVisualStyleBackColor = true;
+            this.F11.Click += new System.EventHandler(this.F11_Click);
             // 
             // I64
             // 
@@ -2531,6 +2679,7 @@ namespace FrmLogin.UserControls
             this.I64.TabIndex = 844;
             this.I64.Text = "4";
             this.I64.UseVisualStyleBackColor = true;
+            this.I64.Click += new System.EventHandler(this.I64_Click);
             // 
             // I63
             // 
@@ -2540,6 +2689,7 @@ namespace FrmLogin.UserControls
             this.I63.TabIndex = 843;
             this.I63.Text = "3";
             this.I63.UseVisualStyleBackColor = true;
+            this.I63.Click += new System.EventHandler(this.I63_Click);
             // 
             // I62
             // 
@@ -2549,6 +2699,7 @@ namespace FrmLogin.UserControls
             this.I62.TabIndex = 842;
             this.I62.Text = "2";
             this.I62.UseVisualStyleBackColor = true;
+            this.I62.Click += new System.EventHandler(this.I62_Click);
             // 
             // I61
             // 
@@ -2558,6 +2709,7 @@ namespace FrmLogin.UserControls
             this.I61.TabIndex = 841;
             this.I61.Text = "1";
             this.I61.UseVisualStyleBackColor = true;
+            this.I61.Click += new System.EventHandler(this.I61_Click);
             // 
             // I54
             // 
@@ -2567,6 +2719,7 @@ namespace FrmLogin.UserControls
             this.I54.TabIndex = 840;
             this.I54.Text = "4";
             this.I54.UseVisualStyleBackColor = true;
+            this.I54.Click += new System.EventHandler(this.I54_Click);
             // 
             // I53
             // 
@@ -2576,6 +2729,7 @@ namespace FrmLogin.UserControls
             this.I53.TabIndex = 839;
             this.I53.Text = "3";
             this.I53.UseVisualStyleBackColor = true;
+            this.I53.Click += new System.EventHandler(this.I53_Click);
             // 
             // I52
             // 
@@ -2585,6 +2739,7 @@ namespace FrmLogin.UserControls
             this.I52.TabIndex = 838;
             this.I52.Text = "2";
             this.I52.UseVisualStyleBackColor = true;
+            this.I52.Click += new System.EventHandler(this.I52_Click);
             // 
             // I51
             // 
@@ -2594,6 +2749,7 @@ namespace FrmLogin.UserControls
             this.I51.TabIndex = 837;
             this.I51.Text = "1";
             this.I51.UseVisualStyleBackColor = true;
+            this.I51.Click += new System.EventHandler(this.I51_Click);
             // 
             // I44
             // 
@@ -2603,6 +2759,7 @@ namespace FrmLogin.UserControls
             this.I44.TabIndex = 836;
             this.I44.Text = "4";
             this.I44.UseVisualStyleBackColor = true;
+            this.I44.Click += new System.EventHandler(this.I44_Click);
             // 
             // I43
             // 
@@ -2612,6 +2769,7 @@ namespace FrmLogin.UserControls
             this.I43.TabIndex = 835;
             this.I43.Text = "3";
             this.I43.UseVisualStyleBackColor = true;
+            this.I43.Click += new System.EventHandler(this.I43_Click);
             // 
             // I42
             // 
@@ -2621,6 +2779,7 @@ namespace FrmLogin.UserControls
             this.I42.TabIndex = 834;
             this.I42.Text = "2";
             this.I42.UseVisualStyleBackColor = true;
+            this.I42.Click += new System.EventHandler(this.I42_Click);
             // 
             // I41
             // 
@@ -2630,6 +2789,7 @@ namespace FrmLogin.UserControls
             this.I41.TabIndex = 833;
             this.I41.Text = "1";
             this.I41.UseVisualStyleBackColor = true;
+            this.I41.Click += new System.EventHandler(this.I41_Click);
             // 
             // I34
             // 
@@ -2639,6 +2799,7 @@ namespace FrmLogin.UserControls
             this.I34.TabIndex = 832;
             this.I34.Text = "4";
             this.I34.UseVisualStyleBackColor = true;
+            this.I34.Click += new System.EventHandler(this.I34_Click);
             // 
             // I33
             // 
@@ -2648,6 +2809,7 @@ namespace FrmLogin.UserControls
             this.I33.TabIndex = 831;
             this.I33.Text = "3";
             this.I33.UseVisualStyleBackColor = true;
+            this.I33.Click += new System.EventHandler(this.I33_Click);
             // 
             // I32
             // 
@@ -2657,6 +2819,7 @@ namespace FrmLogin.UserControls
             this.I32.TabIndex = 830;
             this.I32.Text = "2";
             this.I32.UseVisualStyleBackColor = true;
+            this.I32.Click += new System.EventHandler(this.I32_Click);
             // 
             // I31
             // 
@@ -2666,6 +2829,7 @@ namespace FrmLogin.UserControls
             this.I31.TabIndex = 829;
             this.I31.Text = "1";
             this.I31.UseVisualStyleBackColor = true;
+            this.I31.Click += new System.EventHandler(this.I31_Click);
             // 
             // I24
             // 
@@ -2675,6 +2839,7 @@ namespace FrmLogin.UserControls
             this.I24.TabIndex = 828;
             this.I24.Text = "4";
             this.I24.UseVisualStyleBackColor = true;
+            this.I24.Click += new System.EventHandler(this.I24_Click);
             // 
             // I23
             // 
@@ -2684,6 +2849,7 @@ namespace FrmLogin.UserControls
             this.I23.TabIndex = 827;
             this.I23.Text = "3";
             this.I23.UseVisualStyleBackColor = true;
+            this.I23.Click += new System.EventHandler(this.I23_Click);
             // 
             // I22
             // 
@@ -2693,6 +2859,7 @@ namespace FrmLogin.UserControls
             this.I22.TabIndex = 826;
             this.I22.Text = "2";
             this.I22.UseVisualStyleBackColor = true;
+            this.I22.Click += new System.EventHandler(this.I22_Click);
             // 
             // I21
             // 
@@ -2702,6 +2869,7 @@ namespace FrmLogin.UserControls
             this.I21.TabIndex = 825;
             this.I21.Text = "1";
             this.I21.UseVisualStyleBackColor = true;
+            this.I21.Click += new System.EventHandler(this.I21_Click);
             // 
             // I14
             // 
@@ -2711,6 +2879,7 @@ namespace FrmLogin.UserControls
             this.I14.TabIndex = 824;
             this.I14.Text = "4";
             this.I14.UseVisualStyleBackColor = true;
+            this.I14.Click += new System.EventHandler(this.I14_Click);
             // 
             // I13
             // 
@@ -2720,6 +2889,7 @@ namespace FrmLogin.UserControls
             this.I13.TabIndex = 823;
             this.I13.Text = "3";
             this.I13.UseVisualStyleBackColor = true;
+            this.I13.Click += new System.EventHandler(this.I13_Click);
             // 
             // I12
             // 
@@ -2729,6 +2899,7 @@ namespace FrmLogin.UserControls
             this.I12.TabIndex = 822;
             this.I12.Text = "2";
             this.I12.UseVisualStyleBackColor = true;
+            this.I12.Click += new System.EventHandler(this.I12_Click);
             // 
             // I11
             // 
@@ -2738,6 +2909,7 @@ namespace FrmLogin.UserControls
             this.I11.TabIndex = 821;
             this.I11.Text = "1";
             this.I11.UseVisualStyleBackColor = true;
+            this.I11.Click += new System.EventHandler(this.I11_Click);
             // 
             // H64
             // 
@@ -2747,6 +2919,7 @@ namespace FrmLogin.UserControls
             this.H64.TabIndex = 820;
             this.H64.Text = "4";
             this.H64.UseVisualStyleBackColor = true;
+            this.H64.Click += new System.EventHandler(this.H64_Click);
             // 
             // H63
             // 
@@ -2756,6 +2929,7 @@ namespace FrmLogin.UserControls
             this.H63.TabIndex = 819;
             this.H63.Text = "3";
             this.H63.UseVisualStyleBackColor = true;
+            this.H63.Click += new System.EventHandler(this.H63_Click);
             // 
             // H62
             // 
@@ -2765,6 +2939,7 @@ namespace FrmLogin.UserControls
             this.H62.TabIndex = 818;
             this.H62.Text = "2";
             this.H62.UseVisualStyleBackColor = true;
+            this.H62.Click += new System.EventHandler(this.H62_Click);
             // 
             // H61
             // 
@@ -2774,6 +2949,7 @@ namespace FrmLogin.UserControls
             this.H61.TabIndex = 817;
             this.H61.Text = "1";
             this.H61.UseVisualStyleBackColor = true;
+            this.H61.Click += new System.EventHandler(this.H61_Click);
             // 
             // H54
             // 
@@ -2783,6 +2959,7 @@ namespace FrmLogin.UserControls
             this.H54.TabIndex = 816;
             this.H54.Text = "4";
             this.H54.UseVisualStyleBackColor = true;
+            this.H54.Click += new System.EventHandler(this.H54_Click);
             // 
             // H53
             // 
@@ -2792,6 +2969,7 @@ namespace FrmLogin.UserControls
             this.H53.TabIndex = 815;
             this.H53.Text = "3";
             this.H53.UseVisualStyleBackColor = true;
+            this.H53.Click += new System.EventHandler(this.H53_Click);
             // 
             // H52
             // 
@@ -2801,6 +2979,7 @@ namespace FrmLogin.UserControls
             this.H52.TabIndex = 814;
             this.H52.Text = "2";
             this.H52.UseVisualStyleBackColor = true;
+            this.H52.Click += new System.EventHandler(this.H52_Click);
             // 
             // H51
             // 
@@ -2810,6 +2989,7 @@ namespace FrmLogin.UserControls
             this.H51.TabIndex = 813;
             this.H51.Text = "1";
             this.H51.UseVisualStyleBackColor = true;
+            this.H51.Click += new System.EventHandler(this.H51_Click);
             // 
             // H44
             // 
@@ -2819,6 +2999,7 @@ namespace FrmLogin.UserControls
             this.H44.TabIndex = 812;
             this.H44.Text = "4";
             this.H44.UseVisualStyleBackColor = true;
+            this.H44.Click += new System.EventHandler(this.H44_Click);
             // 
             // H43
             // 
@@ -2828,6 +3009,7 @@ namespace FrmLogin.UserControls
             this.H43.TabIndex = 811;
             this.H43.Text = "3";
             this.H43.UseVisualStyleBackColor = true;
+            this.H43.Click += new System.EventHandler(this.H43_Click);
             // 
             // H42
             // 
@@ -2837,6 +3019,7 @@ namespace FrmLogin.UserControls
             this.H42.TabIndex = 810;
             this.H42.Text = "2";
             this.H42.UseVisualStyleBackColor = true;
+            this.H42.Click += new System.EventHandler(this.H42_Click);
             // 
             // H41
             // 
@@ -2846,6 +3029,7 @@ namespace FrmLogin.UserControls
             this.H41.TabIndex = 809;
             this.H41.Text = "1";
             this.H41.UseVisualStyleBackColor = true;
+            this.H41.Click += new System.EventHandler(this.H41_Click);
             // 
             // H34
             // 
@@ -2855,6 +3039,7 @@ namespace FrmLogin.UserControls
             this.H34.TabIndex = 808;
             this.H34.Text = "4";
             this.H34.UseVisualStyleBackColor = true;
+            this.H34.Click += new System.EventHandler(this.H34_Click);
             // 
             // H33
             // 
@@ -2864,6 +3049,7 @@ namespace FrmLogin.UserControls
             this.H33.TabIndex = 807;
             this.H33.Text = "3";
             this.H33.UseVisualStyleBackColor = true;
+            this.H33.Click += new System.EventHandler(this.H33_Click);
             // 
             // H32
             // 
@@ -2873,6 +3059,7 @@ namespace FrmLogin.UserControls
             this.H32.TabIndex = 806;
             this.H32.Text = "2";
             this.H32.UseVisualStyleBackColor = true;
+            this.H32.Click += new System.EventHandler(this.H32_Click);
             // 
             // H31
             // 
@@ -2882,6 +3069,7 @@ namespace FrmLogin.UserControls
             this.H31.TabIndex = 805;
             this.H31.Text = "1";
             this.H31.UseVisualStyleBackColor = true;
+            this.H31.Click += new System.EventHandler(this.H31_Click);
             // 
             // H24
             // 
@@ -2891,6 +3079,7 @@ namespace FrmLogin.UserControls
             this.H24.TabIndex = 804;
             this.H24.Text = "4";
             this.H24.UseVisualStyleBackColor = true;
+            this.H24.Click += new System.EventHandler(this.H24_Click);
             // 
             // H23
             // 
@@ -2900,6 +3089,7 @@ namespace FrmLogin.UserControls
             this.H23.TabIndex = 803;
             this.H23.Text = "3";
             this.H23.UseVisualStyleBackColor = true;
+            this.H23.Click += new System.EventHandler(this.H23_Click);
             // 
             // H22
             // 
@@ -2909,6 +3099,7 @@ namespace FrmLogin.UserControls
             this.H22.TabIndex = 802;
             this.H22.Text = "2";
             this.H22.UseVisualStyleBackColor = true;
+            this.H22.Click += new System.EventHandler(this.H22_Click);
             // 
             // H21
             // 
@@ -2918,6 +3109,7 @@ namespace FrmLogin.UserControls
             this.H21.TabIndex = 801;
             this.H21.Text = "1";
             this.H21.UseVisualStyleBackColor = true;
+            this.H21.Click += new System.EventHandler(this.H21_Click);
             // 
             // H14
             // 
@@ -2927,6 +3119,7 @@ namespace FrmLogin.UserControls
             this.H14.TabIndex = 800;
             this.H14.Text = "4";
             this.H14.UseVisualStyleBackColor = true;
+            this.H14.Click += new System.EventHandler(this.H14_Click);
             // 
             // H13
             // 
@@ -2936,6 +3129,7 @@ namespace FrmLogin.UserControls
             this.H13.TabIndex = 799;
             this.H13.Text = "3";
             this.H13.UseVisualStyleBackColor = true;
+            this.H13.Click += new System.EventHandler(this.H13_Click);
             // 
             // H12
             // 
@@ -2945,6 +3139,7 @@ namespace FrmLogin.UserControls
             this.H12.TabIndex = 798;
             this.H12.Text = "2";
             this.H12.UseVisualStyleBackColor = true;
+            this.H12.Click += new System.EventHandler(this.H12_Click);
             // 
             // H11
             // 
@@ -2954,6 +3149,7 @@ namespace FrmLogin.UserControls
             this.H11.TabIndex = 797;
             this.H11.Text = "1";
             this.H11.UseVisualStyleBackColor = true;
+            this.H11.Click += new System.EventHandler(this.H11_Click);
             // 
             // K64
             // 
@@ -2963,6 +3159,7 @@ namespace FrmLogin.UserControls
             this.K64.TabIndex = 892;
             this.K64.Text = "4";
             this.K64.UseVisualStyleBackColor = true;
+            this.K64.Click += new System.EventHandler(this.K64_Click);
             // 
             // K63
             // 
@@ -2972,6 +3169,7 @@ namespace FrmLogin.UserControls
             this.K63.TabIndex = 891;
             this.K63.Text = "3";
             this.K63.UseVisualStyleBackColor = true;
+            this.K63.Click += new System.EventHandler(this.K63_Click);
             // 
             // K62
             // 
@@ -2981,6 +3179,7 @@ namespace FrmLogin.UserControls
             this.K62.TabIndex = 890;
             this.K62.Text = "2";
             this.K62.UseVisualStyleBackColor = true;
+            this.K62.Click += new System.EventHandler(this.K62_Click);
             // 
             // K61
             // 
@@ -2990,6 +3189,7 @@ namespace FrmLogin.UserControls
             this.K61.TabIndex = 889;
             this.K61.Text = "1";
             this.K61.UseVisualStyleBackColor = true;
+            this.K61.Click += new System.EventHandler(this.K61_Click);
             // 
             // K54
             // 
@@ -2999,6 +3199,7 @@ namespace FrmLogin.UserControls
             this.K54.TabIndex = 888;
             this.K54.Text = "4";
             this.K54.UseVisualStyleBackColor = true;
+            this.K54.Click += new System.EventHandler(this.K54_Click);
             // 
             // K53
             // 
@@ -3008,6 +3209,7 @@ namespace FrmLogin.UserControls
             this.K53.TabIndex = 887;
             this.K53.Text = "3";
             this.K53.UseVisualStyleBackColor = true;
+            this.K53.Click += new System.EventHandler(this.K53_Click);
             // 
             // K52
             // 
@@ -3017,6 +3219,7 @@ namespace FrmLogin.UserControls
             this.K52.TabIndex = 886;
             this.K52.Text = "2";
             this.K52.UseVisualStyleBackColor = true;
+            this.K52.Click += new System.EventHandler(this.K52_Click);
             // 
             // K51
             // 
@@ -3026,6 +3229,7 @@ namespace FrmLogin.UserControls
             this.K51.TabIndex = 885;
             this.K51.Text = "1";
             this.K51.UseVisualStyleBackColor = true;
+            this.K51.Click += new System.EventHandler(this.K51_Click);
             // 
             // K44
             // 
@@ -3035,6 +3239,7 @@ namespace FrmLogin.UserControls
             this.K44.TabIndex = 884;
             this.K44.Text = "4";
             this.K44.UseVisualStyleBackColor = true;
+            this.K44.Click += new System.EventHandler(this.K44_Click);
             // 
             // K43
             // 
@@ -3044,6 +3249,7 @@ namespace FrmLogin.UserControls
             this.K43.TabIndex = 883;
             this.K43.Text = "3";
             this.K43.UseVisualStyleBackColor = true;
+            this.K43.Click += new System.EventHandler(this.K43_Click);
             // 
             // K42
             // 
@@ -3053,6 +3259,7 @@ namespace FrmLogin.UserControls
             this.K42.TabIndex = 882;
             this.K42.Text = "2";
             this.K42.UseVisualStyleBackColor = true;
+            this.K42.Click += new System.EventHandler(this.K42_Click);
             // 
             // K41
             // 
@@ -3062,6 +3269,7 @@ namespace FrmLogin.UserControls
             this.K41.TabIndex = 881;
             this.K41.Text = "1";
             this.K41.UseVisualStyleBackColor = true;
+            this.K41.Click += new System.EventHandler(this.K41_Click);
             // 
             // K34
             // 
@@ -3071,6 +3279,7 @@ namespace FrmLogin.UserControls
             this.K34.TabIndex = 880;
             this.K34.Text = "4";
             this.K34.UseVisualStyleBackColor = true;
+            this.K34.Click += new System.EventHandler(this.K34_Click);
             // 
             // K33
             // 
@@ -3080,6 +3289,7 @@ namespace FrmLogin.UserControls
             this.K33.TabIndex = 879;
             this.K33.Text = "3";
             this.K33.UseVisualStyleBackColor = true;
+            this.K33.Click += new System.EventHandler(this.K33_Click);
             // 
             // K32
             // 
@@ -3089,6 +3299,7 @@ namespace FrmLogin.UserControls
             this.K32.TabIndex = 878;
             this.K32.Text = "2";
             this.K32.UseVisualStyleBackColor = true;
+            this.K32.Click += new System.EventHandler(this.K32_Click);
             // 
             // K31
             // 
@@ -3098,6 +3309,7 @@ namespace FrmLogin.UserControls
             this.K31.TabIndex = 877;
             this.K31.Text = "1";
             this.K31.UseVisualStyleBackColor = true;
+            this.K31.Click += new System.EventHandler(this.K31_Click);
             // 
             // K24
             // 
@@ -3107,6 +3319,7 @@ namespace FrmLogin.UserControls
             this.K24.TabIndex = 876;
             this.K24.Text = "4";
             this.K24.UseVisualStyleBackColor = true;
+            this.K24.Click += new System.EventHandler(this.K24_Click);
             // 
             // K23
             // 
@@ -3116,6 +3329,7 @@ namespace FrmLogin.UserControls
             this.K23.TabIndex = 875;
             this.K23.Text = "3";
             this.K23.UseVisualStyleBackColor = true;
+            this.K23.Click += new System.EventHandler(this.K23_Click);
             // 
             // K22
             // 
@@ -3125,6 +3339,7 @@ namespace FrmLogin.UserControls
             this.K22.TabIndex = 874;
             this.K22.Text = "2";
             this.K22.UseVisualStyleBackColor = true;
+            this.K22.Click += new System.EventHandler(this.K22_Click);
             // 
             // K21
             // 
@@ -3134,6 +3349,7 @@ namespace FrmLogin.UserControls
             this.K21.TabIndex = 873;
             this.K21.Text = "1";
             this.K21.UseVisualStyleBackColor = true;
+            this.K21.Click += new System.EventHandler(this.K21_Click);
             // 
             // K14
             // 
@@ -3143,6 +3359,7 @@ namespace FrmLogin.UserControls
             this.K14.TabIndex = 872;
             this.K14.Text = "4";
             this.K14.UseVisualStyleBackColor = true;
+            this.K14.Click += new System.EventHandler(this.K14_Click);
             // 
             // K13
             // 
@@ -3152,6 +3369,7 @@ namespace FrmLogin.UserControls
             this.K13.TabIndex = 871;
             this.K13.Text = "3";
             this.K13.UseVisualStyleBackColor = true;
+            this.K13.Click += new System.EventHandler(this.K13_Click);
             // 
             // K12
             // 
@@ -3161,6 +3379,7 @@ namespace FrmLogin.UserControls
             this.K12.TabIndex = 870;
             this.K12.Text = "2";
             this.K12.UseVisualStyleBackColor = true;
+            this.K12.Click += new System.EventHandler(this.K12_Click);
             // 
             // K11
             // 
@@ -3170,6 +3389,7 @@ namespace FrmLogin.UserControls
             this.K11.TabIndex = 869;
             this.K11.Text = "1";
             this.K11.UseVisualStyleBackColor = true;
+            this.K11.Click += new System.EventHandler(this.K11_Click);
             // 
             // J64
             // 
@@ -3179,6 +3399,7 @@ namespace FrmLogin.UserControls
             this.J64.TabIndex = 868;
             this.J64.Text = "4";
             this.J64.UseVisualStyleBackColor = true;
+            this.J64.Click += new System.EventHandler(this.J64_Click);
             // 
             // J63
             // 
@@ -3188,6 +3409,7 @@ namespace FrmLogin.UserControls
             this.J63.TabIndex = 867;
             this.J63.Text = "3";
             this.J63.UseVisualStyleBackColor = true;
+            this.J63.Click += new System.EventHandler(this.J63_Click);
             // 
             // J62
             // 
@@ -3197,6 +3419,7 @@ namespace FrmLogin.UserControls
             this.J62.TabIndex = 866;
             this.J62.Text = "2";
             this.J62.UseVisualStyleBackColor = true;
+            this.J62.Click += new System.EventHandler(this.J62_Click);
             // 
             // J61
             // 
@@ -3206,6 +3429,7 @@ namespace FrmLogin.UserControls
             this.J61.TabIndex = 865;
             this.J61.Text = "1";
             this.J61.UseVisualStyleBackColor = true;
+            this.J61.Click += new System.EventHandler(this.J61_Click);
             // 
             // J54
             // 
@@ -3215,6 +3439,7 @@ namespace FrmLogin.UserControls
             this.J54.TabIndex = 864;
             this.J54.Text = "4";
             this.J54.UseVisualStyleBackColor = true;
+            this.J54.Click += new System.EventHandler(this.J54_Click);
             // 
             // J53
             // 
@@ -3224,6 +3449,7 @@ namespace FrmLogin.UserControls
             this.J53.TabIndex = 863;
             this.J53.Text = "3";
             this.J53.UseVisualStyleBackColor = true;
+            this.J53.Click += new System.EventHandler(this.J53_Click);
             // 
             // J52
             // 
@@ -3233,6 +3459,7 @@ namespace FrmLogin.UserControls
             this.J52.TabIndex = 862;
             this.J52.Text = "2";
             this.J52.UseVisualStyleBackColor = true;
+            this.J52.Click += new System.EventHandler(this.J52_Click);
             // 
             // J51
             // 
@@ -3242,6 +3469,7 @@ namespace FrmLogin.UserControls
             this.J51.TabIndex = 861;
             this.J51.Text = "1";
             this.J51.UseVisualStyleBackColor = true;
+            this.J51.Click += new System.EventHandler(this.J51_Click);
             // 
             // J44
             // 
@@ -3251,6 +3479,7 @@ namespace FrmLogin.UserControls
             this.J44.TabIndex = 860;
             this.J44.Text = "4";
             this.J44.UseVisualStyleBackColor = true;
+            this.J44.Click += new System.EventHandler(this.J44_Click);
             // 
             // J43
             // 
@@ -3260,6 +3489,7 @@ namespace FrmLogin.UserControls
             this.J43.TabIndex = 859;
             this.J43.Text = "3";
             this.J43.UseVisualStyleBackColor = true;
+            this.J43.Click += new System.EventHandler(this.J43_Click);
             // 
             // J42
             // 
@@ -3269,6 +3499,7 @@ namespace FrmLogin.UserControls
             this.J42.TabIndex = 858;
             this.J42.Text = "2";
             this.J42.UseVisualStyleBackColor = true;
+            this.J42.Click += new System.EventHandler(this.J42_Click);
             // 
             // J41
             // 
@@ -3278,6 +3509,7 @@ namespace FrmLogin.UserControls
             this.J41.TabIndex = 857;
             this.J41.Text = "1";
             this.J41.UseVisualStyleBackColor = true;
+            this.J41.Click += new System.EventHandler(this.J41_Click);
             // 
             // J34
             // 
@@ -3287,6 +3519,7 @@ namespace FrmLogin.UserControls
             this.J34.TabIndex = 856;
             this.J34.Text = "4";
             this.J34.UseVisualStyleBackColor = true;
+            this.J34.Click += new System.EventHandler(this.J34_Click);
             // 
             // J33
             // 
@@ -3296,6 +3529,7 @@ namespace FrmLogin.UserControls
             this.J33.TabIndex = 855;
             this.J33.Text = "3";
             this.J33.UseVisualStyleBackColor = true;
+            this.J33.Click += new System.EventHandler(this.J33_Click);
             // 
             // J32
             // 
@@ -3305,6 +3539,7 @@ namespace FrmLogin.UserControls
             this.J32.TabIndex = 854;
             this.J32.Text = "2";
             this.J32.UseVisualStyleBackColor = true;
+            this.J32.Click += new System.EventHandler(this.J32_Click);
             // 
             // J31
             // 
@@ -3314,6 +3549,7 @@ namespace FrmLogin.UserControls
             this.J31.TabIndex = 853;
             this.J31.Text = "1";
             this.J31.UseVisualStyleBackColor = true;
+            this.J31.Click += new System.EventHandler(this.J31_Click);
             // 
             // J24
             // 
@@ -3323,6 +3559,7 @@ namespace FrmLogin.UserControls
             this.J24.TabIndex = 852;
             this.J24.Text = "4";
             this.J24.UseVisualStyleBackColor = true;
+            this.J24.Click += new System.EventHandler(this.J24_Click);
             // 
             // J23
             // 
@@ -3332,6 +3569,7 @@ namespace FrmLogin.UserControls
             this.J23.TabIndex = 851;
             this.J23.Text = "3";
             this.J23.UseVisualStyleBackColor = true;
+            this.J23.Click += new System.EventHandler(this.J23_Click);
             // 
             // J22
             // 
@@ -3341,6 +3579,7 @@ namespace FrmLogin.UserControls
             this.J22.TabIndex = 850;
             this.J22.Text = "2";
             this.J22.UseVisualStyleBackColor = true;
+            this.J22.Click += new System.EventHandler(this.J22_Click);
             // 
             // J21
             // 
@@ -3350,6 +3589,7 @@ namespace FrmLogin.UserControls
             this.J21.TabIndex = 849;
             this.J21.Text = "1";
             this.J21.UseVisualStyleBackColor = true;
+            this.J21.Click += new System.EventHandler(this.J21_Click);
             // 
             // J14
             // 
@@ -3359,6 +3599,7 @@ namespace FrmLogin.UserControls
             this.J14.TabIndex = 848;
             this.J14.Text = "4";
             this.J14.UseVisualStyleBackColor = true;
+            this.J14.Click += new System.EventHandler(this.J14_Click);
             // 
             // J13
             // 
@@ -3368,6 +3609,7 @@ namespace FrmLogin.UserControls
             this.J13.TabIndex = 847;
             this.J13.Text = "3";
             this.J13.UseVisualStyleBackColor = true;
+            this.J13.Click += new System.EventHandler(this.J13_Click);
             // 
             // J12
             // 
@@ -3377,6 +3619,7 @@ namespace FrmLogin.UserControls
             this.J12.TabIndex = 846;
             this.J12.Text = "2";
             this.J12.UseVisualStyleBackColor = true;
+            this.J12.Click += new System.EventHandler(this.J12_Click);
             // 
             // J11
             // 
@@ -3386,6 +3629,7 @@ namespace FrmLogin.UserControls
             this.J11.TabIndex = 845;
             this.J11.Text = "1";
             this.J11.UseVisualStyleBackColor = true;
+            this.J11.Click += new System.EventHandler(this.J11_Click);
             // 
             // M64
             // 
@@ -3395,6 +3639,7 @@ namespace FrmLogin.UserControls
             this.M64.TabIndex = 940;
             this.M64.Text = "4";
             this.M64.UseVisualStyleBackColor = true;
+            this.M64.Click += new System.EventHandler(this.M64_Click);
             // 
             // M63
             // 
@@ -3404,6 +3649,7 @@ namespace FrmLogin.UserControls
             this.M63.TabIndex = 939;
             this.M63.Text = "3";
             this.M63.UseVisualStyleBackColor = true;
+            this.M63.Click += new System.EventHandler(this.M63_Click);
             // 
             // M62
             // 
@@ -3413,6 +3659,7 @@ namespace FrmLogin.UserControls
             this.M62.TabIndex = 938;
             this.M62.Text = "2";
             this.M62.UseVisualStyleBackColor = true;
+            this.M62.Click += new System.EventHandler(this.M62_Click);
             // 
             // M61
             // 
@@ -3422,6 +3669,7 @@ namespace FrmLogin.UserControls
             this.M61.TabIndex = 937;
             this.M61.Text = "1";
             this.M61.UseVisualStyleBackColor = true;
+            this.M61.Click += new System.EventHandler(this.M61_Click);
             // 
             // M54
             // 
@@ -3431,6 +3679,7 @@ namespace FrmLogin.UserControls
             this.M54.TabIndex = 936;
             this.M54.Text = "4";
             this.M54.UseVisualStyleBackColor = true;
+            this.M54.Click += new System.EventHandler(this.M54_Click);
             // 
             // M53
             // 
@@ -3440,6 +3689,7 @@ namespace FrmLogin.UserControls
             this.M53.TabIndex = 935;
             this.M53.Text = "3";
             this.M53.UseVisualStyleBackColor = true;
+            this.M53.Click += new System.EventHandler(this.M53_Click);
             // 
             // M52
             // 
@@ -3449,6 +3699,7 @@ namespace FrmLogin.UserControls
             this.M52.TabIndex = 934;
             this.M52.Text = "2";
             this.M52.UseVisualStyleBackColor = true;
+            this.M52.Click += new System.EventHandler(this.M52_Click);
             // 
             // M51
             // 
@@ -3458,6 +3709,7 @@ namespace FrmLogin.UserControls
             this.M51.TabIndex = 933;
             this.M51.Text = "1";
             this.M51.UseVisualStyleBackColor = true;
+            this.M51.Click += new System.EventHandler(this.M51_Click);
             // 
             // M44
             // 
@@ -3467,6 +3719,7 @@ namespace FrmLogin.UserControls
             this.M44.TabIndex = 932;
             this.M44.Text = "4";
             this.M44.UseVisualStyleBackColor = true;
+            this.M44.Click += new System.EventHandler(this.M44_Click);
             // 
             // M43
             // 
@@ -3476,6 +3729,7 @@ namespace FrmLogin.UserControls
             this.M43.TabIndex = 931;
             this.M43.Text = "3";
             this.M43.UseVisualStyleBackColor = true;
+            this.M43.Click += new System.EventHandler(this.M43_Click);
             // 
             // M42
             // 
@@ -3485,6 +3739,7 @@ namespace FrmLogin.UserControls
             this.M42.TabIndex = 930;
             this.M42.Text = "2";
             this.M42.UseVisualStyleBackColor = true;
+            this.M42.Click += new System.EventHandler(this.M42_Click);
             // 
             // M41
             // 
@@ -3494,6 +3749,7 @@ namespace FrmLogin.UserControls
             this.M41.TabIndex = 929;
             this.M41.Text = "1";
             this.M41.UseVisualStyleBackColor = true;
+            this.M41.Click += new System.EventHandler(this.M41_Click);
             // 
             // M34
             // 
@@ -3503,6 +3759,7 @@ namespace FrmLogin.UserControls
             this.M34.TabIndex = 928;
             this.M34.Text = "4";
             this.M34.UseVisualStyleBackColor = true;
+            this.M34.Click += new System.EventHandler(this.M34_Click);
             // 
             // M33
             // 
@@ -3512,6 +3769,7 @@ namespace FrmLogin.UserControls
             this.M33.TabIndex = 927;
             this.M33.Text = "3";
             this.M33.UseVisualStyleBackColor = true;
+            this.M33.Click += new System.EventHandler(this.M33_Click);
             // 
             // M32
             // 
@@ -3521,6 +3779,7 @@ namespace FrmLogin.UserControls
             this.M32.TabIndex = 926;
             this.M32.Text = "2";
             this.M32.UseVisualStyleBackColor = true;
+            this.M32.Click += new System.EventHandler(this.M32_Click);
             // 
             // M31
             // 
@@ -3530,6 +3789,7 @@ namespace FrmLogin.UserControls
             this.M31.TabIndex = 925;
             this.M31.Text = "1";
             this.M31.UseVisualStyleBackColor = true;
+            this.M31.Click += new System.EventHandler(this.M31_Click);
             // 
             // M24
             // 
@@ -3539,6 +3799,7 @@ namespace FrmLogin.UserControls
             this.M24.TabIndex = 924;
             this.M24.Text = "4";
             this.M24.UseVisualStyleBackColor = true;
+            this.M24.Click += new System.EventHandler(this.M24_Click);
             // 
             // M23
             // 
@@ -3548,6 +3809,7 @@ namespace FrmLogin.UserControls
             this.M23.TabIndex = 923;
             this.M23.Text = "3";
             this.M23.UseVisualStyleBackColor = true;
+            this.M23.Click += new System.EventHandler(this.M23_Click);
             // 
             // M22
             // 
@@ -3557,6 +3819,7 @@ namespace FrmLogin.UserControls
             this.M22.TabIndex = 922;
             this.M22.Text = "2";
             this.M22.UseVisualStyleBackColor = true;
+            this.M22.Click += new System.EventHandler(this.M22_Click);
             // 
             // M21
             // 
@@ -3566,6 +3829,7 @@ namespace FrmLogin.UserControls
             this.M21.TabIndex = 921;
             this.M21.Text = "1";
             this.M21.UseVisualStyleBackColor = true;
+            this.M21.Click += new System.EventHandler(this.M21_Click);
             // 
             // M14
             // 
@@ -3575,6 +3839,7 @@ namespace FrmLogin.UserControls
             this.M14.TabIndex = 920;
             this.M14.Text = "4";
             this.M14.UseVisualStyleBackColor = true;
+            this.M14.Click += new System.EventHandler(this.M14_Click);
             // 
             // M13
             // 
@@ -3584,6 +3849,7 @@ namespace FrmLogin.UserControls
             this.M13.TabIndex = 919;
             this.M13.Text = "3";
             this.M13.UseVisualStyleBackColor = true;
+            this.M13.Click += new System.EventHandler(this.M13_Click);
             // 
             // M12
             // 
@@ -3593,6 +3859,7 @@ namespace FrmLogin.UserControls
             this.M12.TabIndex = 918;
             this.M12.Text = "2";
             this.M12.UseVisualStyleBackColor = true;
+            this.M12.Click += new System.EventHandler(this.M12_Click);
             // 
             // M11
             // 
@@ -3602,6 +3869,7 @@ namespace FrmLogin.UserControls
             this.M11.TabIndex = 917;
             this.M11.Text = "1";
             this.M11.UseVisualStyleBackColor = true;
+            this.M11.Click += new System.EventHandler(this.M11_Click);
             // 
             // L64
             // 
@@ -3611,6 +3879,7 @@ namespace FrmLogin.UserControls
             this.L64.TabIndex = 916;
             this.L64.Text = "4";
             this.L64.UseVisualStyleBackColor = true;
+            this.L64.Click += new System.EventHandler(this.L64_Click);
             // 
             // L63
             // 
@@ -3620,6 +3889,7 @@ namespace FrmLogin.UserControls
             this.L63.TabIndex = 915;
             this.L63.Text = "3";
             this.L63.UseVisualStyleBackColor = true;
+            this.L63.Click += new System.EventHandler(this.L63_Click);
             // 
             // L62
             // 
@@ -3629,6 +3899,7 @@ namespace FrmLogin.UserControls
             this.L62.TabIndex = 914;
             this.L62.Text = "2";
             this.L62.UseVisualStyleBackColor = true;
+            this.L62.Click += new System.EventHandler(this.L62_Click);
             // 
             // L61
             // 
@@ -3638,6 +3909,7 @@ namespace FrmLogin.UserControls
             this.L61.TabIndex = 913;
             this.L61.Text = "1";
             this.L61.UseVisualStyleBackColor = true;
+            this.L61.Click += new System.EventHandler(this.L61_Click);
             // 
             // L54
             // 
@@ -3647,6 +3919,7 @@ namespace FrmLogin.UserControls
             this.L54.TabIndex = 912;
             this.L54.Text = "4";
             this.L54.UseVisualStyleBackColor = true;
+            this.L54.Click += new System.EventHandler(this.L54_Click);
             // 
             // L53
             // 
@@ -3656,6 +3929,7 @@ namespace FrmLogin.UserControls
             this.L53.TabIndex = 911;
             this.L53.Text = "3";
             this.L53.UseVisualStyleBackColor = true;
+            this.L53.Click += new System.EventHandler(this.L53_Click);
             // 
             // L52
             // 
@@ -3665,6 +3939,7 @@ namespace FrmLogin.UserControls
             this.L52.TabIndex = 910;
             this.L52.Text = "2";
             this.L52.UseVisualStyleBackColor = true;
+            this.L52.Click += new System.EventHandler(this.L52_Click);
             // 
             // L51
             // 
@@ -3674,6 +3949,7 @@ namespace FrmLogin.UserControls
             this.L51.TabIndex = 909;
             this.L51.Text = "1";
             this.L51.UseVisualStyleBackColor = true;
+            this.L51.Click += new System.EventHandler(this.L51_Click);
             // 
             // L44
             // 
@@ -3683,6 +3959,7 @@ namespace FrmLogin.UserControls
             this.L44.TabIndex = 908;
             this.L44.Text = "4";
             this.L44.UseVisualStyleBackColor = true;
+            this.L44.Click += new System.EventHandler(this.L44_Click);
             // 
             // L43
             // 
@@ -3692,6 +3969,7 @@ namespace FrmLogin.UserControls
             this.L43.TabIndex = 907;
             this.L43.Text = "3";
             this.L43.UseVisualStyleBackColor = true;
+            this.L43.Click += new System.EventHandler(this.L43_Click);
             // 
             // L42
             // 
@@ -3701,6 +3979,7 @@ namespace FrmLogin.UserControls
             this.L42.TabIndex = 906;
             this.L42.Text = "2";
             this.L42.UseVisualStyleBackColor = true;
+            this.L42.Click += new System.EventHandler(this.L42_Click);
             // 
             // L41
             // 
@@ -3710,6 +3989,7 @@ namespace FrmLogin.UserControls
             this.L41.TabIndex = 905;
             this.L41.Text = "1";
             this.L41.UseVisualStyleBackColor = true;
+            this.L41.Click += new System.EventHandler(this.L41_Click);
             // 
             // L34
             // 
@@ -3719,6 +3999,7 @@ namespace FrmLogin.UserControls
             this.L34.TabIndex = 904;
             this.L34.Text = "4";
             this.L34.UseVisualStyleBackColor = true;
+            this.L34.Click += new System.EventHandler(this.L34_Click);
             // 
             // L33
             // 
@@ -3728,6 +4009,7 @@ namespace FrmLogin.UserControls
             this.L33.TabIndex = 903;
             this.L33.Text = "3";
             this.L33.UseVisualStyleBackColor = true;
+            this.L33.Click += new System.EventHandler(this.L33_Click);
             // 
             // L32
             // 
@@ -3737,6 +4019,7 @@ namespace FrmLogin.UserControls
             this.L32.TabIndex = 902;
             this.L32.Text = "2";
             this.L32.UseVisualStyleBackColor = true;
+            this.L32.Click += new System.EventHandler(this.L32_Click);
             // 
             // L31
             // 
@@ -3746,6 +4029,7 @@ namespace FrmLogin.UserControls
             this.L31.TabIndex = 901;
             this.L31.Text = "1";
             this.L31.UseVisualStyleBackColor = true;
+            this.L31.Click += new System.EventHandler(this.L31_Click);
             // 
             // L24
             // 
@@ -3755,6 +4039,7 @@ namespace FrmLogin.UserControls
             this.L24.TabIndex = 900;
             this.L24.Text = "4";
             this.L24.UseVisualStyleBackColor = true;
+            this.L24.Click += new System.EventHandler(this.L24_Click);
             // 
             // L23
             // 
@@ -3764,6 +4049,7 @@ namespace FrmLogin.UserControls
             this.L23.TabIndex = 899;
             this.L23.Text = "3";
             this.L23.UseVisualStyleBackColor = true;
+            this.L23.Click += new System.EventHandler(this.L23_Click);
             // 
             // L22
             // 
@@ -3773,6 +4059,7 @@ namespace FrmLogin.UserControls
             this.L22.TabIndex = 898;
             this.L22.Text = "2";
             this.L22.UseVisualStyleBackColor = true;
+            this.L22.Click += new System.EventHandler(this.L22_Click);
             // 
             // L21
             // 
@@ -3782,6 +4069,7 @@ namespace FrmLogin.UserControls
             this.L21.TabIndex = 897;
             this.L21.Text = "1";
             this.L21.UseVisualStyleBackColor = true;
+            this.L21.Click += new System.EventHandler(this.L21_Click);
             // 
             // L14
             // 
@@ -3791,6 +4079,7 @@ namespace FrmLogin.UserControls
             this.L14.TabIndex = 896;
             this.L14.Text = "4";
             this.L14.UseVisualStyleBackColor = true;
+            this.L14.Click += new System.EventHandler(this.L14_Click);
             // 
             // L13
             // 
@@ -3800,6 +4089,7 @@ namespace FrmLogin.UserControls
             this.L13.TabIndex = 895;
             this.L13.Text = "3";
             this.L13.UseVisualStyleBackColor = true;
+            this.L13.Click += new System.EventHandler(this.L13_Click);
             // 
             // L12
             // 
@@ -3809,6 +4099,7 @@ namespace FrmLogin.UserControls
             this.L12.TabIndex = 894;
             this.L12.Text = "2";
             this.L12.UseVisualStyleBackColor = true;
+            this.L12.Click += new System.EventHandler(this.L12_Click);
             // 
             // L11
             // 
@@ -3818,6 +4109,7 @@ namespace FrmLogin.UserControls
             this.L11.TabIndex = 893;
             this.L11.Text = "1";
             this.L11.UseVisualStyleBackColor = true;
+            this.L11.Click += new System.EventHandler(this.L11_Click);
             // 
             // O64
             // 
@@ -3827,6 +4119,7 @@ namespace FrmLogin.UserControls
             this.O64.TabIndex = 988;
             this.O64.Text = "4";
             this.O64.UseVisualStyleBackColor = true;
+            this.O64.Click += new System.EventHandler(this.O64_Click);
             // 
             // O63
             // 
@@ -3836,6 +4129,7 @@ namespace FrmLogin.UserControls
             this.O63.TabIndex = 987;
             this.O63.Text = "3";
             this.O63.UseVisualStyleBackColor = true;
+            this.O63.Click += new System.EventHandler(this.O63_Click);
             // 
             // O62
             // 
@@ -3845,6 +4139,7 @@ namespace FrmLogin.UserControls
             this.O62.TabIndex = 986;
             this.O62.Text = "2";
             this.O62.UseVisualStyleBackColor = true;
+            this.O62.Click += new System.EventHandler(this.O62_Click);
             // 
             // O61
             // 
@@ -3854,6 +4149,7 @@ namespace FrmLogin.UserControls
             this.O61.TabIndex = 985;
             this.O61.Text = "1";
             this.O61.UseVisualStyleBackColor = true;
+            this.O61.Click += new System.EventHandler(this.O61_Click);
             // 
             // O54
             // 
@@ -3863,6 +4159,7 @@ namespace FrmLogin.UserControls
             this.O54.TabIndex = 984;
             this.O54.Text = "4";
             this.O54.UseVisualStyleBackColor = true;
+            this.O54.Click += new System.EventHandler(this.O54_Click);
             // 
             // O53
             // 
@@ -3872,6 +4169,7 @@ namespace FrmLogin.UserControls
             this.O53.TabIndex = 983;
             this.O53.Text = "3";
             this.O53.UseVisualStyleBackColor = true;
+            this.O53.Click += new System.EventHandler(this.O53_Click);
             // 
             // O52
             // 
@@ -3881,6 +4179,7 @@ namespace FrmLogin.UserControls
             this.O52.TabIndex = 982;
             this.O52.Text = "2";
             this.O52.UseVisualStyleBackColor = true;
+            this.O52.Click += new System.EventHandler(this.O52_Click);
             // 
             // O51
             // 
@@ -3890,6 +4189,7 @@ namespace FrmLogin.UserControls
             this.O51.TabIndex = 981;
             this.O51.Text = "1";
             this.O51.UseVisualStyleBackColor = true;
+            this.O51.Click += new System.EventHandler(this.O51_Click);
             // 
             // O44
             // 
@@ -3899,6 +4199,7 @@ namespace FrmLogin.UserControls
             this.O44.TabIndex = 980;
             this.O44.Text = "4";
             this.O44.UseVisualStyleBackColor = true;
+            this.O44.Click += new System.EventHandler(this.O44_Click);
             // 
             // O43
             // 
@@ -3908,6 +4209,7 @@ namespace FrmLogin.UserControls
             this.O43.TabIndex = 979;
             this.O43.Text = "3";
             this.O43.UseVisualStyleBackColor = true;
+            this.O43.Click += new System.EventHandler(this.O43_Click);
             // 
             // O42
             // 
@@ -3917,6 +4219,7 @@ namespace FrmLogin.UserControls
             this.O42.TabIndex = 978;
             this.O42.Text = "2";
             this.O42.UseVisualStyleBackColor = true;
+            this.O42.Click += new System.EventHandler(this.O42_Click);
             // 
             // O41
             // 
@@ -3926,6 +4229,7 @@ namespace FrmLogin.UserControls
             this.O41.TabIndex = 977;
             this.O41.Text = "1";
             this.O41.UseVisualStyleBackColor = true;
+            this.O41.Click += new System.EventHandler(this.O41_Click);
             // 
             // O34
             // 
@@ -3935,6 +4239,7 @@ namespace FrmLogin.UserControls
             this.O34.TabIndex = 976;
             this.O34.Text = "4";
             this.O34.UseVisualStyleBackColor = true;
+            this.O34.Click += new System.EventHandler(this.O34_Click);
             // 
             // O33
             // 
@@ -3944,6 +4249,7 @@ namespace FrmLogin.UserControls
             this.O33.TabIndex = 975;
             this.O33.Text = "3";
             this.O33.UseVisualStyleBackColor = true;
+            this.O33.Click += new System.EventHandler(this.O33_Click);
             // 
             // O32
             // 
@@ -3953,6 +4259,7 @@ namespace FrmLogin.UserControls
             this.O32.TabIndex = 974;
             this.O32.Text = "2";
             this.O32.UseVisualStyleBackColor = true;
+            this.O32.Click += new System.EventHandler(this.O32_Click);
             // 
             // O31
             // 
@@ -3962,6 +4269,7 @@ namespace FrmLogin.UserControls
             this.O31.TabIndex = 973;
             this.O31.Text = "1";
             this.O31.UseVisualStyleBackColor = true;
+            this.O31.Click += new System.EventHandler(this.O31_Click);
             // 
             // O24
             // 
@@ -3971,6 +4279,7 @@ namespace FrmLogin.UserControls
             this.O24.TabIndex = 972;
             this.O24.Text = "4";
             this.O24.UseVisualStyleBackColor = true;
+            this.O24.Click += new System.EventHandler(this.O24_Click);
             // 
             // O23
             // 
@@ -3980,6 +4289,7 @@ namespace FrmLogin.UserControls
             this.O23.TabIndex = 971;
             this.O23.Text = "3";
             this.O23.UseVisualStyleBackColor = true;
+            this.O23.Click += new System.EventHandler(this.O23_Click);
             // 
             // O22
             // 
@@ -3989,6 +4299,7 @@ namespace FrmLogin.UserControls
             this.O22.TabIndex = 970;
             this.O22.Text = "2";
             this.O22.UseVisualStyleBackColor = true;
+            this.O22.Click += new System.EventHandler(this.O22_Click);
             // 
             // O21
             // 
@@ -3998,6 +4309,7 @@ namespace FrmLogin.UserControls
             this.O21.TabIndex = 969;
             this.O21.Text = "1";
             this.O21.UseVisualStyleBackColor = true;
+            this.O21.Click += new System.EventHandler(this.O21_Click);
             // 
             // O14
             // 
@@ -4007,6 +4319,7 @@ namespace FrmLogin.UserControls
             this.O14.TabIndex = 968;
             this.O14.Text = "4";
             this.O14.UseVisualStyleBackColor = true;
+            this.O14.Click += new System.EventHandler(this.O14_Click);
             // 
             // O13
             // 
@@ -4016,6 +4329,7 @@ namespace FrmLogin.UserControls
             this.O13.TabIndex = 967;
             this.O13.Text = "3";
             this.O13.UseVisualStyleBackColor = true;
+            this.O13.Click += new System.EventHandler(this.O13_Click);
             // 
             // O12
             // 
@@ -4025,6 +4339,7 @@ namespace FrmLogin.UserControls
             this.O12.TabIndex = 966;
             this.O12.Text = "2";
             this.O12.UseVisualStyleBackColor = true;
+            this.O12.Click += new System.EventHandler(this.O12_Click);
             // 
             // O11
             // 
@@ -4034,6 +4349,7 @@ namespace FrmLogin.UserControls
             this.O11.TabIndex = 965;
             this.O11.Text = "1";
             this.O11.UseVisualStyleBackColor = true;
+            this.O11.Click += new System.EventHandler(this.O11_Click);
             // 
             // N64
             // 
@@ -4043,6 +4359,7 @@ namespace FrmLogin.UserControls
             this.N64.TabIndex = 964;
             this.N64.Text = "4";
             this.N64.UseVisualStyleBackColor = true;
+            this.N64.Click += new System.EventHandler(this.N64_Click);
             // 
             // N63
             // 
@@ -4052,6 +4369,7 @@ namespace FrmLogin.UserControls
             this.N63.TabIndex = 963;
             this.N63.Text = "3";
             this.N63.UseVisualStyleBackColor = true;
+            this.N63.Click += new System.EventHandler(this.N63_Click);
             // 
             // N62
             // 
@@ -4061,6 +4379,7 @@ namespace FrmLogin.UserControls
             this.N62.TabIndex = 962;
             this.N62.Text = "2";
             this.N62.UseVisualStyleBackColor = true;
+            this.N62.Click += new System.EventHandler(this.N62_Click);
             // 
             // N61
             // 
@@ -4070,6 +4389,7 @@ namespace FrmLogin.UserControls
             this.N61.TabIndex = 961;
             this.N61.Text = "1";
             this.N61.UseVisualStyleBackColor = true;
+            this.N61.Click += new System.EventHandler(this.N61_Click);
             // 
             // N54
             // 
@@ -4079,6 +4399,7 @@ namespace FrmLogin.UserControls
             this.N54.TabIndex = 960;
             this.N54.Text = "4";
             this.N54.UseVisualStyleBackColor = true;
+            this.N54.Click += new System.EventHandler(this.N54_Click);
             // 
             // N53
             // 
@@ -4088,6 +4409,7 @@ namespace FrmLogin.UserControls
             this.N53.TabIndex = 959;
             this.N53.Text = "3";
             this.N53.UseVisualStyleBackColor = true;
+            this.N53.Click += new System.EventHandler(this.N53_Click);
             // 
             // N52
             // 
@@ -4097,6 +4419,7 @@ namespace FrmLogin.UserControls
             this.N52.TabIndex = 958;
             this.N52.Text = "2";
             this.N52.UseVisualStyleBackColor = true;
+            this.N52.Click += new System.EventHandler(this.N52_Click);
             // 
             // N51
             // 
@@ -4106,6 +4429,7 @@ namespace FrmLogin.UserControls
             this.N51.TabIndex = 957;
             this.N51.Text = "1";
             this.N51.UseVisualStyleBackColor = true;
+            this.N51.Click += new System.EventHandler(this.N51_Click);
             // 
             // N44
             // 
@@ -4115,6 +4439,7 @@ namespace FrmLogin.UserControls
             this.N44.TabIndex = 956;
             this.N44.Text = "4";
             this.N44.UseVisualStyleBackColor = true;
+            this.N44.Click += new System.EventHandler(this.N44_Click);
             // 
             // N43
             // 
@@ -4124,6 +4449,7 @@ namespace FrmLogin.UserControls
             this.N43.TabIndex = 955;
             this.N43.Text = "3";
             this.N43.UseVisualStyleBackColor = true;
+            this.N43.Click += new System.EventHandler(this.N43_Click);
             // 
             // N42
             // 
@@ -4133,6 +4459,7 @@ namespace FrmLogin.UserControls
             this.N42.TabIndex = 954;
             this.N42.Text = "2";
             this.N42.UseVisualStyleBackColor = true;
+            this.N42.Click += new System.EventHandler(this.N42_Click);
             // 
             // N41
             // 
@@ -4142,6 +4469,7 @@ namespace FrmLogin.UserControls
             this.N41.TabIndex = 953;
             this.N41.Text = "1";
             this.N41.UseVisualStyleBackColor = true;
+            this.N41.Click += new System.EventHandler(this.N41_Click);
             // 
             // N34
             // 
@@ -4151,6 +4479,7 @@ namespace FrmLogin.UserControls
             this.N34.TabIndex = 952;
             this.N34.Text = "4";
             this.N34.UseVisualStyleBackColor = true;
+            this.N34.Click += new System.EventHandler(this.N34_Click);
             // 
             // N33
             // 
@@ -4160,6 +4489,7 @@ namespace FrmLogin.UserControls
             this.N33.TabIndex = 951;
             this.N33.Text = "3";
             this.N33.UseVisualStyleBackColor = true;
+            this.N33.Click += new System.EventHandler(this.N33_Click);
             // 
             // N32
             // 
@@ -4169,6 +4499,7 @@ namespace FrmLogin.UserControls
             this.N32.TabIndex = 950;
             this.N32.Text = "2";
             this.N32.UseVisualStyleBackColor = true;
+            this.N32.Click += new System.EventHandler(this.N32_Click);
             // 
             // N31
             // 
@@ -4178,6 +4509,7 @@ namespace FrmLogin.UserControls
             this.N31.TabIndex = 949;
             this.N31.Text = "1";
             this.N31.UseVisualStyleBackColor = true;
+            this.N31.Click += new System.EventHandler(this.N31_Click);
             // 
             // N24
             // 
@@ -4187,6 +4519,7 @@ namespace FrmLogin.UserControls
             this.N24.TabIndex = 948;
             this.N24.Text = "4";
             this.N24.UseVisualStyleBackColor = true;
+            this.N24.Click += new System.EventHandler(this.N24_Click);
             // 
             // N23
             // 
@@ -4196,6 +4529,7 @@ namespace FrmLogin.UserControls
             this.N23.TabIndex = 947;
             this.N23.Text = "3";
             this.N23.UseVisualStyleBackColor = true;
+            this.N23.Click += new System.EventHandler(this.N23_Click);
             // 
             // N22
             // 
@@ -4205,6 +4539,7 @@ namespace FrmLogin.UserControls
             this.N22.TabIndex = 946;
             this.N22.Text = "2";
             this.N22.UseVisualStyleBackColor = true;
+            this.N22.Click += new System.EventHandler(this.N22_Click);
             // 
             // N21
             // 
@@ -4214,6 +4549,7 @@ namespace FrmLogin.UserControls
             this.N21.TabIndex = 945;
             this.N21.Text = "1";
             this.N21.UseVisualStyleBackColor = true;
+            this.N21.Click += new System.EventHandler(this.N21_Click);
             // 
             // N14
             // 
@@ -4223,6 +4559,7 @@ namespace FrmLogin.UserControls
             this.N14.TabIndex = 944;
             this.N14.Text = "4";
             this.N14.UseVisualStyleBackColor = true;
+            this.N14.Click += new System.EventHandler(this.N14_Click);
             // 
             // N13
             // 
@@ -4232,6 +4569,7 @@ namespace FrmLogin.UserControls
             this.N13.TabIndex = 943;
             this.N13.Text = "3";
             this.N13.UseVisualStyleBackColor = true;
+            this.N13.Click += new System.EventHandler(this.N13_Click);
             // 
             // N12
             // 
@@ -4241,6 +4579,7 @@ namespace FrmLogin.UserControls
             this.N12.TabIndex = 942;
             this.N12.Text = "2";
             this.N12.UseVisualStyleBackColor = true;
+            this.N12.Click += new System.EventHandler(this.N12_Click);
             // 
             // N11
             // 
@@ -4250,6 +4589,7 @@ namespace FrmLogin.UserControls
             this.N11.TabIndex = 941;
             this.N11.Text = "1";
             this.N11.UseVisualStyleBackColor = true;
+            this.N11.Click += new System.EventHandler(this.N11_Click);
             // 
             // R64
             // 
@@ -4259,6 +4599,7 @@ namespace FrmLogin.UserControls
             this.R64.TabIndex = 1036;
             this.R64.Text = "4";
             this.R64.UseVisualStyleBackColor = true;
+            this.R64.Click += new System.EventHandler(this.R64_Click);
             // 
             // R63
             // 
@@ -4268,6 +4609,7 @@ namespace FrmLogin.UserControls
             this.R63.TabIndex = 1035;
             this.R63.Text = "3";
             this.R63.UseVisualStyleBackColor = true;
+            this.R63.Click += new System.EventHandler(this.R63_Click);
             // 
             // R62
             // 
@@ -4277,6 +4619,7 @@ namespace FrmLogin.UserControls
             this.R62.TabIndex = 1034;
             this.R62.Text = "2";
             this.R62.UseVisualStyleBackColor = true;
+            this.R62.Click += new System.EventHandler(this.R62_Click);
             // 
             // R61
             // 
@@ -4286,6 +4629,7 @@ namespace FrmLogin.UserControls
             this.R61.TabIndex = 1033;
             this.R61.Text = "1";
             this.R61.UseVisualStyleBackColor = true;
+            this.R61.Click += new System.EventHandler(this.R61_Click);
             // 
             // R54
             // 
@@ -4295,6 +4639,7 @@ namespace FrmLogin.UserControls
             this.R54.TabIndex = 1032;
             this.R54.Text = "4";
             this.R54.UseVisualStyleBackColor = true;
+            this.R54.Click += new System.EventHandler(this.R54_Click);
             // 
             // R53
             // 
@@ -4304,6 +4649,7 @@ namespace FrmLogin.UserControls
             this.R53.TabIndex = 1031;
             this.R53.Text = "3";
             this.R53.UseVisualStyleBackColor = true;
+            this.R53.Click += new System.EventHandler(this.R53_Click);
             // 
             // R52
             // 
@@ -4313,6 +4659,7 @@ namespace FrmLogin.UserControls
             this.R52.TabIndex = 1030;
             this.R52.Text = "2";
             this.R52.UseVisualStyleBackColor = true;
+            this.R52.Click += new System.EventHandler(this.R52_Click);
             // 
             // R51
             // 
@@ -4322,6 +4669,7 @@ namespace FrmLogin.UserControls
             this.R51.TabIndex = 1029;
             this.R51.Text = "1";
             this.R51.UseVisualStyleBackColor = true;
+            this.R51.Click += new System.EventHandler(this.R51_Click);
             // 
             // R44
             // 
@@ -4331,6 +4679,7 @@ namespace FrmLogin.UserControls
             this.R44.TabIndex = 1028;
             this.R44.Text = "4";
             this.R44.UseVisualStyleBackColor = true;
+            this.R44.Click += new System.EventHandler(this.R44_Click);
             // 
             // R43
             // 
@@ -4340,6 +4689,7 @@ namespace FrmLogin.UserControls
             this.R43.TabIndex = 1027;
             this.R43.Text = "3";
             this.R43.UseVisualStyleBackColor = true;
+            this.R43.Click += new System.EventHandler(this.R43_Click);
             // 
             // R42
             // 
@@ -4349,6 +4699,7 @@ namespace FrmLogin.UserControls
             this.R42.TabIndex = 1026;
             this.R42.Text = "2";
             this.R42.UseVisualStyleBackColor = true;
+            this.R42.Click += new System.EventHandler(this.R42_Click);
             // 
             // R41
             // 
@@ -4358,6 +4709,7 @@ namespace FrmLogin.UserControls
             this.R41.TabIndex = 1025;
             this.R41.Text = "1";
             this.R41.UseVisualStyleBackColor = true;
+            this.R41.Click += new System.EventHandler(this.R41_Click);
             // 
             // R34
             // 
@@ -4367,6 +4719,7 @@ namespace FrmLogin.UserControls
             this.R34.TabIndex = 1024;
             this.R34.Text = "4";
             this.R34.UseVisualStyleBackColor = true;
+            this.R34.Click += new System.EventHandler(this.R34_Click);
             // 
             // R33
             // 
@@ -4376,6 +4729,7 @@ namespace FrmLogin.UserControls
             this.R33.TabIndex = 1023;
             this.R33.Text = "3";
             this.R33.UseVisualStyleBackColor = true;
+            this.R33.Click += new System.EventHandler(this.R33_Click);
             // 
             // R32
             // 
@@ -4385,6 +4739,7 @@ namespace FrmLogin.UserControls
             this.R32.TabIndex = 1022;
             this.R32.Text = "2";
             this.R32.UseVisualStyleBackColor = true;
+            this.R32.Click += new System.EventHandler(this.R32_Click);
             // 
             // R31
             // 
@@ -4394,6 +4749,7 @@ namespace FrmLogin.UserControls
             this.R31.TabIndex = 1021;
             this.R31.Text = "1";
             this.R31.UseVisualStyleBackColor = true;
+            this.R31.Click += new System.EventHandler(this.R31_Click);
             // 
             // R24
             // 
@@ -4403,6 +4759,7 @@ namespace FrmLogin.UserControls
             this.R24.TabIndex = 1020;
             this.R24.Text = "4";
             this.R24.UseVisualStyleBackColor = true;
+            this.R24.Click += new System.EventHandler(this.R24_Click);
             // 
             // R23
             // 
@@ -4412,6 +4769,7 @@ namespace FrmLogin.UserControls
             this.R23.TabIndex = 1019;
             this.R23.Text = "3";
             this.R23.UseVisualStyleBackColor = true;
+            this.R23.Click += new System.EventHandler(this.R23_Click);
             // 
             // R22
             // 
@@ -4421,6 +4779,7 @@ namespace FrmLogin.UserControls
             this.R22.TabIndex = 1018;
             this.R22.Text = "2";
             this.R22.UseVisualStyleBackColor = true;
+            this.R22.Click += new System.EventHandler(this.R22_Click);
             // 
             // R21
             // 
@@ -4430,6 +4789,7 @@ namespace FrmLogin.UserControls
             this.R21.TabIndex = 1017;
             this.R21.Text = "1";
             this.R21.UseVisualStyleBackColor = true;
+            this.R21.Click += new System.EventHandler(this.R21_Click);
             // 
             // R14
             // 
@@ -4439,6 +4799,7 @@ namespace FrmLogin.UserControls
             this.R14.TabIndex = 1016;
             this.R14.Text = "4";
             this.R14.UseVisualStyleBackColor = true;
+            this.R14.Click += new System.EventHandler(this.R14_Click);
             // 
             // R13
             // 
@@ -4448,6 +4809,7 @@ namespace FrmLogin.UserControls
             this.R13.TabIndex = 1015;
             this.R13.Text = "3";
             this.R13.UseVisualStyleBackColor = true;
+            this.R13.Click += new System.EventHandler(this.R13_Click);
             // 
             // R12
             // 
@@ -4457,6 +4819,7 @@ namespace FrmLogin.UserControls
             this.R12.TabIndex = 1014;
             this.R12.Text = "2";
             this.R12.UseVisualStyleBackColor = true;
+            this.R12.Click += new System.EventHandler(this.R12_Click);
             // 
             // R11
             // 
@@ -4466,6 +4829,7 @@ namespace FrmLogin.UserControls
             this.R11.TabIndex = 1013;
             this.R11.Text = "1";
             this.R11.UseVisualStyleBackColor = true;
+            this.R11.Click += new System.EventHandler(this.R11_Click);
             // 
             // P64
             // 
@@ -4475,6 +4839,7 @@ namespace FrmLogin.UserControls
             this.P64.TabIndex = 1012;
             this.P64.Text = "4";
             this.P64.UseVisualStyleBackColor = true;
+            this.P64.Click += new System.EventHandler(this.P64_Click);
             // 
             // P63
             // 
@@ -4484,6 +4849,7 @@ namespace FrmLogin.UserControls
             this.P63.TabIndex = 1011;
             this.P63.Text = "3";
             this.P63.UseVisualStyleBackColor = true;
+            this.P63.Click += new System.EventHandler(this.P63_Click);
             // 
             // P62
             // 
@@ -4493,6 +4859,7 @@ namespace FrmLogin.UserControls
             this.P62.TabIndex = 1010;
             this.P62.Text = "2";
             this.P62.UseVisualStyleBackColor = true;
+            this.P62.Click += new System.EventHandler(this.P62_Click);
             // 
             // P61
             // 
@@ -4502,6 +4869,7 @@ namespace FrmLogin.UserControls
             this.P61.TabIndex = 1009;
             this.P61.Text = "1";
             this.P61.UseVisualStyleBackColor = true;
+            this.P61.Click += new System.EventHandler(this.P61_Click);
             // 
             // P54
             // 
@@ -4511,6 +4879,7 @@ namespace FrmLogin.UserControls
             this.P54.TabIndex = 1008;
             this.P54.Text = "4";
             this.P54.UseVisualStyleBackColor = true;
+            this.P54.Click += new System.EventHandler(this.P54_Click);
             // 
             // P53
             // 
@@ -4520,6 +4889,7 @@ namespace FrmLogin.UserControls
             this.P53.TabIndex = 1007;
             this.P53.Text = "3";
             this.P53.UseVisualStyleBackColor = true;
+            this.P53.Click += new System.EventHandler(this.P53_Click);
             // 
             // P52
             // 
@@ -4529,6 +4899,7 @@ namespace FrmLogin.UserControls
             this.P52.TabIndex = 1006;
             this.P52.Text = "2";
             this.P52.UseVisualStyleBackColor = true;
+            this.P52.Click += new System.EventHandler(this.P52_Click);
             // 
             // P51
             // 
@@ -4538,6 +4909,7 @@ namespace FrmLogin.UserControls
             this.P51.TabIndex = 1005;
             this.P51.Text = "1";
             this.P51.UseVisualStyleBackColor = true;
+            this.P51.Click += new System.EventHandler(this.P51_Click);
             // 
             // P44
             // 
@@ -4547,6 +4919,7 @@ namespace FrmLogin.UserControls
             this.P44.TabIndex = 1004;
             this.P44.Text = "4";
             this.P44.UseVisualStyleBackColor = true;
+            this.P44.Click += new System.EventHandler(this.P44_Click);
             // 
             // P43
             // 
@@ -4556,6 +4929,7 @@ namespace FrmLogin.UserControls
             this.P43.TabIndex = 1003;
             this.P43.Text = "3";
             this.P43.UseVisualStyleBackColor = true;
+            this.P43.Click += new System.EventHandler(this.P43_Click);
             // 
             // P42
             // 
@@ -4565,6 +4939,7 @@ namespace FrmLogin.UserControls
             this.P42.TabIndex = 1002;
             this.P42.Text = "2";
             this.P42.UseVisualStyleBackColor = true;
+            this.P42.Click += new System.EventHandler(this.P42_Click);
             // 
             // P41
             // 
@@ -4574,6 +4949,7 @@ namespace FrmLogin.UserControls
             this.P41.TabIndex = 1001;
             this.P41.Text = "1";
             this.P41.UseVisualStyleBackColor = true;
+            this.P41.Click += new System.EventHandler(this.P41_Click);
             // 
             // P34
             // 
@@ -4583,6 +4959,7 @@ namespace FrmLogin.UserControls
             this.P34.TabIndex = 1000;
             this.P34.Text = "4";
             this.P34.UseVisualStyleBackColor = true;
+            this.P34.Click += new System.EventHandler(this.P34_Click);
             // 
             // P33
             // 
@@ -4592,6 +4969,7 @@ namespace FrmLogin.UserControls
             this.P33.TabIndex = 999;
             this.P33.Text = "3";
             this.P33.UseVisualStyleBackColor = true;
+            this.P33.Click += new System.EventHandler(this.P33_Click);
             // 
             // P32
             // 
@@ -4601,6 +4979,7 @@ namespace FrmLogin.UserControls
             this.P32.TabIndex = 998;
             this.P32.Text = "2";
             this.P32.UseVisualStyleBackColor = true;
+            this.P32.Click += new System.EventHandler(this.P32_Click);
             // 
             // P31
             // 
@@ -4610,6 +4989,7 @@ namespace FrmLogin.UserControls
             this.P31.TabIndex = 997;
             this.P31.Text = "1";
             this.P31.UseVisualStyleBackColor = true;
+            this.P31.Click += new System.EventHandler(this.P31_Click);
             // 
             // P24
             // 
@@ -4619,6 +4999,7 @@ namespace FrmLogin.UserControls
             this.P24.TabIndex = 996;
             this.P24.Text = "4";
             this.P24.UseVisualStyleBackColor = true;
+            this.P24.Click += new System.EventHandler(this.P24_Click);
             // 
             // P23
             // 
@@ -4628,6 +5009,7 @@ namespace FrmLogin.UserControls
             this.P23.TabIndex = 995;
             this.P23.Text = "3";
             this.P23.UseVisualStyleBackColor = true;
+            this.P23.Click += new System.EventHandler(this.P23_Click);
             // 
             // P22
             // 
@@ -4637,6 +5019,7 @@ namespace FrmLogin.UserControls
             this.P22.TabIndex = 994;
             this.P22.Text = "2";
             this.P22.UseVisualStyleBackColor = true;
+            this.P22.Click += new System.EventHandler(this.P22_Click);
             // 
             // P21
             // 
@@ -4646,6 +5029,7 @@ namespace FrmLogin.UserControls
             this.P21.TabIndex = 993;
             this.P21.Text = "1";
             this.P21.UseVisualStyleBackColor = true;
+            this.P21.Click += new System.EventHandler(this.P21_Click);
             // 
             // P14
             // 
@@ -4655,6 +5039,7 @@ namespace FrmLogin.UserControls
             this.P14.TabIndex = 992;
             this.P14.Text = "4";
             this.P14.UseVisualStyleBackColor = true;
+            this.P14.Click += new System.EventHandler(this.P14_Click);
             // 
             // P13
             // 
@@ -4664,6 +5049,7 @@ namespace FrmLogin.UserControls
             this.P13.TabIndex = 991;
             this.P13.Text = "3";
             this.P13.UseVisualStyleBackColor = true;
+            this.P13.Click += new System.EventHandler(this.P13_Click);
             // 
             // P12
             // 
@@ -4673,6 +5059,7 @@ namespace FrmLogin.UserControls
             this.P12.TabIndex = 990;
             this.P12.Text = "2";
             this.P12.UseVisualStyleBackColor = true;
+            this.P12.Click += new System.EventHandler(this.P12_Click);
             // 
             // P11
             // 
@@ -4682,15 +5069,17 @@ namespace FrmLogin.UserControls
             this.P11.TabIndex = 989;
             this.P11.Text = "1";
             this.P11.UseVisualStyleBackColor = true;
+            this.P11.Click += new System.EventHandler(this.P11_Click);
             // 
-            // button441
+            // R74
             // 
-            this.button441.Location = new System.Drawing.Point(994, 8);
-            this.button441.Name = "button441";
-            this.button441.Size = new System.Drawing.Size(43, 22);
-            this.button441.TabIndex = 1109;
-            this.button441.Text = "4";
-            this.button441.UseVisualStyleBackColor = true;
+            this.R74.Location = new System.Drawing.Point(994, 8);
+            this.R74.Name = "R74";
+            this.R74.Size = new System.Drawing.Size(43, 22);
+            this.R74.TabIndex = 1109;
+            this.R74.Text = "4";
+            this.R74.UseVisualStyleBackColor = true;
+            this.R74.Click += new System.EventHandler(this.R74_Click);
             // 
             // R73
             // 
@@ -4700,6 +5089,7 @@ namespace FrmLogin.UserControls
             this.R73.TabIndex = 1108;
             this.R73.Text = "3";
             this.R73.UseVisualStyleBackColor = true;
+            this.R73.Click += new System.EventHandler(this.R73_Click);
             // 
             // R72
             // 
@@ -4709,6 +5099,7 @@ namespace FrmLogin.UserControls
             this.R72.TabIndex = 1107;
             this.R72.Text = "2";
             this.R72.UseVisualStyleBackColor = true;
+            this.R72.Click += new System.EventHandler(this.R72_Click);
             // 
             // R71
             // 
@@ -4718,6 +5109,7 @@ namespace FrmLogin.UserControls
             this.R71.TabIndex = 1106;
             this.R71.Text = "1";
             this.R71.UseVisualStyleBackColor = true;
+            this.R71.Click += new System.EventHandler(this.R71_Click);
             // 
             // P74
             // 
@@ -4727,6 +5119,7 @@ namespace FrmLogin.UserControls
             this.P74.TabIndex = 1105;
             this.P74.Text = "4";
             this.P74.UseVisualStyleBackColor = true;
+            this.P74.Click += new System.EventHandler(this.P74_Click);
             // 
             // P73
             // 
@@ -4736,6 +5129,7 @@ namespace FrmLogin.UserControls
             this.P73.TabIndex = 1104;
             this.P73.Text = "3";
             this.P73.UseVisualStyleBackColor = true;
+            this.P73.Click += new System.EventHandler(this.P73_Click);
             // 
             // P72
             // 
@@ -4745,6 +5139,7 @@ namespace FrmLogin.UserControls
             this.P72.TabIndex = 1103;
             this.P72.Text = "2";
             this.P72.UseVisualStyleBackColor = true;
+            this.P72.Click += new System.EventHandler(this.P72_Click);
             // 
             // P71
             // 
@@ -4754,6 +5149,7 @@ namespace FrmLogin.UserControls
             this.P71.TabIndex = 1102;
             this.P71.Text = "1";
             this.P71.UseVisualStyleBackColor = true;
+            this.P71.Click += new System.EventHandler(this.P71_Click);
             // 
             // O74
             // 
@@ -4763,6 +5159,7 @@ namespace FrmLogin.UserControls
             this.O74.TabIndex = 1101;
             this.O74.Text = "4";
             this.O74.UseVisualStyleBackColor = true;
+            this.O74.Click += new System.EventHandler(this.O74_Click);
             // 
             // O73
             // 
@@ -4772,6 +5169,7 @@ namespace FrmLogin.UserControls
             this.O73.TabIndex = 1100;
             this.O73.Text = "3";
             this.O73.UseVisualStyleBackColor = true;
+            this.O73.Click += new System.EventHandler(this.O73_Click);
             // 
             // O72
             // 
@@ -4781,6 +5179,7 @@ namespace FrmLogin.UserControls
             this.O72.TabIndex = 1099;
             this.O72.Text = "2";
             this.O72.UseVisualStyleBackColor = true;
+            this.O72.Click += new System.EventHandler(this.O72_Click);
             // 
             // O71
             // 
@@ -4790,6 +5189,7 @@ namespace FrmLogin.UserControls
             this.O71.TabIndex = 1098;
             this.O71.Text = "1";
             this.O71.UseVisualStyleBackColor = true;
+            this.O71.Click += new System.EventHandler(this.O71_Click);
             // 
             // N74
             // 
@@ -4799,6 +5199,7 @@ namespace FrmLogin.UserControls
             this.N74.TabIndex = 1097;
             this.N74.Text = "4";
             this.N74.UseVisualStyleBackColor = true;
+            this.N74.Click += new System.EventHandler(this.N74_Click);
             // 
             // N73
             // 
@@ -4808,6 +5209,7 @@ namespace FrmLogin.UserControls
             this.N73.TabIndex = 1096;
             this.N73.Text = "3";
             this.N73.UseVisualStyleBackColor = true;
+            this.N73.Click += new System.EventHandler(this.N73_Click);
             // 
             // N72
             // 
@@ -4817,6 +5219,7 @@ namespace FrmLogin.UserControls
             this.N72.TabIndex = 1095;
             this.N72.Text = "2";
             this.N72.UseVisualStyleBackColor = true;
+            this.N72.Click += new System.EventHandler(this.N72_Click);
             // 
             // N71
             // 
@@ -4826,6 +5229,7 @@ namespace FrmLogin.UserControls
             this.N71.TabIndex = 1094;
             this.N71.Text = "1";
             this.N71.UseVisualStyleBackColor = true;
+            this.N71.Click += new System.EventHandler(this.N71_Click);
             // 
             // M74
             // 
@@ -4835,6 +5239,7 @@ namespace FrmLogin.UserControls
             this.M74.TabIndex = 1093;
             this.M74.Text = "4";
             this.M74.UseVisualStyleBackColor = true;
+            this.M74.Click += new System.EventHandler(this.M74_Click);
             // 
             // M73
             // 
@@ -4844,6 +5249,7 @@ namespace FrmLogin.UserControls
             this.M73.TabIndex = 1092;
             this.M73.Text = "3";
             this.M73.UseVisualStyleBackColor = true;
+            this.M73.Click += new System.EventHandler(this.M73_Click);
             // 
             // M72
             // 
@@ -4853,6 +5259,7 @@ namespace FrmLogin.UserControls
             this.M72.TabIndex = 1091;
             this.M72.Text = "2";
             this.M72.UseVisualStyleBackColor = true;
+            this.M72.Click += new System.EventHandler(this.M72_Click);
             // 
             // M71
             // 
@@ -4862,6 +5269,7 @@ namespace FrmLogin.UserControls
             this.M71.TabIndex = 1090;
             this.M71.Text = "1";
             this.M71.UseVisualStyleBackColor = true;
+            this.M71.Click += new System.EventHandler(this.M71_Click);
             // 
             // L74
             // 
@@ -4871,6 +5279,7 @@ namespace FrmLogin.UserControls
             this.L74.TabIndex = 1089;
             this.L74.Text = "4";
             this.L74.UseVisualStyleBackColor = true;
+            this.L74.Click += new System.EventHandler(this.L74_Click);
             // 
             // L73
             // 
@@ -4880,6 +5289,7 @@ namespace FrmLogin.UserControls
             this.L73.TabIndex = 1088;
             this.L73.Text = "3";
             this.L73.UseVisualStyleBackColor = true;
+            this.L73.Click += new System.EventHandler(this.L73_Click);
             // 
             // L72
             // 
@@ -4889,6 +5299,7 @@ namespace FrmLogin.UserControls
             this.L72.TabIndex = 1087;
             this.L72.Text = "2";
             this.L72.UseVisualStyleBackColor = true;
+            this.L72.Click += new System.EventHandler(this.L72_Click);
             // 
             // L71
             // 
@@ -4898,6 +5309,7 @@ namespace FrmLogin.UserControls
             this.L71.TabIndex = 1086;
             this.L71.Text = "1";
             this.L71.UseVisualStyleBackColor = true;
+            this.L71.Click += new System.EventHandler(this.L71_Click);
             // 
             // K74
             // 
@@ -4907,6 +5319,7 @@ namespace FrmLogin.UserControls
             this.K74.TabIndex = 1085;
             this.K74.Text = "4";
             this.K74.UseVisualStyleBackColor = true;
+            this.K74.Click += new System.EventHandler(this.K74_Click);
             // 
             // K73
             // 
@@ -4916,6 +5329,7 @@ namespace FrmLogin.UserControls
             this.K73.TabIndex = 1084;
             this.K73.Text = "3";
             this.K73.UseVisualStyleBackColor = true;
+            this.K73.Click += new System.EventHandler(this.K73_Click);
             // 
             // K72
             // 
@@ -4925,6 +5339,7 @@ namespace FrmLogin.UserControls
             this.K72.TabIndex = 1083;
             this.K72.Text = "2";
             this.K72.UseVisualStyleBackColor = true;
+            this.K72.Click += new System.EventHandler(this.K72_Click);
             // 
             // K71
             // 
@@ -4934,6 +5349,7 @@ namespace FrmLogin.UserControls
             this.K71.TabIndex = 1082;
             this.K71.Text = "1";
             this.K71.UseVisualStyleBackColor = true;
+            this.K71.Click += new System.EventHandler(this.K71_Click);
             // 
             // J74
             // 
@@ -4943,6 +5359,7 @@ namespace FrmLogin.UserControls
             this.J74.TabIndex = 1081;
             this.J74.Text = "4";
             this.J74.UseVisualStyleBackColor = true;
+            this.J74.Click += new System.EventHandler(this.J74_Click);
             // 
             // J73
             // 
@@ -4952,6 +5369,7 @@ namespace FrmLogin.UserControls
             this.J73.TabIndex = 1080;
             this.J73.Text = "3";
             this.J73.UseVisualStyleBackColor = true;
+            this.J73.Click += new System.EventHandler(this.J73_Click);
             // 
             // J72
             // 
@@ -4961,6 +5379,7 @@ namespace FrmLogin.UserControls
             this.J72.TabIndex = 1079;
             this.J72.Text = "2";
             this.J72.UseVisualStyleBackColor = true;
+            this.J72.Click += new System.EventHandler(this.J72_Click);
             // 
             // J71
             // 
@@ -4970,6 +5389,7 @@ namespace FrmLogin.UserControls
             this.J71.TabIndex = 1078;
             this.J71.Text = "1";
             this.J71.UseVisualStyleBackColor = true;
+            this.J71.Click += new System.EventHandler(this.J71_Click);
             // 
             // I74
             // 
@@ -4979,6 +5399,7 @@ namespace FrmLogin.UserControls
             this.I74.TabIndex = 1077;
             this.I74.Text = "4";
             this.I74.UseVisualStyleBackColor = true;
+            this.I74.Click += new System.EventHandler(this.I74_Click);
             // 
             // I73
             // 
@@ -4988,6 +5409,7 @@ namespace FrmLogin.UserControls
             this.I73.TabIndex = 1076;
             this.I73.Text = "3";
             this.I73.UseVisualStyleBackColor = true;
+            this.I73.Click += new System.EventHandler(this.I73_Click);
             // 
             // I72
             // 
@@ -4997,6 +5419,7 @@ namespace FrmLogin.UserControls
             this.I72.TabIndex = 1075;
             this.I72.Text = "2";
             this.I72.UseVisualStyleBackColor = true;
+            this.I72.Click += new System.EventHandler(this.I72_Click);
             // 
             // I71
             // 
@@ -5006,6 +5429,7 @@ namespace FrmLogin.UserControls
             this.I71.TabIndex = 1074;
             this.I71.Text = "1";
             this.I71.UseVisualStyleBackColor = true;
+            this.I71.Click += new System.EventHandler(this.I71_Click);
             // 
             // H74
             // 
@@ -5015,6 +5439,7 @@ namespace FrmLogin.UserControls
             this.H74.TabIndex = 1073;
             this.H74.Text = "4";
             this.H74.UseVisualStyleBackColor = true;
+            this.H74.Click += new System.EventHandler(this.H74_Click);
             // 
             // H73
             // 
@@ -5024,6 +5449,7 @@ namespace FrmLogin.UserControls
             this.H73.TabIndex = 1072;
             this.H73.Text = "3";
             this.H73.UseVisualStyleBackColor = true;
+            this.H73.Click += new System.EventHandler(this.H73_Click);
             // 
             // H72
             // 
@@ -5033,6 +5459,7 @@ namespace FrmLogin.UserControls
             this.H72.TabIndex = 1071;
             this.H72.Text = "2";
             this.H72.UseVisualStyleBackColor = true;
+            this.H72.Click += new System.EventHandler(this.H72_Click);
             // 
             // H71
             // 
@@ -5042,6 +5469,7 @@ namespace FrmLogin.UserControls
             this.H71.TabIndex = 1070;
             this.H71.Text = "1";
             this.H71.UseVisualStyleBackColor = true;
+            this.H71.Click += new System.EventHandler(this.H71_Click);
             // 
             // G74
             // 
@@ -5051,6 +5479,7 @@ namespace FrmLogin.UserControls
             this.G74.TabIndex = 1069;
             this.G74.Text = "4";
             this.G74.UseVisualStyleBackColor = true;
+            this.G74.Click += new System.EventHandler(this.G74_Click);
             // 
             // G73
             // 
@@ -5060,6 +5489,7 @@ namespace FrmLogin.UserControls
             this.G73.TabIndex = 1068;
             this.G73.Text = "3";
             this.G73.UseVisualStyleBackColor = true;
+            this.G73.Click += new System.EventHandler(this.G73_Click);
             // 
             // G72
             // 
@@ -5069,6 +5499,7 @@ namespace FrmLogin.UserControls
             this.G72.TabIndex = 1067;
             this.G72.Text = "2";
             this.G72.UseVisualStyleBackColor = true;
+            this.G72.Click += new System.EventHandler(this.G72_Click);
             // 
             // G71
             // 
@@ -5078,6 +5509,7 @@ namespace FrmLogin.UserControls
             this.G71.TabIndex = 1066;
             this.G71.Text = "1";
             this.G71.UseVisualStyleBackColor = true;
+            this.G71.Click += new System.EventHandler(this.G71_Click);
             // 
             // F74
             // 
@@ -5087,6 +5519,7 @@ namespace FrmLogin.UserControls
             this.F74.TabIndex = 1065;
             this.F74.Text = "4";
             this.F74.UseVisualStyleBackColor = true;
+            this.F74.Click += new System.EventHandler(this.F74_Click);
             // 
             // F73
             // 
@@ -5096,6 +5529,7 @@ namespace FrmLogin.UserControls
             this.F73.TabIndex = 1064;
             this.F73.Text = "3";
             this.F73.UseVisualStyleBackColor = true;
+            this.F73.Click += new System.EventHandler(this.F73_Click);
             // 
             // F72
             // 
@@ -5105,6 +5539,7 @@ namespace FrmLogin.UserControls
             this.F72.TabIndex = 1063;
             this.F72.Text = "2";
             this.F72.UseVisualStyleBackColor = true;
+            this.F72.Click += new System.EventHandler(this.F72_Click);
             // 
             // F71
             // 
@@ -5114,6 +5549,7 @@ namespace FrmLogin.UserControls
             this.F71.TabIndex = 1062;
             this.F71.Text = "1";
             this.F71.UseVisualStyleBackColor = true;
+            this.F71.Click += new System.EventHandler(this.F71_Click);
             // 
             // A74
             // 
@@ -5163,6 +5599,7 @@ namespace FrmLogin.UserControls
             this.E74.TabIndex = 1057;
             this.E74.Text = "4";
             this.E74.UseVisualStyleBackColor = true;
+            this.E74.Click += new System.EventHandler(this.E74_Click);
             // 
             // E73
             // 
@@ -5172,6 +5609,7 @@ namespace FrmLogin.UserControls
             this.E73.TabIndex = 1056;
             this.E73.Text = "3";
             this.E73.UseVisualStyleBackColor = true;
+            this.E73.Click += new System.EventHandler(this.E73_Click);
             // 
             // E72
             // 
@@ -5181,6 +5619,7 @@ namespace FrmLogin.UserControls
             this.E72.TabIndex = 1055;
             this.E72.Text = "2";
             this.E72.UseVisualStyleBackColor = true;
+            this.E72.Click += new System.EventHandler(this.E72_Click);
             // 
             // E71
             // 
@@ -5190,6 +5629,7 @@ namespace FrmLogin.UserControls
             this.E71.TabIndex = 1054;
             this.E71.Text = "1";
             this.E71.UseVisualStyleBackColor = true;
+            this.E71.Click += new System.EventHandler(this.E71_Click);
             // 
             // D74
             // 
@@ -5199,6 +5639,7 @@ namespace FrmLogin.UserControls
             this.D74.TabIndex = 1053;
             this.D74.Text = "4";
             this.D74.UseVisualStyleBackColor = true;
+            this.D74.Click += new System.EventHandler(this.D74_Click);
             // 
             // D73
             // 
@@ -5208,6 +5649,7 @@ namespace FrmLogin.UserControls
             this.D73.TabIndex = 1052;
             this.D73.Text = "3";
             this.D73.UseVisualStyleBackColor = true;
+            this.D73.Click += new System.EventHandler(this.D73_Click);
             // 
             // D72
             // 
@@ -5217,6 +5659,7 @@ namespace FrmLogin.UserControls
             this.D72.TabIndex = 1051;
             this.D72.Text = "2";
             this.D72.UseVisualStyleBackColor = true;
+            this.D72.Click += new System.EventHandler(this.D72_Click);
             // 
             // D71
             // 
@@ -5226,6 +5669,7 @@ namespace FrmLogin.UserControls
             this.D71.TabIndex = 1050;
             this.D71.Text = "1";
             this.D71.UseVisualStyleBackColor = true;
+            this.D71.Click += new System.EventHandler(this.D71_Click);
             // 
             // C74
             // 
@@ -5235,6 +5679,7 @@ namespace FrmLogin.UserControls
             this.C74.TabIndex = 1049;
             this.C74.Text = "4";
             this.C74.UseVisualStyleBackColor = true;
+            this.C74.Click += new System.EventHandler(this.C74_Click);
             // 
             // C73
             // 
@@ -5244,6 +5689,7 @@ namespace FrmLogin.UserControls
             this.C73.TabIndex = 1048;
             this.C73.Text = "3";
             this.C73.UseVisualStyleBackColor = true;
+            this.C73.Click += new System.EventHandler(this.C73_Click);
             // 
             // C72
             // 
@@ -5253,6 +5699,7 @@ namespace FrmLogin.UserControls
             this.C72.TabIndex = 1047;
             this.C72.Text = "2";
             this.C72.UseVisualStyleBackColor = true;
+            this.C72.Click += new System.EventHandler(this.C72_Click);
             // 
             // C71
             // 
@@ -5262,6 +5709,7 @@ namespace FrmLogin.UserControls
             this.C71.TabIndex = 1046;
             this.C71.Text = "1";
             this.C71.UseVisualStyleBackColor = true;
+            this.C71.Click += new System.EventHandler(this.C71_Click);
             // 
             // B74
             // 
@@ -5311,6 +5759,7 @@ namespace FrmLogin.UserControls
             this.S74.TabIndex = 1041;
             this.S74.Text = "4";
             this.S74.UseVisualStyleBackColor = true;
+            this.S74.Click += new System.EventHandler(this.S74_Click);
             // 
             // S73
             // 
@@ -5320,6 +5769,7 @@ namespace FrmLogin.UserControls
             this.S73.TabIndex = 1040;
             this.S73.Text = "3";
             this.S73.UseVisualStyleBackColor = true;
+            this.S73.Click += new System.EventHandler(this.S73_Click);
             // 
             // S72
             // 
@@ -5329,6 +5779,7 @@ namespace FrmLogin.UserControls
             this.S72.TabIndex = 1039;
             this.S72.Text = "2";
             this.S72.UseVisualStyleBackColor = true;
+            this.S72.Click += new System.EventHandler(this.S72_Click);
             // 
             // S71
             // 
@@ -5338,6 +5789,7 @@ namespace FrmLogin.UserControls
             this.S71.TabIndex = 1038;
             this.S71.Text = "1";
             this.S71.UseVisualStyleBackColor = true;
+            this.S71.Click += new System.EventHandler(this.S71_Click);
             // 
             // label9
             // 
@@ -5688,7 +6140,7 @@ namespace FrmLogin.UserControls
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button441);
+            this.Controls.Add(this.R74);
             this.Controls.Add(this.R73);
             this.Controls.Add(this.R72);
             this.Controls.Add(this.R71);
@@ -6671,7 +7123,7 @@ namespace FrmLogin.UserControls
         private System.Windows.Forms.Button P13;
         private System.Windows.Forms.Button P12;
         private System.Windows.Forms.Button P11;
-        private System.Windows.Forms.Button button441;
+        private System.Windows.Forms.Button R74;
         private System.Windows.Forms.Button R73;
         private System.Windows.Forms.Button R72;
         private System.Windows.Forms.Button R71;

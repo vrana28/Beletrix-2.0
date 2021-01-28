@@ -76,6 +76,7 @@ namespace FrmLogin.Controllers
                 try
                 {
                     Communication.Communication.Instance.DeleteStorekeeper(Storekeeper);
+                    MessageBox.Show("Sistem je obrisao podatak");
                     frmStorekeeperChange.Dispose();
                 }
                 catch (Exception ex)
@@ -149,6 +150,11 @@ namespace FrmLogin.Controllers
 
             try
             {
+                if (Communication.Communication.Instance.FindStorekeeper(s)) {
+                    MessageBox.Show("Već postoji!");
+                    frmAddStorekeeper.TxtUsername.Text = "";
+                    return;
+                }
                 Communication.Communication.Instance.SaveStorekeeper(s);
                 MessageBox.Show("Magacioner je sacuvan!");
                 frmAddStorekeeper.Dispose();

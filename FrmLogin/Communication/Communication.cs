@@ -169,6 +169,13 @@ namespace FrmLogin.Communication
             return (EntrancePosition)client.GetResponseResult();
         }
 
+        internal bool FindStorekeeper(Storekeeper s)
+        {
+            Request r = new Request { Operation = Operation.FindStorekeeper, RequestObject = s };
+            client.SendRequest(r);
+            return (bool)client.GetResponseResult();
+        }
+
         internal List<EntranceItems> ReturnEntranceItems(int entranceId)
         {
             Request r = new Request { Operation = Operation.ReturnEntranceItems, RequestObject = entranceId };
