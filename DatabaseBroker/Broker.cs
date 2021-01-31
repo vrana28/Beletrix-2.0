@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Domain;
+using System.Collections.Specialized;
+using System.Configuration;
 
 namespace DatabaseBroker
 {
@@ -19,7 +21,7 @@ namespace DatabaseBroker
 
         public Broker()
         {
-            connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BeletrixDatabase;Integrated Security=True;");
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["BeletrixDatabase"].ConnectionString);
         }
 
         #region GenericMethods

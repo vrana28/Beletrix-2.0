@@ -1,4 +1,4 @@
-﻿using Controller;
+﻿
 using Domain;
 using FrmLogin.Controllers;
 using FrmLogin.FrmEnter;
@@ -34,6 +34,7 @@ namespace FrmLogin
         public TextBox TxtClient{ get => txtClient; }
         public TextBox TxtArtikal{ get => txtArtikal; }
         public DataGridView DGVSearchResult{ get => dgvSearchResult; }
+        public Label LblStanje{ get => lblStanje; }
 
 
         //choose client button

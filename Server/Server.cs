@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace Server
 {
@@ -24,7 +26,7 @@ namespace Server
         }
 
         public void Start() {
-            listener.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9998));
+            listener.Bind(new IPEndPoint(IPAddress.Parse(ConfigurationManager.AppSettings["IP"]),int.Parse(ConfigurationManager.AppSettings["Port"])));
         }
 
         public void Listen() {

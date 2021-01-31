@@ -9,6 +9,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace FrmLogin.Communication
 {
@@ -232,7 +234,7 @@ namespace FrmLogin.Communication
                     return;
                 }
                 socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                socket.Connect("127.0.0.1", 9998);
+                socket.Connect(ConfigurationManager.AppSettings["IP"],int.Parse(ConfigurationManager.AppSettings["Port"]));
                 client = new CommunicationClient(socket);
         }
 

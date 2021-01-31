@@ -40,6 +40,7 @@
       <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -259,10 +260,6 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{e5c55a45-2298-44ea-b89b-fa3a8f787e51}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Controller\Controller.csproj">
-      <Project>{8415a03b-e676-4bc2-86cd-0485eeed1eb9}</Project>
-      <Name>Controller</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{0d51a52d-0971-4626-89a2-2cc100a5eb0b}</Project>

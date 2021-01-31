@@ -268,7 +268,7 @@ namespace FrmLogin.Controllers
                 frmExit.TxtDateOfLeaving.Text = DateTime.Now.ToString(culture);
                 LeavingDate = DateTime.Now;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Sistem ne moze da kreira deo izlazne palete");
             }

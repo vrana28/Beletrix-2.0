@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controller;
 using Domain;
 using FrmLogin.Controllers;
 using FrmLogin.FrmEnter;

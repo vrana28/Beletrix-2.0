@@ -49,6 +49,8 @@
             this.btnRoba = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblStanje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(205, 25);
+            this.label1.Location = new System.Drawing.Point(46, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 25);
             this.label1.TabIndex = 0;
@@ -246,11 +248,32 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(271, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 33);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Na stanju:";
+            // 
+            // lblStanje
+            // 
+            this.lblStanje.AutoSize = true;
+            this.lblStanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStanje.Location = new System.Drawing.Point(454, 35);
+            this.lblStanje.Name = "lblStanje";
+            this.lblStanje.Size = new System.Drawing.Size(0, 25);
+            this.lblStanje.TabIndex = 26;
+            // 
             // FrmFind
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 626);
+            this.Controls.Add(this.lblStanje);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.btnRoba);
@@ -305,5 +328,7 @@
         private System.Windows.Forms.Button btnRoba;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblStanje;
     }
 }

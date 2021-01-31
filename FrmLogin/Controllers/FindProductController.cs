@@ -44,6 +44,7 @@ namespace FrmLogin.Controllers
             {
                 frmFind.DGVSearchResult.DataSource = null;
                 frmFind.DGVSearchResult.DataSource = Communication.Communication.Instance.SearchProductWith(Client, Roba);
+                frmFind.LblStanje.Text = Izracunaj(frmFind);
             }
             catch (Exception ex)
             {
@@ -59,6 +60,7 @@ namespace FrmLogin.Controllers
                 Client = null;
                 frmFind.DGVSearchResult.DataSource = null;
                 frmFind.DGVSearchResult.DataSource = Communication.Communication.Instance.FindBusyPosition(Client, Roba);
+                frmFind.LblStanje.Text = Izracunaj(frmFind);
             }
             catch (Exception ex)
             {
@@ -74,6 +76,7 @@ namespace FrmLogin.Controllers
                 Roba = null;
                 frmFind.DGVSearchResult.DataSource = null;
                 frmFind.DGVSearchResult.DataSource = Communication.Communication.Instance.FindBusyPosition(Client, Roba);
+                frmFind.LblStanje.Text = Izracunaj(frmFind);
             }
             catch (Exception ex)
             {
@@ -171,11 +174,25 @@ namespace FrmLogin.Controllers
             {
                 frmFind.DGVSearchResult.DataSource = null;
                 frmFind.DGVSearchResult.DataSource = Communication.Communication.Instance.FindBusyPosition(Client, Roba);
+                frmFind.LblStanje.Text = Izracunaj(frmFind);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private string Izracunaj(FrmFind frmFind)
+        {
+            double stanje = 0;
+            DataGridViewRow row;
+            if (frmFind.DGVSearchResult.Rows.Count!=0) {
+                for (int i = 0; i < frmFind.DGVSearchResult.Rows.Count; i++) {
+                    row = frmFind.DGVSearchResult.Rows[i];
+                    stanje += (double)row.Cells[2].Value;
+                }
+            }
+            return stanje.ToString() + " kg";
         }
 
         internal void Search(FrmFind frmFind)
@@ -188,6 +205,7 @@ namespace FrmLogin.Controllers
             {
                 frmFind.DGVSearchResult.DataSource = null;
                 frmFind.DGVSearchResult.DataSource = Communication.Communication.Instance.FindBusyPositionsWithPosition(Client, Roba, ReturnSearchItem());
+                frmFind.LblStanje.Text = Izracunaj(frmFind);
             }
             catch (Exception ex)
             {
