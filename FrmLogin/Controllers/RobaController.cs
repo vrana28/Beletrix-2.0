@@ -77,7 +77,7 @@ namespace FrmLogin.Controllers
 
             if (!UserControlHelpers.IsValidDouble(frmRobaChange.TxtWeightOfBox.Text))
             {
-                MessageBox.Show("Problem with weight box!");
+                MessageBox.Show("Problem sa težinom kutije!");
                 return;
             }
 
@@ -91,7 +91,7 @@ namespace FrmLogin.Controllers
             try
             {
                 Communication.Communication.Instance.UpdateRoba(r);
-                MessageBox.Show("Roba updated!");
+                MessageBox.Show("Artikal je update-ovan!");
                 frmRobaChange.Dispose();
             }
             catch (Exception ex)
@@ -103,15 +103,15 @@ namespace FrmLogin.Controllers
         internal void Delete(FrmRobaChange frmRobaChange, DataGridViewRow row)
         {
             Roba = (Roba)row.DataBoundItem;
-            var confirmResult = MessageBox.Show("Are you sure to delete this item ??",
-                                     "Confirm Delete!!",
+            var confirmResult = MessageBox.Show("Da li ste sigurni da želite da obrišete artikal??",
+                                     "Potvrdi brisanje!!",
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
                 try
                 {
                     Communication.Communication.Instance.DeleteRoba(Roba);
-                    MessageBox.Show("Deleted!");
+                    MessageBox.Show("Obrisano!");
                     frmRobaChange.Dispose();
                 }
                 catch (Exception ex)
@@ -179,7 +179,7 @@ namespace FrmLogin.Controllers
                     return;
                 }
                 Communication.Communication.Instance.AddRoba(r);
-                MessageBox.Show("Artikal je sacuvan!");
+                MessageBox.Show("Artikal je sačuvan!");
                 frmAddRoba.Dispose();
             }
             catch (Exception ex)

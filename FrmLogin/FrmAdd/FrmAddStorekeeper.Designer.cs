@@ -45,47 +45,47 @@ namespace FrmLogin
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 24);
+            this.label1.Location = new System.Drawing.Point(56, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 26);
+            this.label1.Size = new System.Drawing.Size(199, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Storekeeper";
+            this.label1.Text = "Dodaj magacionera";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 95);
+            this.label2.Location = new System.Drawing.Point(50, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Ime:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 134);
+            this.label3.Location = new System.Drawing.Point(50, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Last name:";
+            this.label3.Text = "Prezime:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 180);
+            this.label4.Location = new System.Drawing.Point(50, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Username:";
+            this.label4.Text = "Korisničko ime:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 224);
+            this.label5.Location = new System.Drawing.Point(50, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Password:";
+            this.label5.Text = "Šifra:";
             // 
             // txtName
             // 
@@ -122,7 +122,7 @@ namespace FrmLogin
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 9;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Sačuvaj";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -143,7 +143,7 @@ namespace FrmLogin
             this.Controls.Add(this.label1);
             this.Name = "FrmAddStorekeeper";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAddStorekeeper";
+            this.Text = "Magacioner";
             this.ResumeLayout(false);
             this.PerformLayout();
 

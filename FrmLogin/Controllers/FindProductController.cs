@@ -4,6 +4,8 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -18,6 +20,7 @@ namespace FrmLogin.Controllers
         {
 
         }
+        
         private string kolona;
         private string red;
         private string pm;
@@ -100,11 +103,12 @@ namespace FrmLogin.Controllers
 
         internal void Print(FrmFind frmFind)
         {
+
             if (frmFind.DGVSearchResult.Rows.Count > 0)
             {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "PDF (*.pdf)|*.pdf";
-                sfd.FileName = "Output.pdf";
+                sfd.FileName = "Pretraga.pdf";
                 bool fileError = false;
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
@@ -148,23 +152,63 @@ namespace FrmLogin.Controllers
                                 Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
                                 PdfWriter.GetInstance(pdfDoc, stream);
                                 pdfDoc.Open();
+
+                                //var imagepath = @"D:\..\Logo.png";
+                                //using (FileStream fs = new FileStream(imagepath, FileMode.Open))
+                                //{
+                                //    var png = Image.GetInstance(System.Drawing.Image.FromStream(fs),
+                                //        ImageFormat.Png);
+                                //    png.ScalePercent(5f);
+                                //    png.SetAbsolutePosition(pdfDoc.Left, pdfDoc.Top);
+                                //    pdfDoc.Add(png);
+                                //}
+
+                                var spacer = new Paragraph("")
+                                    {
+                                        SpacingBefore = 10f,
+                                        SpacingAfter = 10f,
+                                    };
+                                pdfDoc.Add(spacer);
+                                var headerTable = new PdfPTable(new[] { .75f, 2f })
+                                {
+                                    
+                                    WidthPercentage = 75,
+                                    DefaultCell = { MinimumHeight = 22f}
+                                };
+                                var culture = new CultureInfo("de-DE");
+                                headerTable.AddCell("Date");
+                                headerTable.AddCell(DateTime.Now.ToString(culture));
+                                headerTable.AddCell("Klijent:");
+                                if (Client == null)
+                                {
+                                    headerTable.AddCell("");
+                                }
+                                else {
+                                    headerTable.AddCell(Client.Name);                                    
+                                }
+                                headerTable.AddCell("Stanje:");
+                                headerTable.AddCell(frmFind.LblStanje.Text);
+
+                                pdfDoc.Add(headerTable);
+                                pdfDoc.Add(spacer);
+
                                 pdfDoc.Add(pdfTable);
                                 pdfDoc.Close();
                                 stream.Close();
                             }
 
-                            MessageBox.Show("Data Exported Successfully !!!", "Info");
+                            MessageBox.Show("Uspešno exportovano!!!", "Info");
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Error :" + ex.Message);
+                            MessageBox.Show("Greška :" + ex.Message);
                         }
                     }
                 }
             }
             else
             {
-                MessageBox.Show("No Record To Export !!!", "Info");
+                MessageBox.Show("Nema šta da sačuva!!!", "Info");
             }
     }
 

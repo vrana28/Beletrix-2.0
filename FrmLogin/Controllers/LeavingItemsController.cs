@@ -97,12 +97,12 @@ namespace FrmLogin.Controllers
         {
             if (frmExit.DGVSelectedtems.Columns.Count == 0)
             {
-                MessageBox.Show("No data to delete");
+                MessageBox.Show("Nema podataka");
                 return;
             }
 
             var confirmResult = MessageBox.Show($"Da li ste sigurni da hocete da oslobodite poziciju {EntrancePosition.PositionId}",
-                                     "Confirm Exit!!",
+                                     "Potvrdi!!",
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
@@ -126,14 +126,14 @@ namespace FrmLogin.Controllers
 
             if (!UserControlHelpers.IsValidDouble(frmExit.TxtNumOfBoxes.Text))
             {
-                MessageBox.Show("Wrong data!");
+                MessageBox.Show("Pogrešan podatak!");
                 return;
             }
 
             //item.NumOfBoxes = double.Parse(txtNumOfBoxes.Text);
             if (double.Parse(frmExit.TxtNumOfBoxes.Text) > broj)
             {
-                MessageBox.Show("Wrong change data!");
+                MessageBox.Show("Pogrešan podatak!");
                 return;
             }
 
@@ -355,7 +355,7 @@ namespace FrmLogin.Controllers
             {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "PDF (*.pdf)|*.pdf";
-                sfd.FileName = "Output.pdf";
+                sfd.FileName = "Izlaz.pdf";
                 bool fileError = false;
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
@@ -399,23 +399,63 @@ namespace FrmLogin.Controllers
                                 Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
                                 PdfWriter.GetInstance(pdfDoc, stream);
                                 pdfDoc.Open();
+
+                                //var imagepath = @"D:\..\Logo.png";
+                                //using (FileStream fs = new FileStream(imagepath, FileMode.Open))
+                                //{
+                                //    var png = Image.GetInstance(System.Drawing.Image.FromStream(fs),
+                                //        ImageFormat.Png);
+                                //    png.ScalePercent(5f);
+                                //    png.SetAbsolutePosition(pdfDoc.Left, pdfDoc.Top);
+                                //    pdfDoc.Add(png);
+                                //}
+
+                                var spacer = new Paragraph("")
+                                {
+                                    SpacingBefore = 10f,
+                                    SpacingAfter = 10f,
+                                };
+                                pdfDoc.Add(spacer);
+                                var headerTable = new PdfPTable(new[] { .75f, 2f })
+                                {
+
+                                    WidthPercentage = 75,
+                                    DefaultCell = { MinimumHeight = 22f }
+                                };
+                                var culture = new CultureInfo("de-DE");
+                                headerTable.AddCell("Date");
+                                headerTable.AddCell(DateTime.Now.ToString(culture));
+                                headerTable.AddCell("Klijent:");
+                                if (Client == null)
+                                {
+                                    headerTable.AddCell("");
+                                }
+                                else
+                                {
+                                    headerTable.AddCell(Client.Name);
+                                }
+                                
+
+                                pdfDoc.Add(headerTable);
+                                pdfDoc.Add(spacer);
+
                                 pdfDoc.Add(pdfTable);
                                 pdfDoc.Close();
                                 stream.Close();
                             }
 
-                            MessageBox.Show("Data Exported Successfully !!!", "Info");
+                            MessageBox.Show("Uspešno exportovano!!!", "Info");
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Error :" + ex.Message);
+                            MessageBox.Show("Greška :" + ex.Message);
                         }
                     }
                 }
             }
             else
             {
-                MessageBox.Show("No Record To Export !!!", "Info");
+                MessageBox.Show("Nema podataka za export!!!", "Info");
             }
         }
     }

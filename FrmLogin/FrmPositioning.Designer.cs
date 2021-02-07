@@ -84,9 +84,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(190, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.Size = new System.Drawing.Size(157, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Entrances";
+            this.label1.Text = "Ulazne palete";
             // 
             // label2
             // 
@@ -94,14 +94,14 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(590, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 25);
+            this.label2.Size = new System.Drawing.Size(95, 25);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Positions";
+            this.label2.Text = "Pozicije";
             // 
             // txtEntranceId
             // 
             this.txtEntranceId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtEntranceId.Location = new System.Drawing.Point(128, 373);
+            this.txtEntranceId.Location = new System.Drawing.Point(128, 371);
             this.txtEntranceId.Name = "txtEntranceId";
             this.txtEntranceId.ReadOnly = true;
             this.txtEntranceId.Size = new System.Drawing.Size(100, 29);
@@ -113,9 +113,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(12, 376);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 24);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Entrance:";
+            this.label3.Text = "Šifra ulaza:";
             // 
             // label4
             // 
@@ -188,7 +188,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 53);
             this.btnSearch.TabIndex = 14;
-            this.btnSearch.Text = "Search";
+            this.btnSearch.Text = "Pretraži";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -196,16 +196,16 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(12, 430);
+            this.label8.Location = new System.Drawing.Point(33, 430);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 24);
+            this.label8.Size = new System.Drawing.Size(79, 24);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Position:";
+            this.label8.Text = "Pozicija:";
             // 
             // txtPositionId
             // 
             this.txtPositionId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtPositionId.Location = new System.Drawing.Point(128, 430);
+            this.txtPositionId.Location = new System.Drawing.Point(128, 425);
             this.txtPositionId.Name = "txtPositionId";
             this.txtPositionId.ReadOnly = true;
             this.txtPositionId.Size = new System.Drawing.Size(100, 29);
@@ -218,7 +218,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 53);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Refresh";
+            this.button1.Text = "Osveži";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.dgvEntrances);
             this.Name = "FrmPositioning";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPositioning";
+            this.Text = "Pozicionisanje";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrances)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositions)).EndInit();
             this.ResumeLayout(false);

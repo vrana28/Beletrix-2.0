@@ -6065,7 +6065,7 @@ namespace FrmLogin.UserControls
             this.btnUlaz.Name = "btnUlaz";
             this.btnUlaz.Size = new System.Drawing.Size(105, 52);
             this.btnUlaz.TabIndex = 1137;
-            this.btnUlaz.Text = "Entrance";
+            this.btnUlaz.Text = "Ulaz";
             this.btnUlaz.UseVisualStyleBackColor = false;
             this.btnUlaz.Click += new System.EventHandler(this.btnUlaz_Click);
             // 
@@ -6077,7 +6077,7 @@ namespace FrmLogin.UserControls
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 52);
             this.btnExit.TabIndex = 1138;
-            this.btnExit.Text = "Leaving";
+            this.btnExit.Text = "Izlaz";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -6089,7 +6089,7 @@ namespace FrmLogin.UserControls
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(105, 52);
             this.btnFind.TabIndex = 1139;
-            this.btnFind.Text = "Find";
+            this.btnFind.Text = "Pretraga";
             this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
@@ -6101,7 +6101,7 @@ namespace FrmLogin.UserControls
             this.btnPovezi.Name = "btnPovezi";
             this.btnPovezi.Size = new System.Drawing.Size(98, 204);
             this.btnPovezi.TabIndex = 1140;
-            this.btnPovezi.Text = "POSITION";
+            this.btnPovezi.Text = "POZICIJE";
             this.btnPovezi.UseVisualStyleBackColor = false;
             this.btnPovezi.Click += new System.EventHandler(this.btnPovezi_Click);
             // 

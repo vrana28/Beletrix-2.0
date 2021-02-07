@@ -42,7 +42,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 194);
+            this.label4.Location = new System.Drawing.Point(40, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 13);
             this.label4.TabIndex = 39;
@@ -77,28 +77,28 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(40, 159);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 35;
-            this.label3.Text = "WeightOfBox:";
+            this.label3.Text = "Težina kutije:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(40, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Naziv:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 48);
+            this.label1.Location = new System.Drawing.Point(24, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 26);
+            this.label1.Size = new System.Drawing.Size(269, 26);
             this.label1.TabIndex = 33;
-            this.label1.Text = "Udpate or Delete Roba";
+            this.label1.Text = "Promena i brisanje artikala";
             // 
             // button1
             // 
@@ -106,7 +106,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 40;
-            this.button1.Text = "Delete";
+            this.button1.Text = "Obriši";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -125,7 +125,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.Controls.Add(this.label1);
             this.Name = "FrmRobaChange";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmRobaChange";
+            this.Text = "Promena artikala";
             this.ResumeLayout(false);
             this.PerformLayout();
 

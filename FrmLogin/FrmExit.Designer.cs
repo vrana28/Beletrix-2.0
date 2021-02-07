@@ -170,7 +170,7 @@ namespace FrmLogin
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(88, 36);
             this.btnPrint.TabIndex = 33;
-            this.btnPrint.Text = "Print";
+            this.btnPrint.Text = "Štampa";
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
@@ -180,7 +180,7 @@ namespace FrmLogin
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(88, 57);
             this.button4.TabIndex = 32;
-            this.button4.Text = "Search product";
+            this.button4.Text = "Pretraži";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -204,7 +204,7 @@ namespace FrmLogin
             this.btnProductSearch.Name = "btnProductSearch";
             this.btnProductSearch.Size = new System.Drawing.Size(116, 23);
             this.btnProductSearch.TabIndex = 30;
-            this.btnProductSearch.Text = "Choose product";
+            this.btnProductSearch.Text = "Izaberi artikal";
             this.btnProductSearch.UseVisualStyleBackColor = true;
             this.btnProductSearch.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -214,7 +214,7 @@ namespace FrmLogin
             this.btnClientSearch.Name = "btnClientSearch";
             this.btnClientSearch.Size = new System.Drawing.Size(116, 23);
             this.btnClientSearch.TabIndex = 29;
-            this.btnClientSearch.Text = "Choose client";
+            this.btnClientSearch.Text = "Izaberi klijenta";
             this.btnClientSearch.UseVisualStyleBackColor = true;
             this.btnClientSearch.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -239,18 +239,18 @@ namespace FrmLogin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(28, 124);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Roba:";
+            this.label4.Text = "Artikal:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(28, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Client:";
+            this.label2.Text = "Klijent:";
             // 
             // label1
             // 
@@ -258,9 +258,9 @@ namespace FrmLogin
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(168, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 25);
+            this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Products exit";
+            this.label1.Text = "Izlaz palete";
             // 
             // pnlChange
             // 
@@ -332,9 +332,9 @@ namespace FrmLogin
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(194, 31);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 13);
+            this.label14.Size = new System.Drawing.Size(70, 13);
             this.label14.TabIndex = 10;
-            this.label14.Text = "Date od leaving:";
+            this.label14.Text = "Datum izlaza:";
             // 
             // dgvLeavingItems
             // 
@@ -392,38 +392,38 @@ namespace FrmLogin
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(0, 139);
+            this.label13.Location = new System.Drawing.Point(21, 139);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 13);
+            this.label13.Size = new System.Drawing.Size(48, 13);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Num of boxes:";
+            this.label13.Text = "Br kutija:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(30, 100);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 13);
+            this.label12.Size = new System.Drawing.Size(39, 13);
             this.label12.TabIndex = 2;
-            this.label12.Text = "Name:";
+            this.label12.Text = "Artikal:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(6, 66);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 1;
-            this.label11.Text = "EntranceId:";
+            this.label11.Text = "Šifra palete:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(36, 27);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.Size = new System.Drawing.Size(27, 13);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Num:";
+            this.label10.Text = "Rbr:";
             // 
             // btnIzlazDelaPalete
             // 
@@ -505,7 +505,7 @@ namespace FrmLogin
             this.Controls.Add(this.label1);
             this.Name = "FrmExit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmExit";
+            this.Text = "Izlaz palete";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResultExit)).EndInit();
             this.pnlChange.ResumeLayout(false);
             this.pnlChange.PerformLayout();

@@ -40,9 +40,9 @@ namespace FrmLogin.FrmGetAll
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(191, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.Size = new System.Drawing.Size(127, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Storekeepers";
+            this.label1.Text = "Magacioneri";
             // 
             // dgvStorekeepers
             // 
@@ -67,7 +67,7 @@ namespace FrmLogin.FrmGetAll
             this.Controls.Add(this.label1);
             this.Name = "FrmGetAllStorekeepers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmGetAllStorekeepers";
+            this.Text = "Magacioner";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStorekeepers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

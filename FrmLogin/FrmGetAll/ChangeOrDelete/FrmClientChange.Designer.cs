@@ -50,9 +50,9 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(109, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 28);
+            this.label1.Size = new System.Drawing.Size(281, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Change or Delete Client";
+            this.label1.Text = "Promena i brisanje klijenta";
             // 
             // txtEmail
             // 
@@ -113,9 +113,9 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(138, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Telephone:";
+            this.label5.Text = "Telefon:";
             // 
             // label4
             // 
@@ -131,18 +131,18 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(138, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Place:";
+            this.label3.Text = "Sedište:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(138, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Naziv:";
             // 
             // btnDelete
             // 
@@ -150,7 +150,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 33;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Obriši";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -174,7 +174,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.Controls.Add(this.label1);
             this.Name = "FrmClientChange";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmClientChange";
+            this.Text = "Promena klijenta";
             this.Load += new System.EventHandler(this.FrmClientChange_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

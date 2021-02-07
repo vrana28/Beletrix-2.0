@@ -87,7 +87,7 @@ namespace FrmLogin.Controllers
         {
             if (string.IsNullOrEmpty(frmEntrance.LblTotalWeight.Text))
             {
-                MessageBox.Show("No data!");
+                MessageBox.Show("Nema podataka!");
                 return;
             }
 
@@ -98,7 +98,7 @@ namespace FrmLogin.Controllers
                 Entrance.TotalWeight = TotalWeight;
                 Entrance.Items = Items;
                 Communication.Communication.Instance.AddEntrance(Entrance);
-                MessageBox.Show("Uspesno sacuvan");
+                MessageBox.Show("Uspešno sačuvan");
                 frmEntrance.Dispose();
             }
             catch (Exception ex)
@@ -127,7 +127,7 @@ namespace FrmLogin.Controllers
         {
             if (frmEntrance.DGVItems.Rows.Count == 0)
             {
-                MessageBox.Show("No data");
+                MessageBox.Show("Nema podataka");
                 return;
             }
             try

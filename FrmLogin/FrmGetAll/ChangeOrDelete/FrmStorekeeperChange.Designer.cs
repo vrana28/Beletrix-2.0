@@ -85,46 +85,46 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(83, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Password:";
+            this.label5.Text = "Šifra:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(83, 216);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Username:";
+            this.label4.Text = "Korisničko ime:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(83, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Last name:";
+            this.label3.Text = "Prezime:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(83, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Ime:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 46);
+            this.label1.Location = new System.Drawing.Point(16, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 26);
+            this.label1.Size = new System.Drawing.Size(321, 26);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Update or Delete Storekeeper";
+            this.label1.Text = "Promena i brisanje magacionera";
             // 
             // btnDelete
             // 
@@ -132,7 +132,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 20;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Obriši";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -154,7 +154,7 @@ namespace FrmLogin.FrmGetAll.ChangeOrDelete
             this.Controls.Add(this.label1);
             this.Name = "FrmStorekeeperChange";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmStorekeeperChange";
+            this.Text = "Promena magacionera";
             this.Load += new System.EventHandler(this.FrmStorekeeperChange_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -98,13 +98,13 @@ namespace FrmLogin.Controllers
 
             if (!UserControlHelpers.IsValidNumber(frmClientChange.TxtPib.Text) || !UserControlHelpers.IsValidNumber(frmClientChange.TxtTelephone.Text))
             {
-                MessageBox.Show("Problem with telephone or PIB");
+                MessageBox.Show("Problem sa telefonom i PIB-om.");
                 return;
             }
 
             if (!UserControlHelpers.IsValidEmail(frmClientChange.TxtEmail.Text))
             {
-                MessageBox.Show("Problem with email.");
+                MessageBox.Show("Problem sa email-om.");
                 return;
             }
 
@@ -122,7 +122,7 @@ namespace FrmLogin.Controllers
             {
 
                 Communication.Communication.Instance.UpdateClient(c);
-                MessageBox.Show("Client updated!");
+                MessageBox.Show("Client update-ovan!");
                 frmClientChange.Dispose();
             }
             catch (Exception ex)
@@ -135,15 +135,15 @@ namespace FrmLogin.Controllers
         {
             Client cl = (Client)row.DataBoundItem;
 
-            var confirmResult = MessageBox.Show("Are you sure to delete this item ??",
-                                     "Confirm Delete!!",
+            var confirmResult = MessageBox.Show("Da li ste sigurni za brisanje klijenta??",
+                                     "Potvrdi brisanje!!",
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
                 try
                 {
                     Communication.Communication.Instance.DeleteClient(cl);
-                    MessageBox.Show("Deleted!");
+                    MessageBox.Show("Obrisano!");
                     frmClientChange.Dispose();
                 }
                 catch (Exception ex)

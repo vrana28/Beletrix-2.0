@@ -56,7 +56,7 @@ namespace FrmLogin.Controllers
             try
             {
                 Communication.Communication.Instance.UpdateStorekeeper(s);
-                MessageBox.Show("Storekeeper is updated!");
+                MessageBox.Show("Magacioner je update-ovan!");
                 frmStorekeeperChange.Dispose();
             }
             catch (SystemOperationException ex)
@@ -68,15 +68,15 @@ namespace FrmLogin.Controllers
         internal void Delete(FrmStorekeeperChange frmStorekeeperChange, DataGridViewRow row)
         {
             Storekeeper = (Storekeeper)row.DataBoundItem;
-            var confirmResult = MessageBox.Show("Are you sure to delete this item ??",
-                                "Confirm Delete!!",
+            var confirmResult = MessageBox.Show("Da li ste sigurni da želite da obrišete magacinera??",
+                                "Potvrdi brisanje!!",
                                 MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
                 try
                 {
                     Communication.Communication.Instance.DeleteStorekeeper(Storekeeper);
-                    MessageBox.Show("Sistem je obrisao podatak");
+                    MessageBox.Show("Obrisano");
                     frmStorekeeperChange.Dispose();
                 }
                 catch (Exception ex)
@@ -106,7 +106,6 @@ namespace FrmLogin.Controllers
                 if (frmGetAllStorekeepers.DgvStoreKeepers.ColumnCount > 0)
                 {
                     DataGridViewRow row = frmGetAllStorekeepers.DgvStoreKeepers.SelectedRows[0];
-                    //Storekeeper s = (Storekeeper)row.DataBoundItem;
                     MainCoordinator.Instance.OpenFrmStorekeeperChange(row,new Controllers.StorekeeperController());
                 }
                 Refresh(frmGetAllStorekeepers);
@@ -117,19 +116,6 @@ namespace FrmLogin.Controllers
                 throw;
             }
         }
-
-        //internal void Delete(Storekeeper storekeeper)
-        //{
-        //    try
-        //    {
-        //        Communication.Communication.Instance.DeleteStorekeeper(storekeeper);
-        //        MessageBox.Show("Storekeeper is deleted!");
-        //    }
-        //    catch (SystemOperationException ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
 
         internal void Save(FrmAddStorekeeper frmAddStorekeeper)
         {
@@ -156,7 +142,7 @@ namespace FrmLogin.Controllers
                     return;
                 }
                 Communication.Communication.Instance.SaveStorekeeper(s);
-                MessageBox.Show("Magacioner je sacuvan!");
+                MessageBox.Show("Magacioner je sačuvan!");
                 frmAddStorekeeper.Dispose();
             }
             catch (SystemOperationException ex)

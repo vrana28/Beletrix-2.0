@@ -55,9 +55,9 @@ namespace FrmLogin.FrmEnter
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(202, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Roba";
+            this.label1.Text = "Artikal";
             // 
             // FrmEnterArtikal
             // 
@@ -68,7 +68,7 @@ namespace FrmLogin.FrmEnter
             this.Controls.Add(this.label1);
             this.Name = "FrmEnterArtikal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEnterArtikal";
+            this.Text = "Artikal";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoba)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -57,7 +57,7 @@ namespace FrmLogin.FrmEnter
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Clients";
+            this.label1.Text = "Klijenti";
             this.label1.DoubleClick += new System.EventHandler(this.dgvClients_DoubleClick);
             // 
             // FrmEnterClient
@@ -69,7 +69,7 @@ namespace FrmLogin.FrmEnter
             this.Controls.Add(this.label1);
             this.Name = "FrmEnterClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEnterClient";
+            this.Text = "Klijent";
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

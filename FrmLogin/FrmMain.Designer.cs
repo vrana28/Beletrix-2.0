@@ -61,8 +61,8 @@ namespace FrmLogin
             // mapToolStripMenuItem
             // 
             this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
-            this.mapToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.mapToolStripMenuItem.Text = "Map";
+            this.mapToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.mapToolStripMenuItem.Text = "Mapa";
             this.mapToolStripMenuItem.Click += new System.EventHandler(this.mapToolStripMenuItem_Click);
             // 
             // addStorekeeperToolStripMenuItem
@@ -71,21 +71,21 @@ namespace FrmLogin
             this.addStorekeeperToolStripMenuItem1,
             this.storekeepersdeleteToolStripMenuItem});
             this.addStorekeeperToolStripMenuItem.Name = "addStorekeeperToolStripMenuItem";
-            this.addStorekeeperToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.addStorekeeperToolStripMenuItem.Text = "Storekeepers";
+            this.addStorekeeperToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.addStorekeeperToolStripMenuItem.Text = "Magacioner";
             // 
             // addStorekeeperToolStripMenuItem1
             // 
             this.addStorekeeperToolStripMenuItem1.Name = "addStorekeeperToolStripMenuItem1";
-            this.addStorekeeperToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
-            this.addStorekeeperToolStripMenuItem1.Text = "Add storekeeper";
+            this.addStorekeeperToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addStorekeeperToolStripMenuItem1.Text = "Dodaj magacionera";
             this.addStorekeeperToolStripMenuItem1.Click += new System.EventHandler(this.addStorekeeperToolStripMenuItem1_Click);
             // 
             // storekeepersdeleteToolStripMenuItem
             // 
             this.storekeepersdeleteToolStripMenuItem.Name = "storekeepersdeleteToolStripMenuItem";
-            this.storekeepersdeleteToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.storekeepersdeleteToolStripMenuItem.Text = "Storekeepers (Delete)";
+            this.storekeepersdeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.storekeepersdeleteToolStripMenuItem.Text = "Magacioneri";
             this.storekeepersdeleteToolStripMenuItem.Click += new System.EventHandler(this.storekeepersdeleteToolStripMenuItem_Click);
             // 
             // clientsToolStripMenuItem
@@ -94,21 +94,21 @@ namespace FrmLogin
             this.addClientToolStripMenuItem,
             this.clientsDeleteToolStripMenuItem});
             this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
-            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.clientsToolStripMenuItem.Text = "Clients";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.clientsToolStripMenuItem.Text = "Klijent";
             // 
             // addClientToolStripMenuItem
             // 
             this.addClientToolStripMenuItem.Name = "addClientToolStripMenuItem";
-            this.addClientToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.addClientToolStripMenuItem.Text = "Add client";
+            this.addClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addClientToolStripMenuItem.Text = "Dodaj klijenta";
             this.addClientToolStripMenuItem.Click += new System.EventHandler(this.addClientToolStripMenuItem_Click);
             // 
             // clientsDeleteToolStripMenuItem
             // 
             this.clientsDeleteToolStripMenuItem.Name = "clientsDeleteToolStripMenuItem";
-            this.clientsDeleteToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.clientsDeleteToolStripMenuItem.Text = "Clients (Delete)";
+            this.clientsDeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientsDeleteToolStripMenuItem.Text = "Klijenti";
             this.clientsDeleteToolStripMenuItem.Click += new System.EventHandler(this.clientsDeleteToolStripMenuItem_Click);
             // 
             // robeToolStripMenuItem
@@ -117,21 +117,21 @@ namespace FrmLogin
             this.addRobuToolStripMenuItem,
             this.robedeleteupdateToolStripMenuItem});
             this.robeToolStripMenuItem.Name = "robeToolStripMenuItem";
-            this.robeToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.robeToolStripMenuItem.Text = "Robe";
+            this.robeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.robeToolStripMenuItem.Text = "Artikal";
             // 
             // addRobuToolStripMenuItem
             // 
             this.addRobuToolStripMenuItem.Name = "addRobuToolStripMenuItem";
             this.addRobuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addRobuToolStripMenuItem.Text = "Add Robu";
+            this.addRobuToolStripMenuItem.Text = "Dodaj artikal";
             this.addRobuToolStripMenuItem.Click += new System.EventHandler(this.addRobuToolStripMenuItem_Click);
             // 
             // robedeleteupdateToolStripMenuItem
             // 
             this.robedeleteupdateToolStripMenuItem.Name = "robedeleteupdateToolStripMenuItem";
             this.robedeleteupdateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.robedeleteupdateToolStripMenuItem.Text = "Robe (Delete)";
+            this.robedeleteupdateToolStripMenuItem.Text = "Artikli";
             this.robedeleteupdateToolStripMenuItem.Click += new System.EventHandler(this.robedeleteupdateToolStripMenuItem_Click);
             // 
             // pnlMain

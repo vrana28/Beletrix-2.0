@@ -42,7 +42,7 @@ namespace FrmLogin.FrmGetAll
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Clients";
+            this.label1.Text = "Klijenti";
             // 
             // dgvClients
             // 
@@ -68,7 +68,7 @@ namespace FrmLogin.FrmGetAll
             this.Controls.Add(this.label1);
             this.Name = "FrmGetAllClients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmGetAllClient";
+            this.Text = "Klijent";
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

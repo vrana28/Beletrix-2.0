@@ -20,8 +20,8 @@ namespace FrmLogin
         {
             InitializeComponent();
             this.loginController = loginController;
-            TxtUsername.Text = "admin";
-            TxtPassword.Text = "admin";
+            //TxtUsername.Text = "admin";
+            //TxtPassword.Text = "admin";
         }
 
         public TextBox TxtUsername{ get=>txtUsername; }

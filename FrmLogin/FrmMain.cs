@@ -21,6 +21,9 @@ namespace FrmLogin
             InitializeComponent();
             LblUser.Text = $"{Controllers.LoginController.Storekeeper.Name} {Controllers.LoginController.Storekeeper.LastName}";
             this.mainController = mainController;
+            if (Controllers.LoginController.Storekeeper.Username != "admin" && Controllers.LoginController.Storekeeper.Password != "admin") {
+                addStorekeeperToolStripMenuItem.Visible = false;
+            }
         }
 
         public Panel PnlMain { get=>pnlMain; }

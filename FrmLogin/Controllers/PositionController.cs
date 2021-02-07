@@ -86,7 +86,7 @@ namespace FrmLogin.Controllers
         {
             if (UserControlHelpers.IsNullOrWhiteSpace(frmPositioning.TxtEntranceId) | UserControlHelpers.IsNullOrWhiteSpace(frmPositioning.TxtPositionId))
             {
-                MessageBox.Show("No data to bind!");
+                MessageBox.Show("Nema podataka za povezivanje!");
                 return;
             }
 
@@ -100,7 +100,7 @@ namespace FrmLogin.Controllers
             {
                 Communication.Communication.Instance.AddEntrancePosition(ep);
                 Refresh(frmPositioning);
-                MessageBox.Show("Connected");
+                MessageBox.Show("Povezano");
             }
             catch (Exception ex)
             {
