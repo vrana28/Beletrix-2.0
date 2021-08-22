@@ -12,7 +12,7 @@ namespace SystemOperations.EntranceSO
 
         protected override void ExecuteOperation(IEntity entity)
         {
-            Entrance e = (Entrance)entity;
+            Entrance e = (Entrance)entity;         
             e.EntranceId = (int)repository.SaveEntrance(entity);
             foreach (EntranceItems ei in e.Items)
             {

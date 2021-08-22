@@ -21,13 +21,12 @@ namespace Domain
         public int ClientId { get; set; }
         public Storekeeper Storekeeper { get; set; }
         public List<EntranceItems> Items  { get; set; }
-
-        //public string PositionId { get; set; }
+        public string PositionId { get; set; } = null;
         
         [Browsable(false)]
         public string TableName => "Entrance";
         [Browsable(false)]
-        public string InsertValues => $" (@Weight,@DateOfEntrance,@DateOfExit, @Dimension,@Obradjen, @ClientId, @StorekeeperId)";
+        public string InsertValues => $" (@Weight,@DateOfEntrance,@DateOfExit, @Dimension,@Obradjen, @ClientId, @StorekeeperId, @PositionId)";
         [Browsable(false)]
         public string IdName => throw new NotImplementedException();
         [Browsable(false)]
@@ -69,7 +68,7 @@ namespace Domain
             command.Parameters.AddWithValue("@Obradjen", Obradjen);
             command.Parameters.AddWithValue("@ClientId", ClientId);
             command.Parameters.AddWithValue("@StorekeeperId", Storekeeper.StorekeeperId);
-            //command.Parameters.AddWithValue("@PositionId", PositionId);
+            command.Parameters.AddWithValue("@PositionId", "");
         }
 
         public List<IEntity> GetEntities(SqlDataReader reader)
