@@ -220,7 +220,7 @@ namespace Controller
             AddNewStorekeeperSO so = new AddNewStorekeeperSO();
             so.ExecuteTemplate(s);
         }
-
+        // imamo add entrance !!!!
         public void AddEntrance(Entrance ulaz)
         {
             //**
@@ -290,13 +290,13 @@ namespace Controller
             so.ExecuteTemplate(new Roba());
             return so.Result;
         }
-
-        public void SaveEntrance(Entrance entrance)
-        {
-            //**
-            AddNewEntranceSO so = new AddNewEntranceSO();
-            so.ExecuteTemplate(entrance);
-        }
+        // imamo i SAVE ENTRANCE !!!
+        //public void SaveEntrance(Entrance entrance)
+        //{
+        //    //**
+        //    AddNewEntranceSO so = new AddNewEntranceSO();
+        //    so.ExecuteTemplateExecuteTemplate(entrance);
+        //}
 
         public void LeavingEntranceItems(List<LeavingItem> listaItemaZaIzlaz, List<EntranceItems> listaItemaZaUpdate)
         {

@@ -44,6 +44,8 @@ namespace FrmLogin.Controllers
 
         internal void AddItems(FrmEntrance frmEntrance)
         {
+            var culture = new CultureInfo("de-DE");
+
             if (UserControlHelpers.IsNullOrWhiteSpace(frmEntrance.TxtArtikal) | UserControlHelpers.IsNullOrWhiteSpace(frmEntrance.TxtDateOfManu)
                 | UserControlHelpers.IsNullOrWhiteSpace(frmEntrance.TxtQuantity))
             {
@@ -68,8 +70,8 @@ namespace FrmLogin.Controllers
                     Num = int.Parse(frmEntrance.TxtNum.Text),
                     Roba = Roba,
                     RobaId = Roba.RobaId,
-                    DateOfManu = DateTime.ParseExact(frmEntrance.TxtDateOfManu.Text, "dd.MM.yyyy.", CultureInfo.InvariantCulture),
-                    DeadlineDate = DateTime.ParseExact(frmEntrance.TxtDateOfManu.Text, "dd.MM.yyyy.", CultureInfo.InvariantCulture).AddYears(1),
+                    DateOfManu = DateTime.ParseExact(frmEntrance.TxtDateOfManu.Text, "dd.MM.yyyy.", culture),
+                    DeadlineDate = DateTime.ParseExact(frmEntrance.TxtDateOfManu.Text, "dd.MM.yyyy.", culture).AddYears(1),
                     NumOfBoxes = float.Parse(frmEntrance.TxtQuantity.Text)
                 };
                 Items.Add(ei);

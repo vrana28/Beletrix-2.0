@@ -32,7 +32,7 @@ namespace Domain
         [Browsable(false)]
         public object WhereValues => $" where RobaId = {RobaId}";
         [Browsable(false)]
-        public object SetValues => $" set Name = '{Name}', WeightOfBox='{WeightOfBox}'";
+        public object SetValues => $" set Name = '{Name}', WeightOfBox='{WeightOfBox}' where RobaId={RobaId}";
         [Browsable(false)]
         // za metodu Exist, koja vraca boolean
         public object ExistName => $" where Name = '{Name}'";

@@ -17,8 +17,8 @@ namespace SystemOperations.EntranceSO
             foreach (EntranceItems ei in e.Items)
             {
                 ei.EntranceId = e.EntranceId;
-                entity = ei;
-                repository.Save(entity);
+                //IEntity ent = ei;
+                repository.SaveEntranceItem(ei);
             }
         }
     }

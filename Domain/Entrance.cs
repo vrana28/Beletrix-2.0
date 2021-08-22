@@ -21,6 +21,8 @@ namespace Domain
         public int ClientId { get; set; }
         public Storekeeper Storekeeper { get; set; }
         public List<EntranceItems> Items  { get; set; }
+
+        //public string PositionId { get; set; }
         
         [Browsable(false)]
         public string TableName => "Entrance";
@@ -56,17 +58,18 @@ namespace Domain
         [Browsable(false)]
         public string All => throw new NotImplementedException();
         [Browsable(false)]
-        public object SetValues2 => $"set DateOfExit = '{DateTime.Now}' where EntranceId = ";
+        public object SetValues2 => $"set DateOfExit = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' where EntranceId = ";
 
         public void AddParametres(SqlCommand command)
         {
             command.Parameters.AddWithValue("@Weight", TotalWeight);
             command.Parameters.AddWithValue("@DateOfEntrance", DateOfEntrance);
-            command.Parameters.AddWithValue("@DateOfExit", DBNull.Value);
+            command.Parameters.AddWithValue("@DateOfExit", "");
             command.Parameters.AddWithValue("@Dimension", Dimension);
             command.Parameters.AddWithValue("@Obradjen", Obradjen);
             command.Parameters.AddWithValue("@ClientId", ClientId);
             command.Parameters.AddWithValue("@StorekeeperId", Storekeeper.StorekeeperId);
+            //command.Parameters.AddWithValue("@PositionId", PositionId);
         }
 
         public List<IEntity> GetEntities(SqlDataReader reader)

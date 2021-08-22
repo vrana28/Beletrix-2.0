@@ -54,7 +54,7 @@ namespace FrmLogin
             this.robeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1484, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1350, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,14 +77,14 @@ namespace FrmLogin
             // addStorekeeperToolStripMenuItem1
             // 
             this.addStorekeeperToolStripMenuItem1.Name = "addStorekeeperToolStripMenuItem1";
-            this.addStorekeeperToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addStorekeeperToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
             this.addStorekeeperToolStripMenuItem1.Text = "Dodaj magacionera";
             this.addStorekeeperToolStripMenuItem1.Click += new System.EventHandler(this.addStorekeeperToolStripMenuItem1_Click);
             // 
             // storekeepersdeleteToolStripMenuItem
             // 
             this.storekeepersdeleteToolStripMenuItem.Name = "storekeepersdeleteToolStripMenuItem";
-            this.storekeepersdeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.storekeepersdeleteToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.storekeepersdeleteToolStripMenuItem.Text = "Magacioneri";
             this.storekeepersdeleteToolStripMenuItem.Click += new System.EventHandler(this.storekeepersdeleteToolStripMenuItem_Click);
             // 
@@ -100,14 +100,14 @@ namespace FrmLogin
             // addClientToolStripMenuItem
             // 
             this.addClientToolStripMenuItem.Name = "addClientToolStripMenuItem";
-            this.addClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addClientToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.addClientToolStripMenuItem.Text = "Dodaj klijenta";
             this.addClientToolStripMenuItem.Click += new System.EventHandler(this.addClientToolStripMenuItem_Click);
             // 
             // clientsDeleteToolStripMenuItem
             // 
             this.clientsDeleteToolStripMenuItem.Name = "clientsDeleteToolStripMenuItem";
-            this.clientsDeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientsDeleteToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.clientsDeleteToolStripMenuItem.Text = "Klijenti";
             this.clientsDeleteToolStripMenuItem.Click += new System.EventHandler(this.clientsDeleteToolStripMenuItem_Click);
             // 
@@ -123,14 +123,14 @@ namespace FrmLogin
             // addRobuToolStripMenuItem
             // 
             this.addRobuToolStripMenuItem.Name = "addRobuToolStripMenuItem";
-            this.addRobuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addRobuToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.addRobuToolStripMenuItem.Text = "Dodaj artikal";
             this.addRobuToolStripMenuItem.Click += new System.EventHandler(this.addRobuToolStripMenuItem_Click);
             // 
             // robedeleteupdateToolStripMenuItem
             // 
             this.robedeleteupdateToolStripMenuItem.Name = "robedeleteupdateToolStripMenuItem";
-            this.robedeleteupdateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.robedeleteupdateToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.robedeleteupdateToolStripMenuItem.Text = "Artikli";
             this.robedeleteupdateToolStripMenuItem.Click += new System.EventHandler(this.robedeleteupdateToolStripMenuItem_Click);
             // 
@@ -139,7 +139,7 @@ namespace FrmLogin
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 24);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1484, 767);
+            this.pnlMain.Size = new System.Drawing.Size(1350, 706);
             this.pnlMain.TabIndex = 1;
             // 
             // lblUser
@@ -154,7 +154,8 @@ namespace FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 791);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1350, 730);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.menuStrip1);

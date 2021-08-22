@@ -130,7 +130,7 @@ namespace Server
                     response.Result = Controler.Instance.FindBusyPositionsWithPosition((Client)request.RequestObject, (Roba)request.RequestObject2, request.Text);
                     break;
                 case Operation.AddEntrance:
-                    Controler.Instance.SaveEntrance((Entrance)request.RequestObject);
+                    Controler.Instance.AddEntrance((Entrance)request.RequestObject);
                     break;
                 case Operation.GetAllEntrances:
                     response.Result = Controler.Instance.GetAllEntrancecs();

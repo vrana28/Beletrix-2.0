@@ -103,6 +103,11 @@ namespace Storage.Implementation.Database
             return (int)broker.SaveEntrance(entity); 
         }
 
+        public void SaveEntranceItem(EntranceItems ei)
+        {
+            broker.SaveEntranceItem(ei);
+        }
+
         public List<IEntity> Search(IEntity entity, object uslov)
         {
             return broker.Search(entity, uslov);

@@ -194,7 +194,7 @@ namespace FrmLogin.Controllers
                     throw new Exception();
                 }
             }
-            catch (Exception )
+            catch (Exception ex)
             {
                 MessageBox.Show("Sistem ne moze da zapamti izlaz dela palete");
             }
@@ -237,18 +237,25 @@ namespace FrmLogin.Controllers
 
         internal void RemoveFromLeavingList(FrmExit frmExit)
         {
-            DataGridViewRow row = frmExit.DGVLeavingItems.SelectedRows[0];
-            LeavingItem li = (LeavingItem)row.DataBoundItem;
-            if (li.RobaId != EntranceItems.RobaId)
+            try
             {
-                MessageBox.Show("Morate prvo da ga ucitate.");
-                return;
+                DataGridViewRow row = frmExit.DGVLeavingItems.SelectedRows[0];
+                LeavingItem li = (LeavingItem)row.DataBoundItem;
+                if (li.RobaId != EntranceItems.RobaId)
+                {
+                    MessageBox.Show("Morate prvo da ga ucitate.");
+                    return;
+                }
+                listaItemaZaIzlaz.Remove(li);
+                frmExit.DGVLeavingItems.DataSource = null;
+                frmExit.DGVLeavingItems.DataSource = listaItemaZaIzlaz;
+                EntranceItems.NumOfBoxes += li.NumOfBoxes;
+                frmExit.TxtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
             }
-            listaItemaZaIzlaz.Remove(li);
-            frmExit.DGVLeavingItems.DataSource = null;
-            frmExit.DGVLeavingItems.DataSource = listaItemaZaIzlaz;
-            EntranceItems.NumOfBoxes += li.NumOfBoxes;
-            frmExit.TxtNumOfBoxes.Text = EntranceItems.NumOfBoxes.ToString();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         internal void IzlazDelaPalete(FrmExit frmExit)

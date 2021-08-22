@@ -50,7 +50,6 @@ namespace DatabaseBroker
         public void Update(IEntity entity)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);
-            command.Transaction = transaction;
             command.CommandText = $"update {entity.TableName} {entity.SetValues}";
             if (command.ExecuteNonQuery() != 1)
             {
@@ -71,12 +70,30 @@ namespace DatabaseBroker
         public void UpdateWithParameter2(IEntity entity, IEntity ent)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);
-            command.CommandText = $"update {entity.TableName} {entity.SetValues2} '{ent.IdName}'";
+            command.CommandText = $"update {entity.TableName} {entity.SetValues2} {ent.IdName}";
             if (command.ExecuteNonQuery() != 1)
             {
                 throw new Exception("Database error!");
             }
         }
+
+        public void SaveEntranceItem(EntranceItems ei)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+            command.CommandText = $"insert into EntranceItems values (@Num,@EntranceId,@RobaId,@DeadlineDate,@Deadline,@NumOfBoxes,@DateOfManu)";
+            command.Parameters.AddWithValue("@Num", ei.Num);
+            command.Parameters.AddWithValue("@EntranceId", ei.EntranceId);
+            command.Parameters.AddWithValue("@RobaId", ei.RobaId);
+            command.Parameters.AddWithValue("@DeadlineDate", ei.DeadlineDate);
+            command.Parameters.AddWithValue("@Deadline", ei.Deadline);
+            command.Parameters.AddWithValue("@NumOfBoxes", ei.NumOfBoxes);
+            command.Parameters.AddWithValue("@DateOfManu", ei.DateOfManu);
+            if (command.ExecuteNonQuery() != 1)
+            {
+                throw new Exception("Database error!");
+            }
+        }
+
         //id entrance
         public void UpdateWithParameter3(IEntity entity, IEntity ent)
         {

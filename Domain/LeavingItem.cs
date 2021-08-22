@@ -22,7 +22,7 @@ namespace Domain
         [Browsable(false)]
         public string TableName => "LeavingItems";
         [Browsable(false)]
-        public string InsertValues => $"'{EntranceId}','{Num}','{RobaId}','{NumOfBoxes}','{DateOfLeaving}'";
+        public string InsertValues => $"'{EntranceId}','{Num}','{RobaId}','{NumOfBoxes}','"+DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+"'";
         [Browsable(false)]
         public string IdName => throw new NotImplementedException();
         [Browsable(false)]

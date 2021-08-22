@@ -587,7 +587,7 @@ namespace FrmLogin.UserControls
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 684);
+            this.label1.Location = new System.Drawing.Point(17, 627);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 20);
             this.label1.TabIndex = 4;
@@ -597,7 +597,7 @@ namespace FrmLogin.UserControls
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 735);
+            this.label2.Location = new System.Drawing.Point(32, 659);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 20);
             this.label2.TabIndex = 5;
@@ -607,7 +607,7 @@ namespace FrmLogin.UserControls
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 573);
+            this.label3.Location = new System.Drawing.Point(17, 555);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 20);
             this.label3.TabIndex = 38;
@@ -627,7 +627,7 @@ namespace FrmLogin.UserControls
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 390);
+            this.label5.Location = new System.Drawing.Point(17, 372);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 20);
             this.label5.TabIndex = 40;
@@ -637,7 +637,7 @@ namespace FrmLogin.UserControls
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 312);
+            this.label6.Location = new System.Drawing.Point(17, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 41;
@@ -666,9 +666,9 @@ namespace FrmLogin.UserControls
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Location = new System.Drawing.Point(129, 638);
+            this.panel1.Location = new System.Drawing.Point(129, 612);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(908, 79);
+            this.panel1.Size = new System.Drawing.Size(908, 21);
             this.panel1.TabIndex = 44;
             // 
             // S64
@@ -753,7 +753,7 @@ namespace FrmLogin.UserControls
             // 
             // S44
             // 
-            this.S44.Location = new System.Drawing.Point(1061, 275);
+            this.S44.Location = new System.Drawing.Point(1061, 266);
             this.S44.Name = "S44";
             this.S44.Size = new System.Drawing.Size(43, 22);
             this.S44.TabIndex = 420;
@@ -763,7 +763,7 @@ namespace FrmLogin.UserControls
             // 
             // S43
             // 
-            this.S43.Location = new System.Drawing.Point(1061, 294);
+            this.S43.Location = new System.Drawing.Point(1061, 285);
             this.S43.Name = "S43";
             this.S43.Size = new System.Drawing.Size(43, 22);
             this.S43.TabIndex = 419;
@@ -773,7 +773,7 @@ namespace FrmLogin.UserControls
             // 
             // S42
             // 
-            this.S42.Location = new System.Drawing.Point(1061, 313);
+            this.S42.Location = new System.Drawing.Point(1061, 304);
             this.S42.Name = "S42";
             this.S42.Size = new System.Drawing.Size(43, 22);
             this.S42.TabIndex = 418;
@@ -783,7 +783,7 @@ namespace FrmLogin.UserControls
             // 
             // S41
             // 
-            this.S41.Location = new System.Drawing.Point(1061, 332);
+            this.S41.Location = new System.Drawing.Point(1061, 323);
             this.S41.Name = "S41";
             this.S41.Size = new System.Drawing.Size(43, 22);
             this.S41.TabIndex = 417;
@@ -793,7 +793,7 @@ namespace FrmLogin.UserControls
             // 
             // S34
             // 
-            this.S34.Location = new System.Drawing.Point(1061, 363);
+            this.S34.Location = new System.Drawing.Point(1061, 351);
             this.S34.Name = "S34";
             this.S34.Size = new System.Drawing.Size(43, 22);
             this.S34.TabIndex = 416;
@@ -803,7 +803,7 @@ namespace FrmLogin.UserControls
             // 
             // S33
             // 
-            this.S33.Location = new System.Drawing.Point(1061, 382);
+            this.S33.Location = new System.Drawing.Point(1061, 370);
             this.S33.Name = "S33";
             this.S33.Size = new System.Drawing.Size(43, 22);
             this.S33.TabIndex = 415;
@@ -813,7 +813,7 @@ namespace FrmLogin.UserControls
             // 
             // S32
             // 
-            this.S32.Location = new System.Drawing.Point(1061, 401);
+            this.S32.Location = new System.Drawing.Point(1061, 389);
             this.S32.Name = "S32";
             this.S32.Size = new System.Drawing.Size(43, 22);
             this.S32.TabIndex = 414;
@@ -823,7 +823,7 @@ namespace FrmLogin.UserControls
             // 
             // S31
             // 
-            this.S31.Location = new System.Drawing.Point(1061, 420);
+            this.S31.Location = new System.Drawing.Point(1061, 408);
             this.S31.Name = "S31";
             this.S31.Size = new System.Drawing.Size(43, 22);
             this.S31.TabIndex = 413;
@@ -833,7 +833,7 @@ namespace FrmLogin.UserControls
             // 
             // S24
             // 
-            this.S24.Location = new System.Drawing.Point(1061, 452);
+            this.S24.Location = new System.Drawing.Point(1061, 439);
             this.S24.Name = "S24";
             this.S24.Size = new System.Drawing.Size(43, 22);
             this.S24.TabIndex = 412;
@@ -843,7 +843,7 @@ namespace FrmLogin.UserControls
             // 
             // S23
             // 
-            this.S23.Location = new System.Drawing.Point(1061, 471);
+            this.S23.Location = new System.Drawing.Point(1061, 458);
             this.S23.Name = "S23";
             this.S23.Size = new System.Drawing.Size(43, 22);
             this.S23.TabIndex = 411;
@@ -853,7 +853,7 @@ namespace FrmLogin.UserControls
             // 
             // S22
             // 
-            this.S22.Location = new System.Drawing.Point(1061, 490);
+            this.S22.Location = new System.Drawing.Point(1061, 477);
             this.S22.Name = "S22";
             this.S22.Size = new System.Drawing.Size(43, 22);
             this.S22.TabIndex = 410;
@@ -863,7 +863,7 @@ namespace FrmLogin.UserControls
             // 
             // S21
             // 
-            this.S21.Location = new System.Drawing.Point(1061, 509);
+            this.S21.Location = new System.Drawing.Point(1061, 496);
             this.S21.Name = "S21";
             this.S21.Size = new System.Drawing.Size(43, 22);
             this.S21.TabIndex = 409;
@@ -873,7 +873,7 @@ namespace FrmLogin.UserControls
             // 
             // S14
             // 
-            this.S14.Location = new System.Drawing.Point(1061, 546);
+            this.S14.Location = new System.Drawing.Point(1061, 524);
             this.S14.Name = "S14";
             this.S14.Size = new System.Drawing.Size(43, 22);
             this.S14.TabIndex = 408;
@@ -883,7 +883,7 @@ namespace FrmLogin.UserControls
             // 
             // S13
             // 
-            this.S13.Location = new System.Drawing.Point(1061, 565);
+            this.S13.Location = new System.Drawing.Point(1061, 543);
             this.S13.Name = "S13";
             this.S13.Size = new System.Drawing.Size(43, 22);
             this.S13.TabIndex = 407;
@@ -893,7 +893,7 @@ namespace FrmLogin.UserControls
             // 
             // S12
             // 
-            this.S12.Location = new System.Drawing.Point(1061, 584);
+            this.S12.Location = new System.Drawing.Point(1061, 562);
             this.S12.Name = "S12";
             this.S12.Size = new System.Drawing.Size(43, 22);
             this.S12.TabIndex = 406;
@@ -903,7 +903,7 @@ namespace FrmLogin.UserControls
             // 
             // S11
             // 
-            this.S11.Location = new System.Drawing.Point(1061, 603);
+            this.S11.Location = new System.Drawing.Point(1061, 581);
             this.S11.Name = "S11";
             this.S11.Size = new System.Drawing.Size(43, 22);
             this.S11.TabIndex = 405;
@@ -993,7 +993,7 @@ namespace FrmLogin.UserControls
             // 
             // E44
             // 
-            this.E44.Location = new System.Drawing.Point(299, 274);
+            this.E44.Location = new System.Drawing.Point(299, 265);
             this.E44.Name = "E44";
             this.E44.Size = new System.Drawing.Size(43, 22);
             this.E44.TabIndex = 708;
@@ -1003,7 +1003,7 @@ namespace FrmLogin.UserControls
             // 
             // E43
             // 
-            this.E43.Location = new System.Drawing.Point(299, 293);
+            this.E43.Location = new System.Drawing.Point(299, 284);
             this.E43.Name = "E43";
             this.E43.Size = new System.Drawing.Size(43, 22);
             this.E43.TabIndex = 707;
@@ -1013,7 +1013,7 @@ namespace FrmLogin.UserControls
             // 
             // E42
             // 
-            this.E42.Location = new System.Drawing.Point(299, 312);
+            this.E42.Location = new System.Drawing.Point(299, 303);
             this.E42.Name = "E42";
             this.E42.Size = new System.Drawing.Size(43, 22);
             this.E42.TabIndex = 706;
@@ -1023,7 +1023,7 @@ namespace FrmLogin.UserControls
             // 
             // E41
             // 
-            this.E41.Location = new System.Drawing.Point(299, 331);
+            this.E41.Location = new System.Drawing.Point(299, 322);
             this.E41.Name = "E41";
             this.E41.Size = new System.Drawing.Size(43, 22);
             this.E41.TabIndex = 705;
@@ -1033,7 +1033,7 @@ namespace FrmLogin.UserControls
             // 
             // E34
             // 
-            this.E34.Location = new System.Drawing.Point(299, 362);
+            this.E34.Location = new System.Drawing.Point(299, 353);
             this.E34.Name = "E34";
             this.E34.Size = new System.Drawing.Size(43, 22);
             this.E34.TabIndex = 704;
@@ -1043,7 +1043,7 @@ namespace FrmLogin.UserControls
             // 
             // E33
             // 
-            this.E33.Location = new System.Drawing.Point(299, 381);
+            this.E33.Location = new System.Drawing.Point(299, 372);
             this.E33.Name = "E33";
             this.E33.Size = new System.Drawing.Size(43, 22);
             this.E33.TabIndex = 703;
@@ -1053,7 +1053,7 @@ namespace FrmLogin.UserControls
             // 
             // E32
             // 
-            this.E32.Location = new System.Drawing.Point(299, 400);
+            this.E32.Location = new System.Drawing.Point(299, 391);
             this.E32.Name = "E32";
             this.E32.Size = new System.Drawing.Size(43, 22);
             this.E32.TabIndex = 702;
@@ -1063,7 +1063,7 @@ namespace FrmLogin.UserControls
             // 
             // E31
             // 
-            this.E31.Location = new System.Drawing.Point(299, 419);
+            this.E31.Location = new System.Drawing.Point(299, 410);
             this.E31.Name = "E31";
             this.E31.Size = new System.Drawing.Size(43, 22);
             this.E31.TabIndex = 701;
@@ -1073,7 +1073,7 @@ namespace FrmLogin.UserControls
             // 
             // E24
             // 
-            this.E24.Location = new System.Drawing.Point(299, 451);
+            this.E24.Location = new System.Drawing.Point(299, 442);
             this.E24.Name = "E24";
             this.E24.Size = new System.Drawing.Size(43, 22);
             this.E24.TabIndex = 700;
@@ -1083,7 +1083,7 @@ namespace FrmLogin.UserControls
             // 
             // E23
             // 
-            this.E23.Location = new System.Drawing.Point(299, 470);
+            this.E23.Location = new System.Drawing.Point(299, 461);
             this.E23.Name = "E23";
             this.E23.Size = new System.Drawing.Size(43, 22);
             this.E23.TabIndex = 699;
@@ -1093,7 +1093,7 @@ namespace FrmLogin.UserControls
             // 
             // E22
             // 
-            this.E22.Location = new System.Drawing.Point(299, 489);
+            this.E22.Location = new System.Drawing.Point(299, 480);
             this.E22.Name = "E22";
             this.E22.Size = new System.Drawing.Size(43, 22);
             this.E22.TabIndex = 698;
@@ -1103,7 +1103,7 @@ namespace FrmLogin.UserControls
             // 
             // E21
             // 
-            this.E21.Location = new System.Drawing.Point(299, 508);
+            this.E21.Location = new System.Drawing.Point(299, 499);
             this.E21.Name = "E21";
             this.E21.Size = new System.Drawing.Size(43, 22);
             this.E21.TabIndex = 697;
@@ -1113,7 +1113,7 @@ namespace FrmLogin.UserControls
             // 
             // E14
             // 
-            this.E14.Location = new System.Drawing.Point(299, 545);
+            this.E14.Location = new System.Drawing.Point(299, 527);
             this.E14.Name = "E14";
             this.E14.Size = new System.Drawing.Size(43, 22);
             this.E14.TabIndex = 696;
@@ -1123,7 +1123,7 @@ namespace FrmLogin.UserControls
             // 
             // E13
             // 
-            this.E13.Location = new System.Drawing.Point(299, 564);
+            this.E13.Location = new System.Drawing.Point(299, 546);
             this.E13.Name = "E13";
             this.E13.Size = new System.Drawing.Size(43, 22);
             this.E13.TabIndex = 695;
@@ -1133,7 +1133,7 @@ namespace FrmLogin.UserControls
             // 
             // E12
             // 
-            this.E12.Location = new System.Drawing.Point(299, 583);
+            this.E12.Location = new System.Drawing.Point(299, 565);
             this.E12.Name = "E12";
             this.E12.Size = new System.Drawing.Size(43, 22);
             this.E12.TabIndex = 694;
@@ -1143,7 +1143,7 @@ namespace FrmLogin.UserControls
             // 
             // E11
             // 
-            this.E11.Location = new System.Drawing.Point(299, 602);
+            this.E11.Location = new System.Drawing.Point(299, 584);
             this.E11.Name = "E11";
             this.E11.Size = new System.Drawing.Size(43, 22);
             this.E11.TabIndex = 693;
@@ -1233,7 +1233,7 @@ namespace FrmLogin.UserControls
             // 
             // D44
             // 
-            this.D44.Location = new System.Drawing.Point(250, 274);
+            this.D44.Location = new System.Drawing.Point(250, 265);
             this.D44.Name = "D44";
             this.D44.Size = new System.Drawing.Size(43, 22);
             this.D44.TabIndex = 684;
@@ -1243,7 +1243,7 @@ namespace FrmLogin.UserControls
             // 
             // D43
             // 
-            this.D43.Location = new System.Drawing.Point(250, 293);
+            this.D43.Location = new System.Drawing.Point(250, 284);
             this.D43.Name = "D43";
             this.D43.Size = new System.Drawing.Size(43, 22);
             this.D43.TabIndex = 683;
@@ -1253,7 +1253,7 @@ namespace FrmLogin.UserControls
             // 
             // D42
             // 
-            this.D42.Location = new System.Drawing.Point(250, 312);
+            this.D42.Location = new System.Drawing.Point(250, 303);
             this.D42.Name = "D42";
             this.D42.Size = new System.Drawing.Size(43, 22);
             this.D42.TabIndex = 682;
@@ -1263,7 +1263,7 @@ namespace FrmLogin.UserControls
             // 
             // D41
             // 
-            this.D41.Location = new System.Drawing.Point(250, 331);
+            this.D41.Location = new System.Drawing.Point(250, 322);
             this.D41.Name = "D41";
             this.D41.Size = new System.Drawing.Size(43, 22);
             this.D41.TabIndex = 681;
@@ -1273,7 +1273,7 @@ namespace FrmLogin.UserControls
             // 
             // D34
             // 
-            this.D34.Location = new System.Drawing.Point(250, 362);
+            this.D34.Location = new System.Drawing.Point(250, 353);
             this.D34.Name = "D34";
             this.D34.Size = new System.Drawing.Size(43, 22);
             this.D34.TabIndex = 680;
@@ -1283,7 +1283,7 @@ namespace FrmLogin.UserControls
             // 
             // D33
             // 
-            this.D33.Location = new System.Drawing.Point(250, 381);
+            this.D33.Location = new System.Drawing.Point(250, 372);
             this.D33.Name = "D33";
             this.D33.Size = new System.Drawing.Size(43, 22);
             this.D33.TabIndex = 679;
@@ -1293,7 +1293,7 @@ namespace FrmLogin.UserControls
             // 
             // D32
             // 
-            this.D32.Location = new System.Drawing.Point(250, 400);
+            this.D32.Location = new System.Drawing.Point(250, 391);
             this.D32.Name = "D32";
             this.D32.Size = new System.Drawing.Size(43, 22);
             this.D32.TabIndex = 678;
@@ -1303,7 +1303,7 @@ namespace FrmLogin.UserControls
             // 
             // D31
             // 
-            this.D31.Location = new System.Drawing.Point(250, 419);
+            this.D31.Location = new System.Drawing.Point(250, 410);
             this.D31.Name = "D31";
             this.D31.Size = new System.Drawing.Size(43, 22);
             this.D31.TabIndex = 677;
@@ -1313,7 +1313,7 @@ namespace FrmLogin.UserControls
             // 
             // D24
             // 
-            this.D24.Location = new System.Drawing.Point(250, 451);
+            this.D24.Location = new System.Drawing.Point(250, 442);
             this.D24.Name = "D24";
             this.D24.Size = new System.Drawing.Size(43, 22);
             this.D24.TabIndex = 676;
@@ -1323,7 +1323,7 @@ namespace FrmLogin.UserControls
             // 
             // D23
             // 
-            this.D23.Location = new System.Drawing.Point(250, 470);
+            this.D23.Location = new System.Drawing.Point(250, 461);
             this.D23.Name = "D23";
             this.D23.Size = new System.Drawing.Size(43, 22);
             this.D23.TabIndex = 675;
@@ -1333,7 +1333,7 @@ namespace FrmLogin.UserControls
             // 
             // D22
             // 
-            this.D22.Location = new System.Drawing.Point(250, 489);
+            this.D22.Location = new System.Drawing.Point(250, 480);
             this.D22.Name = "D22";
             this.D22.Size = new System.Drawing.Size(43, 22);
             this.D22.TabIndex = 674;
@@ -1343,7 +1343,7 @@ namespace FrmLogin.UserControls
             // 
             // D21
             // 
-            this.D21.Location = new System.Drawing.Point(250, 508);
+            this.D21.Location = new System.Drawing.Point(250, 499);
             this.D21.Name = "D21";
             this.D21.Size = new System.Drawing.Size(43, 22);
             this.D21.TabIndex = 673;
@@ -1353,7 +1353,7 @@ namespace FrmLogin.UserControls
             // 
             // D14
             // 
-            this.D14.Location = new System.Drawing.Point(250, 545);
+            this.D14.Location = new System.Drawing.Point(250, 527);
             this.D14.Name = "D14";
             this.D14.Size = new System.Drawing.Size(43, 22);
             this.D14.TabIndex = 672;
@@ -1363,7 +1363,7 @@ namespace FrmLogin.UserControls
             // 
             // D13
             // 
-            this.D13.Location = new System.Drawing.Point(250, 564);
+            this.D13.Location = new System.Drawing.Point(250, 546);
             this.D13.Name = "D13";
             this.D13.Size = new System.Drawing.Size(43, 22);
             this.D13.TabIndex = 671;
@@ -1373,7 +1373,7 @@ namespace FrmLogin.UserControls
             // 
             // D12
             // 
-            this.D12.Location = new System.Drawing.Point(250, 583);
+            this.D12.Location = new System.Drawing.Point(250, 565);
             this.D12.Name = "D12";
             this.D12.Size = new System.Drawing.Size(43, 22);
             this.D12.TabIndex = 670;
@@ -1383,7 +1383,7 @@ namespace FrmLogin.UserControls
             // 
             // D11
             // 
-            this.D11.Location = new System.Drawing.Point(250, 602);
+            this.D11.Location = new System.Drawing.Point(250, 584);
             this.D11.Name = "D11";
             this.D11.Size = new System.Drawing.Size(43, 22);
             this.D11.TabIndex = 669;
@@ -1473,7 +1473,7 @@ namespace FrmLogin.UserControls
             // 
             // C44
             // 
-            this.C44.Location = new System.Drawing.Point(178, 274);
+            this.C44.Location = new System.Drawing.Point(178, 265);
             this.C44.Name = "C44";
             this.C44.Size = new System.Drawing.Size(43, 22);
             this.C44.TabIndex = 660;
@@ -1483,7 +1483,7 @@ namespace FrmLogin.UserControls
             // 
             // C43
             // 
-            this.C43.Location = new System.Drawing.Point(178, 293);
+            this.C43.Location = new System.Drawing.Point(178, 284);
             this.C43.Name = "C43";
             this.C43.Size = new System.Drawing.Size(43, 22);
             this.C43.TabIndex = 659;
@@ -1493,7 +1493,7 @@ namespace FrmLogin.UserControls
             // 
             // C42
             // 
-            this.C42.Location = new System.Drawing.Point(178, 312);
+            this.C42.Location = new System.Drawing.Point(178, 303);
             this.C42.Name = "C42";
             this.C42.Size = new System.Drawing.Size(43, 22);
             this.C42.TabIndex = 658;
@@ -1503,7 +1503,7 @@ namespace FrmLogin.UserControls
             // 
             // C41
             // 
-            this.C41.Location = new System.Drawing.Point(178, 331);
+            this.C41.Location = new System.Drawing.Point(178, 322);
             this.C41.Name = "C41";
             this.C41.Size = new System.Drawing.Size(43, 22);
             this.C41.TabIndex = 657;
@@ -1513,7 +1513,7 @@ namespace FrmLogin.UserControls
             // 
             // C34
             // 
-            this.C34.Location = new System.Drawing.Point(178, 362);
+            this.C34.Location = new System.Drawing.Point(178, 353);
             this.C34.Name = "C34";
             this.C34.Size = new System.Drawing.Size(43, 22);
             this.C34.TabIndex = 656;
@@ -1523,7 +1523,7 @@ namespace FrmLogin.UserControls
             // 
             // C33
             // 
-            this.C33.Location = new System.Drawing.Point(178, 381);
+            this.C33.Location = new System.Drawing.Point(178, 372);
             this.C33.Name = "C33";
             this.C33.Size = new System.Drawing.Size(43, 22);
             this.C33.TabIndex = 655;
@@ -1533,7 +1533,7 @@ namespace FrmLogin.UserControls
             // 
             // C32
             // 
-            this.C32.Location = new System.Drawing.Point(178, 400);
+            this.C32.Location = new System.Drawing.Point(178, 391);
             this.C32.Name = "C32";
             this.C32.Size = new System.Drawing.Size(43, 22);
             this.C32.TabIndex = 654;
@@ -1543,7 +1543,7 @@ namespace FrmLogin.UserControls
             // 
             // C31
             // 
-            this.C31.Location = new System.Drawing.Point(178, 419);
+            this.C31.Location = new System.Drawing.Point(178, 410);
             this.C31.Name = "C31";
             this.C31.Size = new System.Drawing.Size(43, 22);
             this.C31.TabIndex = 653;
@@ -1553,7 +1553,7 @@ namespace FrmLogin.UserControls
             // 
             // C24
             // 
-            this.C24.Location = new System.Drawing.Point(178, 451);
+            this.C24.Location = new System.Drawing.Point(178, 442);
             this.C24.Name = "C24";
             this.C24.Size = new System.Drawing.Size(43, 22);
             this.C24.TabIndex = 652;
@@ -1563,7 +1563,7 @@ namespace FrmLogin.UserControls
             // 
             // C23
             // 
-            this.C23.Location = new System.Drawing.Point(178, 470);
+            this.C23.Location = new System.Drawing.Point(178, 461);
             this.C23.Name = "C23";
             this.C23.Size = new System.Drawing.Size(43, 22);
             this.C23.TabIndex = 651;
@@ -1573,7 +1573,7 @@ namespace FrmLogin.UserControls
             // 
             // C22
             // 
-            this.C22.Location = new System.Drawing.Point(178, 489);
+            this.C22.Location = new System.Drawing.Point(178, 480);
             this.C22.Name = "C22";
             this.C22.Size = new System.Drawing.Size(43, 22);
             this.C22.TabIndex = 650;
@@ -1583,7 +1583,7 @@ namespace FrmLogin.UserControls
             // 
             // C21
             // 
-            this.C21.Location = new System.Drawing.Point(178, 508);
+            this.C21.Location = new System.Drawing.Point(178, 499);
             this.C21.Name = "C21";
             this.C21.Size = new System.Drawing.Size(43, 22);
             this.C21.TabIndex = 649;
@@ -1593,7 +1593,7 @@ namespace FrmLogin.UserControls
             // 
             // C14
             // 
-            this.C14.Location = new System.Drawing.Point(178, 545);
+            this.C14.Location = new System.Drawing.Point(178, 527);
             this.C14.Name = "C14";
             this.C14.Size = new System.Drawing.Size(43, 22);
             this.C14.TabIndex = 648;
@@ -1603,7 +1603,7 @@ namespace FrmLogin.UserControls
             // 
             // C13
             // 
-            this.C13.Location = new System.Drawing.Point(178, 564);
+            this.C13.Location = new System.Drawing.Point(178, 546);
             this.C13.Name = "C13";
             this.C13.Size = new System.Drawing.Size(43, 22);
             this.C13.TabIndex = 647;
@@ -1613,7 +1613,7 @@ namespace FrmLogin.UserControls
             // 
             // C12
             // 
-            this.C12.Location = new System.Drawing.Point(178, 583);
+            this.C12.Location = new System.Drawing.Point(178, 565);
             this.C12.Name = "C12";
             this.C12.Size = new System.Drawing.Size(43, 22);
             this.C12.TabIndex = 646;
@@ -1623,7 +1623,7 @@ namespace FrmLogin.UserControls
             // 
             // C11
             // 
-            this.C11.Location = new System.Drawing.Point(178, 602);
+            this.C11.Location = new System.Drawing.Point(178, 584);
             this.C11.Name = "C11";
             this.C11.Size = new System.Drawing.Size(43, 22);
             this.C11.TabIndex = 645;
@@ -1713,7 +1713,7 @@ namespace FrmLogin.UserControls
             // 
             // B44
             // 
-            this.B44.Location = new System.Drawing.Point(129, 274);
+            this.B44.Location = new System.Drawing.Point(129, 265);
             this.B44.Name = "B44";
             this.B44.Size = new System.Drawing.Size(43, 22);
             this.B44.TabIndex = 636;
@@ -1723,7 +1723,7 @@ namespace FrmLogin.UserControls
             // 
             // B43
             // 
-            this.B43.Location = new System.Drawing.Point(129, 293);
+            this.B43.Location = new System.Drawing.Point(129, 284);
             this.B43.Name = "B43";
             this.B43.Size = new System.Drawing.Size(43, 22);
             this.B43.TabIndex = 635;
@@ -1733,7 +1733,7 @@ namespace FrmLogin.UserControls
             // 
             // B42
             // 
-            this.B42.Location = new System.Drawing.Point(129, 312);
+            this.B42.Location = new System.Drawing.Point(129, 303);
             this.B42.Name = "B42";
             this.B42.Size = new System.Drawing.Size(43, 22);
             this.B42.TabIndex = 634;
@@ -1743,7 +1743,7 @@ namespace FrmLogin.UserControls
             // 
             // B41
             // 
-            this.B41.Location = new System.Drawing.Point(129, 331);
+            this.B41.Location = new System.Drawing.Point(129, 322);
             this.B41.Name = "B41";
             this.B41.Size = new System.Drawing.Size(43, 22);
             this.B41.TabIndex = 633;
@@ -1753,7 +1753,7 @@ namespace FrmLogin.UserControls
             // 
             // B34
             // 
-            this.B34.Location = new System.Drawing.Point(129, 362);
+            this.B34.Location = new System.Drawing.Point(129, 353);
             this.B34.Name = "B34";
             this.B34.Size = new System.Drawing.Size(43, 22);
             this.B34.TabIndex = 632;
@@ -1763,7 +1763,7 @@ namespace FrmLogin.UserControls
             // 
             // B33
             // 
-            this.B33.Location = new System.Drawing.Point(129, 381);
+            this.B33.Location = new System.Drawing.Point(129, 372);
             this.B33.Name = "B33";
             this.B33.Size = new System.Drawing.Size(43, 22);
             this.B33.TabIndex = 631;
@@ -1773,7 +1773,7 @@ namespace FrmLogin.UserControls
             // 
             // B32
             // 
-            this.B32.Location = new System.Drawing.Point(129, 400);
+            this.B32.Location = new System.Drawing.Point(129, 391);
             this.B32.Name = "B32";
             this.B32.Size = new System.Drawing.Size(43, 22);
             this.B32.TabIndex = 630;
@@ -1783,7 +1783,7 @@ namespace FrmLogin.UserControls
             // 
             // B31
             // 
-            this.B31.Location = new System.Drawing.Point(129, 419);
+            this.B31.Location = new System.Drawing.Point(129, 410);
             this.B31.Name = "B31";
             this.B31.Size = new System.Drawing.Size(43, 22);
             this.B31.TabIndex = 629;
@@ -1793,7 +1793,7 @@ namespace FrmLogin.UserControls
             // 
             // B24
             // 
-            this.B24.Location = new System.Drawing.Point(129, 451);
+            this.B24.Location = new System.Drawing.Point(129, 442);
             this.B24.Name = "B24";
             this.B24.Size = new System.Drawing.Size(43, 22);
             this.B24.TabIndex = 628;
@@ -1803,7 +1803,7 @@ namespace FrmLogin.UserControls
             // 
             // B23
             // 
-            this.B23.Location = new System.Drawing.Point(129, 470);
+            this.B23.Location = new System.Drawing.Point(129, 461);
             this.B23.Name = "B23";
             this.B23.Size = new System.Drawing.Size(43, 22);
             this.B23.TabIndex = 627;
@@ -1813,7 +1813,7 @@ namespace FrmLogin.UserControls
             // 
             // B22
             // 
-            this.B22.Location = new System.Drawing.Point(129, 489);
+            this.B22.Location = new System.Drawing.Point(129, 480);
             this.B22.Name = "B22";
             this.B22.Size = new System.Drawing.Size(43, 22);
             this.B22.TabIndex = 626;
@@ -1823,7 +1823,7 @@ namespace FrmLogin.UserControls
             // 
             // B21
             // 
-            this.B21.Location = new System.Drawing.Point(129, 508);
+            this.B21.Location = new System.Drawing.Point(129, 499);
             this.B21.Name = "B21";
             this.B21.Size = new System.Drawing.Size(43, 22);
             this.B21.TabIndex = 625;
@@ -1833,7 +1833,7 @@ namespace FrmLogin.UserControls
             // 
             // B14
             // 
-            this.B14.Location = new System.Drawing.Point(129, 545);
+            this.B14.Location = new System.Drawing.Point(129, 527);
             this.B14.Name = "B14";
             this.B14.Size = new System.Drawing.Size(43, 22);
             this.B14.TabIndex = 624;
@@ -1843,7 +1843,7 @@ namespace FrmLogin.UserControls
             // 
             // B13
             // 
-            this.B13.Location = new System.Drawing.Point(129, 564);
+            this.B13.Location = new System.Drawing.Point(129, 546);
             this.B13.Name = "B13";
             this.B13.Size = new System.Drawing.Size(43, 22);
             this.B13.TabIndex = 623;
@@ -1853,7 +1853,7 @@ namespace FrmLogin.UserControls
             // 
             // B12
             // 
-            this.B12.Location = new System.Drawing.Point(129, 583);
+            this.B12.Location = new System.Drawing.Point(129, 565);
             this.B12.Name = "B12";
             this.B12.Size = new System.Drawing.Size(43, 22);
             this.B12.TabIndex = 622;
@@ -1863,7 +1863,7 @@ namespace FrmLogin.UserControls
             // 
             // B11
             // 
-            this.B11.Location = new System.Drawing.Point(129, 602);
+            this.B11.Location = new System.Drawing.Point(129, 584);
             this.B11.Name = "B11";
             this.B11.Size = new System.Drawing.Size(43, 22);
             this.B11.TabIndex = 621;
@@ -1873,9 +1873,9 @@ namespace FrmLogin.UserControls
             // 
             // S04
             // 
-            this.S04.Location = new System.Drawing.Point(1061, 638);
+            this.S04.Location = new System.Drawing.Point(1061, 609);
             this.S04.Name = "S04";
-            this.S04.Size = new System.Drawing.Size(43, 22);
+            this.S04.Size = new System.Drawing.Size(43, 21);
             this.S04.TabIndex = 720;
             this.S04.Text = "4";
             this.S04.UseVisualStyleBackColor = true;
@@ -1883,9 +1883,9 @@ namespace FrmLogin.UserControls
             // 
             // S03
             // 
-            this.S03.Location = new System.Drawing.Point(1061, 657);
+            this.S03.Location = new System.Drawing.Point(1061, 628);
             this.S03.Name = "S03";
-            this.S03.Size = new System.Drawing.Size(43, 22);
+            this.S03.Size = new System.Drawing.Size(43, 21);
             this.S03.TabIndex = 719;
             this.S03.Text = "3";
             this.S03.UseVisualStyleBackColor = true;
@@ -1893,9 +1893,9 @@ namespace FrmLogin.UserControls
             // 
             // S02
             // 
-            this.S02.Location = new System.Drawing.Point(1061, 676);
+            this.S02.Location = new System.Drawing.Point(1061, 647);
             this.S02.Name = "S02";
-            this.S02.Size = new System.Drawing.Size(43, 22);
+            this.S02.Size = new System.Drawing.Size(43, 21);
             this.S02.TabIndex = 718;
             this.S02.Text = "2";
             this.S02.UseVisualStyleBackColor = true;
@@ -1903,9 +1903,9 @@ namespace FrmLogin.UserControls
             // 
             // S01
             // 
-            this.S01.Location = new System.Drawing.Point(1061, 695);
+            this.S01.Location = new System.Drawing.Point(1061, 666);
             this.S01.Name = "S01";
-            this.S01.Size = new System.Drawing.Size(43, 22);
+            this.S01.Size = new System.Drawing.Size(43, 21);
             this.S01.TabIndex = 717;
             this.S01.Text = "1";
             this.S01.UseVisualStyleBackColor = true;
@@ -1913,9 +1913,9 @@ namespace FrmLogin.UserControls
             // 
             // A04
             // 
-            this.A04.Location = new System.Drawing.Point(58, 637);
+            this.A04.Location = new System.Drawing.Point(58, 609);
             this.A04.Name = "A04";
-            this.A04.Size = new System.Drawing.Size(43, 22);
+            this.A04.Size = new System.Drawing.Size(43, 21);
             this.A04.TabIndex = 748;
             this.A04.Text = "4";
             this.A04.UseVisualStyleBackColor = true;
@@ -1923,9 +1923,9 @@ namespace FrmLogin.UserControls
             // 
             // A03
             // 
-            this.A03.Location = new System.Drawing.Point(58, 656);
+            this.A03.Location = new System.Drawing.Point(58, 628);
             this.A03.Name = "A03";
-            this.A03.Size = new System.Drawing.Size(43, 22);
+            this.A03.Size = new System.Drawing.Size(43, 21);
             this.A03.TabIndex = 747;
             this.A03.Text = "3";
             this.A03.UseVisualStyleBackColor = true;
@@ -1933,9 +1933,9 @@ namespace FrmLogin.UserControls
             // 
             // A02
             // 
-            this.A02.Location = new System.Drawing.Point(58, 675);
+            this.A02.Location = new System.Drawing.Point(58, 648);
             this.A02.Name = "A02";
-            this.A02.Size = new System.Drawing.Size(43, 22);
+            this.A02.Size = new System.Drawing.Size(43, 21);
             this.A02.TabIndex = 746;
             this.A02.Text = "2";
             this.A02.UseVisualStyleBackColor = true;
@@ -1943,9 +1943,9 @@ namespace FrmLogin.UserControls
             // 
             // A01
             // 
-            this.A01.Location = new System.Drawing.Point(58, 694);
+            this.A01.Location = new System.Drawing.Point(58, 666);
             this.A01.Name = "A01";
-            this.A01.Size = new System.Drawing.Size(43, 22);
+            this.A01.Size = new System.Drawing.Size(43, 21);
             this.A01.TabIndex = 745;
             this.A01.Text = "1";
             this.A01.UseVisualStyleBackColor = true;
@@ -2033,7 +2033,7 @@ namespace FrmLogin.UserControls
             // 
             // A44
             // 
-            this.A44.Location = new System.Drawing.Point(58, 274);
+            this.A44.Location = new System.Drawing.Point(58, 265);
             this.A44.Name = "A44";
             this.A44.Size = new System.Drawing.Size(43, 22);
             this.A44.TabIndex = 736;
@@ -2043,7 +2043,7 @@ namespace FrmLogin.UserControls
             // 
             // A43
             // 
-            this.A43.Location = new System.Drawing.Point(58, 293);
+            this.A43.Location = new System.Drawing.Point(58, 284);
             this.A43.Name = "A43";
             this.A43.Size = new System.Drawing.Size(43, 22);
             this.A43.TabIndex = 735;
@@ -2053,7 +2053,7 @@ namespace FrmLogin.UserControls
             // 
             // A42
             // 
-            this.A42.Location = new System.Drawing.Point(58, 312);
+            this.A42.Location = new System.Drawing.Point(58, 303);
             this.A42.Name = "A42";
             this.A42.Size = new System.Drawing.Size(43, 22);
             this.A42.TabIndex = 734;
@@ -2063,7 +2063,7 @@ namespace FrmLogin.UserControls
             // 
             // A41
             // 
-            this.A41.Location = new System.Drawing.Point(58, 331);
+            this.A41.Location = new System.Drawing.Point(58, 322);
             this.A41.Name = "A41";
             this.A41.Size = new System.Drawing.Size(43, 22);
             this.A41.TabIndex = 733;
@@ -2073,7 +2073,7 @@ namespace FrmLogin.UserControls
             // 
             // A34
             // 
-            this.A34.Location = new System.Drawing.Point(58, 362);
+            this.A34.Location = new System.Drawing.Point(58, 350);
             this.A34.Name = "A34";
             this.A34.Size = new System.Drawing.Size(43, 22);
             this.A34.TabIndex = 732;
@@ -2083,7 +2083,7 @@ namespace FrmLogin.UserControls
             // 
             // A33
             // 
-            this.A33.Location = new System.Drawing.Point(58, 381);
+            this.A33.Location = new System.Drawing.Point(58, 369);
             this.A33.Name = "A33";
             this.A33.Size = new System.Drawing.Size(43, 22);
             this.A33.TabIndex = 731;
@@ -2093,7 +2093,7 @@ namespace FrmLogin.UserControls
             // 
             // A32
             // 
-            this.A32.Location = new System.Drawing.Point(58, 400);
+            this.A32.Location = new System.Drawing.Point(58, 388);
             this.A32.Name = "A32";
             this.A32.Size = new System.Drawing.Size(43, 22);
             this.A32.TabIndex = 730;
@@ -2103,7 +2103,7 @@ namespace FrmLogin.UserControls
             // 
             // A31
             // 
-            this.A31.Location = new System.Drawing.Point(58, 419);
+            this.A31.Location = new System.Drawing.Point(58, 407);
             this.A31.Name = "A31";
             this.A31.Size = new System.Drawing.Size(43, 22);
             this.A31.TabIndex = 729;
@@ -2113,7 +2113,7 @@ namespace FrmLogin.UserControls
             // 
             // A24
             // 
-            this.A24.Location = new System.Drawing.Point(58, 451);
+            this.A24.Location = new System.Drawing.Point(58, 439);
             this.A24.Name = "A24";
             this.A24.Size = new System.Drawing.Size(43, 22);
             this.A24.TabIndex = 728;
@@ -2123,7 +2123,7 @@ namespace FrmLogin.UserControls
             // 
             // A23
             // 
-            this.A23.Location = new System.Drawing.Point(58, 470);
+            this.A23.Location = new System.Drawing.Point(58, 458);
             this.A23.Name = "A23";
             this.A23.Size = new System.Drawing.Size(43, 22);
             this.A23.TabIndex = 727;
@@ -2133,7 +2133,7 @@ namespace FrmLogin.UserControls
             // 
             // A22
             // 
-            this.A22.Location = new System.Drawing.Point(58, 489);
+            this.A22.Location = new System.Drawing.Point(58, 477);
             this.A22.Name = "A22";
             this.A22.Size = new System.Drawing.Size(43, 22);
             this.A22.TabIndex = 726;
@@ -2143,7 +2143,7 @@ namespace FrmLogin.UserControls
             // 
             // A21
             // 
-            this.A21.Location = new System.Drawing.Point(58, 508);
+            this.A21.Location = new System.Drawing.Point(58, 496);
             this.A21.Name = "A21";
             this.A21.Size = new System.Drawing.Size(43, 22);
             this.A21.TabIndex = 725;
@@ -2153,7 +2153,7 @@ namespace FrmLogin.UserControls
             // 
             // A14
             // 
-            this.A14.Location = new System.Drawing.Point(58, 545);
+            this.A14.Location = new System.Drawing.Point(58, 524);
             this.A14.Name = "A14";
             this.A14.Size = new System.Drawing.Size(43, 22);
             this.A14.TabIndex = 724;
@@ -2163,7 +2163,7 @@ namespace FrmLogin.UserControls
             // 
             // A13
             // 
-            this.A13.Location = new System.Drawing.Point(58, 564);
+            this.A13.Location = new System.Drawing.Point(58, 543);
             this.A13.Name = "A13";
             this.A13.Size = new System.Drawing.Size(43, 22);
             this.A13.TabIndex = 723;
@@ -2173,7 +2173,7 @@ namespace FrmLogin.UserControls
             // 
             // A12
             // 
-            this.A12.Location = new System.Drawing.Point(58, 583);
+            this.A12.Location = new System.Drawing.Point(58, 562);
             this.A12.Name = "A12";
             this.A12.Size = new System.Drawing.Size(43, 22);
             this.A12.TabIndex = 722;
@@ -2183,7 +2183,7 @@ namespace FrmLogin.UserControls
             // 
             // A11
             // 
-            this.A11.Location = new System.Drawing.Point(58, 602);
+            this.A11.Location = new System.Drawing.Point(58, 581);
             this.A11.Name = "A11";
             this.A11.Size = new System.Drawing.Size(43, 22);
             this.A11.TabIndex = 721;
@@ -2273,7 +2273,7 @@ namespace FrmLogin.UserControls
             // 
             // G44
             // 
-            this.G44.Location = new System.Drawing.Point(414, 274);
+            this.G44.Location = new System.Drawing.Point(414, 265);
             this.G44.Name = "G44";
             this.G44.Size = new System.Drawing.Size(43, 22);
             this.G44.TabIndex = 788;
@@ -2283,7 +2283,7 @@ namespace FrmLogin.UserControls
             // 
             // G43
             // 
-            this.G43.Location = new System.Drawing.Point(414, 293);
+            this.G43.Location = new System.Drawing.Point(414, 284);
             this.G43.Name = "G43";
             this.G43.Size = new System.Drawing.Size(43, 22);
             this.G43.TabIndex = 787;
@@ -2293,7 +2293,7 @@ namespace FrmLogin.UserControls
             // 
             // G42
             // 
-            this.G42.Location = new System.Drawing.Point(414, 312);
+            this.G42.Location = new System.Drawing.Point(414, 303);
             this.G42.Name = "G42";
             this.G42.Size = new System.Drawing.Size(43, 22);
             this.G42.TabIndex = 786;
@@ -2303,7 +2303,7 @@ namespace FrmLogin.UserControls
             // 
             // G41
             // 
-            this.G41.Location = new System.Drawing.Point(414, 331);
+            this.G41.Location = new System.Drawing.Point(414, 322);
             this.G41.Name = "G41";
             this.G41.Size = new System.Drawing.Size(43, 22);
             this.G41.TabIndex = 785;
@@ -2313,7 +2313,7 @@ namespace FrmLogin.UserControls
             // 
             // G34
             // 
-            this.G34.Location = new System.Drawing.Point(414, 362);
+            this.G34.Location = new System.Drawing.Point(414, 353);
             this.G34.Name = "G34";
             this.G34.Size = new System.Drawing.Size(43, 22);
             this.G34.TabIndex = 784;
@@ -2323,7 +2323,7 @@ namespace FrmLogin.UserControls
             // 
             // G33
             // 
-            this.G33.Location = new System.Drawing.Point(414, 381);
+            this.G33.Location = new System.Drawing.Point(414, 372);
             this.G33.Name = "G33";
             this.G33.Size = new System.Drawing.Size(43, 22);
             this.G33.TabIndex = 783;
@@ -2333,7 +2333,7 @@ namespace FrmLogin.UserControls
             // 
             // G32
             // 
-            this.G32.Location = new System.Drawing.Point(414, 400);
+            this.G32.Location = new System.Drawing.Point(414, 391);
             this.G32.Name = "G32";
             this.G32.Size = new System.Drawing.Size(43, 22);
             this.G32.TabIndex = 782;
@@ -2343,7 +2343,7 @@ namespace FrmLogin.UserControls
             // 
             // G31
             // 
-            this.G31.Location = new System.Drawing.Point(414, 419);
+            this.G31.Location = new System.Drawing.Point(414, 410);
             this.G31.Name = "G31";
             this.G31.Size = new System.Drawing.Size(43, 22);
             this.G31.TabIndex = 781;
@@ -2353,7 +2353,7 @@ namespace FrmLogin.UserControls
             // 
             // G24
             // 
-            this.G24.Location = new System.Drawing.Point(414, 451);
+            this.G24.Location = new System.Drawing.Point(414, 442);
             this.G24.Name = "G24";
             this.G24.Size = new System.Drawing.Size(43, 22);
             this.G24.TabIndex = 780;
@@ -2363,7 +2363,7 @@ namespace FrmLogin.UserControls
             // 
             // G23
             // 
-            this.G23.Location = new System.Drawing.Point(414, 470);
+            this.G23.Location = new System.Drawing.Point(414, 461);
             this.G23.Name = "G23";
             this.G23.Size = new System.Drawing.Size(43, 22);
             this.G23.TabIndex = 779;
@@ -2373,7 +2373,7 @@ namespace FrmLogin.UserControls
             // 
             // G22
             // 
-            this.G22.Location = new System.Drawing.Point(414, 489);
+            this.G22.Location = new System.Drawing.Point(414, 480);
             this.G22.Name = "G22";
             this.G22.Size = new System.Drawing.Size(43, 22);
             this.G22.TabIndex = 778;
@@ -2383,7 +2383,7 @@ namespace FrmLogin.UserControls
             // 
             // G21
             // 
-            this.G21.Location = new System.Drawing.Point(414, 508);
+            this.G21.Location = new System.Drawing.Point(414, 499);
             this.G21.Name = "G21";
             this.G21.Size = new System.Drawing.Size(43, 22);
             this.G21.TabIndex = 777;
@@ -2393,7 +2393,7 @@ namespace FrmLogin.UserControls
             // 
             // G14
             // 
-            this.G14.Location = new System.Drawing.Point(414, 545);
+            this.G14.Location = new System.Drawing.Point(414, 527);
             this.G14.Name = "G14";
             this.G14.Size = new System.Drawing.Size(43, 22);
             this.G14.TabIndex = 776;
@@ -2403,7 +2403,7 @@ namespace FrmLogin.UserControls
             // 
             // G13
             // 
-            this.G13.Location = new System.Drawing.Point(414, 564);
+            this.G13.Location = new System.Drawing.Point(414, 546);
             this.G13.Name = "G13";
             this.G13.Size = new System.Drawing.Size(43, 22);
             this.G13.TabIndex = 775;
@@ -2413,7 +2413,7 @@ namespace FrmLogin.UserControls
             // 
             // G12
             // 
-            this.G12.Location = new System.Drawing.Point(414, 583);
+            this.G12.Location = new System.Drawing.Point(414, 565);
             this.G12.Name = "G12";
             this.G12.Size = new System.Drawing.Size(43, 22);
             this.G12.TabIndex = 774;
@@ -2423,7 +2423,7 @@ namespace FrmLogin.UserControls
             // 
             // G11
             // 
-            this.G11.Location = new System.Drawing.Point(414, 602);
+            this.G11.Location = new System.Drawing.Point(414, 584);
             this.G11.Name = "G11";
             this.G11.Size = new System.Drawing.Size(43, 22);
             this.G11.TabIndex = 773;
@@ -2513,7 +2513,7 @@ namespace FrmLogin.UserControls
             // 
             // F44
             // 
-            this.F44.Location = new System.Drawing.Point(365, 274);
+            this.F44.Location = new System.Drawing.Point(365, 265);
             this.F44.Name = "F44";
             this.F44.Size = new System.Drawing.Size(43, 22);
             this.F44.TabIndex = 764;
@@ -2523,7 +2523,7 @@ namespace FrmLogin.UserControls
             // 
             // F43
             // 
-            this.F43.Location = new System.Drawing.Point(365, 293);
+            this.F43.Location = new System.Drawing.Point(365, 284);
             this.F43.Name = "F43";
             this.F43.Size = new System.Drawing.Size(43, 22);
             this.F43.TabIndex = 763;
@@ -2533,7 +2533,7 @@ namespace FrmLogin.UserControls
             // 
             // F42
             // 
-            this.F42.Location = new System.Drawing.Point(365, 312);
+            this.F42.Location = new System.Drawing.Point(365, 303);
             this.F42.Name = "F42";
             this.F42.Size = new System.Drawing.Size(43, 22);
             this.F42.TabIndex = 762;
@@ -2543,7 +2543,7 @@ namespace FrmLogin.UserControls
             // 
             // F41
             // 
-            this.F41.Location = new System.Drawing.Point(365, 331);
+            this.F41.Location = new System.Drawing.Point(365, 322);
             this.F41.Name = "F41";
             this.F41.Size = new System.Drawing.Size(43, 22);
             this.F41.TabIndex = 761;
@@ -2553,7 +2553,7 @@ namespace FrmLogin.UserControls
             // 
             // F34
             // 
-            this.F34.Location = new System.Drawing.Point(365, 362);
+            this.F34.Location = new System.Drawing.Point(365, 353);
             this.F34.Name = "F34";
             this.F34.Size = new System.Drawing.Size(43, 22);
             this.F34.TabIndex = 760;
@@ -2563,7 +2563,7 @@ namespace FrmLogin.UserControls
             // 
             // F33
             // 
-            this.F33.Location = new System.Drawing.Point(365, 381);
+            this.F33.Location = new System.Drawing.Point(365, 372);
             this.F33.Name = "F33";
             this.F33.Size = new System.Drawing.Size(43, 22);
             this.F33.TabIndex = 759;
@@ -2573,7 +2573,7 @@ namespace FrmLogin.UserControls
             // 
             // F32
             // 
-            this.F32.Location = new System.Drawing.Point(365, 400);
+            this.F32.Location = new System.Drawing.Point(365, 391);
             this.F32.Name = "F32";
             this.F32.Size = new System.Drawing.Size(43, 22);
             this.F32.TabIndex = 758;
@@ -2583,7 +2583,7 @@ namespace FrmLogin.UserControls
             // 
             // F31
             // 
-            this.F31.Location = new System.Drawing.Point(365, 419);
+            this.F31.Location = new System.Drawing.Point(365, 410);
             this.F31.Name = "F31";
             this.F31.Size = new System.Drawing.Size(43, 22);
             this.F31.TabIndex = 757;
@@ -2593,7 +2593,7 @@ namespace FrmLogin.UserControls
             // 
             // F24
             // 
-            this.F24.Location = new System.Drawing.Point(365, 451);
+            this.F24.Location = new System.Drawing.Point(365, 442);
             this.F24.Name = "F24";
             this.F24.Size = new System.Drawing.Size(43, 22);
             this.F24.TabIndex = 756;
@@ -2603,7 +2603,7 @@ namespace FrmLogin.UserControls
             // 
             // F23
             // 
-            this.F23.Location = new System.Drawing.Point(365, 470);
+            this.F23.Location = new System.Drawing.Point(365, 461);
             this.F23.Name = "F23";
             this.F23.Size = new System.Drawing.Size(43, 22);
             this.F23.TabIndex = 755;
@@ -2613,7 +2613,7 @@ namespace FrmLogin.UserControls
             // 
             // F22
             // 
-            this.F22.Location = new System.Drawing.Point(365, 489);
+            this.F22.Location = new System.Drawing.Point(365, 480);
             this.F22.Name = "F22";
             this.F22.Size = new System.Drawing.Size(43, 22);
             this.F22.TabIndex = 754;
@@ -2623,7 +2623,7 @@ namespace FrmLogin.UserControls
             // 
             // F21
             // 
-            this.F21.Location = new System.Drawing.Point(365, 508);
+            this.F21.Location = new System.Drawing.Point(365, 499);
             this.F21.Name = "F21";
             this.F21.Size = new System.Drawing.Size(43, 22);
             this.F21.TabIndex = 753;
@@ -2633,7 +2633,7 @@ namespace FrmLogin.UserControls
             // 
             // F14
             // 
-            this.F14.Location = new System.Drawing.Point(365, 545);
+            this.F14.Location = new System.Drawing.Point(365, 527);
             this.F14.Name = "F14";
             this.F14.Size = new System.Drawing.Size(43, 22);
             this.F14.TabIndex = 752;
@@ -2643,7 +2643,7 @@ namespace FrmLogin.UserControls
             // 
             // F13
             // 
-            this.F13.Location = new System.Drawing.Point(365, 564);
+            this.F13.Location = new System.Drawing.Point(365, 546);
             this.F13.Name = "F13";
             this.F13.Size = new System.Drawing.Size(43, 22);
             this.F13.TabIndex = 751;
@@ -2653,7 +2653,7 @@ namespace FrmLogin.UserControls
             // 
             // F12
             // 
-            this.F12.Location = new System.Drawing.Point(365, 583);
+            this.F12.Location = new System.Drawing.Point(365, 565);
             this.F12.Name = "F12";
             this.F12.Size = new System.Drawing.Size(43, 22);
             this.F12.TabIndex = 750;
@@ -2663,7 +2663,7 @@ namespace FrmLogin.UserControls
             // 
             // F11
             // 
-            this.F11.Location = new System.Drawing.Point(365, 602);
+            this.F11.Location = new System.Drawing.Point(365, 584);
             this.F11.Name = "F11";
             this.F11.Size = new System.Drawing.Size(43, 22);
             this.F11.TabIndex = 749;
@@ -2753,7 +2753,7 @@ namespace FrmLogin.UserControls
             // 
             // I44
             // 
-            this.I44.Location = new System.Drawing.Point(530, 274);
+            this.I44.Location = new System.Drawing.Point(530, 265);
             this.I44.Name = "I44";
             this.I44.Size = new System.Drawing.Size(43, 22);
             this.I44.TabIndex = 836;
@@ -2763,7 +2763,7 @@ namespace FrmLogin.UserControls
             // 
             // I43
             // 
-            this.I43.Location = new System.Drawing.Point(530, 293);
+            this.I43.Location = new System.Drawing.Point(530, 284);
             this.I43.Name = "I43";
             this.I43.Size = new System.Drawing.Size(43, 22);
             this.I43.TabIndex = 835;
@@ -2773,7 +2773,7 @@ namespace FrmLogin.UserControls
             // 
             // I42
             // 
-            this.I42.Location = new System.Drawing.Point(530, 312);
+            this.I42.Location = new System.Drawing.Point(530, 303);
             this.I42.Name = "I42";
             this.I42.Size = new System.Drawing.Size(43, 22);
             this.I42.TabIndex = 834;
@@ -2783,7 +2783,7 @@ namespace FrmLogin.UserControls
             // 
             // I41
             // 
-            this.I41.Location = new System.Drawing.Point(530, 331);
+            this.I41.Location = new System.Drawing.Point(530, 322);
             this.I41.Name = "I41";
             this.I41.Size = new System.Drawing.Size(43, 22);
             this.I41.TabIndex = 833;
@@ -2793,7 +2793,7 @@ namespace FrmLogin.UserControls
             // 
             // I34
             // 
-            this.I34.Location = new System.Drawing.Point(530, 362);
+            this.I34.Location = new System.Drawing.Point(530, 353);
             this.I34.Name = "I34";
             this.I34.Size = new System.Drawing.Size(43, 22);
             this.I34.TabIndex = 832;
@@ -2803,7 +2803,7 @@ namespace FrmLogin.UserControls
             // 
             // I33
             // 
-            this.I33.Location = new System.Drawing.Point(530, 381);
+            this.I33.Location = new System.Drawing.Point(530, 372);
             this.I33.Name = "I33";
             this.I33.Size = new System.Drawing.Size(43, 22);
             this.I33.TabIndex = 831;
@@ -2813,7 +2813,7 @@ namespace FrmLogin.UserControls
             // 
             // I32
             // 
-            this.I32.Location = new System.Drawing.Point(530, 400);
+            this.I32.Location = new System.Drawing.Point(530, 391);
             this.I32.Name = "I32";
             this.I32.Size = new System.Drawing.Size(43, 22);
             this.I32.TabIndex = 830;
@@ -2823,7 +2823,7 @@ namespace FrmLogin.UserControls
             // 
             // I31
             // 
-            this.I31.Location = new System.Drawing.Point(530, 419);
+            this.I31.Location = new System.Drawing.Point(530, 410);
             this.I31.Name = "I31";
             this.I31.Size = new System.Drawing.Size(43, 22);
             this.I31.TabIndex = 829;
@@ -2833,7 +2833,7 @@ namespace FrmLogin.UserControls
             // 
             // I24
             // 
-            this.I24.Location = new System.Drawing.Point(530, 451);
+            this.I24.Location = new System.Drawing.Point(530, 442);
             this.I24.Name = "I24";
             this.I24.Size = new System.Drawing.Size(43, 22);
             this.I24.TabIndex = 828;
@@ -2843,7 +2843,7 @@ namespace FrmLogin.UserControls
             // 
             // I23
             // 
-            this.I23.Location = new System.Drawing.Point(530, 470);
+            this.I23.Location = new System.Drawing.Point(530, 461);
             this.I23.Name = "I23";
             this.I23.Size = new System.Drawing.Size(43, 22);
             this.I23.TabIndex = 827;
@@ -2853,7 +2853,7 @@ namespace FrmLogin.UserControls
             // 
             // I22
             // 
-            this.I22.Location = new System.Drawing.Point(530, 489);
+            this.I22.Location = new System.Drawing.Point(530, 480);
             this.I22.Name = "I22";
             this.I22.Size = new System.Drawing.Size(43, 22);
             this.I22.TabIndex = 826;
@@ -2863,7 +2863,7 @@ namespace FrmLogin.UserControls
             // 
             // I21
             // 
-            this.I21.Location = new System.Drawing.Point(530, 508);
+            this.I21.Location = new System.Drawing.Point(530, 499);
             this.I21.Name = "I21";
             this.I21.Size = new System.Drawing.Size(43, 22);
             this.I21.TabIndex = 825;
@@ -2873,7 +2873,7 @@ namespace FrmLogin.UserControls
             // 
             // I14
             // 
-            this.I14.Location = new System.Drawing.Point(530, 545);
+            this.I14.Location = new System.Drawing.Point(530, 527);
             this.I14.Name = "I14";
             this.I14.Size = new System.Drawing.Size(43, 22);
             this.I14.TabIndex = 824;
@@ -2883,7 +2883,7 @@ namespace FrmLogin.UserControls
             // 
             // I13
             // 
-            this.I13.Location = new System.Drawing.Point(530, 564);
+            this.I13.Location = new System.Drawing.Point(530, 546);
             this.I13.Name = "I13";
             this.I13.Size = new System.Drawing.Size(43, 22);
             this.I13.TabIndex = 823;
@@ -2893,7 +2893,7 @@ namespace FrmLogin.UserControls
             // 
             // I12
             // 
-            this.I12.Location = new System.Drawing.Point(530, 583);
+            this.I12.Location = new System.Drawing.Point(530, 565);
             this.I12.Name = "I12";
             this.I12.Size = new System.Drawing.Size(43, 22);
             this.I12.TabIndex = 822;
@@ -2903,7 +2903,7 @@ namespace FrmLogin.UserControls
             // 
             // I11
             // 
-            this.I11.Location = new System.Drawing.Point(530, 602);
+            this.I11.Location = new System.Drawing.Point(530, 584);
             this.I11.Name = "I11";
             this.I11.Size = new System.Drawing.Size(43, 22);
             this.I11.TabIndex = 821;
@@ -2993,7 +2993,7 @@ namespace FrmLogin.UserControls
             // 
             // H44
             // 
-            this.H44.Location = new System.Drawing.Point(481, 274);
+            this.H44.Location = new System.Drawing.Point(481, 265);
             this.H44.Name = "H44";
             this.H44.Size = new System.Drawing.Size(43, 22);
             this.H44.TabIndex = 812;
@@ -3003,7 +3003,7 @@ namespace FrmLogin.UserControls
             // 
             // H43
             // 
-            this.H43.Location = new System.Drawing.Point(481, 293);
+            this.H43.Location = new System.Drawing.Point(481, 284);
             this.H43.Name = "H43";
             this.H43.Size = new System.Drawing.Size(43, 22);
             this.H43.TabIndex = 811;
@@ -3013,7 +3013,7 @@ namespace FrmLogin.UserControls
             // 
             // H42
             // 
-            this.H42.Location = new System.Drawing.Point(481, 312);
+            this.H42.Location = new System.Drawing.Point(481, 303);
             this.H42.Name = "H42";
             this.H42.Size = new System.Drawing.Size(43, 22);
             this.H42.TabIndex = 810;
@@ -3023,7 +3023,7 @@ namespace FrmLogin.UserControls
             // 
             // H41
             // 
-            this.H41.Location = new System.Drawing.Point(481, 331);
+            this.H41.Location = new System.Drawing.Point(481, 322);
             this.H41.Name = "H41";
             this.H41.Size = new System.Drawing.Size(43, 22);
             this.H41.TabIndex = 809;
@@ -3033,7 +3033,7 @@ namespace FrmLogin.UserControls
             // 
             // H34
             // 
-            this.H34.Location = new System.Drawing.Point(481, 362);
+            this.H34.Location = new System.Drawing.Point(481, 353);
             this.H34.Name = "H34";
             this.H34.Size = new System.Drawing.Size(43, 22);
             this.H34.TabIndex = 808;
@@ -3043,7 +3043,7 @@ namespace FrmLogin.UserControls
             // 
             // H33
             // 
-            this.H33.Location = new System.Drawing.Point(481, 381);
+            this.H33.Location = new System.Drawing.Point(481, 372);
             this.H33.Name = "H33";
             this.H33.Size = new System.Drawing.Size(43, 22);
             this.H33.TabIndex = 807;
@@ -3053,7 +3053,7 @@ namespace FrmLogin.UserControls
             // 
             // H32
             // 
-            this.H32.Location = new System.Drawing.Point(481, 400);
+            this.H32.Location = new System.Drawing.Point(481, 391);
             this.H32.Name = "H32";
             this.H32.Size = new System.Drawing.Size(43, 22);
             this.H32.TabIndex = 806;
@@ -3063,7 +3063,7 @@ namespace FrmLogin.UserControls
             // 
             // H31
             // 
-            this.H31.Location = new System.Drawing.Point(481, 419);
+            this.H31.Location = new System.Drawing.Point(481, 410);
             this.H31.Name = "H31";
             this.H31.Size = new System.Drawing.Size(43, 22);
             this.H31.TabIndex = 805;
@@ -3073,7 +3073,7 @@ namespace FrmLogin.UserControls
             // 
             // H24
             // 
-            this.H24.Location = new System.Drawing.Point(481, 451);
+            this.H24.Location = new System.Drawing.Point(481, 442);
             this.H24.Name = "H24";
             this.H24.Size = new System.Drawing.Size(43, 22);
             this.H24.TabIndex = 804;
@@ -3083,7 +3083,7 @@ namespace FrmLogin.UserControls
             // 
             // H23
             // 
-            this.H23.Location = new System.Drawing.Point(481, 470);
+            this.H23.Location = new System.Drawing.Point(481, 461);
             this.H23.Name = "H23";
             this.H23.Size = new System.Drawing.Size(43, 22);
             this.H23.TabIndex = 803;
@@ -3093,7 +3093,7 @@ namespace FrmLogin.UserControls
             // 
             // H22
             // 
-            this.H22.Location = new System.Drawing.Point(481, 489);
+            this.H22.Location = new System.Drawing.Point(481, 480);
             this.H22.Name = "H22";
             this.H22.Size = new System.Drawing.Size(43, 22);
             this.H22.TabIndex = 802;
@@ -3103,7 +3103,7 @@ namespace FrmLogin.UserControls
             // 
             // H21
             // 
-            this.H21.Location = new System.Drawing.Point(481, 508);
+            this.H21.Location = new System.Drawing.Point(481, 499);
             this.H21.Name = "H21";
             this.H21.Size = new System.Drawing.Size(43, 22);
             this.H21.TabIndex = 801;
@@ -3113,7 +3113,7 @@ namespace FrmLogin.UserControls
             // 
             // H14
             // 
-            this.H14.Location = new System.Drawing.Point(481, 545);
+            this.H14.Location = new System.Drawing.Point(481, 527);
             this.H14.Name = "H14";
             this.H14.Size = new System.Drawing.Size(43, 22);
             this.H14.TabIndex = 800;
@@ -3123,7 +3123,7 @@ namespace FrmLogin.UserControls
             // 
             // H13
             // 
-            this.H13.Location = new System.Drawing.Point(481, 564);
+            this.H13.Location = new System.Drawing.Point(481, 546);
             this.H13.Name = "H13";
             this.H13.Size = new System.Drawing.Size(43, 22);
             this.H13.TabIndex = 799;
@@ -3133,7 +3133,7 @@ namespace FrmLogin.UserControls
             // 
             // H12
             // 
-            this.H12.Location = new System.Drawing.Point(481, 583);
+            this.H12.Location = new System.Drawing.Point(481, 565);
             this.H12.Name = "H12";
             this.H12.Size = new System.Drawing.Size(43, 22);
             this.H12.TabIndex = 798;
@@ -3143,7 +3143,7 @@ namespace FrmLogin.UserControls
             // 
             // H11
             // 
-            this.H11.Location = new System.Drawing.Point(481, 602);
+            this.H11.Location = new System.Drawing.Point(481, 584);
             this.H11.Name = "H11";
             this.H11.Size = new System.Drawing.Size(43, 22);
             this.H11.TabIndex = 797;
@@ -3233,7 +3233,7 @@ namespace FrmLogin.UserControls
             // 
             // K44
             // 
-            this.K44.Location = new System.Drawing.Point(649, 274);
+            this.K44.Location = new System.Drawing.Point(649, 265);
             this.K44.Name = "K44";
             this.K44.Size = new System.Drawing.Size(43, 22);
             this.K44.TabIndex = 884;
@@ -3243,7 +3243,7 @@ namespace FrmLogin.UserControls
             // 
             // K43
             // 
-            this.K43.Location = new System.Drawing.Point(649, 293);
+            this.K43.Location = new System.Drawing.Point(649, 284);
             this.K43.Name = "K43";
             this.K43.Size = new System.Drawing.Size(43, 22);
             this.K43.TabIndex = 883;
@@ -3253,7 +3253,7 @@ namespace FrmLogin.UserControls
             // 
             // K42
             // 
-            this.K42.Location = new System.Drawing.Point(649, 312);
+            this.K42.Location = new System.Drawing.Point(649, 303);
             this.K42.Name = "K42";
             this.K42.Size = new System.Drawing.Size(43, 22);
             this.K42.TabIndex = 882;
@@ -3263,7 +3263,7 @@ namespace FrmLogin.UserControls
             // 
             // K41
             // 
-            this.K41.Location = new System.Drawing.Point(649, 331);
+            this.K41.Location = new System.Drawing.Point(649, 322);
             this.K41.Name = "K41";
             this.K41.Size = new System.Drawing.Size(43, 22);
             this.K41.TabIndex = 881;
@@ -3273,7 +3273,7 @@ namespace FrmLogin.UserControls
             // 
             // K34
             // 
-            this.K34.Location = new System.Drawing.Point(649, 362);
+            this.K34.Location = new System.Drawing.Point(649, 353);
             this.K34.Name = "K34";
             this.K34.Size = new System.Drawing.Size(43, 22);
             this.K34.TabIndex = 880;
@@ -3283,7 +3283,7 @@ namespace FrmLogin.UserControls
             // 
             // K33
             // 
-            this.K33.Location = new System.Drawing.Point(649, 381);
+            this.K33.Location = new System.Drawing.Point(649, 372);
             this.K33.Name = "K33";
             this.K33.Size = new System.Drawing.Size(43, 22);
             this.K33.TabIndex = 879;
@@ -3293,7 +3293,7 @@ namespace FrmLogin.UserControls
             // 
             // K32
             // 
-            this.K32.Location = new System.Drawing.Point(649, 400);
+            this.K32.Location = new System.Drawing.Point(649, 391);
             this.K32.Name = "K32";
             this.K32.Size = new System.Drawing.Size(43, 22);
             this.K32.TabIndex = 878;
@@ -3303,7 +3303,7 @@ namespace FrmLogin.UserControls
             // 
             // K31
             // 
-            this.K31.Location = new System.Drawing.Point(649, 419);
+            this.K31.Location = new System.Drawing.Point(649, 410);
             this.K31.Name = "K31";
             this.K31.Size = new System.Drawing.Size(43, 22);
             this.K31.TabIndex = 877;
@@ -3313,7 +3313,7 @@ namespace FrmLogin.UserControls
             // 
             // K24
             // 
-            this.K24.Location = new System.Drawing.Point(649, 451);
+            this.K24.Location = new System.Drawing.Point(649, 442);
             this.K24.Name = "K24";
             this.K24.Size = new System.Drawing.Size(43, 22);
             this.K24.TabIndex = 876;
@@ -3323,7 +3323,7 @@ namespace FrmLogin.UserControls
             // 
             // K23
             // 
-            this.K23.Location = new System.Drawing.Point(649, 470);
+            this.K23.Location = new System.Drawing.Point(649, 461);
             this.K23.Name = "K23";
             this.K23.Size = new System.Drawing.Size(43, 22);
             this.K23.TabIndex = 875;
@@ -3333,7 +3333,7 @@ namespace FrmLogin.UserControls
             // 
             // K22
             // 
-            this.K22.Location = new System.Drawing.Point(649, 489);
+            this.K22.Location = new System.Drawing.Point(649, 480);
             this.K22.Name = "K22";
             this.K22.Size = new System.Drawing.Size(43, 22);
             this.K22.TabIndex = 874;
@@ -3343,7 +3343,7 @@ namespace FrmLogin.UserControls
             // 
             // K21
             // 
-            this.K21.Location = new System.Drawing.Point(649, 508);
+            this.K21.Location = new System.Drawing.Point(649, 499);
             this.K21.Name = "K21";
             this.K21.Size = new System.Drawing.Size(43, 22);
             this.K21.TabIndex = 873;
@@ -3353,7 +3353,7 @@ namespace FrmLogin.UserControls
             // 
             // K14
             // 
-            this.K14.Location = new System.Drawing.Point(649, 545);
+            this.K14.Location = new System.Drawing.Point(649, 527);
             this.K14.Name = "K14";
             this.K14.Size = new System.Drawing.Size(43, 22);
             this.K14.TabIndex = 872;
@@ -3363,7 +3363,7 @@ namespace FrmLogin.UserControls
             // 
             // K13
             // 
-            this.K13.Location = new System.Drawing.Point(649, 564);
+            this.K13.Location = new System.Drawing.Point(649, 546);
             this.K13.Name = "K13";
             this.K13.Size = new System.Drawing.Size(43, 22);
             this.K13.TabIndex = 871;
@@ -3373,7 +3373,7 @@ namespace FrmLogin.UserControls
             // 
             // K12
             // 
-            this.K12.Location = new System.Drawing.Point(649, 583);
+            this.K12.Location = new System.Drawing.Point(649, 565);
             this.K12.Name = "K12";
             this.K12.Size = new System.Drawing.Size(43, 22);
             this.K12.TabIndex = 870;
@@ -3383,7 +3383,7 @@ namespace FrmLogin.UserControls
             // 
             // K11
             // 
-            this.K11.Location = new System.Drawing.Point(649, 602);
+            this.K11.Location = new System.Drawing.Point(649, 584);
             this.K11.Name = "K11";
             this.K11.Size = new System.Drawing.Size(43, 22);
             this.K11.TabIndex = 869;
@@ -3473,7 +3473,7 @@ namespace FrmLogin.UserControls
             // 
             // J44
             // 
-            this.J44.Location = new System.Drawing.Point(600, 274);
+            this.J44.Location = new System.Drawing.Point(600, 265);
             this.J44.Name = "J44";
             this.J44.Size = new System.Drawing.Size(43, 22);
             this.J44.TabIndex = 860;
@@ -3483,7 +3483,7 @@ namespace FrmLogin.UserControls
             // 
             // J43
             // 
-            this.J43.Location = new System.Drawing.Point(600, 293);
+            this.J43.Location = new System.Drawing.Point(600, 284);
             this.J43.Name = "J43";
             this.J43.Size = new System.Drawing.Size(43, 22);
             this.J43.TabIndex = 859;
@@ -3493,7 +3493,7 @@ namespace FrmLogin.UserControls
             // 
             // J42
             // 
-            this.J42.Location = new System.Drawing.Point(600, 312);
+            this.J42.Location = new System.Drawing.Point(600, 303);
             this.J42.Name = "J42";
             this.J42.Size = new System.Drawing.Size(43, 22);
             this.J42.TabIndex = 858;
@@ -3503,7 +3503,7 @@ namespace FrmLogin.UserControls
             // 
             // J41
             // 
-            this.J41.Location = new System.Drawing.Point(600, 331);
+            this.J41.Location = new System.Drawing.Point(600, 322);
             this.J41.Name = "J41";
             this.J41.Size = new System.Drawing.Size(43, 22);
             this.J41.TabIndex = 857;
@@ -3513,7 +3513,7 @@ namespace FrmLogin.UserControls
             // 
             // J34
             // 
-            this.J34.Location = new System.Drawing.Point(600, 362);
+            this.J34.Location = new System.Drawing.Point(600, 353);
             this.J34.Name = "J34";
             this.J34.Size = new System.Drawing.Size(43, 22);
             this.J34.TabIndex = 856;
@@ -3523,7 +3523,7 @@ namespace FrmLogin.UserControls
             // 
             // J33
             // 
-            this.J33.Location = new System.Drawing.Point(600, 381);
+            this.J33.Location = new System.Drawing.Point(600, 372);
             this.J33.Name = "J33";
             this.J33.Size = new System.Drawing.Size(43, 22);
             this.J33.TabIndex = 855;
@@ -3533,7 +3533,7 @@ namespace FrmLogin.UserControls
             // 
             // J32
             // 
-            this.J32.Location = new System.Drawing.Point(600, 400);
+            this.J32.Location = new System.Drawing.Point(600, 391);
             this.J32.Name = "J32";
             this.J32.Size = new System.Drawing.Size(43, 22);
             this.J32.TabIndex = 854;
@@ -3543,7 +3543,7 @@ namespace FrmLogin.UserControls
             // 
             // J31
             // 
-            this.J31.Location = new System.Drawing.Point(600, 419);
+            this.J31.Location = new System.Drawing.Point(600, 410);
             this.J31.Name = "J31";
             this.J31.Size = new System.Drawing.Size(43, 22);
             this.J31.TabIndex = 853;
@@ -3553,7 +3553,7 @@ namespace FrmLogin.UserControls
             // 
             // J24
             // 
-            this.J24.Location = new System.Drawing.Point(600, 451);
+            this.J24.Location = new System.Drawing.Point(600, 442);
             this.J24.Name = "J24";
             this.J24.Size = new System.Drawing.Size(43, 22);
             this.J24.TabIndex = 852;
@@ -3563,7 +3563,7 @@ namespace FrmLogin.UserControls
             // 
             // J23
             // 
-            this.J23.Location = new System.Drawing.Point(600, 470);
+            this.J23.Location = new System.Drawing.Point(600, 461);
             this.J23.Name = "J23";
             this.J23.Size = new System.Drawing.Size(43, 22);
             this.J23.TabIndex = 851;
@@ -3573,7 +3573,7 @@ namespace FrmLogin.UserControls
             // 
             // J22
             // 
-            this.J22.Location = new System.Drawing.Point(600, 489);
+            this.J22.Location = new System.Drawing.Point(600, 480);
             this.J22.Name = "J22";
             this.J22.Size = new System.Drawing.Size(43, 22);
             this.J22.TabIndex = 850;
@@ -3583,7 +3583,7 @@ namespace FrmLogin.UserControls
             // 
             // J21
             // 
-            this.J21.Location = new System.Drawing.Point(600, 508);
+            this.J21.Location = new System.Drawing.Point(600, 499);
             this.J21.Name = "J21";
             this.J21.Size = new System.Drawing.Size(43, 22);
             this.J21.TabIndex = 849;
@@ -3593,7 +3593,7 @@ namespace FrmLogin.UserControls
             // 
             // J14
             // 
-            this.J14.Location = new System.Drawing.Point(600, 545);
+            this.J14.Location = new System.Drawing.Point(600, 527);
             this.J14.Name = "J14";
             this.J14.Size = new System.Drawing.Size(43, 22);
             this.J14.TabIndex = 848;
@@ -3603,7 +3603,7 @@ namespace FrmLogin.UserControls
             // 
             // J13
             // 
-            this.J13.Location = new System.Drawing.Point(600, 564);
+            this.J13.Location = new System.Drawing.Point(600, 546);
             this.J13.Name = "J13";
             this.J13.Size = new System.Drawing.Size(43, 22);
             this.J13.TabIndex = 847;
@@ -3613,7 +3613,7 @@ namespace FrmLogin.UserControls
             // 
             // J12
             // 
-            this.J12.Location = new System.Drawing.Point(600, 583);
+            this.J12.Location = new System.Drawing.Point(600, 565);
             this.J12.Name = "J12";
             this.J12.Size = new System.Drawing.Size(43, 22);
             this.J12.TabIndex = 846;
@@ -3623,7 +3623,7 @@ namespace FrmLogin.UserControls
             // 
             // J11
             // 
-            this.J11.Location = new System.Drawing.Point(600, 602);
+            this.J11.Location = new System.Drawing.Point(600, 584);
             this.J11.Name = "J11";
             this.J11.Size = new System.Drawing.Size(43, 22);
             this.J11.TabIndex = 845;
@@ -3713,7 +3713,7 @@ namespace FrmLogin.UserControls
             // 
             // M44
             // 
-            this.M44.Location = new System.Drawing.Point(765, 274);
+            this.M44.Location = new System.Drawing.Point(765, 265);
             this.M44.Name = "M44";
             this.M44.Size = new System.Drawing.Size(43, 22);
             this.M44.TabIndex = 932;
@@ -3723,7 +3723,7 @@ namespace FrmLogin.UserControls
             // 
             // M43
             // 
-            this.M43.Location = new System.Drawing.Point(765, 293);
+            this.M43.Location = new System.Drawing.Point(765, 284);
             this.M43.Name = "M43";
             this.M43.Size = new System.Drawing.Size(43, 22);
             this.M43.TabIndex = 931;
@@ -3733,7 +3733,7 @@ namespace FrmLogin.UserControls
             // 
             // M42
             // 
-            this.M42.Location = new System.Drawing.Point(765, 312);
+            this.M42.Location = new System.Drawing.Point(765, 303);
             this.M42.Name = "M42";
             this.M42.Size = new System.Drawing.Size(43, 22);
             this.M42.TabIndex = 930;
@@ -3743,7 +3743,7 @@ namespace FrmLogin.UserControls
             // 
             // M41
             // 
-            this.M41.Location = new System.Drawing.Point(765, 331);
+            this.M41.Location = new System.Drawing.Point(765, 322);
             this.M41.Name = "M41";
             this.M41.Size = new System.Drawing.Size(43, 22);
             this.M41.TabIndex = 929;
@@ -3753,7 +3753,7 @@ namespace FrmLogin.UserControls
             // 
             // M34
             // 
-            this.M34.Location = new System.Drawing.Point(765, 362);
+            this.M34.Location = new System.Drawing.Point(765, 353);
             this.M34.Name = "M34";
             this.M34.Size = new System.Drawing.Size(43, 22);
             this.M34.TabIndex = 928;
@@ -3763,7 +3763,7 @@ namespace FrmLogin.UserControls
             // 
             // M33
             // 
-            this.M33.Location = new System.Drawing.Point(765, 381);
+            this.M33.Location = new System.Drawing.Point(765, 372);
             this.M33.Name = "M33";
             this.M33.Size = new System.Drawing.Size(43, 22);
             this.M33.TabIndex = 927;
@@ -3773,7 +3773,7 @@ namespace FrmLogin.UserControls
             // 
             // M32
             // 
-            this.M32.Location = new System.Drawing.Point(765, 400);
+            this.M32.Location = new System.Drawing.Point(765, 391);
             this.M32.Name = "M32";
             this.M32.Size = new System.Drawing.Size(43, 22);
             this.M32.TabIndex = 926;
@@ -3783,7 +3783,7 @@ namespace FrmLogin.UserControls
             // 
             // M31
             // 
-            this.M31.Location = new System.Drawing.Point(765, 419);
+            this.M31.Location = new System.Drawing.Point(765, 410);
             this.M31.Name = "M31";
             this.M31.Size = new System.Drawing.Size(43, 22);
             this.M31.TabIndex = 925;
@@ -3793,7 +3793,7 @@ namespace FrmLogin.UserControls
             // 
             // M24
             // 
-            this.M24.Location = new System.Drawing.Point(765, 451);
+            this.M24.Location = new System.Drawing.Point(765, 442);
             this.M24.Name = "M24";
             this.M24.Size = new System.Drawing.Size(43, 22);
             this.M24.TabIndex = 924;
@@ -3803,7 +3803,7 @@ namespace FrmLogin.UserControls
             // 
             // M23
             // 
-            this.M23.Location = new System.Drawing.Point(765, 470);
+            this.M23.Location = new System.Drawing.Point(765, 461);
             this.M23.Name = "M23";
             this.M23.Size = new System.Drawing.Size(43, 22);
             this.M23.TabIndex = 923;
@@ -3813,7 +3813,7 @@ namespace FrmLogin.UserControls
             // 
             // M22
             // 
-            this.M22.Location = new System.Drawing.Point(765, 489);
+            this.M22.Location = new System.Drawing.Point(765, 480);
             this.M22.Name = "M22";
             this.M22.Size = new System.Drawing.Size(43, 22);
             this.M22.TabIndex = 922;
@@ -3823,7 +3823,7 @@ namespace FrmLogin.UserControls
             // 
             // M21
             // 
-            this.M21.Location = new System.Drawing.Point(765, 508);
+            this.M21.Location = new System.Drawing.Point(765, 499);
             this.M21.Name = "M21";
             this.M21.Size = new System.Drawing.Size(43, 22);
             this.M21.TabIndex = 921;
@@ -3833,7 +3833,7 @@ namespace FrmLogin.UserControls
             // 
             // M14
             // 
-            this.M14.Location = new System.Drawing.Point(765, 545);
+            this.M14.Location = new System.Drawing.Point(765, 527);
             this.M14.Name = "M14";
             this.M14.Size = new System.Drawing.Size(43, 22);
             this.M14.TabIndex = 920;
@@ -3843,7 +3843,7 @@ namespace FrmLogin.UserControls
             // 
             // M13
             // 
-            this.M13.Location = new System.Drawing.Point(765, 564);
+            this.M13.Location = new System.Drawing.Point(765, 546);
             this.M13.Name = "M13";
             this.M13.Size = new System.Drawing.Size(43, 22);
             this.M13.TabIndex = 919;
@@ -3853,7 +3853,7 @@ namespace FrmLogin.UserControls
             // 
             // M12
             // 
-            this.M12.Location = new System.Drawing.Point(765, 583);
+            this.M12.Location = new System.Drawing.Point(765, 565);
             this.M12.Name = "M12";
             this.M12.Size = new System.Drawing.Size(43, 22);
             this.M12.TabIndex = 918;
@@ -3863,7 +3863,7 @@ namespace FrmLogin.UserControls
             // 
             // M11
             // 
-            this.M11.Location = new System.Drawing.Point(765, 602);
+            this.M11.Location = new System.Drawing.Point(765, 584);
             this.M11.Name = "M11";
             this.M11.Size = new System.Drawing.Size(43, 22);
             this.M11.TabIndex = 917;
@@ -3953,7 +3953,7 @@ namespace FrmLogin.UserControls
             // 
             // L44
             // 
-            this.L44.Location = new System.Drawing.Point(716, 274);
+            this.L44.Location = new System.Drawing.Point(716, 265);
             this.L44.Name = "L44";
             this.L44.Size = new System.Drawing.Size(43, 22);
             this.L44.TabIndex = 908;
@@ -3963,7 +3963,7 @@ namespace FrmLogin.UserControls
             // 
             // L43
             // 
-            this.L43.Location = new System.Drawing.Point(716, 293);
+            this.L43.Location = new System.Drawing.Point(716, 284);
             this.L43.Name = "L43";
             this.L43.Size = new System.Drawing.Size(43, 22);
             this.L43.TabIndex = 907;
@@ -3973,7 +3973,7 @@ namespace FrmLogin.UserControls
             // 
             // L42
             // 
-            this.L42.Location = new System.Drawing.Point(716, 312);
+            this.L42.Location = new System.Drawing.Point(716, 303);
             this.L42.Name = "L42";
             this.L42.Size = new System.Drawing.Size(43, 22);
             this.L42.TabIndex = 906;
@@ -3983,7 +3983,7 @@ namespace FrmLogin.UserControls
             // 
             // L41
             // 
-            this.L41.Location = new System.Drawing.Point(716, 331);
+            this.L41.Location = new System.Drawing.Point(716, 322);
             this.L41.Name = "L41";
             this.L41.Size = new System.Drawing.Size(43, 22);
             this.L41.TabIndex = 905;
@@ -3993,7 +3993,7 @@ namespace FrmLogin.UserControls
             // 
             // L34
             // 
-            this.L34.Location = new System.Drawing.Point(716, 362);
+            this.L34.Location = new System.Drawing.Point(716, 353);
             this.L34.Name = "L34";
             this.L34.Size = new System.Drawing.Size(43, 22);
             this.L34.TabIndex = 904;
@@ -4003,7 +4003,7 @@ namespace FrmLogin.UserControls
             // 
             // L33
             // 
-            this.L33.Location = new System.Drawing.Point(716, 381);
+            this.L33.Location = new System.Drawing.Point(716, 372);
             this.L33.Name = "L33";
             this.L33.Size = new System.Drawing.Size(43, 22);
             this.L33.TabIndex = 903;
@@ -4013,7 +4013,7 @@ namespace FrmLogin.UserControls
             // 
             // L32
             // 
-            this.L32.Location = new System.Drawing.Point(716, 400);
+            this.L32.Location = new System.Drawing.Point(716, 391);
             this.L32.Name = "L32";
             this.L32.Size = new System.Drawing.Size(43, 22);
             this.L32.TabIndex = 902;
@@ -4023,7 +4023,7 @@ namespace FrmLogin.UserControls
             // 
             // L31
             // 
-            this.L31.Location = new System.Drawing.Point(716, 419);
+            this.L31.Location = new System.Drawing.Point(716, 410);
             this.L31.Name = "L31";
             this.L31.Size = new System.Drawing.Size(43, 22);
             this.L31.TabIndex = 901;
@@ -4033,7 +4033,7 @@ namespace FrmLogin.UserControls
             // 
             // L24
             // 
-            this.L24.Location = new System.Drawing.Point(716, 451);
+            this.L24.Location = new System.Drawing.Point(716, 442);
             this.L24.Name = "L24";
             this.L24.Size = new System.Drawing.Size(43, 22);
             this.L24.TabIndex = 900;
@@ -4043,7 +4043,7 @@ namespace FrmLogin.UserControls
             // 
             // L23
             // 
-            this.L23.Location = new System.Drawing.Point(716, 470);
+            this.L23.Location = new System.Drawing.Point(716, 461);
             this.L23.Name = "L23";
             this.L23.Size = new System.Drawing.Size(43, 22);
             this.L23.TabIndex = 899;
@@ -4053,7 +4053,7 @@ namespace FrmLogin.UserControls
             // 
             // L22
             // 
-            this.L22.Location = new System.Drawing.Point(716, 489);
+            this.L22.Location = new System.Drawing.Point(716, 480);
             this.L22.Name = "L22";
             this.L22.Size = new System.Drawing.Size(43, 22);
             this.L22.TabIndex = 898;
@@ -4063,7 +4063,7 @@ namespace FrmLogin.UserControls
             // 
             // L21
             // 
-            this.L21.Location = new System.Drawing.Point(716, 508);
+            this.L21.Location = new System.Drawing.Point(716, 499);
             this.L21.Name = "L21";
             this.L21.Size = new System.Drawing.Size(43, 22);
             this.L21.TabIndex = 897;
@@ -4073,7 +4073,7 @@ namespace FrmLogin.UserControls
             // 
             // L14
             // 
-            this.L14.Location = new System.Drawing.Point(716, 545);
+            this.L14.Location = new System.Drawing.Point(716, 527);
             this.L14.Name = "L14";
             this.L14.Size = new System.Drawing.Size(43, 22);
             this.L14.TabIndex = 896;
@@ -4083,7 +4083,7 @@ namespace FrmLogin.UserControls
             // 
             // L13
             // 
-            this.L13.Location = new System.Drawing.Point(716, 564);
+            this.L13.Location = new System.Drawing.Point(716, 546);
             this.L13.Name = "L13";
             this.L13.Size = new System.Drawing.Size(43, 22);
             this.L13.TabIndex = 895;
@@ -4093,7 +4093,7 @@ namespace FrmLogin.UserControls
             // 
             // L12
             // 
-            this.L12.Location = new System.Drawing.Point(716, 583);
+            this.L12.Location = new System.Drawing.Point(716, 565);
             this.L12.Name = "L12";
             this.L12.Size = new System.Drawing.Size(43, 22);
             this.L12.TabIndex = 894;
@@ -4103,7 +4103,7 @@ namespace FrmLogin.UserControls
             // 
             // L11
             // 
-            this.L11.Location = new System.Drawing.Point(716, 602);
+            this.L11.Location = new System.Drawing.Point(716, 584);
             this.L11.Name = "L11";
             this.L11.Size = new System.Drawing.Size(43, 22);
             this.L11.TabIndex = 893;
@@ -4193,7 +4193,7 @@ namespace FrmLogin.UserControls
             // 
             // O44
             // 
-            this.O44.Location = new System.Drawing.Point(878, 274);
+            this.O44.Location = new System.Drawing.Point(878, 265);
             this.O44.Name = "O44";
             this.O44.Size = new System.Drawing.Size(43, 22);
             this.O44.TabIndex = 980;
@@ -4203,7 +4203,7 @@ namespace FrmLogin.UserControls
             // 
             // O43
             // 
-            this.O43.Location = new System.Drawing.Point(878, 293);
+            this.O43.Location = new System.Drawing.Point(878, 284);
             this.O43.Name = "O43";
             this.O43.Size = new System.Drawing.Size(43, 22);
             this.O43.TabIndex = 979;
@@ -4213,7 +4213,7 @@ namespace FrmLogin.UserControls
             // 
             // O42
             // 
-            this.O42.Location = new System.Drawing.Point(878, 312);
+            this.O42.Location = new System.Drawing.Point(878, 303);
             this.O42.Name = "O42";
             this.O42.Size = new System.Drawing.Size(43, 22);
             this.O42.TabIndex = 978;
@@ -4223,7 +4223,7 @@ namespace FrmLogin.UserControls
             // 
             // O41
             // 
-            this.O41.Location = new System.Drawing.Point(878, 331);
+            this.O41.Location = new System.Drawing.Point(878, 322);
             this.O41.Name = "O41";
             this.O41.Size = new System.Drawing.Size(43, 22);
             this.O41.TabIndex = 977;
@@ -4233,7 +4233,7 @@ namespace FrmLogin.UserControls
             // 
             // O34
             // 
-            this.O34.Location = new System.Drawing.Point(878, 362);
+            this.O34.Location = new System.Drawing.Point(878, 353);
             this.O34.Name = "O34";
             this.O34.Size = new System.Drawing.Size(43, 22);
             this.O34.TabIndex = 976;
@@ -4243,7 +4243,7 @@ namespace FrmLogin.UserControls
             // 
             // O33
             // 
-            this.O33.Location = new System.Drawing.Point(878, 381);
+            this.O33.Location = new System.Drawing.Point(878, 372);
             this.O33.Name = "O33";
             this.O33.Size = new System.Drawing.Size(43, 22);
             this.O33.TabIndex = 975;
@@ -4253,7 +4253,7 @@ namespace FrmLogin.UserControls
             // 
             // O32
             // 
-            this.O32.Location = new System.Drawing.Point(878, 400);
+            this.O32.Location = new System.Drawing.Point(878, 391);
             this.O32.Name = "O32";
             this.O32.Size = new System.Drawing.Size(43, 22);
             this.O32.TabIndex = 974;
@@ -4263,7 +4263,7 @@ namespace FrmLogin.UserControls
             // 
             // O31
             // 
-            this.O31.Location = new System.Drawing.Point(878, 419);
+            this.O31.Location = new System.Drawing.Point(878, 410);
             this.O31.Name = "O31";
             this.O31.Size = new System.Drawing.Size(43, 22);
             this.O31.TabIndex = 973;
@@ -4273,7 +4273,7 @@ namespace FrmLogin.UserControls
             // 
             // O24
             // 
-            this.O24.Location = new System.Drawing.Point(878, 451);
+            this.O24.Location = new System.Drawing.Point(878, 442);
             this.O24.Name = "O24";
             this.O24.Size = new System.Drawing.Size(43, 22);
             this.O24.TabIndex = 972;
@@ -4283,7 +4283,7 @@ namespace FrmLogin.UserControls
             // 
             // O23
             // 
-            this.O23.Location = new System.Drawing.Point(878, 470);
+            this.O23.Location = new System.Drawing.Point(878, 461);
             this.O23.Name = "O23";
             this.O23.Size = new System.Drawing.Size(43, 22);
             this.O23.TabIndex = 971;
@@ -4293,7 +4293,7 @@ namespace FrmLogin.UserControls
             // 
             // O22
             // 
-            this.O22.Location = new System.Drawing.Point(878, 489);
+            this.O22.Location = new System.Drawing.Point(878, 480);
             this.O22.Name = "O22";
             this.O22.Size = new System.Drawing.Size(43, 22);
             this.O22.TabIndex = 970;
@@ -4303,7 +4303,7 @@ namespace FrmLogin.UserControls
             // 
             // O21
             // 
-            this.O21.Location = new System.Drawing.Point(878, 508);
+            this.O21.Location = new System.Drawing.Point(878, 499);
             this.O21.Name = "O21";
             this.O21.Size = new System.Drawing.Size(43, 22);
             this.O21.TabIndex = 969;
@@ -4313,7 +4313,7 @@ namespace FrmLogin.UserControls
             // 
             // O14
             // 
-            this.O14.Location = new System.Drawing.Point(878, 545);
+            this.O14.Location = new System.Drawing.Point(878, 527);
             this.O14.Name = "O14";
             this.O14.Size = new System.Drawing.Size(43, 22);
             this.O14.TabIndex = 968;
@@ -4323,7 +4323,7 @@ namespace FrmLogin.UserControls
             // 
             // O13
             // 
-            this.O13.Location = new System.Drawing.Point(878, 564);
+            this.O13.Location = new System.Drawing.Point(878, 546);
             this.O13.Name = "O13";
             this.O13.Size = new System.Drawing.Size(43, 22);
             this.O13.TabIndex = 967;
@@ -4333,7 +4333,7 @@ namespace FrmLogin.UserControls
             // 
             // O12
             // 
-            this.O12.Location = new System.Drawing.Point(878, 583);
+            this.O12.Location = new System.Drawing.Point(878, 565);
             this.O12.Name = "O12";
             this.O12.Size = new System.Drawing.Size(43, 22);
             this.O12.TabIndex = 966;
@@ -4343,7 +4343,7 @@ namespace FrmLogin.UserControls
             // 
             // O11
             // 
-            this.O11.Location = new System.Drawing.Point(878, 602);
+            this.O11.Location = new System.Drawing.Point(878, 584);
             this.O11.Name = "O11";
             this.O11.Size = new System.Drawing.Size(43, 22);
             this.O11.TabIndex = 965;
@@ -4433,7 +4433,7 @@ namespace FrmLogin.UserControls
             // 
             // N44
             // 
-            this.N44.Location = new System.Drawing.Point(829, 274);
+            this.N44.Location = new System.Drawing.Point(829, 265);
             this.N44.Name = "N44";
             this.N44.Size = new System.Drawing.Size(43, 22);
             this.N44.TabIndex = 956;
@@ -4443,7 +4443,7 @@ namespace FrmLogin.UserControls
             // 
             // N43
             // 
-            this.N43.Location = new System.Drawing.Point(829, 293);
+            this.N43.Location = new System.Drawing.Point(829, 284);
             this.N43.Name = "N43";
             this.N43.Size = new System.Drawing.Size(43, 22);
             this.N43.TabIndex = 955;
@@ -4453,7 +4453,7 @@ namespace FrmLogin.UserControls
             // 
             // N42
             // 
-            this.N42.Location = new System.Drawing.Point(829, 312);
+            this.N42.Location = new System.Drawing.Point(829, 303);
             this.N42.Name = "N42";
             this.N42.Size = new System.Drawing.Size(43, 22);
             this.N42.TabIndex = 954;
@@ -4463,7 +4463,7 @@ namespace FrmLogin.UserControls
             // 
             // N41
             // 
-            this.N41.Location = new System.Drawing.Point(829, 331);
+            this.N41.Location = new System.Drawing.Point(829, 322);
             this.N41.Name = "N41";
             this.N41.Size = new System.Drawing.Size(43, 22);
             this.N41.TabIndex = 953;
@@ -4473,7 +4473,7 @@ namespace FrmLogin.UserControls
             // 
             // N34
             // 
-            this.N34.Location = new System.Drawing.Point(829, 362);
+            this.N34.Location = new System.Drawing.Point(829, 353);
             this.N34.Name = "N34";
             this.N34.Size = new System.Drawing.Size(43, 22);
             this.N34.TabIndex = 952;
@@ -4483,7 +4483,7 @@ namespace FrmLogin.UserControls
             // 
             // N33
             // 
-            this.N33.Location = new System.Drawing.Point(829, 381);
+            this.N33.Location = new System.Drawing.Point(829, 372);
             this.N33.Name = "N33";
             this.N33.Size = new System.Drawing.Size(43, 22);
             this.N33.TabIndex = 951;
@@ -4493,7 +4493,7 @@ namespace FrmLogin.UserControls
             // 
             // N32
             // 
-            this.N32.Location = new System.Drawing.Point(829, 400);
+            this.N32.Location = new System.Drawing.Point(829, 391);
             this.N32.Name = "N32";
             this.N32.Size = new System.Drawing.Size(43, 22);
             this.N32.TabIndex = 950;
@@ -4503,7 +4503,7 @@ namespace FrmLogin.UserControls
             // 
             // N31
             // 
-            this.N31.Location = new System.Drawing.Point(829, 419);
+            this.N31.Location = new System.Drawing.Point(829, 410);
             this.N31.Name = "N31";
             this.N31.Size = new System.Drawing.Size(43, 22);
             this.N31.TabIndex = 949;
@@ -4513,7 +4513,7 @@ namespace FrmLogin.UserControls
             // 
             // N24
             // 
-            this.N24.Location = new System.Drawing.Point(829, 451);
+            this.N24.Location = new System.Drawing.Point(829, 442);
             this.N24.Name = "N24";
             this.N24.Size = new System.Drawing.Size(43, 22);
             this.N24.TabIndex = 948;
@@ -4523,7 +4523,7 @@ namespace FrmLogin.UserControls
             // 
             // N23
             // 
-            this.N23.Location = new System.Drawing.Point(829, 470);
+            this.N23.Location = new System.Drawing.Point(829, 461);
             this.N23.Name = "N23";
             this.N23.Size = new System.Drawing.Size(43, 22);
             this.N23.TabIndex = 947;
@@ -4533,7 +4533,7 @@ namespace FrmLogin.UserControls
             // 
             // N22
             // 
-            this.N22.Location = new System.Drawing.Point(829, 489);
+            this.N22.Location = new System.Drawing.Point(829, 480);
             this.N22.Name = "N22";
             this.N22.Size = new System.Drawing.Size(43, 22);
             this.N22.TabIndex = 946;
@@ -4543,7 +4543,7 @@ namespace FrmLogin.UserControls
             // 
             // N21
             // 
-            this.N21.Location = new System.Drawing.Point(829, 508);
+            this.N21.Location = new System.Drawing.Point(829, 499);
             this.N21.Name = "N21";
             this.N21.Size = new System.Drawing.Size(43, 22);
             this.N21.TabIndex = 945;
@@ -4553,7 +4553,7 @@ namespace FrmLogin.UserControls
             // 
             // N14
             // 
-            this.N14.Location = new System.Drawing.Point(829, 545);
+            this.N14.Location = new System.Drawing.Point(829, 527);
             this.N14.Name = "N14";
             this.N14.Size = new System.Drawing.Size(43, 22);
             this.N14.TabIndex = 944;
@@ -4563,7 +4563,7 @@ namespace FrmLogin.UserControls
             // 
             // N13
             // 
-            this.N13.Location = new System.Drawing.Point(829, 564);
+            this.N13.Location = new System.Drawing.Point(829, 546);
             this.N13.Name = "N13";
             this.N13.Size = new System.Drawing.Size(43, 22);
             this.N13.TabIndex = 943;
@@ -4573,7 +4573,7 @@ namespace FrmLogin.UserControls
             // 
             // N12
             // 
-            this.N12.Location = new System.Drawing.Point(829, 583);
+            this.N12.Location = new System.Drawing.Point(829, 565);
             this.N12.Name = "N12";
             this.N12.Size = new System.Drawing.Size(43, 22);
             this.N12.TabIndex = 942;
@@ -4583,7 +4583,7 @@ namespace FrmLogin.UserControls
             // 
             // N11
             // 
-            this.N11.Location = new System.Drawing.Point(829, 602);
+            this.N11.Location = new System.Drawing.Point(829, 584);
             this.N11.Name = "N11";
             this.N11.Size = new System.Drawing.Size(43, 22);
             this.N11.TabIndex = 941;
@@ -4673,7 +4673,7 @@ namespace FrmLogin.UserControls
             // 
             // R44
             // 
-            this.R44.Location = new System.Drawing.Point(994, 274);
+            this.R44.Location = new System.Drawing.Point(994, 265);
             this.R44.Name = "R44";
             this.R44.Size = new System.Drawing.Size(43, 22);
             this.R44.TabIndex = 1028;
@@ -4683,7 +4683,7 @@ namespace FrmLogin.UserControls
             // 
             // R43
             // 
-            this.R43.Location = new System.Drawing.Point(994, 293);
+            this.R43.Location = new System.Drawing.Point(994, 284);
             this.R43.Name = "R43";
             this.R43.Size = new System.Drawing.Size(43, 22);
             this.R43.TabIndex = 1027;
@@ -4693,7 +4693,7 @@ namespace FrmLogin.UserControls
             // 
             // R42
             // 
-            this.R42.Location = new System.Drawing.Point(994, 312);
+            this.R42.Location = new System.Drawing.Point(994, 303);
             this.R42.Name = "R42";
             this.R42.Size = new System.Drawing.Size(43, 22);
             this.R42.TabIndex = 1026;
@@ -4703,7 +4703,7 @@ namespace FrmLogin.UserControls
             // 
             // R41
             // 
-            this.R41.Location = new System.Drawing.Point(994, 331);
+            this.R41.Location = new System.Drawing.Point(994, 322);
             this.R41.Name = "R41";
             this.R41.Size = new System.Drawing.Size(43, 22);
             this.R41.TabIndex = 1025;
@@ -4713,7 +4713,7 @@ namespace FrmLogin.UserControls
             // 
             // R34
             // 
-            this.R34.Location = new System.Drawing.Point(994, 362);
+            this.R34.Location = new System.Drawing.Point(994, 350);
             this.R34.Name = "R34";
             this.R34.Size = new System.Drawing.Size(43, 22);
             this.R34.TabIndex = 1024;
@@ -4723,7 +4723,7 @@ namespace FrmLogin.UserControls
             // 
             // R33
             // 
-            this.R33.Location = new System.Drawing.Point(994, 381);
+            this.R33.Location = new System.Drawing.Point(994, 369);
             this.R33.Name = "R33";
             this.R33.Size = new System.Drawing.Size(43, 22);
             this.R33.TabIndex = 1023;
@@ -4733,7 +4733,7 @@ namespace FrmLogin.UserControls
             // 
             // R32
             // 
-            this.R32.Location = new System.Drawing.Point(994, 400);
+            this.R32.Location = new System.Drawing.Point(994, 388);
             this.R32.Name = "R32";
             this.R32.Size = new System.Drawing.Size(43, 22);
             this.R32.TabIndex = 1022;
@@ -4743,7 +4743,7 @@ namespace FrmLogin.UserControls
             // 
             // R31
             // 
-            this.R31.Location = new System.Drawing.Point(994, 419);
+            this.R31.Location = new System.Drawing.Point(994, 407);
             this.R31.Name = "R31";
             this.R31.Size = new System.Drawing.Size(43, 22);
             this.R31.TabIndex = 1021;
@@ -4753,7 +4753,7 @@ namespace FrmLogin.UserControls
             // 
             // R24
             // 
-            this.R24.Location = new System.Drawing.Point(994, 451);
+            this.R24.Location = new System.Drawing.Point(994, 442);
             this.R24.Name = "R24";
             this.R24.Size = new System.Drawing.Size(43, 22);
             this.R24.TabIndex = 1020;
@@ -4763,7 +4763,7 @@ namespace FrmLogin.UserControls
             // 
             // R23
             // 
-            this.R23.Location = new System.Drawing.Point(994, 470);
+            this.R23.Location = new System.Drawing.Point(994, 461);
             this.R23.Name = "R23";
             this.R23.Size = new System.Drawing.Size(43, 22);
             this.R23.TabIndex = 1019;
@@ -4773,7 +4773,7 @@ namespace FrmLogin.UserControls
             // 
             // R22
             // 
-            this.R22.Location = new System.Drawing.Point(994, 489);
+            this.R22.Location = new System.Drawing.Point(994, 480);
             this.R22.Name = "R22";
             this.R22.Size = new System.Drawing.Size(43, 22);
             this.R22.TabIndex = 1018;
@@ -4783,7 +4783,7 @@ namespace FrmLogin.UserControls
             // 
             // R21
             // 
-            this.R21.Location = new System.Drawing.Point(994, 508);
+            this.R21.Location = new System.Drawing.Point(994, 499);
             this.R21.Name = "R21";
             this.R21.Size = new System.Drawing.Size(43, 22);
             this.R21.TabIndex = 1017;
@@ -4793,7 +4793,7 @@ namespace FrmLogin.UserControls
             // 
             // R14
             // 
-            this.R14.Location = new System.Drawing.Point(994, 545);
+            this.R14.Location = new System.Drawing.Point(994, 527);
             this.R14.Name = "R14";
             this.R14.Size = new System.Drawing.Size(43, 22);
             this.R14.TabIndex = 1016;
@@ -4803,7 +4803,7 @@ namespace FrmLogin.UserControls
             // 
             // R13
             // 
-            this.R13.Location = new System.Drawing.Point(994, 564);
+            this.R13.Location = new System.Drawing.Point(994, 546);
             this.R13.Name = "R13";
             this.R13.Size = new System.Drawing.Size(43, 22);
             this.R13.TabIndex = 1015;
@@ -4813,7 +4813,7 @@ namespace FrmLogin.UserControls
             // 
             // R12
             // 
-            this.R12.Location = new System.Drawing.Point(994, 583);
+            this.R12.Location = new System.Drawing.Point(994, 565);
             this.R12.Name = "R12";
             this.R12.Size = new System.Drawing.Size(43, 22);
             this.R12.TabIndex = 1014;
@@ -4823,7 +4823,7 @@ namespace FrmLogin.UserControls
             // 
             // R11
             // 
-            this.R11.Location = new System.Drawing.Point(994, 602);
+            this.R11.Location = new System.Drawing.Point(994, 584);
             this.R11.Name = "R11";
             this.R11.Size = new System.Drawing.Size(43, 22);
             this.R11.TabIndex = 1013;
@@ -4913,7 +4913,7 @@ namespace FrmLogin.UserControls
             // 
             // P44
             // 
-            this.P44.Location = new System.Drawing.Point(945, 274);
+            this.P44.Location = new System.Drawing.Point(945, 265);
             this.P44.Name = "P44";
             this.P44.Size = new System.Drawing.Size(43, 22);
             this.P44.TabIndex = 1004;
@@ -4923,7 +4923,7 @@ namespace FrmLogin.UserControls
             // 
             // P43
             // 
-            this.P43.Location = new System.Drawing.Point(945, 293);
+            this.P43.Location = new System.Drawing.Point(945, 284);
             this.P43.Name = "P43";
             this.P43.Size = new System.Drawing.Size(43, 22);
             this.P43.TabIndex = 1003;
@@ -4933,7 +4933,7 @@ namespace FrmLogin.UserControls
             // 
             // P42
             // 
-            this.P42.Location = new System.Drawing.Point(945, 312);
+            this.P42.Location = new System.Drawing.Point(945, 303);
             this.P42.Name = "P42";
             this.P42.Size = new System.Drawing.Size(43, 22);
             this.P42.TabIndex = 1002;
@@ -4943,7 +4943,7 @@ namespace FrmLogin.UserControls
             // 
             // P41
             // 
-            this.P41.Location = new System.Drawing.Point(945, 331);
+            this.P41.Location = new System.Drawing.Point(945, 322);
             this.P41.Name = "P41";
             this.P41.Size = new System.Drawing.Size(43, 22);
             this.P41.TabIndex = 1001;
@@ -4953,7 +4953,7 @@ namespace FrmLogin.UserControls
             // 
             // P34
             // 
-            this.P34.Location = new System.Drawing.Point(945, 362);
+            this.P34.Location = new System.Drawing.Point(945, 350);
             this.P34.Name = "P34";
             this.P34.Size = new System.Drawing.Size(43, 22);
             this.P34.TabIndex = 1000;
@@ -4963,7 +4963,7 @@ namespace FrmLogin.UserControls
             // 
             // P33
             // 
-            this.P33.Location = new System.Drawing.Point(945, 381);
+            this.P33.Location = new System.Drawing.Point(945, 369);
             this.P33.Name = "P33";
             this.P33.Size = new System.Drawing.Size(43, 22);
             this.P33.TabIndex = 999;
@@ -4973,7 +4973,7 @@ namespace FrmLogin.UserControls
             // 
             // P32
             // 
-            this.P32.Location = new System.Drawing.Point(945, 400);
+            this.P32.Location = new System.Drawing.Point(945, 388);
             this.P32.Name = "P32";
             this.P32.Size = new System.Drawing.Size(43, 22);
             this.P32.TabIndex = 998;
@@ -4983,7 +4983,7 @@ namespace FrmLogin.UserControls
             // 
             // P31
             // 
-            this.P31.Location = new System.Drawing.Point(945, 419);
+            this.P31.Location = new System.Drawing.Point(945, 407);
             this.P31.Name = "P31";
             this.P31.Size = new System.Drawing.Size(43, 22);
             this.P31.TabIndex = 997;
@@ -4993,7 +4993,7 @@ namespace FrmLogin.UserControls
             // 
             // P24
             // 
-            this.P24.Location = new System.Drawing.Point(945, 451);
+            this.P24.Location = new System.Drawing.Point(945, 442);
             this.P24.Name = "P24";
             this.P24.Size = new System.Drawing.Size(43, 22);
             this.P24.TabIndex = 996;
@@ -5003,7 +5003,7 @@ namespace FrmLogin.UserControls
             // 
             // P23
             // 
-            this.P23.Location = new System.Drawing.Point(945, 470);
+            this.P23.Location = new System.Drawing.Point(945, 461);
             this.P23.Name = "P23";
             this.P23.Size = new System.Drawing.Size(43, 22);
             this.P23.TabIndex = 995;
@@ -5013,7 +5013,7 @@ namespace FrmLogin.UserControls
             // 
             // P22
             // 
-            this.P22.Location = new System.Drawing.Point(945, 489);
+            this.P22.Location = new System.Drawing.Point(945, 480);
             this.P22.Name = "P22";
             this.P22.Size = new System.Drawing.Size(43, 22);
             this.P22.TabIndex = 994;
@@ -5023,7 +5023,7 @@ namespace FrmLogin.UserControls
             // 
             // P21
             // 
-            this.P21.Location = new System.Drawing.Point(945, 508);
+            this.P21.Location = new System.Drawing.Point(945, 499);
             this.P21.Name = "P21";
             this.P21.Size = new System.Drawing.Size(43, 22);
             this.P21.TabIndex = 993;
@@ -5033,7 +5033,7 @@ namespace FrmLogin.UserControls
             // 
             // P14
             // 
-            this.P14.Location = new System.Drawing.Point(945, 545);
+            this.P14.Location = new System.Drawing.Point(945, 527);
             this.P14.Name = "P14";
             this.P14.Size = new System.Drawing.Size(43, 22);
             this.P14.TabIndex = 992;
@@ -5043,7 +5043,7 @@ namespace FrmLogin.UserControls
             // 
             // P13
             // 
-            this.P13.Location = new System.Drawing.Point(945, 564);
+            this.P13.Location = new System.Drawing.Point(945, 546);
             this.P13.Name = "P13";
             this.P13.Size = new System.Drawing.Size(43, 22);
             this.P13.TabIndex = 991;
@@ -5053,7 +5053,7 @@ namespace FrmLogin.UserControls
             // 
             // P12
             // 
-            this.P12.Location = new System.Drawing.Point(945, 583);
+            this.P12.Location = new System.Drawing.Point(945, 565);
             this.P12.Name = "P12";
             this.P12.Size = new System.Drawing.Size(43, 22);
             this.P12.TabIndex = 990;
@@ -5063,7 +5063,7 @@ namespace FrmLogin.UserControls
             // 
             // P11
             // 
-            this.P11.Location = new System.Drawing.Point(945, 602);
+            this.P11.Location = new System.Drawing.Point(945, 584);
             this.P11.Name = "P11";
             this.P11.Size = new System.Drawing.Size(43, 22);
             this.P11.TabIndex = 989;
@@ -5553,9 +5553,9 @@ namespace FrmLogin.UserControls
             // 
             // A74
             // 
-            this.A74.Location = new System.Drawing.Point(58, 8);
+            this.A74.Location = new System.Drawing.Point(58, 9);
             this.A74.Name = "A74";
-            this.A74.Size = new System.Drawing.Size(43, 22);
+            this.A74.Size = new System.Drawing.Size(43, 21);
             this.A74.TabIndex = 1061;
             this.A74.Text = "4";
             this.A74.UseVisualStyleBackColor = true;
@@ -5805,7 +5805,7 @@ namespace FrmLogin.UserControls
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(139, 735);
+            this.label10.Location = new System.Drawing.Point(137, 636);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(20, 20);
             this.label10.TabIndex = 1110;
@@ -5815,7 +5815,7 @@ namespace FrmLogin.UserControls
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(268, 735);
+            this.label11.Location = new System.Drawing.Point(256, 636);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(21, 20);
             this.label11.TabIndex = 1112;
@@ -5825,7 +5825,7 @@ namespace FrmLogin.UserControls
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(193, 735);
+            this.label12.Location = new System.Drawing.Point(190, 636);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(20, 20);
             this.label12.TabIndex = 1111;
@@ -5835,7 +5835,7 @@ namespace FrmLogin.UserControls
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(501, 735);
+            this.label13.Location = new System.Drawing.Point(493, 636);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(21, 20);
             this.label13.TabIndex = 1116;
@@ -5845,7 +5845,7 @@ namespace FrmLogin.UserControls
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(426, 735);
+            this.label14.Location = new System.Drawing.Point(426, 636);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(22, 20);
             this.label14.TabIndex = 1115;
@@ -5855,7 +5855,7 @@ namespace FrmLogin.UserControls
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(379, 735);
+            this.label15.Location = new System.Drawing.Point(380, 636);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(19, 20);
             this.label15.TabIndex = 1114;
@@ -5865,7 +5865,7 @@ namespace FrmLogin.UserControls
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(315, 735);
+            this.label16.Location = new System.Drawing.Point(310, 636);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(20, 20);
             this.label16.TabIndex = 1113;
@@ -5875,7 +5875,7 @@ namespace FrmLogin.UserControls
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(736, 735);
+            this.label17.Location = new System.Drawing.Point(730, 636);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(18, 20);
             this.label17.TabIndex = 1120;
@@ -5885,7 +5885,7 @@ namespace FrmLogin.UserControls
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(668, 735);
+            this.label18.Location = new System.Drawing.Point(663, 636);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(19, 20);
             this.label18.TabIndex = 1119;
@@ -5895,7 +5895,7 @@ namespace FrmLogin.UserControls
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(620, 735);
+            this.label19.Location = new System.Drawing.Point(616, 636);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(17, 20);
             this.label19.TabIndex = 1118;
@@ -5905,7 +5905,7 @@ namespace FrmLogin.UserControls
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(546, 735);
+            this.label20.Location = new System.Drawing.Point(546, 636);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(14, 20);
             this.label20.TabIndex = 1117;
@@ -5915,7 +5915,7 @@ namespace FrmLogin.UserControls
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(964, 735);
+            this.label21.Location = new System.Drawing.Point(955, 638);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(19, 20);
             this.label21.TabIndex = 1124;
@@ -5925,7 +5925,7 @@ namespace FrmLogin.UserControls
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(897, 735);
+            this.label22.Location = new System.Drawing.Point(888, 636);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(21, 20);
             this.label22.TabIndex = 1123;
@@ -5935,7 +5935,7 @@ namespace FrmLogin.UserControls
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(858, 735);
+            this.label23.Location = new System.Drawing.Point(839, 638);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(20, 20);
             this.label23.TabIndex = 1122;
@@ -5945,7 +5945,7 @@ namespace FrmLogin.UserControls
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(790, 735);
+            this.label24.Location = new System.Drawing.Point(775, 636);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(22, 20);
             this.label24.TabIndex = 1121;
@@ -5955,7 +5955,7 @@ namespace FrmLogin.UserControls
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1074, 735);
+            this.label25.Location = new System.Drawing.Point(1110, 660);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(20, 20);
             this.label25.TabIndex = 1126;
@@ -5965,7 +5965,7 @@ namespace FrmLogin.UserControls
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1022, 735);
+            this.label26.Location = new System.Drawing.Point(1005, 638);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(21, 20);
             this.label26.TabIndex = 1125;
@@ -5975,7 +5975,7 @@ namespace FrmLogin.UserControls
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1137, 11);
+            this.label28.Location = new System.Drawing.Point(1126, 9);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(86, 24);
             this.label28.TabIndex = 1128;
@@ -5985,7 +5985,7 @@ namespace FrmLogin.UserControls
             // 
             this.rb1.AutoSize = true;
             this.rb1.Checked = true;
-            this.rb1.Location = new System.Drawing.Point(1161, 49);
+            this.rb1.Location = new System.Drawing.Point(1121, 48);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(31, 17);
             this.rb1.TabIndex = 1129;
@@ -5996,7 +5996,7 @@ namespace FrmLogin.UserControls
             // rb2
             // 
             this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(1161, 81);
+            this.rb2.Location = new System.Drawing.Point(1121, 80);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(31, 17);
             this.rb2.TabIndex = 1130;
@@ -6006,7 +6006,7 @@ namespace FrmLogin.UserControls
             // rb3
             // 
             this.rb3.AutoSize = true;
-            this.rb3.Location = new System.Drawing.Point(1161, 114);
+            this.rb3.Location = new System.Drawing.Point(1121, 113);
             this.rb3.Name = "rb3";
             this.rb3.Size = new System.Drawing.Size(31, 17);
             this.rb3.TabIndex = 1131;
@@ -6016,7 +6016,7 @@ namespace FrmLogin.UserControls
             // rb4
             // 
             this.rb4.AutoSize = true;
-            this.rb4.Location = new System.Drawing.Point(1161, 149);
+            this.rb4.Location = new System.Drawing.Point(1121, 148);
             this.rb4.Name = "rb4";
             this.rb4.Size = new System.Drawing.Size(31, 17);
             this.rb4.TabIndex = 1132;
@@ -6026,7 +6026,7 @@ namespace FrmLogin.UserControls
             // rb5
             // 
             this.rb5.AutoSize = true;
-            this.rb5.Location = new System.Drawing.Point(1161, 181);
+            this.rb5.Location = new System.Drawing.Point(1121, 180);
             this.rb5.Name = "rb5";
             this.rb5.Size = new System.Drawing.Size(31, 17);
             this.rb5.TabIndex = 1133;
@@ -6037,7 +6037,7 @@ namespace FrmLogin.UserControls
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(1138, 246);
+            this.label27.Location = new System.Drawing.Point(1138, 296);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(98, 20);
             this.label27.TabIndex = 1134;
@@ -6050,18 +6050,18 @@ namespace FrmLogin.UserControls
             this.dgvStanjeNaPoziciji.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvStanjeNaPoziciji.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStanjeNaPoziciji.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvStanjeNaPoziciji.Location = new System.Drawing.Point(1130, 277);
+            this.dgvStanjeNaPoziciji.Location = new System.Drawing.Point(1130, 326);
             this.dgvStanjeNaPoziciji.Name = "dgvStanjeNaPoziciji";
             this.dgvStanjeNaPoziciji.ReadOnly = true;
             this.dgvStanjeNaPoziciji.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStanjeNaPoziciji.Size = new System.Drawing.Size(333, 442);
+            this.dgvStanjeNaPoziciji.Size = new System.Drawing.Size(221, 356);
             this.dgvStanjeNaPoziciji.TabIndex = 1135;
             // 
             // btnUlaz
             // 
             this.btnUlaz.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btnUlaz.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUlaz.Location = new System.Drawing.Point(1254, 31);
+            this.btnUlaz.Location = new System.Drawing.Point(1169, 36);
             this.btnUlaz.Name = "btnUlaz";
             this.btnUlaz.Size = new System.Drawing.Size(105, 52);
             this.btnUlaz.TabIndex = 1137;
@@ -6073,7 +6073,7 @@ namespace FrmLogin.UserControls
             // 
             this.btnExit.BackColor = System.Drawing.Color.Thistle;
             this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(1254, 103);
+            this.btnExit.Location = new System.Drawing.Point(1169, 96);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 52);
             this.btnExit.TabIndex = 1138;
@@ -6085,7 +6085,7 @@ namespace FrmLogin.UserControls
             // 
             this.btnFind.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnFind.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(1254, 180);
+            this.btnFind.Location = new System.Drawing.Point(1169, 159);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(105, 52);
             this.btnFind.TabIndex = 1139;
@@ -6097,9 +6097,9 @@ namespace FrmLogin.UserControls
             // 
             this.btnPovezi.BackColor = System.Drawing.Color.Orchid;
             this.btnPovezi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnPovezi.Location = new System.Drawing.Point(1376, 28);
+            this.btnPovezi.Location = new System.Drawing.Point(1130, 219);
             this.btnPovezi.Name = "btnPovezi";
-            this.btnPovezi.Size = new System.Drawing.Size(98, 204);
+            this.btnPovezi.Size = new System.Drawing.Size(173, 67);
             this.btnPovezi.TabIndex = 1140;
             this.btnPovezi.Text = "POZICIJE";
             this.btnPovezi.UseVisualStyleBackColor = false;
@@ -6665,7 +6665,7 @@ namespace FrmLogin.UserControls
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "UCMap";
-            this.Size = new System.Drawing.Size(1479, 801);
+            this.Size = new System.Drawing.Size(1361, 690);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStanjeNaPoziciji)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

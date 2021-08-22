@@ -67,7 +67,7 @@ namespace FrmLogin
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 21);
+            this.label1.Location = new System.Drawing.Point(34, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 24);
             this.label1.TabIndex = 0;
@@ -76,7 +76,7 @@ namespace FrmLogin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 78);
+            this.label2.Location = new System.Drawing.Point(69, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
@@ -85,7 +85,7 @@ namespace FrmLogin
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 121);
+            this.label3.Location = new System.Drawing.Point(35, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 2;
@@ -94,7 +94,7 @@ namespace FrmLogin
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 165);
+            this.label4.Location = new System.Drawing.Point(39, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace FrmLogin
             // 
             // txtClient
             // 
-            this.txtClient.Location = new System.Drawing.Point(141, 71);
+            this.txtClient.Location = new System.Drawing.Point(141, 57);
             this.txtClient.Name = "txtClient";
             this.txtClient.ReadOnly = true;
             this.txtClient.Size = new System.Drawing.Size(207, 20);
@@ -110,7 +110,7 @@ namespace FrmLogin
             // 
             // rtbVrstaPalete
             // 
-            this.rtbVrstaPalete.Location = new System.Drawing.Point(141, 165);
+            this.rtbVrstaPalete.Location = new System.Drawing.Point(141, 109);
             this.rtbVrstaPalete.Name = "rtbVrstaPalete";
             this.rtbVrstaPalete.Size = new System.Drawing.Size(207, 96);
             this.rtbVrstaPalete.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace FrmLogin
             // 
             // txtDateOfEntrance
             // 
-            this.txtDateOfEntrance.Location = new System.Drawing.Point(141, 114);
+            this.txtDateOfEntrance.Location = new System.Drawing.Point(141, 83);
             this.txtDateOfEntrance.Name = "txtDateOfEntrance";
             this.txtDateOfEntrance.ReadOnly = true;
             this.txtDateOfEntrance.Size = new System.Drawing.Size(207, 20);
@@ -126,7 +126,7 @@ namespace FrmLogin
             // 
             // btnChooseClient
             // 
-            this.btnChooseClient.Location = new System.Drawing.Point(374, 68);
+            this.btnChooseClient.Location = new System.Drawing.Point(389, 47);
             this.btnChooseClient.Name = "btnChooseClient";
             this.btnChooseClient.Size = new System.Drawing.Size(102, 23);
             this.btnChooseClient.TabIndex = 7;
@@ -138,14 +138,14 @@ namespace FrmLogin
             // 
             this.lbEntranceItems.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbEntranceItems.FormattingEnabled = true;
-            this.lbEntranceItems.Location = new System.Drawing.Point(141, 275);
+            this.lbEntranceItems.Location = new System.Drawing.Point(141, 219);
             this.lbEntranceItems.Name = "lbEntranceItems";
             this.lbEntranceItems.Size = new System.Drawing.Size(555, 199);
             this.lbEntranceItems.TabIndex = 8;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 368);
+            this.button2.Location = new System.Drawing.Point(15, 312);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 23);
             this.button2.TabIndex = 10;
@@ -158,7 +158,7 @@ namespace FrmLogin
             this.dgvItems.AllowUserToAddRows = false;
             this.dgvItems.AllowUserToDeleteRows = false;
             this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvItems.Location = new System.Drawing.Point(154, 297);
+            this.dgvItems.Location = new System.Drawing.Point(154, 241);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
             this.dgvItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -181,14 +181,15 @@ namespace FrmLogin
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnAddToItems);
-            this.panel1.Location = new System.Drawing.Point(742, 35);
+            this.panel1.Location = new System.Drawing.Point(702, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 439);
+            this.panel1.Size = new System.Drawing.Size(257, 410);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtDeadlineDate
             // 
-            this.txtDeadlineDate.Location = new System.Drawing.Point(155, 273);
+            this.txtDeadlineDate.Location = new System.Drawing.Point(137, 283);
             this.txtDeadlineDate.Name = "txtDeadlineDate";
             this.txtDeadlineDate.ReadOnly = true;
             this.txtDeadlineDate.Size = new System.Drawing.Size(100, 20);
@@ -197,7 +198,7 @@ namespace FrmLogin
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(50, 273);
+            this.label11.Location = new System.Drawing.Point(32, 283);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 13);
             this.label11.TabIndex = 23;
@@ -205,7 +206,7 @@ namespace FrmLogin
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(155, 306);
+            this.txtQuantity.Location = new System.Drawing.Point(137, 316);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(100, 20);
             this.txtQuantity.TabIndex = 22;
@@ -213,7 +214,7 @@ namespace FrmLogin
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(71, 309);
+            this.label9.Location = new System.Drawing.Point(53, 319);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 13);
             this.label9.TabIndex = 21;
@@ -221,7 +222,7 @@ namespace FrmLogin
             // 
             // btnChooseArtikal
             // 
-            this.btnChooseArtikal.Location = new System.Drawing.Point(153, 191);
+            this.btnChooseArtikal.Location = new System.Drawing.Point(135, 201);
             this.btnChooseArtikal.Name = "btnChooseArtikal";
             this.btnChooseArtikal.Size = new System.Drawing.Size(102, 23);
             this.btnChooseArtikal.TabIndex = 13;
@@ -231,14 +232,14 @@ namespace FrmLogin
             // 
             // txtDateOfMan
             // 
-            this.txtDateOfMan.Location = new System.Drawing.Point(155, 231);
+            this.txtDateOfMan.Location = new System.Drawing.Point(137, 241);
             this.txtDateOfMan.Name = "txtDateOfMan";
             this.txtDateOfMan.Size = new System.Drawing.Size(100, 20);
             this.txtDateOfMan.TabIndex = 20;
             // 
             // txtArtikal
             // 
-            this.txtArtikal.Location = new System.Drawing.Point(153, 154);
+            this.txtArtikal.Location = new System.Drawing.Point(135, 164);
             this.txtArtikal.Name = "txtArtikal";
             this.txtArtikal.ReadOnly = true;
             this.txtArtikal.Size = new System.Drawing.Size(100, 20);
@@ -246,7 +247,7 @@ namespace FrmLogin
             // 
             // txtNum
             // 
-            this.txtNum.Location = new System.Drawing.Point(153, 113);
+            this.txtNum.Location = new System.Drawing.Point(135, 123);
             this.txtNum.Name = "txtNum";
             this.txtNum.ReadOnly = true;
             this.txtNum.Size = new System.Drawing.Size(100, 20);
@@ -265,7 +266,7 @@ namespace FrmLogin
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 234);
+            this.label7.Location = new System.Drawing.Point(7, 244);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 13);
             this.label7.TabIndex = 16;
@@ -274,7 +275,7 @@ namespace FrmLogin
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(81, 154);
+            this.label6.Location = new System.Drawing.Point(63, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 15;
@@ -283,7 +284,7 @@ namespace FrmLogin
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(91, 120);
+            this.label5.Location = new System.Drawing.Point(73, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 14;
@@ -291,7 +292,7 @@ namespace FrmLogin
             // 
             // btnAddToItems
             // 
-            this.btnAddToItems.Location = new System.Drawing.Point(18, 398);
+            this.btnAddToItems.Location = new System.Drawing.Point(10, 369);
             this.btnAddToItems.Name = "btnAddToItems";
             this.btnAddToItems.Size = new System.Drawing.Size(102, 23);
             this.btnAddToItems.TabIndex = 13;
@@ -302,7 +303,7 @@ namespace FrmLogin
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(386, 248);
+            this.label10.Location = new System.Drawing.Point(386, 192);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 13);
             this.label10.TabIndex = 13;
@@ -311,7 +312,7 @@ namespace FrmLogin
             // lblMagacioner
             // 
             this.lblMagacioner.AutoSize = true;
-            this.lblMagacioner.Location = new System.Drawing.Point(462, 247);
+            this.lblMagacioner.Location = new System.Drawing.Point(462, 191);
             this.lblMagacioner.Name = "lblMagacioner";
             this.lblMagacioner.Size = new System.Drawing.Size(0, 13);
             this.lblMagacioner.TabIndex = 14;
@@ -320,7 +321,7 @@ namespace FrmLogin
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(5, 275);
+            this.label12.Location = new System.Drawing.Point(5, 219);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 20);
             this.label12.TabIndex = 15;
@@ -330,7 +331,7 @@ namespace FrmLogin
             // 
             this.lblTotalWeight.AutoSize = true;
             this.lblTotalWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblTotalWeight.Location = new System.Drawing.Point(42, 314);
+            this.lblTotalWeight.Location = new System.Drawing.Point(42, 258);
             this.lblTotalWeight.Name = "lblTotalWeight";
             this.lblTotalWeight.Size = new System.Drawing.Size(0, 20);
             this.lblTotalWeight.TabIndex = 16;
@@ -338,7 +339,7 @@ namespace FrmLogin
             // btnSaveComplete
             // 
             this.btnSaveComplete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSaveComplete.Location = new System.Drawing.Point(15, 414);
+            this.btnSaveComplete.Location = new System.Drawing.Point(15, 358);
             this.btnSaveComplete.Name = "btnSaveComplete";
             this.btnSaveComplete.Size = new System.Drawing.Size(102, 60);
             this.btnSaveComplete.TabIndex = 17;
@@ -350,7 +351,7 @@ namespace FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 495);
+            this.ClientSize = new System.Drawing.Size(973, 425);
             this.Controls.Add(this.btnSaveComplete);
             this.Controls.Add(this.lblTotalWeight);
             this.Controls.Add(this.label12);
@@ -371,6 +372,7 @@ namespace FrmLogin
             this.Name = "FrmEntrance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ulaz palete";
+            this.Load += new System.EventHandler(this.FrmEntrance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

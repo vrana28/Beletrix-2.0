@@ -31,6 +31,9 @@ namespace FrmLogin
         private void FrmMain_Load(object sender, EventArgs e)
         {
             mainController.OpenUCMap(this,Controllers.MainController.User);
+   
+
+
         }
 
         public void PanelMethod(UserControl userControl)
