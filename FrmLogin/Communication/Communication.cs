@@ -61,6 +61,13 @@ namespace FrmLogin.Communication
             return (List<Roba>)client.GetResponseResult();
         }
 
+        internal DataTable FindBusyEntrances(Client clients, Roba roba)
+        {
+            Request r = new Request { Operation = Operation.FindBusyEntrances, RequestObject = clients, RequestObject2 = roba };
+            client.SendRequest(r);
+            return (DataTable)client.GetResponseResult();
+        }
+
         internal Client ReturnClient(string txtClient)
         {
             Request r = new Request { Operation = Operation.ReturnClient, RequestObject = txtClient };

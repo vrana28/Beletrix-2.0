@@ -40,9 +40,12 @@ namespace FrmLogin
             this.robeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRobuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.robedeleteupdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
-            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izveštajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uskladištenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iskladištenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +56,8 @@ namespace FrmLogin
             this.addStorekeeperToolStripMenuItem,
             this.clientsToolStripMenuItem,
             this.robeToolStripMenuItem,
-            this.restartToolStripMenuItem});
+            this.restartToolStripMenuItem,
+            this.izveštajiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1350, 24);
@@ -136,6 +140,11 @@ namespace FrmLogin
             this.robedeleteupdateToolStripMenuItem.Text = "Artikli";
             this.robedeleteupdateToolStripMenuItem.Click += new System.EventHandler(this.robedeleteupdateToolStripMenuItem_Click);
             // 
+            // restartToolStripMenuItem
+            // 
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
+            // 
             // pnlMain
             // 
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -152,9 +161,27 @@ namespace FrmLogin
             this.lblUser.Size = new System.Drawing.Size(0, 13);
             this.lblUser.TabIndex = 2;
             // 
-            // restartToolStripMenuItem
+            // izveštajiToolStripMenuItem
             // 
-
+            this.izveštajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uskladištenjeToolStripMenuItem,
+            this.iskladištenjeToolStripMenuItem});
+            this.izveštajiToolStripMenuItem.Name = "izveštajiToolStripMenuItem";
+            this.izveštajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.izveštajiToolStripMenuItem.Text = "Izveštaji";
+            // 
+            // uskladištenjeToolStripMenuItem
+            // 
+            this.uskladištenjeToolStripMenuItem.Name = "uskladištenjeToolStripMenuItem";
+            this.uskladištenjeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uskladištenjeToolStripMenuItem.Text = "Uskladištenje";
+            this.uskladištenjeToolStripMenuItem.Click += new System.EventHandler(this.uskladištenjeToolStripMenuItem_Click);
+            // 
+            // iskladištenjeToolStripMenuItem
+            // 
+            this.iskladištenjeToolStripMenuItem.Name = "iskladištenjeToolStripMenuItem";
+            this.iskladištenjeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iskladištenjeToolStripMenuItem.Text = "Iskladištenje";
             // 
             // FrmMain
             // 
@@ -194,5 +221,8 @@ namespace FrmLogin
         private System.Windows.Forms.ToolStripMenuItem addRobuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem robedeleteupdateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem izveštajiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uskladištenjeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iskladištenjeToolStripMenuItem;
     }
 }

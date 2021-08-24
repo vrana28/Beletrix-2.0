@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="342024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="349192">
       <assemblyIdentity name="Beletrix 2.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q3Nhro40zuDVnoplGdEsLladD+NCxZv/q+1xKVfmauE=</dsig:DigestValue>
+        <dsig:DigestValue>A4tcFYZODHhGHSy2ZPP7m68CGokH7Zl66PEx1Qojqeo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,19 +74,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aNnxgOTa0o4nUbtUywFVDM6rwXqT0k4uF54X/hinU7U=</dsig:DigestValue>
+        <dsig:DigestValue>ZmYgfnuJW9+R333Ot0jzNjoN2cK/3gcGUutt+QHDK5A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Domain.dll" size="28160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Domain.dll" size="29184">
       <assemblyIdentity name="Domain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mMYmbHl3KOjbljDNjzEkFjnNII6cMsD8MggpTLDZT0o=</dsig:DigestValue>
+        <dsig:DigestValue>FueXOlS9PCe6P0rljxFCwHC4d8dtlUNOAkYvI6cHUfI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

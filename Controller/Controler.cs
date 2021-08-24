@@ -314,6 +314,16 @@ namespace Controller
             return so.Result;
         }
 
+        public object FindBusyEntrances(Client client, Roba roba)
+        {
+            //** NOVO UPDATE v2.1
+            GetBusyEntrancesSO so = new GetBusyEntrancesSO();
+            so.Client = client;
+            so.Roba = roba;
+            so.ExecuteTemplate(new Entrance());
+            return so.Result;
+        }
+
         public void DeleteEntrance(string requestObject)
         {
             // NOVO UPDATE v2.1

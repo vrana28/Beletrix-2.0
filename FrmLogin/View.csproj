@@ -179,6 +179,12 @@
     <Compile Include="FrmGetAll\FrmGetAllClients.Designer.cs">
       <DependentUpon>FrmGetAllClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGetAll\FrmGetAllEntrances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetAll\FrmGetAllEntrances.Designer.cs">
+      <DependentUpon>FrmGetAllEntrances.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGetAll\FrmGetAllRoba.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGetAll\FrmGetAllClients.resx">
       <DependentUpon>FrmGetAllClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGetAll\FrmGetAllEntrances.resx">
+      <DependentUpon>FrmGetAllEntrances.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGetAll\FrmGetAllRoba.resx">
       <DependentUpon>FrmGetAllRoba.cs</DependentUpon>

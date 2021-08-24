@@ -189,6 +189,9 @@ namespace Server
                 case Operation.DeleteEntrance:
                     Controler.Instance.DeleteEntrance((string)request.RequestObject);
                     break;
+                case Operation.FindBusyEntrances:
+                    response.Result = Controler.Instance.FindBusyEntrances((Client)request.RequestObject, (Roba)request.RequestObject2);
+                    break;
             }
             return response;
         }

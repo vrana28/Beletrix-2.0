@@ -33,6 +33,7 @@ namespace FrmLogin
         public FrmPositioning frmPositioning;
         public FrmFind frmFind;
         public FrmExit frmExit;
+        public FrmGetAllEntrances frmGetAllEntrances;
 
         private LoginController loginController = new LoginController();
         private MainController mainController = new MainController();
@@ -75,7 +76,11 @@ namespace FrmLogin
             frmExit.ShowDialog();
         }
 
-        
+        internal void OpenFrmGetAllEntrances(EntranceController entranceController)
+        {
+            frmGetAllEntrances = new FrmGetAllEntrances(entranceController);
+            frmGetAllEntrances.ShowDialog();
+        }
 
         public void OpenFrmPositioning(PositionController positionController)
         {

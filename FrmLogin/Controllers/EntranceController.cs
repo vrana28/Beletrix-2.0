@@ -1,5 +1,6 @@
 ﻿using Domain;
 using FrmLogin.FrmEnter;
+using FrmLogin.FrmGetAll;
 using FrmLogin.Helpers;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,108 @@ namespace FrmLogin.Controllers
         public Entrance Entrance { get; set; }
         public List<EntranceItems> Items { get; set; } = new List<EntranceItems>();
 
+        internal void InitDataGridView(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            throw new NotImplementedException();
+        }
+
         public BindingList<EntranceItems> bindingList = new BindingList<EntranceItems>();
         internal void OpenFrmEnterClient(FrmEntrance frmEntrance)
         {
             FrmEnterClient frmEnterClient = new FrmEnterClient(frmEntrance, new Controllers.ClientsController());
             frmEnterClient.ShowDialog();
+        }
+
+        internal void OpenFrmEnterClient(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            FrmEnterClient frmEnterClient = new FrmEnterClient(frmGetAllEntrances, new Controllers.ClientsController());
+            frmEnterClient.ShowDialog();
+            Client = Communication.Communication.Instance.ReturnClient(frmGetAllEntrances.TxtClient.Text);
+        }
+
+        internal void Load(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            try
+            {
+                frmGetAllEntrances.DGVEntrances.DataSource = null;
+                frmGetAllEntrances.DGVEntrances.DataSource = Communication.Communication.Instance.FindBusyEntrances(Client, Roba);
+                frmGetAllEntrances.LblStanje.Text = Izracunaj(frmGetAllEntrances);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        internal void SearchWithoutRoba(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            try
+            {
+                frmGetAllEntrances.TxtArtikal.Text = "";
+                Roba = null;
+                frmGetAllEntrances.DGVEntrances.DataSource = null;
+                frmGetAllEntrances.DGVEntrances.DataSource = Communication.Communication.Instance.FindBusyEntrances(Client, Roba);
+                frmGetAllEntrances.LblStanje.Text = Izracunaj(frmGetAllEntrances);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        internal void Search(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            if (frmGetAllEntrances.DatumOdDo.Checked) {
+                if (frmGetAllEntrances.DateOd.Value > frmGetAllEntrances.DateDo.Value) {
+                    MessageBox.Show("Greska!! Datum od mora biti starariji od datuma do.");
+                    return;
+                }
+            }
+
+            try
+            {
+                frmGetAllEntrances.DGVEntrances.DataSource = null;
+                if (!frmGetAllEntrances.DatumOdDo.Checked) {
+                    frmGetAllEntrances.DGVEntrances.DataSource = Communication.Communication.Instance.FindBusyEntrances(Client, Roba);
+                }
+                //frmGetAllEntrances.DGVEntrances.DataSource = Communication.Communication.Instance.FindBusyEntrancesWithDate(Client, Roba, ReturnSearchItem());
+                frmGetAllEntrances.LblStanje.Text = Izracunaj(frmGetAllEntrances);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private string Izracunaj(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            double stanje = 0;
+            DataGridViewRow row;
+            if (frmGetAllEntrances.DGVEntrances.Rows.Count != 0)
+            {
+                for (int i = 0; i < frmGetAllEntrances.DGVEntrances.Rows.Count; i++)
+                {
+                    row = frmGetAllEntrances.DGVEntrances.Rows[i];
+                    stanje += (double)row.Cells[3].Value;
+                }
+            }
+            return stanje.ToString() + " kg";
+        }
+
+        internal void SearchWithoutClient(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            try
+            {
+                frmGetAllEntrances.TxtClient.Text = "";
+                Client = null;
+                frmGetAllEntrances.DGVEntrances.DataSource = null;
+                frmGetAllEntrances.DGVEntrances.DataSource = Communication.Communication.Instance.FindBusyEntrances(Client, Roba);
+                frmGetAllEntrances.LblStanje.Text = Izracunaj(frmGetAllEntrances);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         internal void OpenFrmEnterArtikal(FrmEntrance frmEntrance)
@@ -40,6 +138,18 @@ namespace FrmLogin.Controllers
             }
             FrmEnterArtikal frmEnterArtikal = new FrmEnterArtikal(frmEntrance, new Controllers.RobaController());
             frmEnterArtikal.ShowDialog();
+        }
+
+        internal void OpenFrmEnterArtikal(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            //if (UserControlHelpers.IsNullOrWhiteSpace(frmGetAllEntrances.TxtClient))
+            //{
+            //    MessageBox.Show("Greska!! Morate prvo uneti klijenta.");
+            //    return;
+            //}
+            FrmEnterArtikal frmEnterArtikal = new FrmEnterArtikal(frmGetAllEntrances, new Controllers.RobaController());
+            frmEnterArtikal.ShowDialog();
+            Roba = Communication.Communication.Instance.ReturnRoba(frmGetAllEntrances.TxtArtikal.Text);
         }
 
         internal void AddItems(FrmEntrance frmEntrance)

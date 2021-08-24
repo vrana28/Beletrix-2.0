@@ -32,8 +32,6 @@ namespace FrmLogin
         {
             mainController.OpenUCMap(this,Controllers.MainController.User);
             
-
-
         }
 
         public void PanelMethod(UserControl userControl)
@@ -88,6 +86,9 @@ namespace FrmLogin
             mainController.OpenGetAllRoba(this);
         }
 
-        
+        private void uskladištenjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainController.OpenGetAllEntrances(this);
+        }
     }
 }

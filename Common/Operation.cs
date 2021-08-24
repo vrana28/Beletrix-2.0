@@ -45,5 +45,6 @@ namespace Common
         RestartDatabase,
         ReturnEntrance,
         DeleteEntrance,
+        FindBusyEntrances,
     }
 }

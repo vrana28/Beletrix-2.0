@@ -47,6 +47,35 @@ namespace DatabaseBroker
             }
         }
 
+        public DataTable BusyEntrances(Entrance entity, Client client, Roba roba)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+
+            if (client != null && roba != null)
+            {
+                command.CommandText = $" {entity.Izvestaj} and r.Name = '{roba.Name}' and c.Name = '{client.Name}' {entity.Order}";
+            }
+            if (client != null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj} and c.Name = '{client.Name}' {entity.Order}";
+            }
+            if (client == null && roba != null)
+            {
+                command.CommandText = $"{entity.Izvestaj} and r.Name = '{roba.Name}' {entity.Order}";
+            }
+            if (client == null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj} {entity.Order}";
+            }
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            dataAdapter.Fill(table);
+            return table;
+        }
+
         public void Update(IEntity entity)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);

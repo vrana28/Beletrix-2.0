@@ -61,6 +61,9 @@ namespace FrmLogin.Controllers
             MainCoordinator.Instance.OpenFrmGetAllRoba(new Controllers.RobaController());
         }
 
-        
+        internal void OpenGetAllEntrances(FrmMain frmMain)
+        {
+            MainCoordinator.Instance.OpenFrmGetAllEntrances(new Controllers.EntranceController());
+        }
     }
 }

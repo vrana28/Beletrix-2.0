@@ -57,6 +57,7 @@
     <Compile Include="EntranceSO\AddNewEntranceSO.cs" />
     <Compile Include="EntranceSO\DeleteEntranceSO.cs" />
     <Compile Include="EntranceSO\GetAllJoinSO.cs" />
+    <Compile Include="EntranceSO\GetBusyEntrancesSO.cs" />
     <Compile Include="EntranceSO\RestartDatabase.cs" />
     <Compile Include="EntranceSO\ReturnEntranceSO.cs" />
     <Compile Include="EntranceSO\ReturnEntranceSO2.cs" />

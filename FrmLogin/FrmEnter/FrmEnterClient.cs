@@ -1,6 +1,7 @@
 ﻿
 using Domain;
 using FrmLogin.Controllers;
+using FrmLogin.FrmGetAll;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,7 @@ namespace FrmLogin.FrmEnter
 
         public int Signal { get; set; }
         public FrmEntrance frmEntrance{ get; set; }
+        public FrmGetAllEntrances frmGetAllEntrances { get; set; }
         public FrmFind frmFind{ get; set; }
         public FrmExit frmExit { get; set; }
         public DataGridView DGVClientsToEnter { get => dgvClients; }
@@ -36,6 +38,15 @@ namespace FrmLogin.FrmEnter
             InitializeComponent();
             clientController.InitEnterDataGridView(this);
             Signal = 1;
+        }
+
+        public FrmEnterClient(FrmGetAllEntrances frmGetAllEntrance, ClientsController clientsController)
+        {
+            this.frmGetAllEntrances = frmGetAllEntrance;
+            this.clientController = clientsController;
+            InitializeComponent();
+            clientController.InitEnterDataGridView(this);
+            Signal = 4;
         }
 
         public FrmEnterClient(FrmFind frmFind, ClientsController clientsController)

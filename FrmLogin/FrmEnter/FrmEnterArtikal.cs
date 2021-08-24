@@ -1,6 +1,7 @@
 ﻿
 using Domain;
 using FrmLogin.Controllers;
+using FrmLogin.FrmGetAll;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,7 @@ namespace FrmLogin.FrmEnter
         public FrmEntrance frmEntrance{ get; set; }
         public FrmFind frmFind { get; set; }
         public FrmExit FrmExit { get; set; }
-
+        public FrmGetAllEntrances frmGetAllEntrances { get; set; }
         public DataGridView DGVArtikli { get => dgvRoba; }
 
         public FrmEnterArtikal(FrmEntrance frmEntrance, Controllers.RobaController robaController)
@@ -31,6 +32,15 @@ namespace FrmLogin.FrmEnter
             InitializeComponent();
             robaController.InitEnterDataGridView(this);
             Signal = 1;
+        }
+
+        public FrmEnterArtikal(FrmGetAllEntrances frmGetAllEntrances, Controllers.RobaController robaController)
+        {
+            this.frmGetAllEntrances = frmGetAllEntrances;
+            this.robaController = robaController;
+            InitializeComponent();
+            robaController.InitEnterDataGridView(this);
+            Signal = 4;
         }
 
         public FrmEnterArtikal(FrmFind frmFind, RobaController robaController)

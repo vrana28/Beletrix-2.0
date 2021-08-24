@@ -52,6 +52,11 @@ namespace Storage.Implementation.Database
             return broker.GetAllJoin(entity);
         }
 
+        public DataTable GetBusyEntrances(IEntity entity, Client client, Roba roba)
+        {
+            return broker.BusyEntrances((Entrance)entity, client, roba);
+        }
+
         public DataTable GetBusyPositions(IEntity entity1, IEntity entity2, IEntity entity3)
         {
             return broker.BusyPosition(entity1, entity2, entity3);
