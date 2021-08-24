@@ -41,7 +41,7 @@ namespace Domain
         [Browsable(false)]
         public object SelectValues => "";
         [Browsable(false)]
-        public object WhereValues => throw new NotImplementedException();
+        public object WhereValues => $" where EntranceId = {EntranceId}";
         [Browsable(false)]
         public object SetValues => " set Obradjen = 1 where EntranceId = ";
         [Browsable(false)]

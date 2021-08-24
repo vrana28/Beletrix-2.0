@@ -25,6 +25,10 @@ namespace FrmLogin.Controllers
         {
             frmPositioning.DGVEntrances.DataSource = Communication.Communication.Instance.GetAllEntrances();
             frmPositioning.DGVPositions.DataSource = Communication.Communication.Instance.GetAllPositions();
+            if (Controllers.LoginController.Storekeeper.Username != "admin" && Controllers.LoginController.Storekeeper.Password != "admin")
+            {
+                frmPositioning.BtnEntranceDelete.Visible = false;
+            }
         }
 
         internal void SearchPosition(FrmPositioning frmPositioning)
@@ -67,6 +71,25 @@ namespace FrmLogin.Controllers
             frmPositioning.TxtPositionId.Text = "";
             frmPositioning.DGVPositions.DataSource = Communication.Communication.Instance.GetAllPositions();
             frmPositioning.DGVEntrances.DataSource = Communication.Communication.Instance.GetAllEntrances();
+        }
+
+        internal void DeleteEntrance(FrmPositioning frmPositioning)
+        {
+            if (UserControlHelpers.IsNullOrWhiteSpace(frmPositioning.TxtEntranceId))
+            {
+                MessageBox.Show("Nema podataka za povezivanje!");
+                return;
+            }
+            try
+            {
+                Communication.Communication.Instance.DeleteEntrance(frmPositioning.TxtEntranceId.Text);
+                Refresh(frmPositioning);
+                MessageBox.Show("Obrisan ulaz");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         internal void Restart()

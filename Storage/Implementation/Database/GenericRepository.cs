@@ -93,6 +93,11 @@ namespace Storage.Implementation.Database
             return broker.ReturnEntity2(position, positionId);
         }
 
+        public Position Return3(Position position, string positionId)
+        {
+            return broker.ReturnEntity3(position, positionId);
+        }
+
         public void Rollback()
         {
             broker.Rollback();

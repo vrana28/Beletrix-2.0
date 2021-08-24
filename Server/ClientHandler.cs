@@ -186,6 +186,9 @@ namespace Server
                 case Operation.ReturnEntrance:
                     response.Result = Controler.Instance.ReturnEntrances((string)request.RequestObject);
                     break;
+                case Operation.DeleteEntrance:
+                    Controler.Instance.DeleteEntrance((string)request.RequestObject);
+                    break;
             }
             return response;
         }

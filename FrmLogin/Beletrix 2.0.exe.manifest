@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="341000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="342024">
       <assemblyIdentity name="Beletrix 2.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YAnhO80zONXaXiYy8jH0+zM5Yl3Lpq/seGTNSKu+/O0=</dsig:DigestValue>
+        <dsig:DigestValue>q3Nhro40zuDVnoplGdEsLladD+NCxZv/q+1xKVfmauE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mKaWmw4KPUaaIcr8i3ASGUF3/4FiCXUzd3OnNB+LDG8=</dsig:DigestValue>
+        <dsig:DigestValue>aNnxgOTa0o4nUbtUywFVDM6rwXqT0k4uF54X/hinU7U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4qsX26U8Tv/Yerh9Lu6tRXUhAdxqIki6KYDW98YOhcI=</dsig:DigestValue>
+        <dsig:DigestValue>mMYmbHl3KOjbljDNjzEkFjnNII6cMsD8MggpTLDZT0o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

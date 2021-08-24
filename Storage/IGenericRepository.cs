@@ -18,6 +18,7 @@ namespace Storage
         bool Exist(IEntity entity);
         void UpdateWithParameters2(IEntity ent1, IEntity entity);
         DataTable ShowEntranceItems(IEntity entity, object uslov);
+        Position Return3(Position position, string positionId);
         IEntity Return2(IEntity position, object positionId);
         void SaveEntranceItem(EntranceItems ei);
         void UpdateWithParameters3(Entrance e, string entranceId);

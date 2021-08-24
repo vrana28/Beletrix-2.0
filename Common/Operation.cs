@@ -44,5 +44,6 @@ namespace Common
         UpdateEntranceAndPositoin,
         RestartDatabase,
         ReturnEntrance,
+        DeleteEntrance,
     }
 }

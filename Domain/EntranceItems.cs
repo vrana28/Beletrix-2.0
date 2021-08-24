@@ -30,7 +30,7 @@ namespace Domain
         public string JoinCondition => throw new NotImplementedException();
         [Browsable(false)]
         public string JoinTable => "Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
-               + $" join EntrancePositions ep on (ep.EntranceId = e.EntranceId) join Roba r on (ei.RobaId = r.RobaId) join Clients c on (c.ClientId = e.ClientId) where ep.PositionId =";
+               + $" join Roba r on (ei.RobaId = r.RobaId) join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1 and e.PositionId =";
         [Browsable(false)]
         public string TableAlias => " r.Name as Naziv,(ei.NumOfBoxes*r.WeightOfBox) as Tezina,ei.DateOfManu as Datum, c.Name as Klijent ";
         [Browsable(false)]

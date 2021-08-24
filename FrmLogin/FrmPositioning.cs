@@ -26,6 +26,7 @@ namespace FrmLogin
 
         public DataGridView DGVEntrances{ get => dgvEntrances; }
         public DataGridView DGVPositions{ get => dgvPositions; }
+        public Button BtnEntranceDelete { get => btnEntranceDelete; }
         public TextBox TxtKolona { get => txtKolona; }
         public TextBox TxtRed { get => txtRed; }
         public TextBox TxtPM { get => txtPaletnoMesto; }
@@ -64,6 +65,11 @@ namespace FrmLogin
         private void btnResi_Click(object sender, EventArgs e)
         {
             positionController.Restart();
+        }
+
+        private void btnEntranceDelete_Click(object sender, EventArgs e)
+        {
+            positionController.DeleteEntrance(this);
         }
     }
 }

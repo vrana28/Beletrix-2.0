@@ -314,6 +314,14 @@ namespace Controller
             return so.Result;
         }
 
+        public void DeleteEntrance(string requestObject)
+        {
+            // NOVO UPDATE v2.1
+            DeleteEntranceSO so = new DeleteEntranceSO();
+            so.EntranceId = Int32.Parse(requestObject);
+            so.ExecuteTemplate(new Entrance());
+        }
+
         // imamo i SAVE ENTRANCE !!!
         //public void SaveEntrance(Entrance entrance)
         //{

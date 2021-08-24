@@ -96,6 +96,13 @@ namespace FrmLogin.Communication
             client.GetResponseResult();
         }
 
+        internal void DeleteEntrance(string entranceId)
+        {
+            Request r = new Request { Operation = Operation.DeleteEntrance, RequestObject = entranceId };
+            client.SendRequest(r);
+            client.GetResponseResult();
+        }
+
         internal DataTable ShowEntranceItems(string positionId)
         {
             Request r = new Request { Operation = Operation.ShowEntranceItems, RequestObject = positionId };

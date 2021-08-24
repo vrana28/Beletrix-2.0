@@ -67,7 +67,21 @@ namespace DatabaseBroker
             }
         }
 
+        // za trazenje entrance - ULAZA
         public IEntity ReturnEntity2(IEntity position, object positionId)
+        {
+            IEntity result;
+            SqlCommand command = new SqlCommand("", connection, transaction);
+            command.CommandText = $"select * from {position.TableName} where PositionId like '{positionId}' and Aktivno = 1";
+            SqlDataReader reader = command.ExecuteReader();
+            result = position.ReturnEntity(reader);
+            reader.Close();
+            return result;
+        }
+
+        // za trazenje pozicije
+
+        public Position ReturnEntity3(Position position, string positionId)
         {
             IEntity result;
             SqlCommand command = new SqlCommand("", connection, transaction);
@@ -75,7 +89,7 @@ namespace DatabaseBroker
             SqlDataReader reader = command.ExecuteReader();
             result = position.ReturnEntity(reader);
             reader.Close();
-            return result;
+            return (Position)result;
         }
 
         // id repository
