@@ -182,11 +182,11 @@ namespace Controller
             return so.Result;
         }
 
-        public void LeaveEntrance(EntrancePosition entrancePosition)
+        public void LeaveEntrance(Entrance entrance)
         {
             //**
             ExitEntrancePositionSO so = new ExitEntrancePositionSO();
-            so.ExecuteTemplate(entrancePosition);
+            so.ExecuteTemplate(entrance);
         }
 
         public DataTable FindBusyPositionsWithPosition(Client client, Roba roba, string v)
@@ -290,6 +290,30 @@ namespace Controller
             so.ExecuteTemplate(new Roba());
             return so.Result;
         }
+
+        public void UpdateEntranceAndPosition(int requestObject, string requestObject2)
+        {
+            // NOVO UPDATE v2.1
+            UpdateEntranceAndPosition so = new UpdateEntranceAndPosition();
+            so.EntranceId = requestObject;
+            so.PositionId = requestObject2;
+            so.ExecuteTemplate(new Entrance());
+        }
+
+        public void RestartDatabase()
+        {
+            RestartDatabase so = new RestartDatabase();
+            so.ExecuteTemplate(new EntrancePosition());
+        }
+
+        public object ReturnEntrances(string pozicija)
+        {
+            ReturnEntranceSO2 so = new ReturnEntranceSO2();
+            so.Uslov = pozicija;
+            so.ExecuteTemplate(new Entrance());
+            return so.Result;
+        }
+
         // imamo i SAVE ENTRANCE !!!
         //public void SaveEntrance(Entrance entrance)
         //{

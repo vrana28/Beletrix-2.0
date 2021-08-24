@@ -34,12 +34,15 @@ namespace Common
         FindBusyPosition,
         ReturnEntrancePosition,
         ReturnEntranceItems,
-        LeaveEntrancePosition,
+        LeaveEntrance,
         LeavingEntranceItem,
         ShowEntranceItems,
         ReturnClient,
         ReturnRoba,
         GetWeightOfBox,
         FindStorekeeper,
+        UpdateEntranceAndPositoin,
+        RestartDatabase,
+        ReturnEntrance,
     }
 }

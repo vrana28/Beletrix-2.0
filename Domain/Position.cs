@@ -21,30 +21,30 @@ namespace Domain
         [Browsable(false)]
         public string IdName => throw new NotImplementedException();
         [Browsable(false)]
-        public string JoinCondition => "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string JoinCondition => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
-               + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
-               + $"join Clients c on (c.ClientId = e.ClientId) where r.RobaId = ";
+               + $"join Roba r on (r.RobaId = ei.RobaId)"
+               + $"join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1 and r.RobaId = ";
         [Browsable(false)]
-        public string JoinTable => "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Ukupna_Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string JoinTable => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Ukupna_Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije, c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
-               + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
-               + $"join Clients c on (c.ClientId = e.ClientId) where c.ClientId = ";
+               + $"join Roba r on (r.RobaId = ei.RobaId)"
+               + $"join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1 and c.ClientId = ";
         [Browsable(false)]
         public string TableAlias => " and r.RobaId = ";
  
         [Browsable(false)]
-        public object SelectValues => " and ep.PositionId like ";
+        public object SelectValues => " and e.PositionId like ";
         [Browsable(false)]
-        public object WhereValues => "order by ep.PositionId";
+        public object WhereValues => "order by e.PositionId";
         [Browsable(false)]
         public object SetValues => " set Slobodno = 0 where PositionId = ";
         [Browsable(false)]
         public object ExistName => throw new NotImplementedException();
         [Browsable(false)]
-        public object WhereReturn => "where ep.PositionId like ";
+        public object WhereReturn => "and e.PositionId like ";
         [Browsable(false)]
         public object GetWeightOfBox => " * from Positions where Slobodno = 1 and PositionId like ";
         //    command.CommandText = $"select * from Positions where PositionId like '{v}' and Slobodno = 1";
@@ -53,11 +53,11 @@ namespace Domain
         [Browsable(false)]
         public object WherePosition => $" where Slobodno = '{true}'";
         [Browsable(false)]
-        public string All => "select r.Name as Product,ep.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string All => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
-               + $"join EntrancePositions ep on (e.EntranceId = ep.EntranceId) join Roba r on (r.RobaId = ei.RobaId)"
-               + $"join Clients c on (c.ClientId = e.ClientId) ";
+               + $"join Roba r on (r.RobaId = ei.RobaId) "
+               + $"join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1";
         [Browsable(false)]
         public object SetValues2 => "set Slobodno = 1 where PositionId =";
 
@@ -84,7 +84,17 @@ namespace Domain
 
         public IEntity ReturnEntity(SqlDataReader reader)
         {
-            throw new NotImplementedException();
+            IEntity result = null;
+            while (reader.Read())
+            {
+                Position p = new Position
+                {
+                    PositionId = (string)reader[0],
+                    Slobodna = (bool)reader[1],
+                };
+                result = p;
+            }
+            return result;
         }
     }
 }

@@ -99,7 +99,6 @@ namespace FrmLogin.Controllers
             {
                 Entrance.TotalWeight = TotalWeight;
                 Entrance.Items = Items;
-                //Entrance.PositionId = null;
                 Communication.Communication.Instance.AddEntrance(Entrance);
                 MessageBox.Show("Uspešno sačuvan");
                 frmEntrance.Dispose();

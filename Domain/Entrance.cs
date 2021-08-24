@@ -22,13 +22,14 @@ namespace Domain
         public Storekeeper Storekeeper { get; set; }
         public List<EntranceItems> Items  { get; set; }
         public string PositionId { get; set; } = null;
+        public bool Aktivno { get; set; }
         
         [Browsable(false)]
         public string TableName => "Entrance";
         [Browsable(false)]
-        public string InsertValues => $" (@Weight,@DateOfEntrance,@DateOfExit, @Dimension,@Obradjen, @ClientId, @StorekeeperId, @PositionId)";
+        public string InsertValues => $" (@Weight,@DateOfEntrance,@DateOfExit, @Dimension,@Obradjen, @ClientId, @StorekeeperId, @PositionId, @Aktivno)";
         [Browsable(false)]
-        public string IdName => throw new NotImplementedException();
+        public string IdName => "";
         [Browsable(false)]
         public string JoinCondition => throw new NotImplementedException();
         [Browsable(false)]
@@ -57,8 +58,11 @@ namespace Domain
         [Browsable(false)]
         public string All => throw new NotImplementedException();
         [Browsable(false)]
-        public object SetValues2 => $"set DateOfExit = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' where EntranceId = ";
-
+        public object SetValues2 => $"set DateOfExit = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' , Aktivno = 0 where EntranceId = ";
+        [Browsable(false)]
+        public object SetValues3 => $"set PositionId = ";
+        [Browsable(false)]
+        public object SetValues4 => $" where EntranceId = ";
         public void AddParametres(SqlCommand command)
         {
             command.Parameters.AddWithValue("@Weight", TotalWeight);
@@ -69,6 +73,7 @@ namespace Domain
             command.Parameters.AddWithValue("@ClientId", ClientId);
             command.Parameters.AddWithValue("@StorekeeperId", Storekeeper.StorekeeperId);
             command.Parameters.AddWithValue("@PositionId", "");
+            command.Parameters.AddWithValue("@Aktivno", false);
         }
 
         public List<IEntity> GetEntities(SqlDataReader reader)

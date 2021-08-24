@@ -48,6 +48,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
+            this.btnResi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrances)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositions)).BeginInit();
             this.SuspendLayout();
@@ -246,11 +247,22 @@
             this.btnRestart.UseVisualStyleBackColor = false;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
+            // btnResi
+            // 
+            this.btnResi.Location = new System.Drawing.Point(817, 464);
+            this.btnResi.Name = "btnResi";
+            this.btnResi.Size = new System.Drawing.Size(75, 23);
+            this.btnResi.TabIndex = 20;
+            this.btnResi.Text = "Resi";
+            this.btnResi.UseVisualStyleBackColor = true;
+            this.btnResi.Click += new System.EventHandler(this.btnResi_Click);
+            // 
             // FrmPositioning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 575);
+            this.Controls.Add(this.btnResi);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.button1);
@@ -303,5 +315,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnRestart;
+        private System.Windows.Forms.Button btnResi;
     }
 }

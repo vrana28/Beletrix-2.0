@@ -74,6 +74,9 @@ namespace FrmLogin
             frmExit = new FrmExit(leavingItemsController);
             frmExit.ShowDialog();
         }
+
+        
+
         public void OpenFrmPositioning(PositionController positionController)
         {
             frmPositioning = new FrmPositioning(positionController);

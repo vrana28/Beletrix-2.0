@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Collections.Specialized;
+using Org.BouncyCastle.Ocsp;
 
 namespace FrmLogin.Communication
 {
@@ -81,6 +82,13 @@ namespace FrmLogin.Communication
             return (List<Client>)client.GetResponseResult();
         }
 
+        internal void RestartDatabase()
+        {
+            Request r = new Request { Operation = Operation.RestartDatabase };
+            client.SendRequest(r);
+            client.GetResponseResult();
+        }
+
         internal void SaveStorekeeper(Storekeeper s)
         {
             Request r = new Request { Operation = Operation.SaveStorekeeper, RequestObject = s };
@@ -105,6 +113,13 @@ namespace FrmLogin.Communication
         internal void UpdateRoba(Roba roba)
         {
             Request r = new Request { Operation = Operation.UpdateRoba, RequestObject = roba };
+            client.SendRequest(r);
+            client.GetResponseResult();
+        }
+
+        internal void UpdateEntranceAndPosition(string txtEntranceId, string txtPositionId)
+        {
+            Request r = new Request { Operation = Operation.UpdateEntranceAndPositoin, RequestObject = txtEntranceId, RequestObject2 = txtPositionId };
             client.SendRequest(r);
             client.GetResponseResult();
         }
@@ -213,9 +228,9 @@ namespace FrmLogin.Communication
             return (bool)client.GetResponseResult();
         }
 
-        internal void LeaveEntrance(EntrancePosition entrancePosition)
+        internal void LeaveEntrance(Entrance entrance)
         {
-            Request r = new Request { Operation = Operation.LeaveEntrancePosition, RequestObject = entrancePosition };
+            Request r = new Request { Operation = Operation.LeaveEntrance, RequestObject = entrance };
             client.SendRequest(r);
             client.GetResponseResult();
         }
@@ -282,6 +297,13 @@ namespace FrmLogin.Communication
             Request r = new Request { Operation = Operation.LeavingEntranceItem, RequestObject = listaItemaZaIzlaz, RequestObject2 = listaItemaZaUpdate };
             client.SendRequest(r);
             client.GetResponseResult();
+        }
+
+        internal Entrance ReturnEntrance(string pozicija)
+        {
+            Request r = new Request { Operation = Operation.ReturnEntrance, RequestObject = pozicija };
+            client.SendRequest(r);
+            return (Entrance)client.GetResponseResult();
         }
     }
 }

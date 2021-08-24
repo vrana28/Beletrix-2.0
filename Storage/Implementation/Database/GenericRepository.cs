@@ -88,6 +88,11 @@ namespace Storage.Implementation.Database
             return broker.ReturnEntity(entity, uslov);
         }
 
+        public IEntity Return2(IEntity position, object positionId)
+        {
+            return broker.ReturnEntity2(position, positionId);
+        }
+
         public void Rollback()
         {
             broker.Rollback();
@@ -133,11 +138,16 @@ namespace Storage.Implementation.Database
         {
             if (ent1.GetType() == typeof(Position))
             {
-                broker.UpdateWithParameter3(ent1, entity);
+                broker.UpdateWithParameter3(ent1, (Entrance)entity);
             }
             else {
-                broker.UpdateWithParameter2(ent1, entity);
+                broker.UpdateWithParameter2(ent1, (Entrance)entity);
             }
+        }
+
+        public void UpdateWithParameters3(Entrance e, string positionId)
+        {
+            broker.UpdateEntranceWithPostion(e, positionId);
         }
     }
 }

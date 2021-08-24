@@ -31,7 +31,7 @@ namespace Domain
         [Browsable(false)]
         public object SelectValues => "e.EntranceId";
         [Browsable(false)]
-        public object WhereValues => throw new NotImplementedException();
+        public object WhereValues => "";
         [Browsable(false)]
         public object SetValues => "where EntranceId =";
         [Browsable(false)]
@@ -57,7 +57,17 @@ namespace Domain
 
         public List<IEntity> GetEntities(SqlDataReader reader)
         {
-            throw new NotImplementedException();
+            List<IEntity> result = new List<IEntity>();
+            while (reader.Read())
+            {
+                EntrancePosition ep = new EntrancePosition
+                {
+                    EntranceId = (int)reader[0],
+                    PositionId = (string)reader[1]
+                };
+                result.Add(ep);
+            }
+            return result;
         }
 
         public IEntity ReturnEntity(SqlDataReader reader)

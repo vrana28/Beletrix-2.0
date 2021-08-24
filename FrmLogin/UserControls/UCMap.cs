@@ -2619,8 +2619,12 @@ namespace FrmLogin.UserControls
             ShowPosition(S74.Name);
         }
 
+
         #endregion
 
-       
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

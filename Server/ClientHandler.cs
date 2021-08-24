@@ -156,8 +156,8 @@ namespace Server
                 case Operation.ReturnEntranceItems:
                     response.Result = Controler.Instance.ReturnEntranceItems((int)request.RequestObject);
                     break;
-                case Operation.LeaveEntrancePosition:
-                    Controler.Instance.LeaveEntrance((EntrancePosition)request.RequestObject);
+                case Operation.LeaveEntrance:
+                    Controler.Instance.LeaveEntrance((Entrance)request.RequestObject);
                     break;
                 case Operation.LeavingEntranceItem:
                     Controler.Instance.LeavingEntranceItems((List<LeavingItem>)request.RequestObject, (List<EntranceItems>)request.RequestObject2);
@@ -176,6 +176,15 @@ namespace Server
                     break;
                 case Operation.FindStorekeeper:
                     response.Result = Controler.Instance.FindStorekeeper((Storekeeper)request.RequestObject);
+                    break;
+                case Operation.UpdateEntranceAndPositoin:
+                    Controler.Instance.UpdateEntranceAndPosition(Int32.Parse((string)(request.RequestObject)), (string)request.RequestObject2);
+                    break;
+                case Operation.RestartDatabase:
+                    Controler.Instance.RestartDatabase();
+                    break;
+                case Operation.ReturnEntrance:
+                    response.Result = Controler.Instance.ReturnEntrances((string)request.RequestObject);
                     break;
             }
             return response;

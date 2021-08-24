@@ -42,6 +42,7 @@ namespace FrmLogin
             this.robedeleteupdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@ namespace FrmLogin
             this.mapToolStripMenuItem,
             this.addStorekeeperToolStripMenuItem,
             this.clientsToolStripMenuItem,
-            this.robeToolStripMenuItem});
+            this.robeToolStripMenuItem,
+            this.restartToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1350, 24);
@@ -150,6 +152,10 @@ namespace FrmLogin
             this.lblUser.Size = new System.Drawing.Size(0, 13);
             this.lblUser.TabIndex = 2;
             // 
+            // restartToolStripMenuItem
+            // 
+
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,5 +193,6 @@ namespace FrmLogin
         private System.Windows.Forms.ToolStripMenuItem robeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addRobuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem robedeleteupdateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
     }
 }

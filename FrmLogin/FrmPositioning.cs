@@ -61,6 +61,9 @@ namespace FrmLogin
         {
             positionController.Connect(this);
         }
-
+        private void btnResi_Click(object sender, EventArgs e)
+        {
+            positionController.Restart();
+        }
     }
 }

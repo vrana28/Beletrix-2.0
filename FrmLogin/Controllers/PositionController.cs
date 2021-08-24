@@ -1,4 +1,5 @@
 ﻿using Domain;
+using FrmLogin.Communication;
 using FrmLogin.Helpers;
 using System;
 using System.Collections.Generic;
@@ -68,6 +69,19 @@ namespace FrmLogin.Controllers
             frmPositioning.DGVEntrances.DataSource = Communication.Communication.Instance.GetAllEntrances();
         }
 
+        internal void Restart()
+        {
+            try
+            {
+                Communication.Communication.Instance.RestartDatabase();
+                MessageBox.Show("Uspesan Update Baze - Pozdrav");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         internal void ReturnSelectedPosition(FrmPositioning frmPositioning)
         {
             try
@@ -90,15 +104,17 @@ namespace FrmLogin.Controllers
                 return;
             }
 
-            EntrancePosition ep = new EntrancePosition
-            {
-                EntranceId = int.Parse(frmPositioning.TxtEntranceId.Text),
-                PositionId = frmPositioning.TxtPositionId.Text
-            };
+            //EntrancePosition ep = new EntrancePosition
+            //{
+            //    EntranceId = int.Parse(frmPositioning.TxtEntranceId.Text),
+            //    PositionId = frmPositioning.TxtPositionId.Text
+            //};
+            
 
             try
             {
-                Communication.Communication.Instance.AddEntrancePosition(ep);
+                //Communication.Communication.Instance.AddEntrancePosition(ep);
+                Communication.Communication.Instance.UpdateEntranceAndPosition(frmPositioning.TxtEntranceId.Text, frmPositioning.TxtPositionId.Text);
                 Refresh(frmPositioning);
                 MessageBox.Show("Povezano");
             }

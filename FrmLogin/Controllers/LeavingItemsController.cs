@@ -25,6 +25,7 @@ namespace FrmLogin.Controllers
         public Client Client{ get; set; }
         public Roba Roba{ get; set; }
         public EntrancePosition EntrancePosition { get; set; }
+        public Entrance Entrance { get; set; }
         public DateTime LeavingDate { get; set; }
         public List<LeavingItem> listaItemaZaIzlaz { get; set; } = new List<LeavingItem>();
         public List<EntranceItems> listaItemaZaUpdate { get; set; } = new List<EntranceItems>();
@@ -101,14 +102,15 @@ namespace FrmLogin.Controllers
                 return;
             }
 
-            var confirmResult = MessageBox.Show($"Da li ste sigurni da hocete da oslobodite poziciju {EntrancePosition.PositionId}",
+            var confirmResult = MessageBox.Show($"Da li ste sigurni da hocete da oslobodite poziciju {Entrance.PositionId}",
                                      "Potvrdi!!",
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
                 try
                 {
-                    Communication.Communication.Instance.LeaveEntrance(EntrancePosition);
+                    //Entrance = Communication.Communication.Instance.FindEntrance(Entrance.EntranceId);
+                    Communication.Communication.Instance.LeaveEntrance(Entrance);
                     MessageBox.Show("Izaslo!");
                     RefreshGridView1(frmExit);
                 }
@@ -292,8 +294,10 @@ namespace FrmLogin.Controllers
                 DataGridViewRow row = frmExit.DGVAllItems.SelectedRows[0];
                 pozicija = (string)row.Cells[1].Value;
                 frmExit.LblPozicija.Text = pozicija;
-                EntrancePosition = Communication.Communication.Instance.ReturnEntrancePositions(pozicija);
-                BindingList<EntranceItems> items = new BindingList<EntranceItems>(Communication.Communication.Instance.ReturnEntranceItems(EntrancePosition.EntranceId));
+                //EntrancePosition = Communication.Communication.Instance.ReturnEntrancePositions(pozicija);
+                Entrance = Communication.Communication.Instance.ReturnEntrance(pozicija);
+                Entrance.PositionId = pozicija;
+                BindingList<EntranceItems> items = new BindingList<EntranceItems>(Communication.Communication.Instance.ReturnEntranceItems(Entrance.EntranceId));
                 frmExit.DGVSelectedtems.DataSource = items;
                 InitialGridView(frmExit);
             }

@@ -66,11 +66,23 @@ namespace DatabaseBroker
                 throw new Exception("Database error!");
             }
         }
+
+        public IEntity ReturnEntity2(IEntity position, object positionId)
+        {
+            IEntity result;
+            SqlCommand command = new SqlCommand("", connection, transaction);
+            command.CommandText = $"select * from {position.TableName} where PositionId like '{positionId}'";
+            SqlDataReader reader = command.ExecuteReader();
+            result = position.ReturnEntity(reader);
+            reader.Close();
+            return result;
+        }
+
         // id repository
-        public void UpdateWithParameter2(IEntity entity, IEntity ent)
+        public void UpdateWithParameter2(IEntity entity, Entrance ent)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);
-            command.CommandText = $"update {entity.TableName} {entity.SetValues2} {ent.IdName}";
+            command.CommandText = $"update {entity.TableName} {entity.SetValues2} {ent.EntranceId}";
             if (command.ExecuteNonQuery() != 1)
             {
                 throw new Exception("Database error!");
@@ -94,11 +106,21 @@ namespace DatabaseBroker
             }
         }
 
-        //id entrance
-        public void UpdateWithParameter3(IEntity entity, IEntity ent)
+        public void UpdateEntranceWithPostion(Entrance e, string positionId)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);
-            command.CommandText = $"update {entity.TableName} {entity.SetValues2} '{ent.JoinCondition}'";
+            command.CommandText = $"update {e.TableName} {e.SetValues3} '{positionId}', Obradjen = 1, Aktivno = 1 {e.SetValues4} {e.EntranceId} ";
+            if (command.ExecuteNonQuery() != 1)
+            {
+                throw new Exception("Database error - entrance update!");
+            }
+        }
+
+        //id entrance
+        public void UpdateWithParameter3(IEntity entity, Entrance ent)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+            command.CommandText = $"update {entity.TableName} {entity.SetValues2} '{ent.PositionId}'";
             if (command.ExecuteNonQuery() != 1)
             {
                 throw new Exception("Database error!");
