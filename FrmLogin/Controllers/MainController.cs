@@ -65,5 +65,10 @@ namespace FrmLogin.Controllers
         {
             MainCoordinator.Instance.OpenFrmGetAllEntrances(new Controllers.EntranceController());
         }
+
+        internal void OpenGetAllLeavingEntraces(FrmMain frmMain)
+        {
+            MainCoordinator.Instance.OpenFrmGetAllLeavingEntrances(new Controllers.EntranceController());
+        }
     }
 }

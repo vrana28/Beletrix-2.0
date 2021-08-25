@@ -17,8 +17,11 @@ namespace Storage
         void Update(IEntity entity);
         bool Exist(IEntity entity);
         void UpdateWithParameters2(IEntity ent1, IEntity entity);
+        DataTable GetOutputEntrances(Entrance entity, LeavingItem leavingItem, Client client, Roba roba);
+        DataTable GetOutputEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo);
         DataTable GetBusyEntrances(IEntity entity, Client client, Roba roba);
         DataTable ShowEntranceItems(IEntity entity, object uslov);
+        DataTable GetBusyEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo);
         Position Return3(Position position, string positionId);
         IEntity Return2(IEntity position, object positionId);
         void SaveEntranceItem(EntranceItems ei);

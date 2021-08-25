@@ -90,5 +90,10 @@ namespace FrmLogin
         {
             mainController.OpenGetAllEntrances(this);
         }
+
+        private void iskladištenjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mainController.OpenGetAllLeavingEntraces(this);
+        }
     }
 }

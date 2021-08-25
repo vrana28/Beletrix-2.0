@@ -69,6 +69,12 @@ namespace FrmLogin.Controllers
                     frmEnterArtikal.frmGetAllEntrances.TxtArtikal.Text = Roba.Name;
                     frmEnterArtikal.Dispose();
                     break;
+                case 5:
+                    DataGridViewRow row4 = frmEnterArtikal.DGVArtikli.SelectedRows[0];
+                    Roba = (Roba)row4.DataBoundItem;
+                    frmEnterArtikal.frmGetAllLeavingEntrances.TxtArtikal.Text = Roba.Name;
+                    frmEnterArtikal.Dispose();
+                    break;
             }
         }
 

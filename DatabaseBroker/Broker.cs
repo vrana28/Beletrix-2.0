@@ -47,6 +47,93 @@ namespace DatabaseBroker
             }
         }
 
+        public DataTable BusyEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+
+            if (client != null && roba != null)
+            {
+                command.CommandText = $" {entity.Izvestaj} and r.Name = '{roba.Name}' and c.Name = '{client.Name}' and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} ) {entity.Order}";
+            }
+            if (client != null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj} and c.Name = '{client.Name}' and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} ) {entity.Order}";
+            }
+            if (client == null && roba != null)
+            {
+                command.CommandText = $"{entity.Izvestaj} and r.Name = '{roba.Name}' and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} ) {entity.Order}";
+            }
+            if (client == null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj} and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} ) {entity.Order}";
+            }
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            dataAdapter.Fill(table);
+            return table;
+        }
+
+        public DataTable OutputEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+
+            if (client != null && roba != null)
+            {
+                command.CommandText = $" {entity.Izvestaj2} and r.Name = '{roba.Name}' and c.Name = '{client.Name}' and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} )) {entity.Izvestaj2Nastavak} where r.Name = '{roba.Name}' and c.Name = '{client.Name}' and (MONTH(e.DateOfEntrance) >= {datumOd.Month} and DAY(e.DateOfEntrance) >= {datumOd.Day} and YEAR(e.DateOfEntrance) >= {datumOd.Year} ) and ( MONTH(e.DateOfEntrance) <= {datumDo.Month} and DAY(e.DateOfEntrance) <= {datumDo.Day} and YEAR(e.DateOfEntrance) <= {datumDo.Year} ) ) {entity.Order}";
+            }
+            if (client != null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} and c.Name = '{client.Name}' and (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} )) {entity.Izvestaj2Nastavak} where c.Name = '{client.Name}' and (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} ) ) {entity.Order}";
+            }
+            if (client == null && roba != null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} and r.Name = '{roba.Name}' and (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} )) {entity.Izvestaj2Nastavak} where r.Name = '{roba.Name}' and (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} ) )  {entity.Order}";
+            }
+            if (client == null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} and (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} ) ) {entity.Izvestaj2Nastavak} where  (MONTH(e.DateOfExit) >= {datumOd.Month} and DAY(e.DateOfExit) >= {datumOd.Day} and YEAR(e.DateOfExit) >= {datumOd.Year} ) and ( MONTH(e.DateOfExit) <= {datumDo.Month} and DAY(e.DateOfExit) <= {datumDo.Day} and YEAR(e.DateOfExit) <= {datumDo.Year} ) ) {entity.Order}";
+            }
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            dataAdapter.Fill(table);
+            return table;
+        }
+
+        public DataTable OutputEntrances(Entrance entity, LeavingItem leavingItem, Client client, Roba roba)
+        {
+            SqlCommand command = new SqlCommand("", connection, transaction);
+
+            if (client != null && roba != null)
+            {
+                command.CommandText = $" {entity.Izvestaj2} and r.Name = '{roba.Name}' and c.Name = '{client.Name}' ) {entity.Izvestaj2Nastavak} where r.Name = '{roba.Name}' and c.Name = '{client.Name}' ) {entity.Order}";
+            }
+            if (client != null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} and c.Name = '{client.Name}' ) {entity.Izvestaj2Nastavak} where c.Name = '{client.Name}' ) {entity.Order}";
+            }
+            if (client == null && roba != null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} and r.Name = '{roba.Name}' ) {entity.Izvestaj2Nastavak} where r.Name = '{roba.Name}' )  {entity.Order}";
+            }
+            if (client == null && roba == null)
+            {
+                command.CommandText = $"{entity.Izvestaj2} ) {entity.Izvestaj2Nastavak} ) {entity.Order}";
+            }
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            dataAdapter.Fill(table);
+            return table;
+        }
+
         public DataTable BusyEntrances(Entrance entity, Client client, Roba roba)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);

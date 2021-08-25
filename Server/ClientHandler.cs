@@ -192,6 +192,15 @@ namespace Server
                 case Operation.FindBusyEntrances:
                     response.Result = Controler.Instance.FindBusyEntrances((Client)request.RequestObject, (Roba)request.RequestObject2);
                     break;
+                case Operation.FindBusyEntrancesWithDate:
+                    response.Result = Controler.Instance.FindBusyEntrancesWithDate((Client)request.RequestObject, (Roba)request.RequestObject2, (DateTime)request.RequestObject3, (DateTime)request.RequestObject4);
+                    break;
+                case Operation.FindOutputEntrances:
+                    response.Result = Controler.Instance.FindOutputEntrances((Client)request.RequestObject, (Roba)request.RequestObject2);
+                    break;
+                case Operation.FindOutputEntrancesWithDate:
+                    response.Result = Controler.Instance.FindOutputEntrancesWithDate((Client)request.RequestObject, (Roba)request.RequestObject2, (DateTime)request.RequestObject3, (DateTime)request.RequestObject4);
+                    break;
             }
             return response;
         }

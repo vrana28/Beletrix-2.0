@@ -34,6 +34,7 @@ namespace FrmLogin
         public FrmFind frmFind;
         public FrmExit frmExit;
         public FrmGetAllEntrances frmGetAllEntrances;
+        public FrmGetAllLeavingEntrances frmGetAllLeavingEntrances;
 
         private LoginController loginController = new LoginController();
         private MainController mainController = new MainController();
@@ -74,6 +75,12 @@ namespace FrmLogin
         {
             frmExit = new FrmExit(leavingItemsController);
             frmExit.ShowDialog();
+        }
+
+        internal void OpenFrmGetAllLeavingEntrances(EntranceController entranceController)
+        {
+            frmGetAllLeavingEntrances = new FrmGetAllLeavingEntrances(entranceController);
+            frmGetAllLeavingEntrances.ShowDialog();
         }
 
         internal void OpenFrmGetAllEntrances(EntranceController entranceController)

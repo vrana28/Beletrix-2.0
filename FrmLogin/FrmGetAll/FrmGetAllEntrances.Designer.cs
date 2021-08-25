@@ -197,33 +197,36 @@
             this.btnPrint.TabIndex = 38;
             this.btnPrint.Text = "Štampa";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // dgvEntrances
             // 
             this.dgvEntrances.AllowUserToAddRows = false;
             this.dgvEntrances.AllowUserToDeleteRows = false;
             this.dgvEntrances.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEntrances.Location = new System.Drawing.Point(49, 235);
+            this.dgvEntrances.Location = new System.Drawing.Point(26, 235);
             this.dgvEntrances.Name = "dgvEntrances";
             this.dgvEntrances.ReadOnly = true;
-            this.dgvEntrances.Size = new System.Drawing.Size(896, 348);
+            this.dgvEntrances.Size = new System.Drawing.Size(919, 348);
             this.dgvEntrances.TabIndex = 40;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(416, 144);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(406, 186);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 13);
+            this.label5.Size = new System.Drawing.Size(201, 20);
             this.label5.TabIndex = 41;
             this.label5.Text = "Ukupno uskladišteno ( kg ):";
             // 
             // lblStanje
             // 
             this.lblStanje.AutoSize = true;
-            this.lblStanje.Location = new System.Drawing.Point(416, 183);
+            this.lblStanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblStanje.Location = new System.Drawing.Point(626, 186);
             this.lblStanje.Name = "lblStanje";
-            this.lblStanje.Size = new System.Drawing.Size(0, 13);
+            this.lblStanje.Size = new System.Drawing.Size(0, 20);
             this.lblStanje.TabIndex = 42;
             // 
             // FrmGetAllEntrances

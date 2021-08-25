@@ -197,6 +197,12 @@
     <Compile Include="FrmGetAll\FrmGetAllStorekeepers.Designer.cs">
       <DependentUpon>FrmGetAllStorekeepers.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGetAll\FrmGetAllLeavingEntrances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetAll\FrmGetAllLeavingEntrances.Designer.cs">
+      <DependentUpon>FrmGetAllLeavingEntrances.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGetAll\FrmGetAllStorekeepers.resx">
       <DependentUpon>FrmGetAllStorekeepers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGetAll\FrmGetAllLeavingEntrances.resx">
+      <DependentUpon>FrmGetAllLeavingEntrances.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

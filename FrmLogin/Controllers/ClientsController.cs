@@ -77,6 +77,12 @@ namespace FrmLogin.Controllers
                     frmEnterClient.frmGetAllEntrances.TxtClient.Text = Client.Name;
                     frmEnterClient.Dispose();
                     break;
+                case 5:
+                    DataGridViewRow row4 = frmEnterClient.DGVClientsToEnter.SelectedRows[0];
+                    Client = (Client)row4.DataBoundItem;
+                    frmEnterClient.frmGetAllLeavingEntrances.TxtClient.Text = Client.Name;
+                    frmEnterClient.Dispose();
+                    break;
             }
         }
 

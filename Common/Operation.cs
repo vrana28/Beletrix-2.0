@@ -46,5 +46,8 @@ namespace Common
         ReturnEntrance,
         DeleteEntrance,
         FindBusyEntrances,
+        FindBusyEntrancesWithDate,
+        FindOutputEntrances,
+        FindOutputEntrancesWithDate,
     }
 }

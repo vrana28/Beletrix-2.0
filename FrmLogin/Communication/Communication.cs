@@ -89,6 +89,13 @@ namespace FrmLogin.Communication
             return (List<Client>)client.GetResponseResult();
         }
 
+        internal DataTable FindOutputEntrances(Client clients, Roba roba)
+        {
+            Request r = new Request { Operation = Operation.FindOutputEntrances, RequestObject = clients, RequestObject2 = roba };
+            client.SendRequest(r);
+            return (DataTable)client.GetResponseResult();
+        }
+
         internal void RestartDatabase()
         {
             Request r = new Request { Operation = Operation.RestartDatabase };
@@ -108,6 +115,13 @@ namespace FrmLogin.Communication
             Request r = new Request { Operation = Operation.DeleteEntrance, RequestObject = entranceId };
             client.SendRequest(r);
             client.GetResponseResult();
+        }
+
+        internal DataTable FindBusyEntrancesWithDate(Client clients, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            Request r = new Request { Operation = Operation.FindBusyEntrancesWithDate, RequestObject = clients, RequestObject2 = roba, RequestObject3 = datumOd, RequestObject4 = datumDo };
+            client.SendRequest(r);
+            return (DataTable)client.GetResponseResult();
         }
 
         internal DataTable ShowEntranceItems(string positionId)
@@ -311,6 +325,13 @@ namespace FrmLogin.Communication
             Request r = new Request { Operation = Operation.LeavingEntranceItem, RequestObject = listaItemaZaIzlaz, RequestObject2 = listaItemaZaUpdate };
             client.SendRequest(r);
             client.GetResponseResult();
+        }
+
+        internal object FindOutputEntrancesWithDate(Client clients, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            Request r = new Request { Operation = Operation.FindOutputEntrancesWithDate, RequestObject = clients, RequestObject2 = roba, RequestObject3 = datumOd, RequestObject4 = datumDo };
+            client.SendRequest(r);
+            return (DataTable)client.GetResponseResult();
         }
 
         internal Entrance ReturnEntrance(string pozicija)

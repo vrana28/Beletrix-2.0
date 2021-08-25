@@ -57,6 +57,11 @@ namespace Storage.Implementation.Database
             return broker.BusyEntrances((Entrance)entity, client, roba);
         }
 
+        public DataTable GetBusyEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            return broker.BusyEntrancesWithDate((Entrance)entity, client, roba, datumOd, datumDo);
+        }
+
         public DataTable GetBusyPositions(IEntity entity1, IEntity entity2, IEntity entity3)
         {
             return broker.BusyPosition(entity1, entity2, entity3);
@@ -70,6 +75,16 @@ namespace Storage.Implementation.Database
         public int GetNewId(IEntity e)
         {
             throw new NotImplementedException();
+        }
+
+        public DataTable GetOutputEntrances(Entrance entity, LeavingItem leavingItem, Client client, Roba roba)
+        {
+            return broker.OutputEntrances((Entrance)entity, leavingItem, client, roba);
+        }
+
+        public DataTable GetOutputEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            return broker.OutputEntrancesWithDate((Entrance)entity, client, roba, datumOd, datumDo);
         }
 
         public double GetWeightOfBox(IEntity entity, object uslov)

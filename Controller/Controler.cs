@@ -324,6 +324,40 @@ namespace Controller
             return so.Result;
         }
 
+        public object FindBusyEntrancesWithDate(Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            //** NOVO UPDATE v2.1
+            GetBusyEntrancesWithDateSO so = new GetBusyEntrancesWithDateSO();
+            so.Client = client;
+            so.Roba = roba;
+            so.DatumOd = datumOd;
+            so.DatumDo = datumDo;
+            so.ExecuteTemplate(new Entrance());
+            return so.Result;
+        }
+
+        public object FindOutputEntrancesWithDate(Client client, Roba roba, DateTime datumOd, DateTime datumDo)
+        {
+            //** NOVO UPDATE v2.1
+            GetOutputEntrancesWithDateSO so = new GetOutputEntrancesWithDateSO();
+            so.Client = client;
+            so.Roba = roba;
+            so.DatumOd = datumOd;
+            so.DatumDo = datumDo;
+            so.ExecuteTemplate(new Entrance());
+            return so.Result;
+        }
+
+        public object FindOutputEntrances(Client client, Roba roba)
+        {
+            //** NOVO UPDATE v2.1
+            GetOutputEntrancesSO so = new GetOutputEntrancesSO();
+            so.Client = client;
+            so.Roba = roba;
+            so.ExecuteTemplate(new Entrance());
+            return so.Result;
+        }
+
         public void DeleteEntrance(string requestObject)
         {
             // NOVO UPDATE v2.1

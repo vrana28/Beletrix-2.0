@@ -41,11 +41,11 @@ namespace FrmLogin
             this.addRobuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.robedeleteupdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlMain = new System.Windows.Forms.Panel();
-            this.lblUser = new System.Windows.Forms.Label();
             this.izveštajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uskladištenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iskladištenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblUser = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,22 +145,6 @@ namespace FrmLogin
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
             this.restartToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
             // 
-            // pnlMain
-            // 
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(0, 24);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1350, 706);
-            this.pnlMain.TabIndex = 1;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(741, 8);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(0, 13);
-            this.lblUser.TabIndex = 2;
-            // 
             // izveštajiToolStripMenuItem
             // 
             this.izveštajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -182,6 +166,23 @@ namespace FrmLogin
             this.iskladištenjeToolStripMenuItem.Name = "iskladištenjeToolStripMenuItem";
             this.iskladištenjeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iskladištenjeToolStripMenuItem.Text = "Iskladištenje";
+            this.iskladištenjeToolStripMenuItem.Click += new System.EventHandler(this.iskladištenjeToolStripMenuItem_Click);
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(0, 24);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1350, 706);
+            this.pnlMain.TabIndex = 1;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(741, 8);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(0, 13);
+            this.lblUser.TabIndex = 2;
             // 
             // FrmMain
             // 

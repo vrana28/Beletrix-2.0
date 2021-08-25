@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="349192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="357896">
       <assemblyIdentity name="Beletrix 2.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>A4tcFYZODHhGHSy2ZPP7m68CGokH7Zl66PEx1Qojqeo=</dsig:DigestValue>
+        <dsig:DigestValue>VpAoLRVZFbIfTuZaBkopT4XKmYRBfIgD1T+oHsFA2J8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -67,26 +67,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="7168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="7680">
       <assemblyIdentity name="Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZmYgfnuJW9+R333Ot0jzNjoN2cK/3gcGUutt+QHDK5A=</dsig:DigestValue>
+        <dsig:DigestValue>5okHjrvc2ngzyi2FdEEdGvPz+Diu7qNp+uZ1xMrOj0U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Domain.dll" size="29184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Domain.dll" size="31744">
       <assemblyIdentity name="Domain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FueXOlS9PCe6P0rljxFCwHC4d8dtlUNOAkYvI6cHUfI=</dsig:DigestValue>
+        <dsig:DigestValue>wT4n5Y5IaLX6KJOfHlr5WhdxnNPAx06OYIji3LfVfq4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

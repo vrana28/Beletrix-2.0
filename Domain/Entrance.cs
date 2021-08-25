@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -71,6 +72,20 @@ namespace Domain
                + $"join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1 and e.DateOfExit < '{new DateTime(2019,8,18)}' ";
         [Browsable(false)]
         public string Order => " order by e.PositionId";
+        [Browsable(false)]
+        public string Izvestaj2 => "(select e.EntranceID as Sifra_Ulaza, r.Name as Artikal, e.PositionId as Pozicija, (ei.NumOfBoxes* r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+                   " r.WeightOfBox as Tezina_Kutije, e.Dimension as Dobavljac, c.Name as Klijent, e.DateOfEntrance as Datum_ulaza, e.DateOfExit as Datum_Izlaza, "
+               + $" ei.DateOfManu as Datum_Proizvodnje from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+               + $"join Roba r on (r.RobaId = ei.RobaId) "
+               + $"join Clients c on (c.ClientId = e.ClientId) " +
+            $" where e.DateOfExit > '{new DateTime(2019, 8, 18)}'  ";
+        [Browsable(false)]
+        public string Izvestaj2Nastavak => " UNION" +
+            $" ( select e.EntranceID as Sifra_Ulaza, r.Name as Artikal, e.PositionId as Pozicija, (li.NumOfBoxes* r.WeightOfBox) as Tezina,li.NumOfBoxes as Broj_Kutija," +
+                   " r.WeightOfBox as Tezina_Kutije, e.Dimension as Dobavljac, c.Name as Klijent, e.DateOfEntrance as Datum_ulaza, li.DateOfLeaving as Datum_Izlaza, "
+               + $" ei.DateOfManu as Datum_Proizvodnje from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
+               + $" join LeavingItems li on (li.EntranceId = e.EntranceId) join Roba r on (r.RobaId = li.RobaId) "
+               + $"join Clients c on (c.ClientId = e.ClientId) ";
         public void AddParametres(SqlCommand command)
         {
             command.Parameters.AddWithValue("@Weight", TotalWeight);
