@@ -21,13 +21,13 @@ namespace Domain
         [Browsable(false)]
         public string IdName => throw new NotImplementedException();
         [Browsable(false)]
-        public string JoinCondition => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string JoinCondition => "select e.EntranceId as Sifra_Ulaza,r.Name as Artikal,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
                + $"join Roba r on (r.RobaId = ei.RobaId)"
                + $"join Clients c on (c.ClientId = e.ClientId) where e.Aktivno = 1 and r.RobaId = ";
         [Browsable(false)]
-        public string JoinTable => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Ukupna_Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string JoinTable => "select e.EntranceId as Sifra_Ulaza,r.Name as Artikal,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Ukupna_Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije, c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
                + $"join Roba r on (r.RobaId = ei.RobaId)"
@@ -53,7 +53,7 @@ namespace Domain
         [Browsable(false)]
         public object WherePosition => $" where Slobodno = '{true}'";
         [Browsable(false)]
-        public string All => "select r.Name as Product,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
+        public string All => "select e.EntranceId as Sifra_Ulaza,r.Name as Artikal,e.PositionId as Pozicija,(ei.NumOfBoxes * r.WeightOfBox) as Tezina,ei.NumOfBoxes as Broj_Kutija," +
                    " r.WeightOfBox as Tezina_Kutije,c.Name as Klijent,"
                + $" ei.DateOfManu as Datum_Proiz from Entrance e join EntranceItems ei on (e.EntranceId = ei.EntranceId)"
                + $"join Roba r on (r.RobaId = ei.RobaId) "

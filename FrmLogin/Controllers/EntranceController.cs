@@ -68,6 +68,38 @@ namespace FrmLogin.Controllers
             }
         }
 
+        internal void RadioButtonClick(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            if (frmGetAllEntrances.DatumOdDo.Checked && !frmGetAllEntrances.isChecked)
+                frmGetAllEntrances.DatumOdDo.Checked = false;
+            else
+            {
+                frmGetAllEntrances.DatumOdDo.Checked = true;
+                frmGetAllEntrances.isChecked = false;
+            }
+        }
+
+        internal void RadioButtonClick(FrmGetAllLeavingEntrances frmGetAllLeavingEntrances)
+        {
+            if (frmGetAllLeavingEntrances.DatumOdDo.Checked && !frmGetAllLeavingEntrances.isChecked)
+                frmGetAllLeavingEntrances.DatumOdDo.Checked = false;
+            else
+            {
+                frmGetAllLeavingEntrances.DatumOdDo.Checked = true;
+                frmGetAllLeavingEntrances.isChecked = false;
+            }
+        }
+
+        internal void ChangeRadioButton(FrmGetAllEntrances frmGetAllEntrances)
+        {
+            frmGetAllEntrances.isChecked = frmGetAllEntrances.DatumOdDo.Checked;
+        }
+
+        internal void ChangeRadioButton(FrmGetAllLeavingEntrances frmGetAllLeavingEntrances)
+        {
+            frmGetAllLeavingEntrances.isChecked = frmGetAllLeavingEntrances.DatumOdDo.Checked;
+        }
+
         internal void Load(FrmGetAllLeavingEntrances frmGetAllLeavingEntrances)
         {
             try
@@ -200,6 +232,124 @@ namespace FrmLogin.Controllers
             }
         }
 
+        internal void Print(FrmGetAllLeavingEntrances frmGetAllLeavingEntrances)
+        {
+            if (frmGetAllLeavingEntrances.DGVLeavingEntrances.Rows.Count > 0)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "PDF (*.pdf)|*.pdf";
+                sfd.FileName = "Uskladistenje.pdf";
+                bool fileError = false;
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    if (File.Exists(sfd.FileName))
+                    {
+                        try
+                        {
+                            File.Delete(sfd.FileName);
+                        }
+                        catch (IOException ex)
+                        {
+                            fileError = true;
+                            MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
+                        }
+                    }
+                    if (!fileError)
+                    {
+                        try
+                        {
+                            PdfPTable pdfTable = new PdfPTable(frmGetAllLeavingEntrances.DGVLeavingEntrances.Columns.Count);
+                            pdfTable.DefaultCell.Padding = 3;
+                            pdfTable.WidthPercentage = 100;
+                            pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
+
+                            foreach (DataGridViewColumn column in frmGetAllLeavingEntrances.DGVLeavingEntrances.Columns)
+                            {
+                                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                                pdfTable.AddCell(cell);
+                            }
+
+                            foreach (DataGridViewRow row in frmGetAllLeavingEntrances.DGVLeavingEntrances.Rows)
+                            {
+                                foreach (DataGridViewCell cell in row.Cells)
+                                {
+                                    pdfTable.AddCell(cell.Value.ToString());
+                                }
+                            }
+
+                            using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))
+                            {
+                                Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                                PdfWriter.GetInstance(pdfDoc, stream);
+                                pdfDoc.Open();
+
+                                //var imagepath = @"D:\..\Logo.png";
+                                //using (FileStream fs = new FileStream(imagepath, FileMode.Open))
+                                //{
+                                //    var png = Image.GetInstance(System.Drawing.Image.FromStream(fs),
+                                //        ImageFormat.Png);
+                                //    png.ScalePercent(5f);
+                                //    png.SetAbsolutePosition(pdfDoc.Left, pdfDoc.Top);
+                                //    pdfDoc.Add(png);
+                                //}
+
+                                var spacer = new Paragraph("")
+                                {
+                                    SpacingBefore = 10f,
+                                    SpacingAfter = 10f,
+                                };
+                                Font titleFont = FontFactory.GetFont("Arial", 32);
+                                Font regularFont = FontFactory.GetFont("Arial", 36);
+                                Paragraph title;
+                                title = new Paragraph("Iskladištenje", titleFont);
+                                pdfDoc.Add(title);
+                                pdfDoc.Add(spacer);
+                                var headerTable = new PdfPTable(new[] { .75f, 2f })
+                                {
+
+                                    WidthPercentage = 75,
+                                    DefaultCell = { MinimumHeight = 22f }
+                                };
+                                var culture = new CultureInfo("de-DE");
+                                headerTable.AddCell("Date");
+                                headerTable.AddCell(DateTime.Now.ToString(culture));
+                                headerTable.AddCell("Klijent:");
+                                if (Client == null)
+                                {
+                                    headerTable.AddCell("");
+                                }
+                                else
+                                {
+                                    headerTable.AddCell(Client.Name);
+                                }
+                                headerTable.AddCell("Ukupno iskladišteno:");
+                                headerTable.AddCell(frmGetAllLeavingEntrances.LblStanje.Text);
+                                headerTable.AddCell("Potpis magacionera ");
+                                headerTable.AddCell("                   ");
+
+                                pdfDoc.Add(headerTable);
+                                pdfDoc.Add(spacer);
+
+                                pdfDoc.Add(pdfTable);
+                                pdfDoc.Close();
+                                stream.Close();
+                            }
+
+                            MessageBox.Show("Uspešno exportovano!!!", "Info");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Greška :" + ex.Message);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nema šta da sačuva!!!", "Info");
+            }
+        }
+
         internal void SearchWithoutRoba(FrmGetAllEntrances frmGetAllEntrances)
         {
             try
@@ -235,7 +385,7 @@ namespace FrmLogin.Controllers
         internal void Search(FrmGetAllEntrances frmGetAllEntrances)
         {
             if (frmGetAllEntrances.DatumOdDo.Checked) {
-                if (frmGetAllEntrances.DateOd.Value > frmGetAllEntrances.DateDo.Value) {
+                if (frmGetAllEntrances.DateOd.Value > frmGetAllEntrances.DateDo.Value.AddHours(12)) {
                     MessageBox.Show("Greska!! Datum od mora biti starariji od datuma do.");
                     return;
                 }
@@ -263,7 +413,7 @@ namespace FrmLogin.Controllers
         {
             if (frmGetAllLeavingEntrances.DatumOdDo.Checked)
             {
-                if (frmGetAllLeavingEntrances.DateOd.Value > frmGetAllLeavingEntrances.DateDo.Value)
+                if (frmGetAllLeavingEntrances.DateOd.Value > frmGetAllLeavingEntrances.DateDo.Value.AddHours(12))
                 {
                     MessageBox.Show("Greska!! Datum od mora biti starariji od datuma do.");
                     return;

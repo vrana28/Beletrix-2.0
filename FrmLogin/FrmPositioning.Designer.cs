@@ -232,7 +232,7 @@
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(145, 81);
             this.btnConnect.TabIndex = 18;
-            this.btnConnect.Text = "CONNECT";
+            this.btnConnect.Text = "POVEŽI";
             this.btnConnect.UseVisualStyleBackColor = false;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
@@ -244,7 +244,7 @@
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(145, 41);
             this.btnRestart.TabIndex = 19;
-            this.btnRestart.Text = "Restart";
+            this.btnRestart.Text = "Restartuj";
             this.btnRestart.UseVisualStyleBackColor = false;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 

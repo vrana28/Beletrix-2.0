@@ -233,7 +233,7 @@ namespace FrmLogin.Controllers
             if (frmFind.DGVSearchResult.Rows.Count!=0) {
                 for (int i = 0; i < frmFind.DGVSearchResult.Rows.Count; i++) {
                     row = frmFind.DGVSearchResult.Rows[i];
-                    stanje += (double)row.Cells[2].Value;
+                    stanje += (double)row.Cells[3].Value;
                 }
             }
             return stanje.ToString() + " kg";

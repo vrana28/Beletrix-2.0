@@ -64,5 +64,16 @@ namespace FrmLogin.FrmGetAll
         {
             entranceController.Print(this);
         }
+
+        public bool isChecked = false;
+        private void rbDatumOdDo_CheckedChanged(object sender, EventArgs e)
+        {
+            entranceController.ChangeRadioButton(this);
+        }
+
+        private void rbDatumOdDo_Click(object sender, EventArgs e)
+        {
+            entranceController.RadioButtonClick(this);
+        }
     }
 }

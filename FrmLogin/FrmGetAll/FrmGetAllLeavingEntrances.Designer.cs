@@ -98,6 +98,7 @@
             this.btnPrint.TabIndex = 57;
             this.btnPrint.Text = "Štampa";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click_1);
             // 
             // dtpDo
             // 
@@ -140,6 +141,8 @@
             this.rbDatumOdDo.TabIndex = 52;
             this.rbDatumOdDo.TabStop = true;
             this.rbDatumOdDo.UseVisualStyleBackColor = true;
+            this.rbDatumOdDo.CheckedChanged += new System.EventHandler(this.rbDatumOdDo_CheckedChanged);
+            this.rbDatumOdDo.Click += new System.EventHandler(this.rbDatumOdDo_Click);
             // 
             // label1
             // 

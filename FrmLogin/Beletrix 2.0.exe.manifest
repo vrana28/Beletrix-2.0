@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="357896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Beletrix 2.0.exe" size="359944">
       <assemblyIdentity name="Beletrix 2.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VpAoLRVZFbIfTuZaBkopT4XKmYRBfIgD1T+oHsFA2J8=</dsig:DigestValue>
+        <dsig:DigestValue>0Hz4m3nplY10ml1EkgZeqoCAmlWFxY/LJ1NHQn9/Pwg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wT4n5Y5IaLX6KJOfHlr5WhdxnNPAx06OYIji3LfVfq4=</dsig:DigestValue>
+        <dsig:DigestValue>vT8aWdjrZo5LpJYIXBbiSmZxsM6n5zrSCPrWo2WWdfE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,13 +102,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Beletrix 2.0.exe.config" size="1136">
+  <file name="Beletrix 2.0.exe.config" size="1137">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/4gj9GdLvfxIQvLhZM15KpiO6e4K5J4lFNU6N0E5/Vk=</dsig:DigestValue>
+      <dsig:DigestValue>IiBEPIBkbl2c9jt00SgGKy0ep1OKe4eXLtJVIbapc4A=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icon.ico" size="107852">

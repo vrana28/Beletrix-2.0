@@ -144,8 +144,9 @@
             this.rbDatumOdDo.Name = "rbDatumOdDo";
             this.rbDatumOdDo.Size = new System.Drawing.Size(14, 13);
             this.rbDatumOdDo.TabIndex = 33;
-            this.rbDatumOdDo.TabStop = true;
             this.rbDatumOdDo.UseVisualStyleBackColor = true;
+            this.rbDatumOdDo.CheckedChanged += new System.EventHandler(this.rbDatumOdDo_CheckedChanged);
+            this.rbDatumOdDo.Click += new System.EventHandler(this.rbDatumOdDo_Click);
             // 
             // lblOd
             // 
