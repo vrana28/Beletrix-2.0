@@ -52,6 +52,11 @@ namespace Storage.Implementation.Database
             return broker.GetAllJoin(entity);
         }
 
+        public bool GetBoolPosition(IEntity entity, string pozicija)
+        {
+            return broker.GetBoolPosition(entity, pozicija);
+        }
+
         public DataTable GetBusyEntrances(IEntity entity, Client client, Roba roba)
         {
             return broker.BusyEntrances((Entrance)entity, client, roba);

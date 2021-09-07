@@ -201,6 +201,9 @@ namespace Server
                 case Operation.FindOutputEntrancesWithDate:
                     response.Result = Controler.Instance.FindOutputEntrancesWithDate((Client)request.RequestObject, (Roba)request.RequestObject2, (DateTime)request.RequestObject3, (DateTime)request.RequestObject4);
                     break;
+                case Operation.ZauzetaPozicija:
+                    response.Result = Controler.Instance.ZauzetaPozicija((string)request.RequestObject);
+                    break;
             }
             return response;
         }

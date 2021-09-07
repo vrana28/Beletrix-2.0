@@ -66,6 +66,7 @@
     <Compile Include="EntranceSO\ReturnEntranceSO2.cs" />
     <Compile Include="EntranceSO\UpdateEntranceAndPosition.cs" />
     <Compile Include="PositionSO\GetAllPositionsSO.cs" />
+    <Compile Include="PositionSO\GetBoolPositionSO.cs" />
     <Compile Include="PositionSO\GetBusyPositionSO.cs" />
     <Compile Include="PositionSO\GetBusyPositionWithPosition.cs" />
     <Compile Include="PositionSO\SearchSO.cs" />

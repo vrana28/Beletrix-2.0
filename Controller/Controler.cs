@@ -348,6 +348,14 @@ namespace Controller
             return so.Result;
         }
 
+        public object ZauzetaPozicija(string pozicija)
+        {
+            GetBoolPositionSO so = new GetBoolPositionSO();
+            so.Pozicija = pozicija;
+            so.ExecuteTemplate(new Position());
+            return so.Result;
+        }
+
         public object FindOutputEntrances(Client client, Roba roba)
         {
             //** NOVO UPDATE v2.1

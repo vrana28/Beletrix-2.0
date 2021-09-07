@@ -30,7 +30,7 @@ namespace FrmLogin.UserControls
             RButtons.Add(rb5);
         }
 
-        public DataGridView DGVStanjeNaPoziciji{ get=>dgvStanjeNaPoziciji; }
+        public DataGridView DGVStanjeNaPoziciji { get => dgvStanjeNaPoziciji; }
 
         private void btnUlaz_Click(object sender, EventArgs e)
         {
@@ -42,9 +42,10 @@ namespace FrmLogin.UserControls
             mapController.OpenFrmPositioning(this);
         }
 
-        public void ShowPosition(string pozicija) {
+        public void ShowPosition(string pozicija)
+        {
 
-            mapController.ShowPositin(this,pozicija);
+            mapController.ShowPositin(this, pozicija);
         }
 
         private void btnFind_Click(object sender, EventArgs e)
@@ -357,7 +358,7 @@ namespace FrmLogin.UserControls
             ShowPosition(B74.Name);
         }
 
-       
+
 
         private void C11_Click(object sender, EventArgs e)
         {
@@ -2626,5 +2627,26 @@ namespace FrmLogin.UserControls
         {
 
         }
+
+        private void UCMap_Load(object sender, EventArgs e)
+        {
+
+            //string PositionId = pozicija + UserControlHelpers.CkeckedButtons(RButtons).Text;
+
+            //char[] posebniRedovi = { 'A', 'B' };
+            //foreach (char c in posebniRedovi) {
+            //    for (int i = 0; i <= 7; i++) {
+            //        for (int j = 1; j <= 4; j++) {
+            //            string pozicija = c + i.ToString() + j.ToString();
+            //            pozicija = pozicija + UserControlHelpers.CkeckedButtons(RButtons).Text;
+            //            if (mapController.Zauzeto(pozicija)) { 
+                            
+            //            }
+            //        }
+            //    }
+            //}
+
+        }
     }
 }
+

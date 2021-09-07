@@ -47,6 +47,17 @@ namespace DatabaseBroker
             }
         }
 
+        public bool GetBoolPosition(IEntity entity, string pozicija)
+        {
+            IEntity result;
+            SqlCommand command = new SqlCommand("", connection, transaction);
+            command.CommandText = $"select * from {entity.TableName} where PositionId like '{pozicija}'";
+            SqlDataReader reader = command.ExecuteReader();
+            result = entity.ReturnEntity(reader);
+            reader.Close();
+            return ((Position)result).Slobodna;
+        }
+
         public DataTable BusyEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo)
         {
             SqlCommand command = new SqlCommand("", connection, transaction);

@@ -51,5 +51,10 @@ namespace FrmLogin.Controllers
                 MessageBox.Show(ex.Message);
             }
         }
+
+        internal bool Zauzeto(string pozicija)
+        {
+            return Communication.Communication.Instance.Zauzeto(pozicija);
+        }
     }
 }

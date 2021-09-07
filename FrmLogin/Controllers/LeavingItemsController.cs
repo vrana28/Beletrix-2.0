@@ -292,7 +292,7 @@ namespace FrmLogin.Controllers
             try
             {
                 DataGridViewRow row = frmExit.DGVAllItems.SelectedRows[0];
-                pozicija = (string)row.Cells[1].Value;
+                pozicija = (string)row.Cells[2].Value;
                 frmExit.LblPozicija.Text = pozicija;
                 //EntrancePosition = Communication.Communication.Instance.ReturnEntrancePositions(pozicija);
                 Entrance = Communication.Communication.Instance.ReturnEntrance(pozicija);

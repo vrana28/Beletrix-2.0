@@ -61,6 +61,13 @@ namespace FrmLogin.Communication
             return (List<Roba>)client.GetResponseResult();
         }
 
+        internal bool Zauzeto(string pozicija)
+        {
+            Request r = new Request { Operation = Operation.ZauzetaPozicija, RequestObject = pozicija};
+            client.SendRequest(r);
+            return (bool)client.GetResponseResult();
+        }
+
         internal DataTable FindBusyEntrances(Client clients, Roba roba)
         {
             Request r = new Request { Operation = Operation.FindBusyEntrances, RequestObject = clients, RequestObject2 = roba };

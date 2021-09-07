@@ -49,5 +49,6 @@ namespace Common
         FindBusyEntrancesWithDate,
         FindOutputEntrances,
         FindOutputEntrancesWithDate,
+        ZauzetaPozicija,
     }
 }

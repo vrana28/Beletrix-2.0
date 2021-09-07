@@ -6666,6 +6666,7 @@ namespace FrmLogin.UserControls
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "UCMap";
             this.Size = new System.Drawing.Size(1361, 690);
+            this.Load += new System.EventHandler(this.UCMap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStanjeNaPoziciji)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

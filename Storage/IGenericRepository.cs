@@ -16,6 +16,7 @@ namespace Storage
         void Delete(IEntity entity);
         void Update(IEntity entity);
         bool Exist(IEntity entity);
+        bool GetBoolPosition(IEntity entity, string pozicija);
         void UpdateWithParameters2(IEntity ent1, IEntity entity);
         DataTable GetOutputEntrances(Entrance entity, LeavingItem leavingItem, Client client, Roba roba);
         DataTable GetOutputEntrancesWithDate(Entrance entity, Client client, Roba roba, DateTime datumOd, DateTime datumDo);
