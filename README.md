@@ -5,4 +5,4 @@ Beletrix 2,0 is desktop application developed in .Net Framework using C# languag
 
 Home Page                  |  Star Rank Page           |  Fork Rank Page
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="views/home.png" alt="Home" width="300">  |  <img src="views/stars.png" alt="Stars" width="300"> | <img src="views/forks.png" alt="Forks" width="300">
+<img src="slika41.png" alt="Home" width="300">  |  <img src="views/stars.png" alt="Stars" width="300"> | <img src="views/forks.png" alt="Forks" width="300">
